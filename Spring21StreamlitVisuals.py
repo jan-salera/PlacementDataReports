@@ -2,6 +2,10 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import requests
+import folium
+from streamlit_folium import st_folium
+import numpy as np
+import json
 
 # Load the dataset
 dest21 = pd.read_csv("Spring 2021_2-21-24(Post-graduate Outcomes (Undergr).csv")
@@ -22,7 +26,7 @@ state_abbrev = {
     'West Virginia': 'WV', 'Wisconsin': 'WI', 'Wyoming': 'WY'
 }
 state_counts['StateAbbrev'] = state_counts['State'].map(state_abbrev)
-
+abbrev = state_counts['StateAbbrev']
 # Example mapping of cities to counties in Michigan
 city_to_county = {
     'Detroit - MI': 'Wayne County',
@@ -94,19 +98,51 @@ offer_rec_date['Offer Received Date'] = pd.to_datetime(offer_rec_date['Offer Rec
 job_offers_trend = offer_rec_date.groupby(offer_rec_date['Offer Received Date'].dt.date).size().reset_index(name='Job Offers')#cutoff_date = pd.Timestamp('2022-01-31')
 #job_offers_trend = job_offers_trend[pd.to_datetime(job_offers_trend['Reported Date']) <= cutoff_date]
 
+state_counts['LogCount'] = np.log1p(state_counts['Count'])
+
 # Create choropleth figure for states
 fig = px.choropleth(
     state_counts,
     locations='StateAbbrev',
     locationmode='USA-states',
-    color='Count',
+    color='LogCount',  # Use the log-transformed count
     color_continuous_scale='Greens',
-    labels={'Count': 'Count'},
+    labels={'LogCount': 'Log Count'},
     scope='usa',
-    title='Count of Employed Spartan Engineers by State',
-    range_color=(0, state_counts['Count'].max()),
-    color_continuous_midpoint=state_counts['Count'].median(),
+    title='Count of Employed Spartan Engineers by State (Log Scale)',
+    range_color=(state_counts['LogCount'].min(), state_counts['LogCount'].max()),  # Set the color scale range
 )
+
+# Adjust colorbar to show the original scale
+fig.update_coloraxes(
+    colorbar=dict(
+        tickvals=[np.log1p(x) for x in [1, 10, 100, 1000, 10000]],  # Customize tick values as needed
+        ticktext=['1', '10', '100', '1000', '10000']  # Corresponding labels
+    )
+)
+
+state_geo = requests.get(
+    "https://raw.githubusercontent.com/python-visualization/folium-example-data/main/us_states.json"
+).json()
+
+# Load the GeoJSON data
+#state_geo = pd.read_csv("C:/Users/Shayna/OneDrive - Michigan State University/Documents/MSU The Center - Shayna Laptop/us_states.geojson.txt")
+foliumstatemap = folium.Map(location=[37.8, -96], zoom_start=3.8)
+
+folium.Choropleth(
+    geo_data=state_geo,  # new geojson data
+    name="choropleth",
+    data=state_counts,
+    columns=["State", "LogCount"],
+    key_on="feature.properties.name",
+    fill_color="YlGn",
+    fill_opacity=0.7,
+    line_opacity=0.1,
+    legend_name="Number of Employed Spartan Graduates",
+).add_to(foliumstatemap)
+
+folium.LayerControl().add_to(foliumstatemap)
+
 
 # Create choropleth figure for Michigan counties
 fig2 = px.choropleth(
@@ -187,6 +223,7 @@ fig_dot.update_layout(
     height=300  # Adjust the height of the figure
 )
 
+
 # Display the Streamlit app
 st.markdown(
     """
@@ -194,8 +231,40 @@ st.markdown(
     """, 
     unsafe_allow_html=True
 )
+
+import pandas
+
+state_geo = requests.get(
+    "https://raw.githubusercontent.com/python-visualization/folium-example-data/main/us_states.json"
+).json()
+state_data = pandas.read_csv(
+    "https://raw.githubusercontent.com/python-visualization/folium-example-data/main/us_unemployment_oct_2012.csv"
+)
+
+m = folium.Map(location=[48, -102], zoom_start=3)
+
+folium.Choropleth(
+    geo_data=state_geo,
+    name="choropleth",
+    data=state_data,
+    columns=["State", "Unemployment"],
+    key_on="feature.id",
+    fill_color="YlGn",
+    fill_opacity=0.7,
+    line_opacity=0.2,
+    legend_name="Unemployment Rate (%)",
+).add_to(m)
+
+folium.LayerControl().add_to(m)
+st.write("This visualization is using dummy code to test the package itself on my computer. This visual is NOT related to the Data and Reports webpage.")
+st_folium(m, width=700, height=500)
+
+
+st.write(state_counts)
 st.write("Here are some of the visualizations that I have made so far :)")
-st.subheader('Interactive Choropleth Map for States')
+st.subheader('Interactive Choropleth Map for States using Folium')
+st_folium(foliumstatemap, width=700, height=500)
+st.subheader('Interactive Choropleth Map for States using Folium')
 st.plotly_chart(fig)
 st.subheader('Interactive Choropleth Map for Counties in Michigan')
 st.plotly_chart(fig2)
