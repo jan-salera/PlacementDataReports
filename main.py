@@ -112,7 +112,7 @@ def main():
             AES_Data_Ethnicity()
         with tab3:
             AES_Data_Gender()
-        st.header("Co-Curricular Experiences")
+        
         
         
         
