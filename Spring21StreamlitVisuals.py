@@ -144,6 +144,7 @@ folium.Choropleth(
 folium.LayerControl().add_to(foliumstatemap)
 
 
+
 # Create choropleth figure for Michigan counties
 fig2 = px.choropleth(
     county_counts,
@@ -241,7 +242,7 @@ state_data = pandas.read_csv(
     "https://raw.githubusercontent.com/python-visualization/folium-example-data/main/us_unemployment_oct_2012.csv"
 )
 
-m = folium.Map(location=[48, -102], zoom_start=3)
+m = folium.Map(location=[48, -102], zoom_start=4)
 
 folium.Choropleth(
     geo_data=state_geo,
@@ -261,6 +262,8 @@ st_folium(m, width=700, height=500)
 
 
 st.write(state_counts)
+st.write(state_geo.keys())
+st.write(state_geo['features'][0])
 st.write("Here are some of the visualizations that I have made so far :)")
 st.subheader('Interactive Choropleth Map for States using Folium')
 st_folium(foliumstatemap, width=700, height=500)
