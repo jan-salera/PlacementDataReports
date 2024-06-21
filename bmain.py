@@ -29,7 +29,7 @@ def key_stats(year= "2023", kr = "90.5%", krinfo = "742/820", pr = "94.3%", prin
     H1, H2 = st.columns([1.5, 3])
     with H2:
         st.header(":green[Spartan Statistics]")
-    H3, H0 = st.columns([1, 3.5])
+    H3, H0 = st.columns([1, 3.275])
     with H0:    
         st.write("Data Represents Spring",year,"Graduating Undergraduates")
     
@@ -105,6 +105,7 @@ def main():
                 AllGender2022 = [541, 217]
                 data_gender(AllGender2022)
         elif ["2021"] == ms1:
+            key_stats(year= "2021", kr = "80.3%", krinfo = "599/746", pr = "96%", prinfo = "575/599", avgsal = "$64,838", medsal = "$70,000", employ = "82%", grad = "14%")
             st.header("Spring 2021 Graduating Class Composition: All Engineering Majors")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
@@ -158,6 +159,7 @@ def main():
                 AESGender2022 = [32, 25]
                 data_gender(AESGender2022)
         elif ["2021"] == ms1:
+            key_stats(year= "2021", kr = "88%", krinfo = "63/72", pr = "100%", prinfo = "63/63", avgsal = "$66,697", medsal = "$65,000", employ = "97%", grad = "3%")
             st.header("Spring 2021 Graduating Class Composition: AES Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
@@ -212,6 +214,7 @@ def main():
                 BEGender2022 = [21, 29]
                 data_gender(BEGender2022, InverseGender)
         elif ["2021"] == ms1:
+            key_stats(year= "2021", kr = "87%", krinfo = "41/47", pr = "88%", prinfo = "36/41", avgsal = "$58,792", medsal = "$56,160", employ = "68%", grad = "17%")
             st.header("Spring 2021 Graduating Class Composition: BE Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
@@ -309,6 +312,7 @@ def main():
                 CEGender2022 = [31, 20]
                 data_gender(CEGender2022)
         elif ["2021"] == ms1:
+            key_stats(year= "2021", kr = "75%", krinfo = "33/44", pr = "97%", prinfo = "32/33", avgsal = "$58,612", medsal = "$55,640", employ = "85%", grad = "12%")
             st.header("Spring 2021 Graduating Class Composition: CE Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
@@ -364,6 +368,7 @@ def main():
                 ChemEGender2022 = [66, 34]
                 data_gender(ChemEGender2022)
         elif ["2021"] == ms1:
+            key_stats(year= "2021", kr = "83%", krinfo = "83/100", pr = "94%", prinfo = "78/83", avgsal = "$69,604", medsal = "$70,000", employ = "86%", grad = "8.4%")
             st.header("Spring 2021 Graduating Class Composition: ChemE Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
@@ -419,6 +424,7 @@ def main():
                 CpEGender2022 = [34, 8]
                 data_gender(CpEGender2022)
         elif ["2021"] == ms1:
+            key_stats(year= "2021", kr = "79%", krinfo = "33/42", pr = "97%", prinfo = "32/33", avgsal = "$81,500", medsal = "$77,500", employ = "73%", grad = "21%")
             st.header("Spring 2021 Graduating Class Composition: CpE Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
@@ -473,6 +479,7 @@ def main():
                 CSEGender2022 = [164, 29]
                 data_gender(CSEGender2022)   
         elif ["2021"] == ms1:
+            key_stats(year= "2021", kr = "71%", krinfo = "123/173", pr = "98%", prinfo = "120/123", avgsal = "$76,365", medsal = "$75,000", employ = "87%", grad = "10%")
             st.header("Spring 2021 Graduating Class Composition: CSE Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
@@ -526,6 +533,7 @@ def main():
                 EEGender2022 = [50, 10]
                 data_gender(EEGender2022)
         elif ["2021"] == ms1:
+            key_stats(year= "2021", kr = "85%", krinfo = "57/67", pr = "95%", prinfo = "54/57", avgsal = "$73,322", medsal = "$75,000", employ = "70%", grad = "25%")
             st.header("Spring 2021 Graduating Class Composition: EE Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
@@ -581,6 +589,7 @@ def main():
                 ENEGender2022 = [10, 10]
                 data_gender(ENEGender2022)
         elif ["2021"] == ms1:
+            key_stats(year= "2021", kr = "71%", krinfo = "17/24", pr = "94%", prinfo = "16/17", avgsal = "$60,560", medsal = "$60,000", employ = "94%", grad = "0%")
             st.header("Spring 2021 Graduating Class Composition: ENE Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
@@ -635,6 +644,7 @@ def main():
                 MEGender2022 = [127, 37]
                 data_gender(MEGender2022)
         elif ["2021"] == ms1:
+            key_stats(year= "2021", kr = "85%", krinfo = "131/155", pr = "97%", prinfo = "127/131", avgsal = "$69,674", medsal = "$71,000", employ = "79%", grad = "18%")
             st.header("Spring 2021 Graduating Class Composition: ME Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
@@ -690,6 +700,7 @@ def main():
                 MSGender2022 = [15, 8]
                 data_gender(MSGender2022)
         elif ["2021"] == ms1:
+            key_stats(year= "2021", kr = "82%", krinfo = "18/22", pr = "94%", prinfo = "17/18", avgsal = "$63,581", medsal = "$60,320", employ = "67%", grad = "27%")
             st.header("Spring 2021 Graduating Class Composition: MS Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
