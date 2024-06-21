@@ -25,6 +25,32 @@ def data_ethnicity(count = [], ethnicity = ['White', 'Asian', 'International', '
     ethnicfig = px.pie(ethnicity_data, values='Count', names='Ethnicity', title='Ethnicity Distribution', color_discrete_sequence=msu_colors)
     st.plotly_chart(ethnicfig)
 
+def key_stats(year= "2023", kr = "90.5%", krinfo = "742/820", pr = "94.3%", prinfo = "700/742", avgsal = "$76,806", medsal = "$75,000", employ = "79.3%", grad = "14.2%"):
+    H1, H2 = st.columns([1.5, 3])
+    with H2:
+        st.header(":green[Spartan Statistics]")
+    H3, H0 = st.columns([1, 3.5])
+    with H0:    
+        st.write("Data Represents Spring",year,"Graduating Undergraduates")
+    
+    A1, A2, A3 = st.columns([3, 2.5, 2])
+    with A1:
+        st.header(kr)
+        st.write("Knowledge Rate (" + krinfo + " graduates)")
+        st.header(pr)
+        st.write("Placement Rate (" + prinfo + ") Employment/Education/Other Intentions")
+    with A2:
+        st.header(avgsal)
+        st.write("Average Starting Salary")
+        st.header(medsal)
+        st.write("Median Starting Salary")
+    with A3:
+        st.header(employ)
+        st.write("Engaged in employment")
+        st.header(grad)
+        st.write("Enrolled in graduate school or other continuing education")
+
+
 AllEthnicity = ['White', 'Asian', 'International', 'Hispanic/Latine', 'Black/African American', 'Two or More Races', 'Not Specified', 'Not Reported','American Indian/Alaskan Native']
 Major2022 = [57, 50, 7, 51, 91, 42, 193, 60, 20, 164, 23]
 InverseGender = ['#C70F0F', '#0B1799']
@@ -49,6 +75,8 @@ def main():
 
     if ["All Engineering Majors"] == ms:
         if ["2023"] == ms1:
+            key_stats()
+            st.caption("Note: 0.8% of graduates indicate “other intentions” - placed and not seeking")
             st.header("Spring 2023 Graduating Class Composition: All Engineering Majors")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
@@ -98,13 +126,13 @@ def main():
 
     elif ["Applied Engineering Sciences"] == ms:
         if ["2023"] == ms1:
+            key_stats(year= "2023", kr = "100%", krinfo = "78/78", pr = "92.3%", prinfo = "72/78", avgsal = "$72,233", medsal = "$70,000", employ = "87%", grad = "5.1%")
             st.header("Spring 2023 Graduating Class Composition: AES Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
                 AESColors = ['#CECECE', '#CECECE', '#CECECE','#18453B','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE']
                 data_major(AESColors)
             with tab2:
-
                 AESCount2023 = [58, 6, 2, 6, 2, 3, 1]
                 data_ethnicity(AESCount2023)
             with tab3:
@@ -151,6 +179,7 @@ def main():
     
     elif ["Biosystems Engineering"] == ms:
         if ["2023"] == ms1:
+            key_stats(year= "2023", kr = "93%", krinfo = "41/44", pr = "93%", prinfo = "38/41", avgsal = "$68,768", medsal = "$72,500", employ = "78%", grad = "15%")
             st.header("Spring 2023 Graduating Class Composition: BE Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
@@ -188,7 +217,7 @@ def main():
             with tab3:
                 BEGender2021 = [27, 20]
                 data_gender(BEGender2021) 
-        elif ["Cummulative Data 21-23"] == ms1:
+        elif ["Cummulative Data 21-23"] == ms1:       
             st.header("Spring 2021-2023 Cummulative Graduating Class Composition: BE Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
@@ -203,6 +232,7 @@ def main():
                 
     elif ["Computational Data Science"] == ms:
         if ["2023"] == ms1:
+            key_stats(year= "2023", kr = "93%", krinfo = "13/14", pr = "92%", prinfo = "12/13", avgsal = "$91,357", medsal = "$95,000", employ = "84%", grad = "8%")
             st.header("Spring 2023 Graduating Class Composition: CDS Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
@@ -243,6 +273,7 @@ def main():
 
     elif ["Civil Engineering"] == ms:
         if ["2023"] == ms1:
+            key_stats(year= "2023", kr = "95%", krinfo = "55/58", pr = "96%", prinfo = "53/55", avgsal = "$65,895", medsal = "$65,000", employ = "84%", grad = "9%")
             st.header("Spring 2023 Graduating Class Composition: CE Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
@@ -296,6 +327,7 @@ def main():
 
     elif ["Chemical Engineering"] == ms:
         if ["2023"] == ms1:
+            key_stats(year= "2023", kr = "95%", krinfo = "90/95", pr = "98%", prinfo = "88/90", avgsal = "$77,315", medsal = "$76,000", employ = "83%", grad = "15%")
             st.header("Spring 2023 Graduating Class Composition: ChemE Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
@@ -349,6 +381,7 @@ def main():
                
     elif ["Computer Engineering"] == ms:
         if ["2023"] == ms1:
+            key_stats(year= "2023", kr = "92", krinfo = "22/24", pr = "100%", prinfo = "22/24", avgsal = "$80,112", medsal = "$79,040", employ = "91%", grad = "9%")
             st.header("Spring 2023 Graduating Class Composition: CpE Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
@@ -402,6 +435,7 @@ def main():
 
     elif ["Computer Science"] == ms:
         if ["2023"] == ms1:
+            key_stats(year= "2023", kr = "81%", krinfo = "184/227", pr = "92%", prinfo = "169/184", avgsal = "$89,826", medsal = "$85,000", employ = "73%", grad = "19%")
             st.header("Spring 2023 Graduating Class Composition: CSE Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
@@ -454,6 +488,7 @@ def main():
     
     elif ["Electrical Engineering"] == ms:
         if ["2023"] == ms1:
+            key_stats(year= "2023", kr = "93%", krinfo = "71/76", pr = "96%", prinfo = "68/71", avgsal = "$76,512", medsal = "$79,500", employ = "77%", grad = "16%")
             st.header("Spring 2023 Graduating Class Composition: EE Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
@@ -505,6 +540,7 @@ def main():
        
     elif ["Environmental Engineering"] == ms:
         if ["2023"] == ms1:
+            key_stats(year= "2023", kr = "94%", krinfo = "16/17", pr = "94%", prinfo = "15/16", avgsal = "$58,102", medsal = "$61,950", employ = "75%", grad = "19%")
             st.header("Spring 2023 Graduating Class Composition: ENE Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
@@ -558,6 +594,7 @@ def main():
 
     elif ["Mechanical Engineering"] == ms:
         if ["2023"] == ms1:
+            key_stats(year= "2023", kr = "92%", krinfo = "157/171", pr = "95%", prinfo = "149/157", avgsal = "$75,069", medsal = "$74,500", employ = "79%", grad = "15%")
             st.header("Spring 2023 Graduating Class Composition: ME Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
@@ -610,6 +647,7 @@ def main():
     
     elif ["Material Science"] == ms:
         if ["2023"] == ms1:
+            key_stats(year= "2023", kr = "94%", krinfo = "15/16", pr = "93%", prinfo = "14/15", avgsal = "$70,447", medsal = "$72,500", employ = "73%", grad = "13%")
             st.header("Spring 2023 Graduating Class Composition: MS Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
