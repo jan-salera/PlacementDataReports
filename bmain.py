@@ -26,10 +26,10 @@ def data_ethnicity(count = [], ethnicity = ['White', 'Asian', 'International', '
     st.plotly_chart(ethnicfig)
 
 def key_stats(year= "2023", kr = "90.5%", krinfo = "742/820", pr = "94.3%", prinfo = "700/742", avgsal = "$76,806", medsal = "$75,000", employ = "79.3%", grad = "14.2%"):
-    H1, H2 = st.columns([1.5, 3])
+    H1, H2 = st.columns([.5, 1.75])
     with H2:
-        st.header(":green[Spartan Statistics]")
-    H3, H0 = st.columns([1, 3.275])
+        st.header(":green[Spartan Engineering Statistics]")
+    H3, H0 = st.columns([1, 3.20])
     with H0:    
         st.write("Data Represents Spring",year,"Graduating Undergraduates")
     
