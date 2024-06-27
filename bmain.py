@@ -26,14 +26,16 @@ def data_ethnicity(count = [], ethnicity = ['White', 'Asian', 'International', '
     st.plotly_chart(ethnicfig)
 
 def key_stats(year= "2023", kr = "90.5%", krinfo = "742/820", pr = "94.3%", prinfo = "700/742", avgsal = "$76,806", medsal = "$75,000", employ = "79.3%", grad = "14.2%"):
-    H1, H2 = st.columns([.5, 1.75])
-    with H2:
-        st.header(":green[Spartan Engineering Statistics]")
-    H3, H0 = st.columns([1, 3.20])
+    st.markdown("""<h1 style="font-weight: normal; text-align:center;">Spartan Engineering Statistics </h1>""", unsafe_allow_html=True,)
+
+    H3, H0 = st.columns([1, 3.55])
+    with H3:
+        st.write("")
     with H0:    
         st.write("Data Represents Spring",year,"Graduating Undergraduates")
     
     A1, A2, A3 = st.columns([3, 2.5, 2])
+    
     with A1:
         st.header(kr)
         st.write("Knowledge Rate (" + krinfo + " graduates)")
@@ -62,7 +64,7 @@ Major2021 = [72, 47, 44, 100, 42, 173, 67, 24, 155, 22]
 MajorList2021 = ["Applied Engineering Sciences", "Biosystems Engineering", "Civil Engineering" , "Chemical Engineering", "Computer Engineering", "Computer Science", "Electrical Engineering", "Environmental Engineering", "Mechanical Engineering", "Material Science"]
 Major2123 = [207, 141, 21, 153, 286, 108, 593, 203, 61, 490, 61]
 
-def main():        
+def main():    
     col1, col2 = st.columns([2,3]) 
     with col1:
         options = ("Cummulative Data 21-23", "2023", "2022", "2021")
