@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 # Shows the entire graduating class breakdown by major
-def data_major(colors = [], count = [78, 44, 14, 58, 95, 24, 227, 76, 17, 171, 16], majors = ["Applied Engineering Sciences", "Biosystems Engineering",        "Computational Data Science", "Civil Engineering","Chemical Engineering", "Computer Engineering", "Computer Science", "Electrical Engineering", "Environmental Engineering", "Mechanical Engineering", "Material Science"]):
+def data_major(colors = [], count = [78, 44, 14, 58, 95, 24, 227, 76, 17, 171, 16], majors = ["Applied Engineering Sciences", "Biosystems Engineering",        "Computational Data Science", "Civil Engineering","Chemical Engineering", "Computer Engineering", "Computer Science", "Electrical Engineering", "Environmental Engineering", "Mechanical Engineering", "Material Sciences and Engineering"]):
     class_data = {
     'Major': majors,
     'Count': count}
@@ -94,7 +94,7 @@ AllEthnicity = ['White', 'Asian', 'International', 'Hispanic/Latine', 'Black/Afr
 Major2022 = [57, 50, 7, 51, 91, 42, 193, 60, 20, 164, 23]
 InverseGender = ['#C70F0F', '#0B1799']
 Major2021 = [72, 47, 44, 100, 42, 173, 67, 24, 155, 22]
-MajorList2021 = ["Applied Engineering Sciences", "Biosystems Engineering", "Civil Engineering" , "Chemical Engineering", "Computer Engineering", "Computer Science", "Electrical Engineering", "Environmental Engineering", "Mechanical Engineering", "Material Science"]
+MajorList2021 = ["Applied Engineering Sciences", "Biosystems Engineering", "Civil Engineering" , "Chemical Engineering", "Computer Engineering", "Computer Science", "Electrical Engineering", "Environmental Engineering", "Mechanical Engineering", "Material Sciences and Engineering"]
 Major2123 = [207, 141, 21, 153, 286, 108, 593, 203, 61, 490, 61]
 
 def main():    
@@ -105,11 +105,9 @@ def main():
 
     with col2:
         if ms1 == ["2021"]:
-            options= ("All Engineering Majors", "Applied Engineering Sciences", "Biosystems Engineering", "Civil Engineering", "Chemical Engineering", "Computer Engineering", "Computer Science", "Electrical Engineering", "Environmental Engineering", "Mechanical Engineering", "Material Science")
+            options= ("All Engineering Majors", "Applied Engineering Sciences", "Biosystems Engineering", "Chemical Engineering", "Civil Engineering", "Computer Engineering", "Computer Science", "Electrical Engineering", "Environmental Engineering", "Material Sciences and Engineering", "Mechanical Engineering")
         else:
-            options = ("All Engineering Majors", "Applied Engineering Sciences", "Biosystems Engineering", "Computational Data Science", 
-            "Civil Engineering", "Chemical Engineering", "Computer Engineering", "Computer Science", "Electrical Engineering", 
-            "Environmental Engineering", "Mechanical Engineering", "Material Science")
+            options= ("All Engineering Majors", "Applied Engineering Sciences", "Biosystems Engineering", "Chemical Engineering", "Civil Engineering", "Computer Engineering", "Computer Science", "Electrical Engineering", "Environmental Engineering", "Material Sciences and Engineering", "Mechanical Engineering")
         ms = st.multiselect("Note: Only select one option per filter.", options=options, placeholder = "Filter By Major",  label_visibility="hidden")
 
     if ["All Engineering Majors"] == ms:
@@ -748,7 +746,7 @@ def main():
             with tab3:
                 data_gender([393, 97])
     
-    elif ["Material Science"] == ms:
+    elif ["Material Sciences and Engineering"] == ms:
         if ["2023"] == ms1:
             key_stats(year= "2023", kr = "94%", krinfo = "15/16", pr = "93%", prinfo = "14/15", avgsal = "$70,447", medsal = "$72,500", employ = "73%", grad = "13%")
             st.header("Spring 2023 Graduating Class Composition: MS Major")
