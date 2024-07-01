@@ -1,3 +1,8 @@
+import pandas as pd
+import numpy as np
+import streamlit as st
+import plotly.express as px
+
 def choropleth_state_map(file_path, name_of_major_category = "All"):
     all_majors_data = pd.read_csv(file_path)
     state_counts = all_majors_data['Employer State'].value_counts().reset_index()
@@ -29,3 +34,8 @@ def choropleth_state_map(file_path, name_of_major_category = "All"):
         hover_data={'State': True, 'Count': True, 'StateAbbrev': False, 'LogCount': False}
     )
     return fig
+
+
+fig = choropleth_state_map("DestinationCumulativeDataset(Electrical Engineering).csv", "Electrical Engineering")
+st.subheader('Interactive Choropleth Map for States for Electrical Engineers')
+st.plotly_chart(fig)

@@ -1,5 +1,7 @@
 import streamlit as st
 import plotly.express as px
+import pandas as pd
+import numpy as np
 
 # Shows the entire graduating class breakdown by major
 def data_major(colors = [], count = [78, 44, 14, 58, 95, 24, 227, 76, 17, 171, 16], majors = ["Applied Engineering Sciences", "Biosystems Engineering",        "Computational Data Science", "Civil Engineering","Chemical Engineering", "Computer Engineering", "Computer Science", "Electrical Engineering", "Environmental Engineering", "Mechanical Engineering", "Material Science"]):
@@ -56,6 +58,37 @@ def key_stats(year= "2023", kr = "90.5%", krinfo = "742/820", pr = "94.3%", prin
             st.header("2%")
             st.write("Engaged in Volunteering opportunites")
 
+def choropleth_state_map(file_path):
+    all_majors_data = pd.read_csv(file_path)
+    state_counts = all_majors_data['Employer State'].value_counts().reset_index()
+    state_counts.columns = ['State', 'Count']
+    state_abbrev = {
+        'Alabama': 'AL', 'Alaska': 'AK', 'Arizona': 'AZ', 'Arkansas': 'AR', 'California': 'CA', 'Colorado': 'CO',
+        'Connecticut': 'CT', 'Delaware': 'DE', 'District of Columbia': 'DC', 'Florida': 'FL', 'Georgia': 'GA', 'Hawaii': 'HI', 'Idaho': 'ID',
+        'Illinois': 'IL', 'Indiana': 'IN', 'Iowa': 'IA', 'Kansas': 'KS', 'Kentucky': 'KY', 'Louisiana': 'LA',
+        'Maine': 'ME', 'Maryland': 'MD', 'Massachusetts': 'MA', 'Michigan': 'MI', 'Minnesota': 'MN', 'Mississippi': 'MS',
+        'Missouri': 'MO', 'Montana': 'MT', 'Nebraska': 'NE', 'Nevada': 'NV', 'New Hampshire': 'NH', 'New Jersey': 'NJ',
+        'New Mexico': 'NM', 'New York': 'NY', 'North Carolina': 'NC', 'North Dakota': 'ND', 'Ohio': 'OH', 'Oklahoma': 'OK',
+        'Oregon': 'OR', 'Pennsylvania': 'PA', 'Rhode Island': 'RI', 'South Carolina': 'SC', 'South Dakota': 'SD',
+        'Tennessee': 'TN', 'Texas': 'TX', 'Utah': 'UT', 'Vermont': 'VT', 'Virginia': 'VA', 'Washington': 'WA',
+        'West Virginia': 'WV', 'Wisconsin': 'WI', 'Wyoming': 'WY'
+    }
+    state_counts['StateAbbrev'] = state_counts['State'].map(state_abbrev)
+    abbrev = state_counts['StateAbbrev']
+    state_counts['LogCount'] = np.log1p(state_counts['Count'])
+    fig = px.choropleth(
+        state_counts,
+        locations='StateAbbrev',
+        locationmode='USA-states',
+        color='LogCount',  # Use the log-transformed count
+        color_continuous_scale='Greens',
+        labels={'LogCount': 'Log Count'},
+        scope='usa',
+        title='',
+        range_color=(state_counts['LogCount'].min(), state_counts['LogCount'].max()),  # Set the color scale range
+        hover_data={'State': True, 'Count': True, 'StateAbbrev': False, 'LogCount': False}
+    )
+    return fig
 
 AllEthnicity = ['White', 'Asian', 'International', 'Hispanic/Latine', 'Black/African American', 'Two or More Races', 'Not Specified', 'Not Reported','American Indian/Alaskan Native']
 Major2022 = [57, 50, 7, 51, 91, 42, 193, 60, 20, 164, 23]
@@ -108,6 +141,7 @@ def main():
                 data_gender(AllGender2022)
         elif ["2021"] == ms1:
             key_stats(year= "2021", kr = "80.3%", krinfo = "599/746", pr = "96%", prinfo = "575/599", avgsal = "$64,838", medsal = "$70,000", employ = "82%", grad = "14%")
+
             st.header("Spring 2021 Graduating Class Composition: All Engineering Majors")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
@@ -119,6 +153,10 @@ def main():
             with tab3:
                 AllGender2021 = [556, 190]
                 data_gender(AllGender2021)
+
+            AllFig = choropleth_state_map("DestinationCumulativeDataset(All Majors).csv")
+            st.header('Interactive Choropleth Map for States for All Engineers')
+            st.plotly_chart(AllFig)
         elif ["Cummulative Data 21-23"] == ms1:
             st.header("Spring 2021-2023 Cummulative Graduating Class Composition: All Engineering Majors")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
@@ -162,6 +200,7 @@ def main():
                 data_gender(AESGender2022)
         elif ["2021"] == ms1:
             key_stats(year= "2021", kr = "88%", krinfo = "63/72", pr = "100%", prinfo = "63/63", avgsal = "$66,697", medsal = "$65,000", employ = "97%", grad = "3%")
+
             st.header("Spring 2021 Graduating Class Composition: AES Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
@@ -173,7 +212,11 @@ def main():
                 data_ethnicity(AESCount2021, AESEthnicity2021)
             with tab3:
                 AESGender2021 = [46, 26]
-                data_gender(AESGender2021)        
+                data_gender(AESGender2021)
+
+            AESFig = choropleth_state_map("DestinationCumulativeDataset(Applied Engineering Sciences).csv")
+            st.header('Interactive Choropleth Map for States for AES Engineers')
+            st.plotly_chart(AESFig)   
         elif ["Cummulative Data 21-23"] == ms1:
             st.header("Spring 2021-2023 Cummulative Graduating Class Composition: AES Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
@@ -229,6 +272,10 @@ def main():
             with tab3:
                 BEGender2021 = [27, 20]
                 data_gender(BEGender2021) 
+            
+            BEFig = choropleth_state_map("DestinationCumulativeDataset(Biosystems Engineering).csv")
+            st.header('Interactive Choropleth Map for States for BE Engineers')
+            st.plotly_chart(BEFig) 
         elif ["Cummulative Data 21-23"] == ms1:       
             st.header("Spring 2021-2023 Cummulative Graduating Class Composition: BE Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
@@ -327,6 +374,11 @@ def main():
             with tab3:
                 CEGender2021 = [37, 7]
                 data_gender(CEGender2021)
+
+            CEFig = choropleth_state_map("DestinationCumulativeDataset(Civil Engineering).csv")
+            st.header('Interactive Choropleth Map for States for CE Engineers')
+            st.plotly_chart(CEFig)
+
         elif ["Cummulative Data 21-23"] == ms1:
             st.header("Spring 2021-2023 Cummulative Graduating Class Composition: CE Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
@@ -383,6 +435,10 @@ def main():
             with tab3:
                 ChemEGender2021 = [54, 41]
                 data_gender(ChemEGender2021)
+            
+            ChemEFig = choropleth_state_map("DestinationCumulativeDataset(Chemical Engineering).csv")
+            st.header('Interactive Choropleth Map for States for ChemE Engineers')
+            st.plotly_chart(ChemEFig)
         elif ["Cummulative Data 21-23"] == ms1:
             st.header("Spring 2021-2023 Cummulative Graduating Class Composition: ChemE Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
@@ -439,6 +495,10 @@ def main():
             with tab3:
                 CpEGender2021 = [37, 5]
                 data_gender(CpEGender2021)
+
+            CpEFig = choropleth_state_map("DestinationCumulativeDataset(Computer Engineering).csv")
+            st.header('Interactive Choropleth Map for States for CpE Engineers')
+            st.plotly_chart(CpEFig)
         elif ["Cummulative Data 21-23"] == ms1:
             st.header("Spring 2021-2023 Cummulative Graduating Class Composition: CpE Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
@@ -494,6 +554,10 @@ def main():
             with tab3:
                 CSEGender2021 = [139, 34]
                 data_gender(CSEGender2021)
+            
+            CSEFig = choropleth_state_map("DestinationCumulativeDataset(Computer Science).csv")
+            st.header('Interactive Choropleth Map for States for CSE Engineers')
+            st.plotly_chart(CSEFig)
         elif ["Cummulative Data 21-23"] == ms1:
             st.header("Spring 2021-2023 Cummulative Graduating Class Composition: CSE Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
@@ -548,6 +612,10 @@ def main():
             with tab3:
                 EEGender2021 = [56, 11]
                 data_gender(EEGender2021)
+            
+            EEFig = choropleth_state_map("DestinationCumulativeDataset(Electrical Engineering).csv")
+            st.header('Interactive Choropleth Map for States for EE Engineers')
+            st.plotly_chart(EEFig)
         elif ["Cummulative Data 21-23"] == ms1:
             st.header("Spring 2021-2023 Cummulative Graduating Class Composition: EE Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
@@ -604,6 +672,10 @@ def main():
             with tab3:
                 ENEGender2021 = [11, 13]
                 data_gender(ENEGender2021, InverseGender)
+            
+            ENEFig = choropleth_state_map("DestinationCumulativeDataset(Environmental Engineering).csv")
+            st.header('Interactive Choropleth Map for States for ENE Engineers')
+            st.plotly_chart(ENEFig)
         elif ["Cummulative Data 21-23"] == ms1:
             st.header("Spring 2021-2023 Cummulative Graduating Class Composition: ENE Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
@@ -659,6 +731,10 @@ def main():
             with tab3:
                 MEGender2021 = [120, 35]
                 data_gender(MEGender2021)
+            
+            MEFig = choropleth_state_map("DestinationCumulativeDataset(Mechanical Engineering).csv")
+            st.header('Interactive Choropleth Map for States for ME Engineers')
+            st.plotly_chart(MEFig)     
         elif ["Cummulative Data 21-23"] == ms1:
             st.header("Spring 2021-2023 Cummulative Graduating Class Composition: ME Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
@@ -715,6 +791,10 @@ def main():
             with tab3:
                 MSGender2021 = [17, 5]
                 data_gender(MSGender2021)
+            
+            MSFig = choropleth_state_map("DestinationCumulativeDataset(Materials Science and Eng).csv")
+            st.header('Interactive Choropleth Map for States for MS Engineers')
+            st.plotly_chart(MSFig) 
         elif ["Cummulative Data 21-23"] == ms1:
             st.header("Spring 2021-2023 Cummulative Graduating Class Composition: MS Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
