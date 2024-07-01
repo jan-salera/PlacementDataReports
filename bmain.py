@@ -27,7 +27,7 @@ def data_ethnicity(count = [], ethnicity = ['White', 'Asian', 'International', '
     ethnicfig = px.pie(ethnicity_data, values='Count', names='Ethnicity', title='Ethnicity Distribution', color_discrete_sequence=msu_colors)
     st.plotly_chart(ethnicfig)
 
-def key_stats(year= "2023", kr = "90.5%", krinfo = "742/820", pr = "94.3%", prinfo = "700/742", avgsal = "$76,806", medsal = "$75,000", employ = "79.3%", grad = "14.2%"):
+def key_stats(year= "2023", kr = "90.5%", krinfo = "742/820", pr = "94.3%", prinfo = "700/742", avgsal = "$76,806", medsal = "$75,000", employ = "79.3%", grad = "14.2%", vol = 0):
     st.markdown("""<h1 style="font-weight: normal; text-align:center;">Spartan Engineering Statistics </h1>""", unsafe_allow_html=True,)
 
     H3, H0 = st.columns([1, 3.55])
@@ -42,21 +42,27 @@ def key_stats(year= "2023", kr = "90.5%", krinfo = "742/820", pr = "94.3%", prin
         st.header(kr)
         st.write("Knowledge Rate (" + krinfo + " graduates)")
         st.header(pr)
-        st.write("Placement Rate (" + prinfo + ") Employment/Education/Other Intentions")
-    with A2:
+        st.write("Placement Rate (" + prinfo + " graduates)")
+    with A3:
         st.header(avgsal)
         st.write("Average Starting Salary")
         st.header(medsal)
         st.write("Median Starting Salary")
-    with A3:
+    with A2:
         st.header(employ)
-        st.write("Engaged in employment")
+        st.write("Employed")
         if type(grad) is str:
             st.header(grad)
-            st.write("Enrolled in graduate school or other continuing education")
+            st.write("Continuing Education")
         else:
             st.header("2%")
-            st.write("Engaged in Volunteering opportunites")
+            st.write("Service/Volunteering")
+        if type(vol) is str:
+            st.header(vol)
+            st.write("Service/Volunteering")
+        elif vol == 1:
+            st.header("1%")
+            st.write("Fellowship")
 
 def choropleth_state_map(file_path):
     all_majors_data = pd.read_csv(file_path)
@@ -138,7 +144,7 @@ def main():
                 AllGender2022 = [541, 217]
                 data_gender(AllGender2022)
         elif ["2021"] == ms1:
-            key_stats(year= "2021", kr = "80.3%", krinfo = "599/746", pr = "96%", prinfo = "575/599", avgsal = "$64,838", medsal = "$70,000", employ = "82%", grad = "14%")
+            key_stats(year= "2021", kr = "80.3%", krinfo = "599/746", pr = "96%", prinfo = "575/599", avgsal = "$69,838", medsal = "$70,000", employ = "82%", grad = "13.5%", vol = "0.5%")
 
             st.header("Spring 2021 Graduating Class Composition: All Engineering Majors")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
@@ -257,7 +263,7 @@ def main():
                 BEGender2022 = [21, 29]
                 data_gender(BEGender2022, InverseGender)
         elif ["2021"] == ms1:
-            key_stats(year= "2021", kr = "87%", krinfo = "41/47", pr = "88%", prinfo = "36/41", avgsal = "$58,792", medsal = "$56,160", employ = "68%", grad = "17%")
+            key_stats(year= "2021", kr = "87%", krinfo = "41/47", pr = "87%", prinfo = "36/41", avgsal = "$58,792", medsal = "$56,160", employ = "68%", grad = "17%", vol = "2%")
             st.header("Spring 2021 Graduating Class Composition: BE Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
@@ -376,7 +382,6 @@ def main():
             CEFig = choropleth_state_map("DestinationCumulativeDataset(Civil Engineering).csv")
             st.header('Interactive Choropleth Map for States for CE Engineers')
             st.plotly_chart(CEFig)
-
         elif ["Cummulative Data 21-23"] == ms1:
             st.header("Spring 2021-2023 Cummulative Graduating Class Composition: CE Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
@@ -420,7 +425,7 @@ def main():
                 ChemEGender2022 = [66, 34]
                 data_gender(ChemEGender2022)
         elif ["2021"] == ms1:
-            key_stats(year= "2021", kr = "83%", krinfo = "83/100", pr = "94%", prinfo = "78/83", avgsal = "$69,604", medsal = "$70,000", employ = "86%", grad = "8.4%")
+            key_stats(year= "2021", kr = "83%", krinfo = "83/100", pr = "94%", prinfo = "78/83", avgsal = "$69,604", medsal = "$70,000", employ = "86%", grad = "8%")
             st.header("Spring 2021 Graduating Class Composition: ChemE Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
@@ -480,7 +485,7 @@ def main():
                 CpEGender2022 = [34, 8]
                 data_gender(CpEGender2022)
         elif ["2021"] == ms1:
-            key_stats(year= "2021", kr = "79%", krinfo = "33/42", pr = "97%", prinfo = "32/33", avgsal = "$81,500", medsal = "$77,500", employ = "73%", grad = "21%")
+            key_stats(year= "2021", kr = "79%", krinfo = "33/42", pr = "97%", prinfo = "32/33", avgsal = "$81,500", medsal = "$77,500", employ = "73%", grad = "21%", vol = "3%")
             st.header("Spring 2021 Graduating Class Composition: CpE Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
@@ -539,7 +544,7 @@ def main():
                 CSEGender2022 = [164, 29]
                 data_gender(CSEGender2022)   
         elif ["2021"] == ms1:
-            key_stats(year= "2021", kr = "71%", krinfo = "123/173", pr = "98%", prinfo = "120/123", avgsal = "$76,365", medsal = "$75,000", employ = "87%", grad = "10%")
+            key_stats(year= "2021", kr = "71%", krinfo = "123/173", pr = "98%", prinfo = "120/123", avgsal = "$76,365", medsal = "$75,000", employ = "87%", grad = "10%", vol = 1)
             st.header("Spring 2021 Graduating Class Composition: CSE Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
