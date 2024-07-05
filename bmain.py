@@ -110,8 +110,8 @@ def c_key_stats(kr21, kr22, kr23, ya_kr, pr21, pr22, pr23, ya_pr, as21, as22, as
 
     with C4:
         st.header(":green[$" + ya_ms + "]")
-        st.write(ya, "Year Average Median Salary", key = 2)
-        sm1 = st.checkbox("See More")    
+        st.write(ya, "Year Average Median Salary")
+        sm1 = st.checkbox("See More", key = 2)    
         if sm1:
             st.header("$" + ms23)
             st.write("2023 Median Salary")
