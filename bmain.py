@@ -220,7 +220,7 @@ def main():
                 data_gender(AllGender2021)
 
             AllFig = choropleth_state_map("DestinationCumulativeDataset(All Majors).csv")
-            st.header('Interactive Choropleth Map for States for All Engineers')
+            st.header('Interactive Map for Destination Data: All Engineering Majors')
             st.plotly_chart(AllFig)
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('80.3%', '82.5%', '90.5%', '84.4%', '96.0%', '98.0%','94.3%', '96.1%', '69,838', '73,922', '76,806', '73,522', '70,000','72,500', '75,000', '72,500')
@@ -270,7 +270,7 @@ def main():
                 data_gender(AESGender2021)
 
             AESFig = choropleth_state_map("DestinationCumulativeDataset(Applied Engineering Sciences).csv")
-            st.header('Interactive Choropleth Map for States for AES Engineers')
+            st.header('Interactive Map for Destination Data: AES Major')
             st.plotly_chart(AESFig)   
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('88%', '81%', '100%', '90%', '100%', '100%', '92%','97%', '66,697', '67,579', '72,233', '68,836', '65,000', '70,000','70,000', '68,333')
@@ -319,7 +319,7 @@ def main():
                 data_gender(BEGender2021) 
             
             BEFig = choropleth_state_map("DestinationCumulativeDataset(Biosystems Engineering).csv")
-            st.header('Interactive Choropleth Map for States for BE Engineers')
+            st.header('Interactive Map for Destination Data: BE Major')
             st.plotly_chart(BEFig) 
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('87%', '100%', '93%', '93%', '87%', '94%', '93%', '91%',
@@ -402,7 +402,7 @@ def main():
                 data_gender(CEGender2021)
 
             CEFig = choropleth_state_map("DestinationCumulativeDataset(Civil Engineering).csv")
-            st.header('Interactive Choropleth Map for States for CE Engineers')
+            st.header('Interactive Map for Destination Data: CE Major')
             st.plotly_chart(CEFig)
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('75%', '76%', '95%', '82%', '97%', '95%', '96%', '96%','58,612', '66,729', '65,895', '63,745', '55,640', '67,800', '65,000', '62,813')
@@ -452,7 +452,7 @@ def main():
                 data_gender(ChemEGender2021)
             
             ChemEFig = choropleth_state_map("DestinationCumulativeDataset(Chemical Engineering).csv")
-            st.header('Interactive Choropleth Map for States for ChemE Engineers')
+            st.header('Interactive Map for Destination Data: ChemE Major')
             st.plotly_chart(ChemEFig)
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('83%', '82%', '95%', '87%', '94%', '97%', '98%', '96%','69,604', '71,561', '77,315', '72,827', '70,000', '72,500', '76,000', '72,833')
@@ -502,7 +502,7 @@ def main():
                 data_gender(CpEGender2021)
 
             CpEFig = choropleth_state_map("DestinationCumulativeDataset(Computer Engineering).csv")
-            st.header('Interactive Choropleth Map for States for CpE Engineers')
+            st.header('Interactive Map for Destination Data: CpE Major')
             st.plotly_chart(CpEFig)
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('79%', '76%', '92%', '82%', '97%', '97%', '100%',	'98%', '81,500', '83,698', '80,112', '81,770','77,500',	'80,500',	'79,040', '79,013')           
@@ -551,7 +551,7 @@ def main():
                 data_gender(CSEGender2021)
             
             CSEFig = choropleth_state_map("DestinationCumulativeDataset(Computer Science).csv")
-            st.header('Interactive Choropleth Map for States for CSE Engineers')
+            st.header('Interactive Map for Destination Data: CSE Major')
             st.plotly_chart(CSEFig)
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('71%', '79%', '81%', '77%', '98%', '98%', '92%', '96%','76,365', '85,220', '89,826', '83,804', '75,000', '80,000', '85,000', '80,000') 
@@ -599,7 +599,7 @@ def main():
                 data_gender(EEGender2021)
             
             EEFig = choropleth_state_map("DestinationCumulativeDataset(Electrical Engineering).csv")
-            st.header('Interactive Choropleth Map for States for EE Engineers')
+            st.header('Interactive Map for Destination Data: EE Major')
             st.plotly_chart(EEFig)
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('85%', '83%', '93%', '87%', '95%', '100%', '96%', '97%', '73,322', '79,650', '76,512', '76,495', '75,000', '77,500', '79,500', '77,333')
@@ -649,7 +649,7 @@ def main():
                 data_gender(ENEGender2021, InverseGender)
             
             ENEFig = choropleth_state_map("DestinationCumulativeDataset(Environmental Engineering).csv")
-            st.header('Interactive Choropleth Map for States for ENE Engineers')
+            st.header('Interactive Map for Destination Data: ENE Major')
             st.plotly_chart(ENEFig)
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('71%', '90%', '94%', '85%', '94%', '100%', '94%', '96%','60,560', '63,697', '58,102', '60,786 ', '60,000', '62,400', '61,950', '61,450')
@@ -698,7 +698,7 @@ def main():
                 data_gender(MEGender2021)
             
             MEFig = choropleth_state_map("DestinationCumulativeDataset(Mechanical Engineering).csv")
-            st.header('Interactive Choropleth Map for States for ME Engineers')
+            st.header('Interactive Map for Destination Data: ME Major')
             st.plotly_chart(MEFig)     
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('85%', '84%', '92%', '87%', '97%', '98%', '95%', '97%','69,674', '70,685', '75,069', '71,809', '71,000', '72,000', '74,500', '72,500')
@@ -748,21 +748,45 @@ def main():
                 data_gender(MSGender2021)
             
             MSFig = choropleth_state_map("DestinationCumulativeDataset(Materials Science and Eng).csv")
-            st.header('Interactive Choropleth Map for States for MS Engineers')
+            st.header('Interactive Map for Destination Data: MS Major')
             st.plotly_chart(MSFig) 
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('82%', '87%', '94%', '88%', '94%', '95%', '93%', '94%', '63,581', '72,147', '70,447', '68,725', '60,320', '75,000', '72,500', '69,273')
     
     st.divider()
-    st.subheader("HELPFUL LINKS")
+    st.subheader("ANNUAL ACTIVITY REPORT")
+    st.write("Annual overview of The Center's activities and student engagement")
+    K1, K2, K3 = st.columns(3)
+    with K1:
+        st.page_link("https://www.careers.egr.msu.edu/_files/ugd/bc0367_5553fe34db574893a98e7a8dbc12054d.pdf", label= ":green[**2022-2023 Activity Report**]")
+        st.image("2023.png")
+        
+    with K2:
+        st.page_link("https://www.careers.egr.msu.edu/_files/ugd/bc0367_771032809d634849a706253122fdcf05.pdf", label= ":green[**2021-2022 Activity Report**]")
+        st.image("2022.png")
+    with K3:
+        st.page_link("https://www.careers.egr.msu.edu/_files/ugd/bc0367_4586c10b1b31439bbe69da616e0e3315.pdf", label= ":green[**2020-2021 Activity Report**]")
+        st.image("2021.png")
+    with st.expander("Activity Reports From Prior Years"):
+        K1, K2, K3 = st.columns(3)
+        with K1:
+            st.page_link("https://www.careers.egr.msu.edu/_files/ugd/bc0367_63a24da526604d86b872fef02fe33e18.pdf", label= ":green[**2019-2020 Activity Report**]")
+            st.page_link("https://www.careers.egr.msu.edu/_files/ugd/bc0367_e1d90f9b3daf445fb275bde81048dbb2.pdf", label= ":green[**2016-2017 Activity Report**]")
+        with K2:
+            st.page_link("https://www.careers.egr.msu.edu/_files/ugd/bc0367_013d842090f14402855558e2ad91aac7.pdf", label= ":green[**2018-2019 Activity Report**]")
+            
+        with K3:
+            st.page_link("https://www.careers.egr.msu.edu/_files/ugd/bc0367_767f829043174861b77a83a2742a1096.pdf", label= ":green[**2017-2018 Activity Report**]")
+
+    st.divider()
+    st.subheader("ADDITIONAL LINKS")
     J2, J1 = st.columns(2)
     with J2:
         st.page_link("https://careernetwork.msu.edu/outcomes/", label= ":green[**Destination Data for All Majors**]")
-        st.image("CareerServices.png", "Contains MSU Wide - All Colleges Destination Survey (2022) by our Career Services Network")
+        st.image("CareerServices.png", "Contains MSU Wide - All Colleges Destination Survey (2023) by our Career Services Network")
     with J1:
         st.page_link("https://engineering.msu.edu/academics/undergraduate-studies/enrollment-data", label= ":green[**College of Engineering Enrollment Data**]")
         st.image("EnrollmentData.png", "Gives a year by year enrollment and graduation date breakdown for the last 10 years")
-
 
 
 
