@@ -7,8 +7,10 @@ import numpy as np
 def data_major(colors = [], count = [78, 44, 14, 58, 95, 24, 227, 76, 17, 171, 16], majors = ["Applied Engineering Sciences", "Biosystems Engineering",        "Computational Data Science", "Civil Engineering","Chemical Engineering", "Computer Engineering", "Computer Science", "Electrical Engineering", "Environmental Engineering", "Mechanical Engineering", "Material Sciences and Engineering"]):
     class_data = {
     'Major': majors,
-    'Count': count}
+    'Count': count
+    }
     major_fig = px.pie(class_data, values='Count', names='Major', title='Major Distribution', color_discrete_sequence=colors)
+    
     st.plotly_chart(major_fig)
 
 # Shows the entire graduating class breakdown by gender
@@ -753,6 +755,7 @@ def main():
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('82%', '87%', '94%', '88%', '94%', '95%', '93%', '94%', '63,581', '72,147', '70,447', '68,725', '60,320', '75,000', '72,500', '69,273')
     
+    #Annual Activity Report Section 
     st.divider()
     st.subheader("ANNUAL ACTIVITY REPORT")
     st.write("Annual overview of The Center's activities and student engagement")
@@ -777,7 +780,32 @@ def main():
             
         with K3:
             st.page_link("https://www.careers.egr.msu.edu/_files/ugd/bc0367_767f829043174861b77a83a2742a1096.pdf", label= ":green[**2017-2018 Activity Report**]")
+    # Enrollment Data Section
+    st.divider()
+    st.subheader("ENROLLMENT DATA")
+    T1, T2, T3 = st.tabs(["Class Level", "Ethnicity", "Gender"])
+    with T1:
+        class_data = {
+        'Class Level': ["First Year", "Sophomore", "Junior", "Senior"],
+        'Count': [1847, 1501, 1249, 1536]}
+        df = pd.DataFrame(class_data)
+                                           
+        major_fig = px.pie(df, values='Count', names='Class Level', title='Major Distribution', color_discrete_sequence=['#BFD641', '#FFB84C', '#5D9AE9', '#FFDE59'])
+        
+        major_fig.update_layout(
+            legend=dict(
+                traceorder='normal',  itemsizing='constant'
+            ))
+        
+        st.plotly_chart(major_fig)
 
+    with T2:
+        EnrollEthnicity2023 = ['White', 'Asian', 'International', 'Hispanic/Latine', 'Black/African American', 'Two or More Races', 'Not Specified', 'American Indian/Alaskan Native', 'Hawaiian/Pacific Islander']
+        data_ethnicity([3481,790,785,337,324,243,158,14,1], EnrollEthnicity2023)
+    with T3:
+        data_gender([4747, 1386])
+
+    # Additional Links Section
     st.divider()
     st.subheader("ADDITIONAL LINKS")
     J2, J1 = st.columns(2)
