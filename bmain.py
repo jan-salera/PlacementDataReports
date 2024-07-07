@@ -123,6 +123,15 @@ def c_key_stats(kr21, kr22, kr23, ya_kr, pr21, pr22, pr23, ya_pr, as21, as22, as
                 st.header("$" + ms21)
                 st.write("2021 Median Salary")
 
+def research_readings(size = [3,3,3], pagelink= "https://www.google.com/", custom = "insert label here"):
+        M1, M2, M3  = st.columns(size)
+        with M1:
+            st.write("")
+        with M2:
+            st.write("")
+            st.page_link(page = pagelink, label = custom)
+        with M3:
+            st.write("")
 
 def choropleth_state_map(file_path):
     all_majors_data = pd.read_csv(file_path)
@@ -754,7 +763,35 @@ def main():
             st.plotly_chart(MSFig) 
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('82%', '87%', '94%', '88%', '94%', '95%', '93%', '94%', '63,581', '72,147', '70,447', '68,725', '60,320', '75,000', '72,500', '69,273')
-    
+
+    # Enrollment Data Section
+    st.divider()
+    st.subheader("ENROLLMENT DATA")
+    st.header("Fall 2023 Enrollment Data")
+    T1, T2, T3 = st.tabs(["Class Level", "Ethnicity", "Gender"])
+    with T1:
+        class_data = {
+        'Class Level': ["First Year", "Sophomore", "Junior", "Senior"],
+        'Count': [1847, 1501, 1249, 1536]}
+        df = pd.DataFrame(class_data)
+                                           
+        major_fig = px.pie(df, values='Count', names='Class Level', title='Major Distribution', color_discrete_sequence=['#BFD641', '#FFB84C', '#5D9AE9', '#FFDE59'])
+        
+        major_fig.update_layout(
+            legend=dict(
+                traceorder='normal',  itemsizing='constant'
+            ))
+        
+        st.plotly_chart(major_fig)
+
+    with T2:
+        EnrollEthnicity2023 = ['White', 'Asian', 'International', 'Hispanic/Latine', 'Black/African American', 'Two or More Races', 'Not Specified', 'American Indian/Alaskan Native', 'Hawaiian/Pacific Islander']
+        data_ethnicity([3481,790,785,337,324,243,158,14,1], EnrollEthnicity2023)
+    with T3:
+        data_gender([4747, 1386])
+
+    st.page_link("https://www.careers.egr.msu.edu/_files/ugd/bc0367_f52727d1f5fd44fb865b6bff7b45b6ef.xlsx?dn=Diversity_graphs%20Combined_12_9_22.xlsx", label = ":green[**Diversity Enrollment Data 5 Year Overview for Engineering**]")
+
     #Annual Activity Report Section 
     st.divider()
     st.subheader("ANNUAL ACTIVITY REPORT")
@@ -780,30 +817,33 @@ def main():
             
         with K3:
             st.page_link("https://www.careers.egr.msu.edu/_files/ugd/bc0367_767f829043174861b77a83a2742a1096.pdf", label= ":green[**2017-2018 Activity Report**]")
-    # Enrollment Data Section
-    st.divider()
-    st.subheader("ENROLLMENT DATA")
-    T1, T2, T3 = st.tabs(["Class Level", "Ethnicity", "Gender"])
-    with T1:
-        class_data = {
-        'Class Level': ["First Year", "Sophomore", "Junior", "Senior"],
-        'Count': [1847, 1501, 1249, 1536]}
-        df = pd.DataFrame(class_data)
-                                           
-        major_fig = px.pie(df, values='Count', names='Class Level', title='Major Distribution', color_discrete_sequence=['#BFD641', '#FFB84C', '#5D9AE9', '#FFDE59'])
-        
-        major_fig.update_layout(
-            legend=dict(
-                traceorder='normal',  itemsizing='constant'
-            ))
-        
-        st.plotly_chart(major_fig)
 
-    with T2:
-        EnrollEthnicity2023 = ['White', 'Asian', 'International', 'Hispanic/Latine', 'Black/African American', 'Two or More Races', 'Not Specified', 'American Indian/Alaskan Native', 'Hawaiian/Pacific Islander']
-        data_ethnicity([3481,790,785,337,324,243,158,14,1], EnrollEthnicity2023)
-    with T3:
-        data_gender([4747, 1386])
+    #Research and Readings Section 
+    st.divider()
+    st.subheader("RESEARCH AND READINGS")
+
+    number = st.slider("Drag the slide bar to unlock a new level of information with our recommended research and readings!", 0, 80, 40, 20, format = "")
+
+    if number == 0:
+        research_readings([1,8.5,8], "https://www.careers.egr.msu.edu/_files/ugd/bc0367_faa49c899d6f44b3b8471d235776e681.pdf",':green[**The Co-Op Experience - A Lasting Impact by Dr. Phil Gardner and Garth Motschenbacher**]')
+        with st.container(border=True):
+            st.image("TheCoopExperience.png")
+
+    elif number == 20:
+        research_readings([1,11,2.65], "https://joinhandshake.com/wp-content/themes/handshake/dist/assets/downloads/network-trends/gen-z-career-goals-ai-economy.pdf?view=true", ':green[**Handshake Network Trends Report: The Class of 2024 sets their sights on the future**]')
+        st.image("HandshakeFuture.png")
+    elif number == 40:
+        research_readings([1,24,10],"https://www.careers.egr.msu.edu/_files/ugd/bc0367_b684a1faf5c64d0eb711a136ce31f72f.pdf",':green[**Factors Relating to Faculty Engagement in Cooperative Education by Dr. Bernadette Friedrich**]')
+        with st.container(border=True):
+            st.image("CooperativeEd.png")
+    elif number == 60:
+        research_readings([1,3,2.65], "https://joinhandshake.com/blog/network-trends/how-gen-z-defines-flexibility/",':green[**Handshake Network Trends Report: How Gen Z defines “flexibility”**]')
+        st.image("HandshakeGenZArticle.png")
+    
+    elif number == 80:
+        research_readings([3,6.28,3], "https://ceri.msu.edu/_assets/pdfs/folder College%20Recruiting%20Outlook%202022-2023.pdf", ':green[**College Hiring Outlook 2023 - by Dr. Phil Gardner**]')
+        st.image("CollegeHiringOutlook.png")
+
 
     # Additional Links Section
     st.divider()
@@ -815,6 +855,7 @@ def main():
     with J1:
         st.page_link("https://engineering.msu.edu/academics/undergraduate-studies/enrollment-data", label= ":green[**College of Engineering Enrollment Data**]")
         st.image("EnrollmentData.png", "Gives a year by year enrollment and graduation date breakdown for the last 10 years")
+    
 
 
 
