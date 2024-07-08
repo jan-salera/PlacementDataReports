@@ -178,14 +178,14 @@ def main():
     col1, col2 = st.columns([2,3]) 
     with col1:
         options = ("Cumulative Data 21-23: Key Stats", "2023", "2022", "2021")
-        ms1 = st.multiselect("Note: Only select one option per filter.", options=options, placeholder = "Filter By Year", label_visibility="visible")
+        ms1 = st.multiselect("Note: Only select one option per filter.", options=options, placeholder = "Filter By Year", label_visibility="visible", default=["2021"])
 
     with col2:
         if ms1 == ["2021"]:
             options= ("All Engineering Majors", "Applied Engineering Sciences", "Biosystems Engineering", "Chemical Engineering", "Civil Engineering", "Computer Engineering", "Computer Science", "Electrical Engineering", "Environmental Engineering", "Material Sciences and Engineering", "Mechanical Engineering")
         else:
             options= ("All Engineering Majors", "Applied Engineering Sciences", "Biosystems Engineering", "Chemical Engineering", "Civil Engineering", "Computational Data Science", "Computer Engineering", "Computer Science", "Electrical Engineering", "Environmental Engineering", "Material Sciences and Engineering", "Mechanical Engineering")
-        ms = st.multiselect("Note: Only select one option per filter.", options=options, placeholder = "Filter By Major",  label_visibility="hidden")
+        ms = st.multiselect("Note: Only select one option per filter.", options=options, placeholder = "Filter By Major", default=["All Engineering Majors"],  label_visibility="hidden")
 
     if ["All Engineering Majors"] == ms:
         if ["2023"] == ms1:
