@@ -202,6 +202,9 @@ def main():
             with tab3:
                 AllGender2023 = [625, 195]
                 data_gender(AllGender2023)
+            fig = choropleth_state_map("CSV_Spring 2023_3-7-24.csv")
+            st.header('Interactive Map for Destination Data: Spring 2023 College of Engineering Graduating Class')
+            st.plotly_chart(fig)
         elif ["2022"] == ms1:
             key_stats("2022", "82.5%", "625/758", "98%", "612/625", "$73,922", "$72,500", "82.9%", "14.6%", "0.2%")
             st.caption("Note: 0.3% of graduates indicate “other intentions” - placed and not seeking")
@@ -215,9 +218,11 @@ def main():
             with tab3:
                 AllGender2022 = [541, 217]
                 data_gender(AllGender2022)
+            fig = choropleth_state_map("CSV_Spring 2022_2-21-24.csv")
+            st.header('Interactive Map for Destination Data: Spring 2022 College of Engineering Graduating Class')
+            st.plotly_chart(fig)
         elif ["2021"] == ms1:
             key_stats(year= "2021", kr = "80.3%", krinfo = "599/746", pr = "96%", prinfo = "575/599", avgsal = "$69,838", medsal = "$70,000", employ = "82%", grad = "13.5%", vol = "0.5%")
-
             st.header("Spring 2021 Graduating Class Composition: All Engineering Majors")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
@@ -229,12 +234,13 @@ def main():
             with tab3:
                 AllGender2021 = [556, 190]
                 data_gender(AllGender2021)
-
+            fig = choropleth_state_map("CSV_Spring 2021_2-21-24.csv")
+            st.header('Interactive Map for Destination Data: Spring 2021 College of Engineering Graduating Class')
+        elif ["Cumulative Data 21-23: Key Stats"] == ms1:
+            c_key_stats('80.3%', '82.5%', '90.5%', '84.4%', '96.0%', '98.0%','94.3%', '96.1%', '69,838', '73,922', '76,806', '73,522', '70,000','72,500', '75,000', '72,500')
             AllFig = choropleth_state_map("DestinationCumulativeDataset(All Majors).csv")
             st.header('Interactive Map for Destination Data: All Engineering Majors')
             st.plotly_chart(AllFig)
-        elif ["Cumulative Data 21-23: Key Stats"] == ms1:
-            c_key_stats('80.3%', '82.5%', '90.5%', '84.4%', '96.0%', '98.0%','94.3%', '96.1%', '69,838', '73,922', '76,806', '73,522', '70,000','72,500', '75,000', '72,500')
 
     elif ["Applied Engineering Sciences"] == ms:
         if ["2023"] == ms1:
@@ -279,12 +285,12 @@ def main():
             with tab3:
                 AESGender2021 = [46, 26]
                 data_gender(AESGender2021)
-
-            AESFig = choropleth_state_map("DestinationCumulativeDataset(Applied Engineering Sciences).csv")
-            st.header('Interactive Map for Destination Data: AES Major')
-            st.plotly_chart(AESFig)   
+ 
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('88%', '81%', '100%', '90%', '100%', '100%', '92%','97%', '66,697', '67,579', '72,233', '68,836', '65,000', '70,000','70,000', '68,333')
+            AESFig = choropleth_state_map("DestinationCumulativeDataset(Applied Engineering Sciences).csv")
+            st.header('Interactive Map for Destination Data: AES Major')
+            st.plotly_chart(AESFig)  
     
     elif ["Biosystems Engineering"] == ms:
         if ["2023"] == ms1:
@@ -327,14 +333,13 @@ def main():
                 data_ethnicity(BECount2021, BEEthnicity2021)
             with tab3:
                 BEGender2021 = [27, 20]
-                data_gender(BEGender2021) 
-            
-            BEFig = choropleth_state_map("DestinationCumulativeDataset(Biosystems Engineering).csv")
-            st.header('Interactive Map for Destination Data: BE Major')
-            st.plotly_chart(BEFig) 
+                data_gender(BEGender2021)        
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('87%', '100%', '93%', '93%', '87%', '94%', '93%', '91%',
                         '58,792', '64,547', '68,768', '64,036', '56,160', '64,500', '72,500', '64,387')
+            BEFig = choropleth_state_map("DestinationCumulativeDataset(Biosystems Engineering).csv")
+            st.header('Interactive Map for Destination Data: BE Major')
+            st.plotly_chart(BEFig) 
                 
     elif ["Computational Data Science"] == ms:
         if ["2023"] == ms1:
@@ -366,7 +371,10 @@ def main():
             with tab3:
                 data_gender([4, 3])
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
-            c_key_stats(0, '86%', '93%', '90%', 0, '100%', '92%', '96%', 0, '70,333', '91,357', '80,845', 0, '75,000', '95,000', '85,000', "Two")       
+            c_key_stats(0, '86%', '93%', '90%', 0, '100%', '92%', '96%', 0, '70,333', '91,357', '80,845', 0, '75,000', '95,000', '85,000', "Two")  
+            CDSFig = choropleth_state_map("DestinationCumulativeDataset(Computational Data Science).csv")
+            st.header('Interactive Map for Destination Data: CDS Major')
+            st.plotly_chart(CDSFig) 
 
     elif ["Civil Engineering"] == ms:
         if ["2023"] == ms1:
@@ -412,11 +420,11 @@ def main():
                 CEGender2021 = [37, 7]
                 data_gender(CEGender2021)
 
+        elif ["Cumulative Data 21-23: Key Stats"] == ms1:
+            c_key_stats('75%', '76%', '95%', '82%', '97%', '95%', '96%', '96%','58,612', '66,729', '65,895', '63,745', '55,640', '67,800', '65,000', '62,813')
             CEFig = choropleth_state_map("DestinationCumulativeDataset(Civil Engineering).csv")
             st.header('Interactive Map for Destination Data: CE Major')
             st.plotly_chart(CEFig)
-        elif ["Cumulative Data 21-23: Key Stats"] == ms1:
-            c_key_stats('75%', '76%', '95%', '82%', '97%', '95%', '96%', '96%','58,612', '66,729', '65,895', '63,745', '55,640', '67,800', '65,000', '62,813')
             
     elif ["Chemical Engineering"] == ms:
         if ["2023"] == ms1:
@@ -462,11 +470,11 @@ def main():
                 ChemEGender2021 = [54, 41]
                 data_gender(ChemEGender2021)
             
+        elif ["Cumulative Data 21-23: Key Stats"] == ms1:
+            c_key_stats('83%', '82%', '95%', '87%', '94%', '97%', '98%', '96%','69,604', '71,561', '77,315', '72,827', '70,000', '72,500', '76,000', '72,833')
             ChemEFig = choropleth_state_map("DestinationCumulativeDataset(Chemical Engineering).csv")
             st.header('Interactive Map for Destination Data: ChemE Major')
             st.plotly_chart(ChemEFig)
-        elif ["Cumulative Data 21-23: Key Stats"] == ms1:
-            c_key_stats('83%', '82%', '95%', '87%', '94%', '97%', '98%', '96%','69,604', '71,561', '77,315', '72,827', '70,000', '72,500', '76,000', '72,833')
                
     elif ["Computer Engineering"] == ms:
         if ["2023"] == ms1:
@@ -512,11 +520,11 @@ def main():
                 CpEGender2021 = [37, 5]
                 data_gender(CpEGender2021)
 
+        elif ["Cumulative Data 21-23: Key Stats"] == ms1:
+            c_key_stats('79%', '76%', '92%', '82%', '97%', '97%', '100%',	'98%', '81,500', '83,698', '80,112', '81,770','77,500',	'80,500',	'79,040', '79,013')      
             CpEFig = choropleth_state_map("DestinationCumulativeDataset(Computer Engineering).csv")
             st.header('Interactive Map for Destination Data: CpE Major')
-            st.plotly_chart(CpEFig)
-        elif ["Cumulative Data 21-23: Key Stats"] == ms1:
-            c_key_stats('79%', '76%', '92%', '82%', '97%', '97%', '100%',	'98%', '81,500', '83,698', '80,112', '81,770','77,500',	'80,500',	'79,040', '79,013')           
+            st.plotly_chart(CpEFig)     
 
     elif ["Computer Science"] == ms:
         if ["2023"] == ms1:
@@ -561,11 +569,11 @@ def main():
                 CSEGender2021 = [139, 34]
                 data_gender(CSEGender2021)
             
+        elif ["Cumulative Data 21-23: Key Stats"] == ms1:
+            c_key_stats('71%', '79%', '81%', '77%', '98%', '98%', '92%', '96%','76,365', '85,220', '89,826', '83,804', '75,000', '80,000', '85,000', '80,000') 
             CSEFig = choropleth_state_map("DestinationCumulativeDataset(Computer Science).csv")
             st.header('Interactive Map for Destination Data: CSE Major')
             st.plotly_chart(CSEFig)
-        elif ["Cumulative Data 21-23: Key Stats"] == ms1:
-            c_key_stats('71%', '79%', '81%', '77%', '98%', '98%', '92%', '96%','76,365', '85,220', '89,826', '83,804', '75,000', '80,000', '85,000', '80,000') 
     
     elif ["Electrical Engineering"] == ms:
         if ["2023"] == ms1:
@@ -609,11 +617,11 @@ def main():
                 EEGender2021 = [56, 11]
                 data_gender(EEGender2021)
             
+        elif ["Cumulative Data 21-23: Key Stats"] == ms1:
+            c_key_stats('85%', '83%', '93%', '87%', '95%', '100%', '96%', '97%', '73,322', '79,650', '76,512', '76,495', '75,000', '77,500', '79,500', '77,333')
             EEFig = choropleth_state_map("DestinationCumulativeDataset(Electrical Engineering).csv")
             st.header('Interactive Map for Destination Data: EE Major')
             st.plotly_chart(EEFig)
-        elif ["Cumulative Data 21-23: Key Stats"] == ms1:
-            c_key_stats('85%', '83%', '93%', '87%', '95%', '100%', '96%', '97%', '73,322', '79,650', '76,512', '76,495', '75,000', '77,500', '79,500', '77,333')
        
     elif ["Environmental Engineering"] == ms:
         if ["2023"] == ms1:
@@ -659,11 +667,11 @@ def main():
                 ENEGender2021 = [11, 13]
                 data_gender(ENEGender2021, InverseGender)
             
+        elif ["Cumulative Data 21-23: Key Stats"] == ms1:
+            c_key_stats('71%', '90%', '94%', '85%', '94%', '100%', '94%', '96%','60,560', '63,697', '58,102', '60,786 ', '60,000', '62,400', '61,950', '61,450')
             ENEFig = choropleth_state_map("DestinationCumulativeDataset(Environmental Engineering).csv")
             st.header('Interactive Map for Destination Data: ENE Major')
             st.plotly_chart(ENEFig)
-        elif ["Cumulative Data 21-23: Key Stats"] == ms1:
-            c_key_stats('71%', '90%', '94%', '85%', '94%', '100%', '94%', '96%','60,560', '63,697', '58,102', '60,786 ', '60,000', '62,400', '61,950', '61,450')
 
     elif ["Mechanical Engineering"] == ms:
         if ["2023"] == ms1:
@@ -707,12 +715,12 @@ def main():
             with tab3:
                 MEGender2021 = [120, 35]
                 data_gender(MEGender2021)
-            
-            MEFig = choropleth_state_map("DestinationCumulativeDataset(Mechanical Engineering).csv")
-            st.header('Interactive Map for Destination Data: ME Major')
-            st.plotly_chart(MEFig)     
+                 
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('85%', '84%', '92%', '87%', '97%', '98%', '95%', '97%','69,674', '70,685', '75,069', '71,809', '71,000', '72,000', '74,500', '72,500')
+            MEFig = choropleth_state_map("DestinationCumulativeDataset(Mechanical Engineering).csv")
+            st.header('Interactive Map for Destination Data: ME Major')
+            st.plotly_chart(MEFig)
     
     elif ["Material Sciences and Engineering"] == ms:
         if ["2023"] == ms1:
@@ -758,11 +766,11 @@ def main():
                 MSGender2021 = [17, 5]
                 data_gender(MSGender2021)
             
+        elif ["Cumulative Data 21-23: Key Stats"] == ms1:
+            c_key_stats('82%', '87%', '94%', '88%', '94%', '95%', '93%', '94%', '63,581', '72,147', '70,447', '68,725', '60,320', '75,000', '72,500', '69,273')
             MSFig = choropleth_state_map("DestinationCumulativeDataset(Materials Science and Eng).csv")
             st.header('Interactive Map for Destination Data: MS Major')
             st.plotly_chart(MSFig) 
-        elif ["Cumulative Data 21-23: Key Stats"] == ms1:
-            c_key_stats('82%', '87%', '94%', '88%', '94%', '95%', '93%', '94%', '63,581', '72,147', '70,447', '68,725', '60,320', '75,000', '72,500', '69,273')
 
     # Enrollment Data Section
     st.divider()
