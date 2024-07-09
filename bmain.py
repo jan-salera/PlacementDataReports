@@ -236,6 +236,8 @@ def main():
                 data_gender(AllGender2021)
             fig = choropleth_state_map("CSV_Spring 2021_2-21-24.csv")
             st.header('Interactive Map for Destination Data: Spring 2021 College of Engineering Graduating Class')
+            st.plotly_chart(fig)
+
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('80.3%', '82.5%', '90.5%', '84.4%', '96.0%', '98.0%','94.3%', '96.1%', '69,838', '73,922', '76,806', '73,522', '70,000','72,500', '75,000', '72,500')
             AllFig = choropleth_state_map("DestinationCumulativeDataset(All Majors).csv")
