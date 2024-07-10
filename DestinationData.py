@@ -123,16 +123,6 @@ def c_key_stats(kr21, kr22, kr23, ya_kr, pr21, pr22, pr23, ya_pr, as21, as22, as
                 st.header("$" + ms21)
                 st.write("2021 Median Salary")
 
-def research_readings(size = [3,3,3], pagelink= "https://www.google.com/", custom = "insert label here"):
-        M1, M2, M3  = st.columns(size)
-        with M1:
-            st.write("")
-        with M2:
-            st.write("")
-            st.page_link(page = pagelink, label = custom)
-        with M3:
-            st.write("")
-
 def choropleth_state_map(file_path):
     all_majors_data = pd.read_csv(file_path)
     state_counts = all_majors_data['Employer State'].value_counts().reset_index()
@@ -762,3 +752,9 @@ def main():
             MSFig = choropleth_state_map("DestinationCumulativeDataset(Materials Science and Eng).csv")
             st.header('Interactive Map for Destination Data: MS Major')
             st.plotly_chart(MSFig) 
+
+
+
+if __name__ == "__main__":
+
+    main()
