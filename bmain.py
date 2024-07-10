@@ -159,7 +159,6 @@ def choropleth_state_map(file_path):
         color_continuous_scale='Greens',
         labels={'LogCount': 'Log Count'},
         scope='usa',
-        title='',
         range_color=(state_counts['LogCount'].min(), state_counts['LogCount'].max()),  # Set the color scale range
         hover_data={'State': True, 'Count': True, 'StateAbbrev': False, 'LogCount': False}
     )
