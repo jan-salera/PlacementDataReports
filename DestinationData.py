@@ -162,8 +162,6 @@ MajorList2021 = ["Applied Engineering Sciences", "Biosystems Engineering", "Civi
 Major2123 = [207, 141, 21, 153, 286, 108, 593, 203, 61, 490, 61]
 
 def main():  
-    st.subheader("DESTINATION DATA") 
-    st.write("Summary of placement, salary and geographic destinations for all undergraduate students in the College of Engineering")
     col1, col2 = st.columns([2,3]) 
     with col1:
         options = ("Cumulative Data 21-23: Key Stats", "2023", "2022", "2021")

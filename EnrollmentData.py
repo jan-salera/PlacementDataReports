@@ -18,7 +18,6 @@ def data_ethnicity(count = [], ethnicity = ['White', 'Asian', 'International', '
     ethnicfig = px.pie(ethnicity_data, values='Count', names='Ethnicity', title='Ethnicity Distribution', color_discrete_sequence=msu_colors)
     st.plotly_chart(ethnicfig)
 
-st.subheader("ENROLLMENT DATA")
 st.header("Fall 2023 Enrollment Data")
 T1, T2, T3 = st.tabs(["Class Level", "Ethnicity", "Gender"])
 with T1:
