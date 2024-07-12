@@ -152,6 +152,7 @@ def choropleth_state_map(file_path):
         range_color=(state_counts['LogCount'].min(), state_counts['LogCount'].max()),  # Set the color scale range
         hover_data={'State': True, 'Count': True, 'StateAbbrev': False, 'LogCount': False}
     )
+    fig.update_layout(coloraxis_showscale=False)
     return fig
 
 AllEthnicity = ['White', 'Asian', 'International', 'Hispanic/Latine', 'Black/African American', 'Two or More Races', 'Not Specified', 'Not Reported','American Indian/Alaskan Native']
