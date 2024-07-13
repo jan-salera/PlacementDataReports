@@ -5,9 +5,6 @@ import numpy as np
 
 
 #Annual Activity Report Section 
-st.divider()
-st.subheader("ANNUAL ACTIVITY REPORT")
-st.write("Annual overview of The Center's activities and student engagement")
 K1, K2, K3 = st.columns(3)
 with K1:
     st.page_link("https://www.careers.egr.msu.edu/_files/ugd/bc0367_5553fe34db574893a98e7a8dbc12054d.pdf", label= ":green[**2022-2023 Activity Report**]")
