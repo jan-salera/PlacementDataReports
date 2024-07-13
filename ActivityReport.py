@@ -5,8 +5,7 @@ import numpy as np
 
 
 #Annual Activity Report Section 
-
-with st.expander("Activity Reports From Prior Years"):
+with st.expander("**Activity Reports From Prior Years**"):
     K1, K2, K3 = st.columns(3)
     with K1:
         st.page_link("https://www.careers.egr.msu.edu/_files/ugd/bc0367_63a24da526604d86b872fef02fe33e18.pdf", label= ":green[**2019-2020 Activity Report**]")
