@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import numpy as np
+from geopy.geocoders import Nominatim
 
 # Load the dataset
 file_path = r"C:\Users\Shayna\OneDrive - Michigan State University\Documents\MSU The Center - Shayna Laptop\DestinationCumulativeDataset.csv"
@@ -554,3 +555,119 @@ def display_top_employers(csv_file):
 
 csv_file = r"C:\Users\Shayna\Downloads\DestinationCumulativeDataset(Mechanical Engineering).csv"
 display_top_employers(csv_file)
+
+
+import streamlit as st
+import pandas as pd
+import plotly.express as px
+from geopy.geocoders import Nominatim
+
+def add_lat_long_to_dataframe(data):
+    if 'Employer City' in data.columns:
+        geolocator = Nominatim(user_agent='myapplication')
+        employer_latitudes = []
+        employer_longitudes = []
+
+        for city in data['Employer City']:
+            if pd.notna(city):
+                try:
+                    location = geolocator.geocode(city)
+                    if location:
+                        employer_latitudes.append(location.latitude)
+                        employer_longitudes.append(location.longitude)
+                    else:
+                        employer_latitudes.append(None)
+                        employer_longitudes.append(None)
+                except Exception as e:
+                    employer_latitudes.append(None)
+                    employer_longitudes.append(None)
+            else:
+                employer_latitudes.append(None)
+                employer_longitudes.append(None)
+
+        data['Employer Latitude'] = employer_latitudes
+        data['Employer Longitude'] = employer_longitudes
+
+        st.success("Latitude and Longitude columns created successfully.")
+    else:
+        st.error("The uploaded CSV file does not contain the 'Employer City' column.")
+
+def display_city_visualization(file_path):
+    data = pd.read_csv(file_path)
+    
+    if 'Employer Latitude' not in data.columns or 'Employer Longitude' not in data.columns:
+        st.warning("Latitude and Longitude columns not found. Creating columns... This may take a moment.")
+
+        add_lat_long_to_dataframe(data)
+        data.to_csv(file_path, index=False)
+        st.info("Updated CSV file with Latitude and Longitude columns. Please reload the app to visualize.")
+
+    if 'Employer Latitude' in data.columns and 'Employer Longitude' in data.columns:
+        # Calculate count of graduates per city
+        city_counts = data.groupby('Employer City').size().reset_index(name='Graduate Count')
+
+        # Merge with original data to get latitude and longitude
+        data_merged = pd.merge(data, city_counts, on='Employer City', how='left')
+
+        fig = px.scatter_geo(
+                data_merged,
+                lat='Employer Latitude',
+                lon='Employer Longitude',
+                hover_name='Employer City',
+                hover_data={
+                    'Employer City': True,
+                    'Graduate Count': True,
+                    'Employer Latitude': False,
+                    'Employer Longitude': False,
+                    'Employer City': False
+                },
+                size='Graduate Count',
+                size_max=25,
+                color_discrete_sequence=px.colors.sequential.Greens
+                )
+
+        fig.update_traces(marker=dict(line=dict(width=2, color='#577b59')))
+
+
+        fig.update_geos(
+            showcountries=True, countrycolor="Black",
+            showcoastlines=True, coastlinecolor="Black",
+            showland=True, landcolor="#a3cf9e"
+        )
+
+        fig.update_layout(
+            title="City Visualization",
+            geo=dict(
+                scope='usa',
+                projection=dict(type='albers usa'),
+                showlakes=True,
+                lakecolor='#9ec1cf',
+                showocean=True,  # Show ocean
+                oceancolor='#9ec1cf'  # Color of ocean water (same as lake water color)
+            ),
+            margin={"r":0,"t":0,"l":0,"b":0}
+        )
+
+        st.plotly_chart(fig)
+    else:
+        st.error("Failed to create Latitude and Longitude columns. Please check your CSV file.")
+
+# Streamlit app setup
+st.title("City Visualization")
+
+file_path = r"C:\Users\Shayna\Downloads\LATLONGDestinationCumulativeDataset(All Majors).csv"
+display_city_visualization(file_path)
+
+
+
+def top_5_employer_states(file_path):
+    all_majors_data = pd.read_csv(file_path)
+    state_counts = all_majors_data['Employer State'].value_counts().reset_index()
+    state_counts.columns = ['State', 'Count']
+    top_5_states = state_counts.head(5)
+
+    # Display top 5 employer states ranked
+    for index, row in top_5_states.iterrows():
+        st.write(f"{index + 1}. **{row['State']}**")
+
+top_5_employer_states(csv_file)
