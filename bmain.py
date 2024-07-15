@@ -480,7 +480,7 @@ def main():
                 data_gender(CDSGender2023)
         elif ["2022"] == ms1:
             key_stats(year= "2022", kr = "86%", krinfo = "6/7", pr = "100%", prinfo = "6/6", avgsal = "$70,333", medsal = "$75,000", employ = "83%", grad = "17%")
-            st.header("Spring 2022 Graduating Classs Composition: CDS Major")
+            st.header("Spring 2022 Graduating Class Composition: CDS Major")
             tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
             with tab1:
                 CDSColors = ['#CECECE', '#CECECE', '#CECECE','#CECECE','#CECECE','#CECECE', '#CECECE','#CECECE','#CECECE','#CECECE', '#18453B']
