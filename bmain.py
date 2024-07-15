@@ -340,14 +340,13 @@ def main():
             st.plotly_chart(fig)
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('80.3%', '82.5%', '90.5%', '84.4%', '96.0%', '98.0%','94.3%', '96.1%', '69,838', '73,922', '76,806', '73,522', '70,000','72,500', '75,000', '72,500')
-            tab1, tab2, tab3 = st.tabs(["Top Employers", "By State", "By City"])
+            tab1, tab2= st.tabs(["By State", "By City"])
             with tab1:
-                top_5_employer_states("LATLONGDestinationCumulativeDataset(All Majors).csv")
-            with tab2:
                 AllFig = choropleth_state_map("DestinationCumulativeDataset(All Majors).csv")
                 st.header('College of Engineering Spring 21-23 Destination Locations - By State')
                 st.plotly_chart(AllFig)
-            with tab3:
+                top_5_employer_states("LATLONGDestinationCumulativeDataset(All Majors).csv")
+            with tab2:
                 st.header('College of Engineering Spring 21-23 Destination Locations - By City')
                 display_city_visualization("LATLONGDestinationCumulativeDataset(All Majors).csv")
 
@@ -397,14 +396,13 @@ def main():
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('88%', '81%', '100%', '90%', '100%', '100%', '92%','97%', '66,697', '67,579', '72,233', '68,836', '65,000', '70,000','70,000', '68,333')
              
-            tab1, tab2, tab3 = st.tabs(["Top Employers", "By State", "By City"])
+            tab1, tab2= st.tabs(["By State", "By City"])
             with tab1:
-                top_5_employer_states("LATLONGDestinationCumulativeDataset(Applied Engineering Sciences).csv")
-            with tab2:
                 AESFig = choropleth_state_map("DestinationCumulativeDataset(Applied Engineering Sciences).csv")
                 st.header('College of Engineering Spring 21-23 Destination Locations - By State: AES Major')
                 st.plotly_chart(AESFig) 
-            with tab3:
+                top_5_employer_states("LATLONGDestinationCumulativeDataset(Applied Engineering Sciences).csv")
+            with tab2:
                 st.header('College of Engineering Spring 21-23 Destination Locations - By City: AES Major')
                 display_city_visualization("LATLONGDestinationCumulativeDataset(Applied Engineering Sciences).csv")
     
@@ -454,14 +452,13 @@ def main():
             c_key_stats('87%', '100%', '93%', '93%', '87%', '94%', '93%', '91%',
                         '58,792', '64,547', '68,768', '64,036', '56,160', '64,500', '72,500', '64,387')
 
-            tab1, tab2, tab3 = st.tabs(["Top Employers", "By State", "By City"])
+            tab1, tab2= st.tabs(["By State", "By City"])
             with tab1:
-                top_5_employer_states("LATLONGDestinationCumulativeDataset(Biosystems Engineering).csv")
-            with tab2:
                 BEFig = choropleth_state_map("DestinationCumulativeDataset(Biosystems Engineering).csv")
                 st.header('College of Engineering Spring 21-23 Destination Locations - By State: BE Major')
                 st.plotly_chart(BEFig) 
-            with tab3:
+                top_5_employer_states("LATLONGDestinationCumulativeDataset(Biosystems Engineering).csv")
+            with tab2:
                 st.header('College of Engineering Spring 21-23 Destination Locations - By City: BE Major')
                 display_city_visualization("LATLONGDestinationCumulativeDataset(Biosystems Engineering).csv")
                 
@@ -497,14 +494,13 @@ def main():
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats(0, '86%', '93%', '90%', 0, '100%', '92%', '96%', 0, '70,333', '91,357', '80,845', 0, '75,000', '95,000', '85,000', "Two") 
             
-            tab1, tab2, tab3 = st.tabs(["Top Employers", "By State", "By City"])
+            tab1, tab2 = st.tabs(["By State", "By City"])
             with tab1:
-                top_5_employer_states("LATLONGDestinationCumulativeDataset(Computational Data Science).csv")
-            with tab2:
                 CDSFig = choropleth_state_map("DestinationCumulativeDataset(Computational Data Science).csv")
                 st.header('College of Engineering Spring 21-23 Destination Locations - By State: CDS Major')
-                st.plotly_chart(CDSFig)  
-            with tab3:
+                st.plotly_chart(CDSFig) 
+                top_5_employer_states("LATLONGDestinationCumulativeDataset(Computational Data Science).csv")
+            with tab2:
                 st.header('College of Engineering Spring 21-23 Destination Locations - By City: BE Major')
                 display_city_visualization("LATLONGDestinationCumulativeDataset(Computational Data Science).csv")
 
@@ -554,14 +550,13 @@ def main():
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('75%', '76%', '95%', '82%', '97%', '95%', '96%', '96%','58,612', '66,729', '65,895', '63,745', '55,640', '67,800', '65,000', '62,813')
 
-            tab1, tab2, tab3 = st.tabs(["Top Employers", "By State", "By City"])
+            tab1, tab2 = st.tabs(["By State", "By City"])
             with tab1:
-                top_5_employer_states("LATLONGDestinationCumulativeDataset(Civil Engineering).csv")
-            with tab2:
                 CEFig = choropleth_state_map("DestinationCumulativeDataset(Civil Engineering).csv")
                 st.header('College of Engineering Spring 21-23 Destination Locations - By State: CE Major')
                 st.plotly_chart(CEFig)
-            with tab3:
+                top_5_employer_states("LATLONGDestinationCumulativeDataset(Civil Engineering).csv")
+            with tab2:
                 st.header('College of Engineering Spring 21-23 Destination Locations - By City: CE Major')
                 display_city_visualization("LATLONGDestinationCumulativeDataset(Civil Engineering).csv")
 
@@ -612,14 +607,13 @@ def main():
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('83%', '82%', '95%', '87%', '94%', '97%', '98%', '96%','69,604', '71,561', '77,315', '72,827', '70,000', '72,500', '76,000', '72,833')
 
-            tab1, tab2, tab3 = st.tabs(["Top Employers", "By State", "By City"])
+            tab1, tab2 = st.tabs(["By State", "By City"])
             with tab1:
-                top_5_employer_states("LATLONGDestinationCumulativeDataset(Chemical Engineering).csv")
-            with tab2:
                 ChemEFig = choropleth_state_map("DestinationCumulativeDataset(Chemical Engineering).csv")
                 st.header('College of Engineering Spring 21-23 Destination Locations - By State: ChemE Major')
                 st.plotly_chart(ChemEFig)
-            with tab3:
+                top_5_employer_states("LATLONGDestinationCumulativeDataset(Chemical Engineering).csv")
+            with tab2:
                 st.header('College of Engineering Spring 21-23 Destination Locations - By City: ChemE Major')
                 display_city_visualization("LATLONGDestinationCumulativeDataset(Chemical Engineering).csv")
                
@@ -669,14 +663,13 @@ def main():
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('79%', '76%', '92%', '82%', '97%', '97%', '100%',	'98%', '81,500', '83,698', '80,112', '81,770','77,500',	'80,500',	'79,040', '79,013')      
 
-            tab1, tab2, tab3 = st.tabs(["Top Employers", "By State", "By City"])
+            tab1, tab2 = st.tabs(["By State", "By City"])
             with tab1:
-                top_5_employer_states("LATLONGDestinationCumulativeDataset(Computer Engineering).csv")
-            with tab2:
                 CpEFig = choropleth_state_map("DestinationCumulativeDataset(Computer Engineering).csv")
                 st.header('College of Engineering Spring 21-23 Destination Locations - By State: CpE Major')
                 st.plotly_chart(CpEFig)  
-            with tab3:
+                top_5_employer_states("LATLONGDestinationCumulativeDataset(Computer Engineering).csv")
+            with tab2:
                 st.header('College of Engineering Spring 21-23 Destination Locations - By City: CpE Major')
                 display_city_visualization("LATLONGDestinationCumulativeDataset(Computer Engineering).csv")
                 
@@ -726,14 +719,13 @@ def main():
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('71%', '79%', '81%', '77%', '98%', '98%', '92%', '96%','76,365', '85,220', '89,826', '83,804', '75,000', '80,000', '85,000', '80,000') 
     
-            tab1, tab2, tab3 = st.tabs(["Top Employers", "By State", "By City"])
+            tab1, tab2 = st.tabs(["By State", "By City"])
             with tab1:
-                top_5_employer_states("LATLONGDestinationCumulativeDataset(Computer Science).csv")
-            with tab2:
                 CSEFig = choropleth_state_map("DestinationCumulativeDataset(Computer Science).csv")
                 st.header('College of Engineering Spring 21-23 Destination Locations - By State: CSE Major')
-                st.plotly_chart(CSEFig)  
-            with tab3:
+                st.plotly_chart(CSEFig) 
+                top_5_employer_states("LATLONGDestinationCumulativeDataset(Computer Science).csv")
+            with tab2:
                 st.header('College of Engineering Spring 21-23 Destination Locations - By City: CSE Major')
                 display_city_visualization("LATLONGDestinationCumulativeDataset(Computer Science).csv")
 
@@ -782,14 +774,13 @@ def main():
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('85%', '83%', '93%', '87%', '95%', '100%', '96%', '97%', '73,322', '79,650', '76,512', '76,495', '75,000', '77,500', '79,500', '77,333')
             
-            tab1, tab2, tab3 = st.tabs(["Top Employers", "By State", "By City"])
+            tab1, tab2 = st.tabs(["By State", "By City"])
             with tab1:
-                top_5_employer_states("LATLONGDestinationCumulativeDataset(Electrical Engineering).csv")
-            with tab2:
                 EEFig = choropleth_state_map("DestinationCumulativeDataset(Electrical Engineering).csv")
                 st.header('College of Engineering Spring 21-23 Destination Locations - By State: EE Major')
                 st.plotly_chart(EEFig)
-            with tab3:
+                top_5_employer_states("LATLONGDestinationCumulativeDataset(Electrical Engineering).csv")
+            with tab2:
                 st.header('College of Engineering Spring 21-23 Destination Locations - By City: EE Major')
                 display_city_visualization("LATLONGDestinationCumulativeDataset(Electrical Engineering).csv")
        
@@ -839,14 +830,13 @@ def main():
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('71%', '90%', '94%', '85%', '94%', '100%', '94%', '96%','60,560', '63,697', '58,102', '60,786 ', '60,000', '62,400', '61,950', '61,450')
             
-            tab1, tab2, tab3 = st.tabs(["Top Employers", "By State", "By City"])
+            tab1, tab2= st.tabs(["By State", "By City"])
             with tab1:
-                top_5_employer_states("LATLONGDestinationCumulativeDataset(Environmental Engineering).csv")
-            with tab2:
                 ENEFig = choropleth_state_map("DestinationCumulativeDataset(Environmental Engineering).csv")
                 st.header('College of Engineering Spring 21-23 Destination Locations - By State: ENE Major')
                 st.plotly_chart(ENEFig)
-            with tab3:
+                top_5_employer_states("LATLONGDestinationCumulativeDataset(Environmental Engineering).csv")
+            with tab2:
                 st.header('College of Engineering Spring 21-23 Destination Locations - By City: ENE Major')
                 display_city_visualization("LATLONGDestinationCumulativeDataset(Environmental Engineering).csv")
 
@@ -895,14 +885,13 @@ def main():
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('85%', '84%', '92%', '87%', '97%', '98%', '95%', '97%','69,674', '70,685', '75,069', '71,809', '71,000', '72,000', '74,500', '72,500')
             
-            tab1, tab2, tab3 = st.tabs(["Top Employers", "By State", "By City"])
+            tab1, tab2 = st.tabs(["By State", "By City"])
             with tab1:
-                top_5_employer_states("LATLONGDestinationCumulativeDataset(Mechanical Engineering).csv")
-            with tab2:
                 MEFig = choropleth_state_map("DestinationCumulativeDataset(Mechanical Engineering).csv")
                 st.header('College of Engineering Spring 21-23 Destination Locations - By State: ME Major')
                 st.plotly_chart(MEFig)
-            with tab3:
+                top_5_employer_states("LATLONGDestinationCumulativeDataset(Mechanical Engineering).csv")
+            with tab2:
                 st.header('College of Engineering Spring 21-23 Destination Locations - By City: ME Major')
                 display_city_visualization("LATLONGDestinationCumulativeDataset(Mechanical Engineering).csv")
     
@@ -952,14 +941,13 @@ def main():
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('82%', '87%', '94%', '88%', '94%', '95%', '93%', '94%', '63,581', '72,147', '70,447', '68,725', '60,320', '75,000', '72,500', '69,273')
             
-            tab1, tab2, tab3 = st.tabs(["Top Employers", "By State", "By City"])
+            tab1, tab2 = st.tabs(["By State", "By City"])
             with tab1:
-                top_5_employer_states("LATLONGDestinationCumulativeDataset(Materials Science and Eng).csv")
-            with tab2:
                 MSFig = choropleth_state_map("DestinationCumulativeDataset(Materials Science and Eng).csv")
                 st.header('College of Engineering Spring 21-23 Destination Locations - By State: MS Major')
                 st.plotly_chart(MSFig)
-            with tab3:
+                top_5_employer_states("LATLONGDestinationCumulativeDataset(Materials Science and Eng).csv")
+            with tab2:
                 st.header('College of Engineering Spring 21-23 Destination Locations - By City: MS Major')
                 display_city_visualization("LATLONGDestinationCumulativeDataset(Materials Science and Eng).csv")
 
