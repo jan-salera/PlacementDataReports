@@ -4,3 +4,5 @@ numpy
 streamlit
 folium
 streamlit_folium
+nominatim
+geopy
