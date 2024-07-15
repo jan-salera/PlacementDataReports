@@ -2,6 +2,7 @@ import streamlit as st
 import plotly.express as px
 import pandas as pd
 import numpy as np
+from geopy.geocoders import Nominatim
 
 # Shows the entire graduating class breakdown by major
 def data_major(colors = [], count = [78, 44, 14, 58, 95, 24, 227, 76, 17, 171, 16], majors = ["Applied Engineering Sciences", "Biosystems Engineering",        "Computational Data Science", "Civil Engineering","Chemical Engineering", "Computer Engineering", "Computer Science", "Electrical Engineering", "Environmental Engineering", "Mechanical Engineering", "Materials Science & Engineering"]):
@@ -155,6 +156,106 @@ def choropleth_state_map(file_path):
     fig.update_layout(coloraxis_showscale=False)
     return fig
 
+def add_lat_long_to_dataframe(data):
+    if 'Employer City' in data.columns:
+        geolocator = Nominatim(user_agent='myapplication')
+        employer_latitudes = []
+        employer_longitudes = []
+
+        for city in data['Employer City']:
+            if pd.notna(city):
+                try:
+                    location = geolocator.geocode(city)
+                    if location:
+                        employer_latitudes.append(location.latitude)
+                        employer_longitudes.append(location.longitude)
+                    else:
+                        employer_latitudes.append(None)
+                        employer_longitudes.append(None)
+                except Exception as e:
+                    employer_latitudes.append(None)
+                    employer_longitudes.append(None)
+            else:
+                employer_latitudes.append(None)
+                employer_longitudes.append(None)
+
+        data['Employer Latitude'] = employer_latitudes
+        data['Employer Longitude'] = employer_longitudes
+
+        st.success("Latitude and Longitude columns created successfully.")
+    else:
+        st.error("The uploaded CSV file does not contain the 'Employer City' column.")
+
+def display_city_visualization(file_path):
+    data = pd.read_csv(file_path)
+    
+    if 'Employer Latitude' not in data.columns or 'Employer Longitude' not in data.columns:
+        st.warning("Latitude and Longitude columns not found. Creating columns... This may take a moment.")
+
+        add_lat_long_to_dataframe(data)
+        data.to_csv(file_path, index=False)
+        st.info("Updated CSV file with Latitude and Longitude columns. Please reload the app to visualize.")
+
+    if 'Employer Latitude' in data.columns and 'Employer Longitude' in data.columns:
+        # Calculate count of graduates per city
+        city_counts = data.groupby('Employer City').size().reset_index(name='Graduate Count')
+
+        # Merge with original data to get latitude and longitude
+        data_merged = pd.merge(data, city_counts, on='Employer City', how='left')
+
+        fig = px.scatter_geo(
+                data_merged,
+                lat='Employer Latitude',
+                lon='Employer Longitude',
+                hover_name='Employer City',
+                hover_data={
+                    'Employer City': True,
+                    'Graduate Count': True,
+                    'Employer Latitude': False,
+                    'Employer Longitude': False,
+                    'Employer City': False
+                },
+                size='Graduate Count',
+                size_max=25,
+                color_discrete_sequence=px.colors.sequential.Greens
+                )
+
+        fig.update_traces(marker=dict(line=dict(width=2, color='#577b59')))
+
+
+        fig.update_geos(
+            showcountries=True, countrycolor="Black",
+            showcoastlines=True, coastlinecolor="Black",
+            showland=True, landcolor="#a3cf9e"
+        )
+
+        fig.update_layout(
+            title="City Visualization",
+            geo=dict(
+                scope='usa',
+                projection=dict(type='albers usa'),
+                showlakes=True,
+                lakecolor='#9ec1cf',
+                showocean=True,  # Show ocean
+                oceancolor='#9ec1cf'  # Color of ocean water (same as lake water color)
+            ),
+            margin={"r":0,"t":0,"l":0,"b":0}
+        )
+
+        st.plotly_chart(fig)
+    else:
+        st.error("Failed to create Latitude and Longitude columns. Please check your CSV file.")
+
+def top_5_employer_states(file_path):
+    all_majors_data = pd.read_csv(file_path)
+    state_counts = all_majors_data['Employer State'].value_counts().reset_index()
+    state_counts.columns = ['State', 'Count']
+    top_5_states = state_counts.head(5)
+
+    # Display top 5 employer states ranked
+    for index, row in top_5_states.iterrows():
+        st.write(f"{index + 1}. **{row['State']}**")
+
 AllEthnicity = ['White', 'Asian', 'International', 'Hispanic/Latine', 'Black/African American', 'Two or More Races', 'Not Specified', 'Not Reported','American Indian/Alaskan Native']
 Major2022 = [57, 50, 7, 51, 91, 42, 193, 60, 20, 164, 23]
 InverseGender = ['#C70F0F', '#0B1799']
@@ -227,9 +328,15 @@ def main():
             st.plotly_chart(fig)
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('80.3%', '82.5%', '90.5%', '84.4%', '96.0%', '98.0%','94.3%', '96.1%', '69,838', '73,922', '76,806', '73,522', '70,000','72,500', '75,000', '72,500')
-            AllFig = choropleth_state_map("DestinationCumulativeDataset(All Majors).csv")
-            st.header('Interactive Map for Destination Data: All Engineering Majors')
-            st.plotly_chart(AllFig)
+            tab1, tab2= st.tabs(["By State", "By City"])
+            with tab1:
+                AllFig = choropleth_state_map("DestinationCumulativeDataset(All Majors).csv")
+                st.header('College of Engineering Spring 21-23 Destination Locations - By State')
+                st.plotly_chart(AllFig)
+                top_5_employer_states("LATLONGDestinationCumulativeDataset(All Majors).csv")
+            with tab2:
+                st.header('College of Engineering Spring 21-23 Destination Locations - By City')
+                display_city_visualization("LATLONGDestinationCumulativeDataset(All Majors).csv")
 
     elif ["Applied Engineering Sciences"] == ms:
         if ["2023"] == ms1:
@@ -276,9 +383,16 @@ def main():
                 data_gender(AESGender2021)
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('88%', '81%', '100%', '90%', '100%', '100%', '92%','97%', '66,697', '67,579', '72,233', '68,836', '65,000', '70,000','70,000', '68,333')
-            AESFig = choropleth_state_map("DestinationCumulativeDataset(Applied Engineering Sciences).csv")
-            st.header('Interactive Map for Destination Data: AES Major')
-            st.plotly_chart(AESFig)  
+             
+            tab1, tab2= st.tabs(["By State", "By City"])
+            with tab1:
+                AESFig = choropleth_state_map("DestinationCumulativeDataset(Applied Engineering Sciences).csv")
+                st.header('College of Engineering Spring 21-23 Destination Locations - By State: AES Major')
+                st.plotly_chart(AESFig) 
+                top_5_employer_states("LATLONGDestinationCumulativeDataset(Applied Engineering Sciences).csv")
+            with tab2:
+                st.header('College of Engineering Spring 21-23 Destination Locations - By City: AES Major')
+                display_city_visualization("LATLONGDestinationCumulativeDataset(Applied Engineering Sciences).csv")
     
     elif ["Biosystems Engineering"] == ms:
         if ["2023"] == ms1:
@@ -325,9 +439,16 @@ def main():
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('87%', '100%', '93%', '93%', '87%', '94%', '93%', '91%',
                         '58,792', '64,547', '68,768', '64,036', '56,160', '64,500', '72,500', '64,387')
-            BEFig = choropleth_state_map("DestinationCumulativeDataset(Biosystems Engineering).csv")
-            st.header('Interactive Map for Destination Data: BE Major')
-            st.plotly_chart(BEFig) 
+
+            tab1, tab2= st.tabs(["By State", "By City"])
+            with tab1:
+                BEFig = choropleth_state_map("DestinationCumulativeDataset(Biosystems Engineering).csv")
+                st.header('College of Engineering Spring 21-23 Destination Locations - By State: BE Major')
+                st.plotly_chart(BEFig) 
+                top_5_employer_states("LATLONGDestinationCumulativeDataset(Biosystems Engineering).csv")
+            with tab2:
+                st.header('College of Engineering Spring 21-23 Destination Locations - By City: BE Major')
+                display_city_visualization("LATLONGDestinationCumulativeDataset(Biosystems Engineering).csv")
                 
     elif ["Computational Data Science"] == ms:
         if ["2023"] == ms1:
@@ -359,10 +480,17 @@ def main():
             with tab3:
                 data_gender([4, 3])
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
-            c_key_stats(0, '86%', '93%', '90%', 0, '100%', '92%', '96%', 0, '70,333', '91,357', '80,845', 0, '75,000', '95,000', '85,000', "Two")  
-            CDSFig = choropleth_state_map("DestinationCumulativeDataset(Computational Data Science).csv")
-            st.header('Interactive Map for Destination Data: CDS Major')
-            st.plotly_chart(CDSFig) 
+            c_key_stats(0, '86%', '93%', '90%', 0, '100%', '92%', '96%', 0, '70,333', '91,357', '80,845', 0, '75,000', '95,000', '85,000', "Two") 
+            
+            tab1, tab2 = st.tabs(["By State", "By City"])
+            with tab1:
+                CDSFig = choropleth_state_map("DestinationCumulativeDataset(Computational Data Science).csv")
+                st.header('College of Engineering Spring 21-23 Destination Locations - By State: CDS Major')
+                st.plotly_chart(CDSFig) 
+                top_5_employer_states("LATLONGDestinationCumulativeDataset(Computational Data Science).csv")
+            with tab2:
+                st.header('College of Engineering Spring 21-23 Destination Locations - By City: BE Major')
+                display_city_visualization("LATLONGDestinationCumulativeDataset(Computational Data Science).csv")
 
     elif ["Civil Engineering"] == ms:
         if ["2023"] == ms1:
@@ -409,9 +537,17 @@ def main():
                 data_gender(CEGender2021)
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('75%', '76%', '95%', '82%', '97%', '95%', '96%', '96%','58,612', '66,729', '65,895', '63,745', '55,640', '67,800', '65,000', '62,813')
-            CEFig = choropleth_state_map("DestinationCumulativeDataset(Civil Engineering).csv")
-            st.header('Interactive Map for Destination Data: CE Major')
-            st.plotly_chart(CEFig)
+
+            tab1, tab2 = st.tabs(["By State", "By City"])
+            with tab1:
+                CEFig = choropleth_state_map("DestinationCumulativeDataset(Civil Engineering).csv")
+                st.header('College of Engineering Spring 21-23 Destination Locations - By State: CE Major')
+                st.plotly_chart(CEFig)
+                top_5_employer_states("LATLONGDestinationCumulativeDataset(Civil Engineering).csv")
+            with tab2:
+                st.header('College of Engineering Spring 21-23 Destination Locations - By City: CE Major')
+                display_city_visualization("LATLONGDestinationCumulativeDataset(Civil Engineering).csv")
+
             
     elif ["Chemical Engineering"] == ms:
         if ["2023"] == ms1:
@@ -458,9 +594,16 @@ def main():
                 data_gender(ChemEGender2021)         
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('83%', '82%', '95%', '87%', '94%', '97%', '98%', '96%','69,604', '71,561', '77,315', '72,827', '70,000', '72,500', '76,000', '72,833')
-            ChemEFig = choropleth_state_map("DestinationCumulativeDataset(Chemical Engineering).csv")
-            st.header('Interactive Map for Destination Data: ChemE Major')
-            st.plotly_chart(ChemEFig)
+
+            tab1, tab2 = st.tabs(["By State", "By City"])
+            with tab1:
+                ChemEFig = choropleth_state_map("DestinationCumulativeDataset(Chemical Engineering).csv")
+                st.header('College of Engineering Spring 21-23 Destination Locations - By State: ChemE Major')
+                st.plotly_chart(ChemEFig)
+                top_5_employer_states("LATLONGDestinationCumulativeDataset(Chemical Engineering).csv")
+            with tab2:
+                st.header('College of Engineering Spring 21-23 Destination Locations - By City: ChemE Major')
+                display_city_visualization("LATLONGDestinationCumulativeDataset(Chemical Engineering).csv")
                
     elif ["Computer Engineering"] == ms:
         if ["2023"] == ms1:
@@ -507,9 +650,17 @@ def main():
                 data_gender(CpEGender2021)
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('79%', '76%', '92%', '82%', '97%', '97%', '100%',	'98%', '81,500', '83,698', '80,112', '81,770','77,500',	'80,500',	'79,040', '79,013')      
-            CpEFig = choropleth_state_map("DestinationCumulativeDataset(Computer Engineering).csv")
-            st.header('Interactive Map for Destination Data: CpE Major')
-            st.plotly_chart(CpEFig)     
+
+            tab1, tab2 = st.tabs(["By State", "By City"])
+            with tab1:
+                CpEFig = choropleth_state_map("DestinationCumulativeDataset(Computer Engineering).csv")
+                st.header('College of Engineering Spring 21-23 Destination Locations - By State: CpE Major')
+                st.plotly_chart(CpEFig)  
+                top_5_employer_states("LATLONGDestinationCumulativeDataset(Computer Engineering).csv")
+            with tab2:
+                st.header('College of Engineering Spring 21-23 Destination Locations - By City: CpE Major')
+                display_city_visualization("LATLONGDestinationCumulativeDataset(Computer Engineering).csv")
+                
 
     elif ["Computer Science"] == ms:
         if ["2023"] == ms1:
@@ -555,9 +706,17 @@ def main():
                 data_gender(CSEGender2021)  
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('71%', '79%', '81%', '77%', '98%', '98%', '92%', '96%','76,365', '85,220', '89,826', '83,804', '75,000', '80,000', '85,000', '80,000') 
-            CSEFig = choropleth_state_map("DestinationCumulativeDataset(Computer Science).csv")
-            st.header('Interactive Map for Destination Data: CSE Major')
-            st.plotly_chart(CSEFig)
+    
+            tab1, tab2 = st.tabs(["By State", "By City"])
+            with tab1:
+                CSEFig = choropleth_state_map("DestinationCumulativeDataset(Computer Science).csv")
+                st.header('College of Engineering Spring 21-23 Destination Locations - By State: CSE Major')
+                st.plotly_chart(CSEFig) 
+                top_5_employer_states("LATLONGDestinationCumulativeDataset(Computer Science).csv")
+            with tab2:
+                st.header('College of Engineering Spring 21-23 Destination Locations - By City: CSE Major')
+                display_city_visualization("LATLONGDestinationCumulativeDataset(Computer Science).csv")
+
     
     elif ["Electrical Engineering"] == ms:
         if ["2023"] == ms1:
@@ -602,9 +761,16 @@ def main():
                 data_gender(EEGender2021)  
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('85%', '83%', '93%', '87%', '95%', '100%', '96%', '97%', '73,322', '79,650', '76,512', '76,495', '75,000', '77,500', '79,500', '77,333')
-            EEFig = choropleth_state_map("DestinationCumulativeDataset(Electrical Engineering).csv")
-            st.header('Interactive Map for Destination Data: EE Major')
-            st.plotly_chart(EEFig)
+            
+            tab1, tab2 = st.tabs(["By State", "By City"])
+            with tab1:
+                EEFig = choropleth_state_map("DestinationCumulativeDataset(Electrical Engineering).csv")
+                st.header('College of Engineering Spring 21-23 Destination Locations - By State: EE Major')
+                st.plotly_chart(EEFig)
+                top_5_employer_states("LATLONGDestinationCumulativeDataset(Electrical Engineering).csv")
+            with tab2:
+                st.header('College of Engineering Spring 21-23 Destination Locations - By City: EE Major')
+                display_city_visualization("LATLONGDestinationCumulativeDataset(Electrical Engineering).csv")
        
     elif ["Environmental Engineering"] == ms:
         if ["2023"] == ms1:
@@ -651,9 +817,16 @@ def main():
                 data_gender(ENEGender2021, InverseGender)
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('71%', '90%', '94%', '85%', '94%', '100%', '94%', '96%','60,560', '63,697', '58,102', '60,786 ', '60,000', '62,400', '61,950', '61,450')
-            ENEFig = choropleth_state_map("DestinationCumulativeDataset(Environmental Engineering).csv")
-            st.header('Interactive Map for Destination Data: ENE Major')
-            st.plotly_chart(ENEFig)
+            
+            tab1, tab2= st.tabs(["By State", "By City"])
+            with tab1:
+                ENEFig = choropleth_state_map("DestinationCumulativeDataset(Environmental Engineering).csv")
+                st.header('College of Engineering Spring 21-23 Destination Locations - By State: ENE Major')
+                st.plotly_chart(ENEFig)
+                top_5_employer_states("LATLONGDestinationCumulativeDataset(Environmental Engineering).csv")
+            with tab2:
+                st.header('College of Engineering Spring 21-23 Destination Locations - By City: ENE Major')
+                display_city_visualization("LATLONGDestinationCumulativeDataset(Environmental Engineering).csv")
 
     elif ["Mechanical Engineering"] == ms:
         if ["2023"] == ms1:
@@ -699,9 +872,16 @@ def main():
                 data_gender(MEGender2021)          
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('85%', '84%', '92%', '87%', '97%', '98%', '95%', '97%','69,674', '70,685', '75,069', '71,809', '71,000', '72,000', '74,500', '72,500')
-            MEFig = choropleth_state_map("DestinationCumulativeDataset(Mechanical Engineering).csv")
-            st.header('Interactive Map for Destination Data: ME Major')
-            st.plotly_chart(MEFig)
+            
+            tab1, tab2 = st.tabs(["By State", "By City"])
+            with tab1:
+                MEFig = choropleth_state_map("DestinationCumulativeDataset(Mechanical Engineering).csv")
+                st.header('College of Engineering Spring 21-23 Destination Locations - By State: ME Major')
+                st.plotly_chart(MEFig)
+                top_5_employer_states("LATLONGDestinationCumulativeDataset(Mechanical Engineering).csv")
+            with tab2:
+                st.header('College of Engineering Spring 21-23 Destination Locations - By City: ME Major')
+                display_city_visualization("LATLONGDestinationCumulativeDataset(Mechanical Engineering).csv")
     
     elif ["Materials Science & Engineering"] == ms:
         if ["2023"] == ms1:
@@ -748,9 +928,16 @@ def main():
                 data_gender(MSGender2021)    
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             c_key_stats('82%', '87%', '94%', '88%', '94%', '95%', '93%', '94%', '63,581', '72,147', '70,447', '68,725', '60,320', '75,000', '72,500', '69,273')
-            MSFig = choropleth_state_map("DestinationCumulativeDataset(Materials Science and Eng).csv")
-            st.header('Interactive Map for Destination Data: MS Major')
-            st.plotly_chart(MSFig) 
+            
+            tab1, tab2 = st.tabs(["By State", "By City"])
+            with tab1:
+                MSFig = choropleth_state_map("DestinationCumulativeDataset(Materials Science and Eng).csv")
+                st.header('College of Engineering Spring 21-23 Destination Locations - By State: MS Major')
+                st.plotly_chart(MSFig)
+                top_5_employer_states("LATLONGDestinationCumulativeDataset(Materials Science and Eng).csv")
+            with tab2:
+                st.header('College of Engineering Spring 21-23 Destination Locations - By City: MS Major')
+                display_city_visualization("LATLONGDestinationCumulativeDataset(Materials Science and Eng).csv")
 
 
 
