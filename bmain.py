@@ -6,6 +6,16 @@ from geopy.geocoders import Nominatim
 
 # Shows the entire graduating class breakdown by major
 def data_major(colors = [], count = [78, 44, 14, 58, 95, 24, 227, 76, 17, 171, 16], majors = ["Applied Engineering Sciences", "Biosystems Engineering",        "Computational Data Science", "Civil Engineering","Chemical Engineering", "Computer Engineering", "Computer Science", "Electrical Engineering", "Environmental Engineering", "Mechanical Engineering", "Materials Science & Engineering"]):
+    """Shows the entire graduating class breakdown by major
+    
+    Args:
+        colors (list): list of strings, Hex values, needs one per value in the graph, default is [] 
+        count (list) : list of ints, count of how many students of each major
+        majors (list) : list of strings, all majors in the graph
+    
+    Returns:
+        streamlit plotly_chart: Circle graph with all majors and how many in each major 
+    """
     class_data = {
     'Major': majors,
     'Count': count
