@@ -24,28 +24,35 @@ def report_salary(avgsal21 = "$10,000", avgsal22 = "$10,000", avgsal23 = "$10,00
     Returns:
         Streamlit components
     """
-    C1, C2, C3, C4 = st.columns(4) # divides the page into 4 vertical columns
 
+    C1, C2, C3, C4 = st.columns(4) # divides the page into 4 vertical columns
     with C1: # first column
-        st.header(avgsal21)
-        st.write("2021 Average Internship Salary (" + count21 + " students)")
-        st.header(medsal21)
-        st.write("2021 Median Internship Salary (" + count21 + " students)")
+        st.header(":green[2021]")
+        st.write(" ")
+        st.subheader(avgsal21)
+        st.write("Average Internship Salary (" + count21 + " students)")
+        st.subheader(medsal21)
+        st.write("Median Internship Salary (" + count21 + " students)")
     with C2: # second column 
-        st.header(avgsal22)
-        st.write("2022 Average Internship Salary (" + count22 + " students)")
-        st.header(medsal22)
-        st.write("2022 Median Internship Salary (" + count22 + " students)")
+        st.header(":green[2022]")
+        st.write(" ")
+        st.subheader(avgsal22)
+        st.write("Average Internship Salary (" + count22 + " students)")
+        st.subheader(medsal22)
+        st.write("Median Internship Salary (" + count22 + " students)")
     with C3: # third column 
-        st.header(avgsal23)
-        st.write("2023 Average Internship Salary (" + count23 + " students)")
-        st.header(medsal23)
-        st.write("2023 Median Internship Salary (" + count23 + " students)")
+        st.header(":green[2023]")
+        st.write(" ")
+        st.subheader(avgsal23)
+        st.write("Average Internship Salary (" + count23 + " students)")
+        st.subheader(medsal23)
+        st.write("Median Internship Salary (" + count23 + " students)")
     with C4: # fourth column 
-        st.header(":green[" + avgsal2123 + "]")
-        st.write("Three Year Cumulative Average Internship Salary (" +  count2123 + " students)")
-        st.header(":green[" + medsal2123 + "]")
-        st.write("Three Year Cumulative Median Internship Salary (" + count2123 + " students)") # turns the text into green
+        st.subheader(":green[Three Year Cumulative]")
+        st.subheader(":green[" + avgsal2123 + "]")
+        st.write("Average Internship Salary (" +  count2123 + " students)")
+        st.subheader(":green[" + medsal2123 + "]")
+        st.write("Median Internship Salary (" + count2123 + " students)")
 
 def main():
     st.header("Internship Data")
