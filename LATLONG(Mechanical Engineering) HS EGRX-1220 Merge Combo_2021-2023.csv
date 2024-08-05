@@ -1,0 +1,371 @@
+First Name,Last Name,Email,Major,Outcome Type Placeholder,Academic Term,Employer Name,Job Title,City,Metro Area Placeholder,State,Salary,Pay Period,Gender,Ethnicity,Employer Latitude,Employer Longitude
+Jack,Whitcomb,whitco25@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Tesla,Launch Engineering Intern,Reno,Reno-Sparks-Fernley -- NV,Nevada,$39.27 ,hourly,Male,White,50.4677626,7.351989
+Wil,Jozwiak,jozwiakw@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Tenneco,Manufacturing Intern,Chicago,Chicago-Naperville-Michigan City -- IL-IN-WI,Illinois,$37.50,hourly,Male,White,41.8755616,-87.6244212
+Rolanda,Hutson,hutsonr1@msu.edu,Mechanical Engineering,,Spring 2021,Marathon Petroleum Company,,Findlay,,Ohio,$36.61,hourly,Female,Black/African American,41.0413873,-83.6503982
+Vanessa,Wang,wangvane@msu.edu,Mechanical Engineering,,Spring 2021,Marathon Petroleum Company,,Findlay,,Ohio,$36.61,hourly,Female,Asian,41.0413873,-83.6503982
+Adam,Fox,foxadam3@msu.edu,Mechanical Engineering,,Fall 2021,Marathon Petroleum Company,,Findlay,,Ohio,$36.00,hourly,Male,White,41.0413873,-83.6503982
+Katie,McMillan,mcmil155@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Walmart e-commerce,Fulfillment Engineering Intern,Hoboken,New York-Newark-Bridgeport -- NY-NJ-CT-PA,New Jersey,$35.00,hourly,Female,White,40.7433066,-74.0323752
+Jake,Rutkowski,rutkow64@msu.edu,Mechanical Engineering,Internship/Co-op,Spring 2022,Rivian,General Assembly Manufacturing Engineering Intern,Normal,No Defined Metro Area,Illinois,$35.00,hourly,Male,White,40.5092961,-88.9843937
+Jake,Rutkowski,rutkow64@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Rivian,Powertrain Engineering Intern - Product Development,Normal,No Defined Metro Area,Illinois,$35.00,hourly,Male,White,40.5092961,-88.9843937
+Sydney,Kelly,kellysyd@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Marathon Petroleum Company,Mechanical engineering co-op,Mandan,No Defined Metro Area,North Dakota,$34.75 ,hourly,Female,White,46.826415,-100.889704
+Aisyah,Mahira,mahiraai@msu.edu,Mechanical Engineering,,Summer 2023,Aramco Americas,,Houston,,Texas,$34.00,hourly,Female,International,29.7589382,-95.3676974
+Lizzie,Kooistra,kooist17@msu.edu,Mechanical Engineering,,Fall 2023,Collins Aerospace,,Detroit,,Ohio,$33.00,hourly,Female,White,42.3315509,-83.0466403
+Lizzie,Kooistra,kooist17@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Collins Aerospace,Mechanical Engineer,Dayton,Dayton-Springfield-Greenville -- OH,Ohio,$33.00 ,hourly,Female,White,39.7589478,-84.1916069
+Salman,Aljuwiser,aljuwise@msu.edu,Mechanical Engineering,,Summer 2023,Aramco Americas,,Houston,,Texas,$32.25,hourly,Male,International,29.7589382,-95.3676974
+Matthew,Ajlouny,ajlounym@msu.edu,Mechanical Engineering,,Fall 2022,Tesla,,San Francisco,,California,$32.00,hourly,Male,White,37.7792588,-122.4193286
+Jacob,Wescott,wescott6@msu.edu,Mechanical Engineering,,Fall 2021,Tesla,,San Francisco,,California,$32.00,hourly,Male,White,37.7792588,-122.4193286
+Alex,Oreilly,oreill25@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Pratt & Whitney,Process Manufacturing EngineerIng Intern,Hartford,Hartford-West Hartford-Willimantic -- CT,Connecticut,$30.28,hourly,Male,Two or More Races,41.764582,-72.6908547
+Emilia,Jakuc,jakucemi@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,US - Army,Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$30.00 ,hourly,Female,White,42.3315509,-83.0466403
+Raed,Mohammed,moham117@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Nissan Motor Company Ltd,Mechanical Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$30.00 ,hourly,Male,White,42.3315509,-83.0466403
+Vedi,Patel,patelved@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Johnson & Johnson,Mechanical Engineering Intern,San Francisco,San Jose-San Francisco-Oakland -- CA,California,$30.00 ,hourly,Female,Asian,37.7792588,-122.4193286
+Sara,Purdue,purduesa@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Eli Lilly,Engineering Intern,Indianapolis,Indianapolis-Anderson-Columbus -- IN,Indiana,$30.00 ,hourly,Female,White,39.7683331,-86.1583502
+Emma,Turkmani,turkman2@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,PPG Industries,Marketing Analyst Intern,Pittsburgh ,Pittsburgh-New Castle -- PA,Pennsylvania,$30.00,hourly,Female,Two or More Races,40.4416941,-79.9900861
+Max,Hortop,hortopma@msu.edu,Mechanical Engineering,Internship/Co-op,Fall 2021,Rivian,Powertrain Design Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$30.00,hourly,Male,White,42.3315509,-83.0466403
+Yulianna,Duran,duranyul@msu.edu,Mechanical Engineering,,Fall 2023,,,Ann Arbor,,Michigan,$29.50,hourly,Female,Hispanic/Latine,42.2813722,-83.7484616
+Kate,Nolan,nolanka3@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,General Mills,Manufacturing and Engineering Associate,Atlanta,Atlanta-Sandy Springs-Gainesville -- GA-AL,Georgia,$29.38,hourly,Female,White,33.7489924,-84.3902644
+Brandon,Gonzalez,gonza783@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,General Motors,Process Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$29.38,hourly,Male,Hispanic/Latine,42.3315509,-83.0466403
+Anthony,Montemayor,montem22@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,General Motors,Manufacturing Mechanical Engineering Intern,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$29.38,hourly,Male,Hispanic/Latine,42.7337712,-84.5553805
+Zach,Hetfield,hetfiel7@msu.edu,Mechanical Engineering,,Spring 2023,,,Ann Arbor,,Michigan,$29.00,hourly,Male,White,42.2813722,-83.7484616
+Emerson,Voss,vossemer@msu.edu,Mechanical Engineering,,Summer 2023,Nissan Motor Company Ltd,,Detroit,,Michigan,$29.00,hourly,Female,White,42.3315509,-83.0466403
+Nathan,Wright,wrigh757@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Steelcase,Manufacturing Intern,Grand Rapids,Grand Rapids-Muskegon-Holland -- MI,Michigan,$28.48 ,hourly,Male,White,42.9632425,-85.6678639
+Jenni,Aubin,aubinjen@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Northrop Grumman Corporation,Mechanical Engineering Intern,Washington DC,Washington-Baltimore-Northern Virginia -- DC-MD-VA-WV,District of Columbia,$28.25 ,hourly,Female,White,38.8950368,-77.0365427
+Luke,Lemont,lemontlu@msu.edu,Mechanical Engineering,Internship/Co-op,Fall 2023,Ford Motor Company,Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$28.13,hourly,Male,White,42.3315509,-83.0466403
+Jenni,Aubin,aubinjen@msu.edu,Mechanical Engineering,,Summer 2022,General Motors,,Grand Rapids,,Michigan,$28.13,hourly,Female,White,42.9632425,-85.6678639
+Brian,Hanton,hantonb1@msu.edu,Mechanical Engineering,,Spring 2021,General Motors,,Detroit,,Michigan,$28.13,hourly,Male,White,42.3315509,-83.0466403
+Coleson,White,whitec66@msu.edu,Mechanical Engineering,,Summer 2021,PPG Industries,PPG Primers,Pittsburgh,,Pennsylvania,$27.50,hourly,Male,White,40.4416941,-79.9900861
+Justin,Schmitz,schmi809@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Ford Motor Company,Quality/Manufacturing Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$27.18 ,hourly,Male,White,42.3315509,-83.0466403
+Alayna,Celestini,celest18@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Stellantis - FCA Fiat Chrysler Automobiles,Manufacturing Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$27.00 ,hourly,Female,White,42.3315509,-83.0466403
+Sammy,Dickow,dickows1@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Ford Motor Company,Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$27.00 ,hourly,Male,White,42.3315509,-83.0466403
+Emily,Peterson,pete1311@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Whirlpool,WERLD Intern,Benton Harbor,No Defined Metro Area,Michigan,$27.00,hourly,Female,White,42.1167065,-86.4541894
+Matthew,Price,pricem15@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Whirlpool,Intern,Benton Harbor,No Defined Metro Area,Michigan,$27.00,hourly,Male,White,42.1167065,-86.4541894
+Ross,Davis,davisr48@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Lockheed Martin,Mechanical Engineering Intern,Denver,Denver-Aurora-Boulder -- CO,Colorado,$26.70,hourly,Male,White,39.7392364,-104.984862
+Jacob,Demski,demskija@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Steelcase,Product developement Intern,Grand Rapids,Grand Rapids-Muskegon-Holland -- MI,Michigan,$26.65,hourly,Male,White,42.9632425,-85.6678639
+Quentin,Wade,wadequen@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2021,Stellantis - FCA Fiat Chrysler Automobiles,Fuel Systems Intern,Au Gres,No Defined Metro Area,Michigan,$26.50,hourly,Male,White,44.04863,-83.695816
+Catherine,Schenone,schenone@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,GE,US Inspections Engineering Intern,Cincinnati,Cincinnati-Middletown-Wilmington -- OH-KY-IN,Ohio,$26.25,hourly,Female,White,39.1014537,-84.5124602
+Abigail,Makowski,makows43@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Black and Veatch,Mechanical Engineering Intern,Ann Arbor,Detroit-Warren-Flint -- MI,Michigan,$26.15 ,hourly,Female,White,42.2813722,-83.7484616
+Justin,Gauthier,gauthi89@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,FANUC America,Validation Engineer,Detroit,Detroit-Warren-Flint -- MI,Michigan,$26.00 ,hourly,Male,White,42.3315509,-83.0466403
+Amanda,Jeffers,jeffe122@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Kautex,Quality Engineering Intern,Fort Wayne,Fort Wayne-Huntington-Auburn -- IN,Indiana,$26.00 ,hourly,Female,White,41.0799898,-85.1386015
+Taylor,Page,pagetayl@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Eaton,Technical Sales Engineer,Pittsburgh,Pittsburgh-New Castle -- PA,Pennsylvania,$26.00 ,hourly,Female,White,40.4416941,-79.9900861
+Henry,Horak,horakjon@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,RENK America,Transmission intern,Grand Rapids,Grand Rapids-Muskegon-Holland -- MI,Michigan,$26.00,hourly,Male,White,42.9632425,-85.6678639
+Natalie,Knisley,knisleyn@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Trane Technologies,EPIC Engineering Intern,La Crosse,No Defined Metro Area,Wisconsin,$26.00,hourly,Female,White,43.8122836,-91.2514355
+Nicholas,Sarver,sarverni@msu.edu,Mechanical Engineering,,Summer 2022,Adient,,Detroit,,Michigan,$26.00,hourly,Male,White,42.3315509,-83.0466403
+Tommy,Wierzbicki,wierzb23@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,KLA,Mechanical Design Engineering intern,Ann Arbor,Detroit-Warren-Flint -- MI,Michigan,$26.00,hourly,Male,White,42.2813722,-83.7484616
+Jake,Rutkowski,rutkow64@msu.edu,Mechanical Engineering,Internship/Co-op,Spring 2021,General Motors,General Assembly Group Leader,Fort Wayne,Fort Wayne-Huntington-Auburn -- IN,Indiana,$26.00,hourly,Male,White,41.0799898,-85.1386015
+Brady,O'Shea,osheabra@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Ford Motor Company,Product Development Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$25.96,hourly,Male,White,42.3315509,-83.0466403
+Aisyah,Mahira,mahiraai@msu.edu,Mechanical Engineering,,Spring 2023,Corteva,"Engineering, Production & Technology Co-op Program",Midland,,Michigan,$25.60,hourly,Female,International,31.83688,-102.0103767
+Nick,Opolka,opolkani@msu.edu,Mechanical Engineering,,Spring 2022,Billerud Americas Corporation,,Norway,,Michigan,$25.49,hourly,Male,White,64.5731537,11.52803643954819
+Nick,Opolka,opolkani@msu.edu,Mechanical Engineering,,Summer 2022,,,Quinnesec,,Michigan,$25.49,hourly,Male,White,45.8063452,-87.988459
+Julia,O'mara,omarajul@msu.edu,Mechanical Engineering,,Summer 2021,,,Detroit,,Michigan,$25.38,hourly,Female,White,42.3315509,-83.0466403
+Chris,Sadler,sadlerc1@msu.edu,Mechanical Engineering,,Summer 2021,Ford Motor Company,,Detroit,,Michigan,$25.38,hourly,Male,White,42.3315509,-83.0466403
+Brendan,Foster,foste284@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,"Plastipak Packaging, Inc.",Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$25.00 ,hourly,Male,White,42.3315509,-83.0466403
+Saransh,Mehta,mehtasa7@msu.edu,Mechanical Engineering,Internship/Co-op,Fall 2023,Palm Tree,M&A Summer Analyst,Dallas,Dallas-Fort Worth -- TX,Texas,$25.00,hourly,Male,International,32.7762719,-96.7968559
+Ryan,Murphy,murph788@msu.edu,Mechanical Engineering,,Summer 2023,Helm Group,,Freeport,,Illinois,$25.00,hourly,Male,White,42.2966861,-89.6212271
+Jp,Paul,pauljon2@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Daimler Truck North America,Series and project management,Detroit,Detroit-Warren-Flint -- MI,Michigan,$25.00 ,hourly,Male,International,42.3315509,-83.0466403
+Katelyn,Szafranski,szafra20@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Williams International,Mechanical Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$25.00 ,hourly,Female,White,42.3315509,-83.0466403
+Nolan,Houghteling,houghte3@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Harmon International,Mechanical Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$25.00,hourly,Male,White,42.3315509,-83.0466403
+Spencer,Labuda,labudasp@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Daimler Truck AG,Vehicle Testing Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$25.00,hourly,Male,White,42.3315509,-83.0466403
+Faizan,Malik,malikfa1@msu.edu,Mechanical Engineering,,Spring 2022,Mercury Marine,Electro-Mechanical Testing Engineering Co-Op,Fond Du Lac,,Wisconsin,$25.00,hourly,Male,International,43.7533414,-88.4493796
+Patrick,Marchal,marchalp@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Bell Flight,Mechanical Engineer Intern,Fort Worth,Dallas-Fort Worth -- TX,Texas,$25.00,hourly,Male,White,32.753177,-97.3327459
+Evan,Petersen,pete1312@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Stellantis - FCA Fiat Chrysler Automobiles,Quality/Manufacturing Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$25.00,hourly,Male,White,42.3315509,-83.0466403
+Nathan,Wright,wrigh757@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Danaher Corporation,Supplier Development Engineering Intern,San Francisco,San Jose-San Francisco-Oakland -- CA,California,$25.00,hourly,Male,White,37.7792588,-122.4193286
+Ian,Burress,burressi@msu.edu,Mechanical Engineering,,Summer 2021,Stellantis - FCA Fiat Chrysler Automobiles,,Detroit,,Michigan,$25.00,hourly,Male,Not Specified,42.3315509,-83.0466403
+Nathan,Clinger,clingern@msu.edu,Mechanical Engineering,,Summer 2021,Kautex,,Detroit,,Michigan,$25.00,hourly,Male,White,42.3315509,-83.0466403
+Kylie,Decker,decker30@msu.edu,Mechanical Engineering,,Summer 2021,,,Lynn,,Massachusetts,$25.00,hourly,Female,White,33.1474257,-101.812592
+Anirudh,Menon,menonan2@msu.edu,Mechanical Engineering,,Fall 2021,Autodesk,Autodesk Fusion 360 Student Ambassador,San Francisco,,California,$25.00,hourly,Male,International,37.7792588,-122.4193286
+Luke,Willemsen,willems7@msu.edu,Mechanical Engineering,,Summer 2021,,,Detroit,,Michigan,$25.00,hourly,Male,White,42.3315509,-83.0466403
+Alejandro,Tlatelpa,tlatelpa@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Caterpillar,Corporate Intern - Engineering,Peoria,Peoria-Canton -- IL,Illinois,$24.50,hourly,Male,Hispanic/Latine,40.6938609,-89.5891008
+Natalie,Knisley,knisleyn@msu.edu,Mechanical Engineering,,Summer 2021,Trane Technologies,,Clarksville,,Tennessee,$24.50,hourly,Female,White,36.5277607,-87.3588703
+Justine,Stewart,stewa711@msu.edu,Mechanical Engineering,,Summer 2021,Trane Technologies,,Hastings,,Nebraska,$24.50,hourly,Female,White,50.8553888,0.5824703
+Gabe,Johnson,john7541@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Yanfeng,Quality Engineer,Detroit,Detroit-Warren-Flint -- MI,Michigan,$24.00 ,hourly,Male,White,42.3315509,-83.0466403
+Matthew,Davidson,david256@msu.edu,Mechanical Engineering,,Summer 2022,Novelis,,Oswego,,New York,$24.00,hourly,Male,International,43.4112973,-76.1279841
+Jessica,Ray,rayjess5@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,FANUC America,Temporary Associate Engineer,Detroit,Detroit-Warren-Flint -- MI,Michigan,$24.00,hourly,Female,White,42.3315509,-83.0466403
+Evan,Rushbrook,rushbro1@msu.edu,Mechanical Engineering,,Summer 2022,Bosch,,Detroit,,Michigan,$24.00,hourly,Male,White,42.3315509,-83.0466403
+Tommy,Wierzbicki,wierzb23@msu.edu,Mechanical Engineering,,Summer 2021,KLA,,Ann Arbor,,Michigan,$24.00,hourly,Male,White,42.2813722,-83.7484616
+Abigail,Bowman,bowmanab@msu.edu,Mechanical Engineering,,Spring 2022,Steelcase,,Grand Rapids,,Michigan,$23.89,hourly,Female,White,42.9632425,-85.6678639
+Abigail,Bowman,bowmanab@msu.edu,Mechanical Engineering,,Fall 2021,Steelcase,,Grand Rapids,,Michigan,$23.84,hourly,Female,White,42.9632425,-85.6678639
+Nicholas,Michaels,micha191@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Steelcase,Product Development Engineering Intern,Grand Rapids,Grand Rapids-Muskegon-Holland -- MI,Michigan,$23.79,hourly,Male,White,42.9632425,-85.6678639
+Connor,Laubach,laubachc@msu.edu,Mechanical Engineering,Internship/Co-op,Fall 2022,General Motors,Field Engineer,Detroit,Detroit-Warren-Flint -- MI,Michigan,$23.75,hourly,Male,Hispanic/Latine,42.3315509,-83.0466403
+Raed,Mohammed,moham117@msu.edu,Mechanical Engineering,Internship/Co-op,Spring 2022,BMW Manufacturing,Exterior Integration/Validation Engineer,Greenville,Greenville-Spartanburg-Anderson -- SC,South Carolina,$23.75,hourly,Male,White,34.851354,-82.3984882
+Zach,Hetfield,hetfiel7@msu.edu,Mechanical Engineering,,Spring 2022,Trane Technologies,,La Crosse,,Wisconsin,$23.50,hourly,Male,White,43.8122836,-91.2514355
+Zach,Hetfield,hetfiel7@msu.edu,Mechanical Engineering,,Summer 2022,Trane Technologies,,La Crosse,,Wisconsin,$23.50,hourly,Male,White,43.8122836,-91.2514355
+Ciara,Regan-Moore,reganmoo@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Polaris Industries,Powertrain Engineer,Minneapolis ,Minneapolis-St. Paul-St. Cloud -- MN-WI,Minnesota,$23.50,hourly,Female,White,44.9772995,-93.2654692
+Matthew,Celini,celinima@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Stellantis - FCA Fiat Chrysler Automobiles,Quality/Manufacturing Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$23.08,hourly,Male,White,42.3315509,-83.0466403
+Graham,Bailey,baileygr@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Milwaukee Tool,Mechanical Design Intern,Milwaukee,Milwaukee-Racine-Waukesha -- WI,Wisconsin,$23.00 ,hourly,Male,White,43.0386475,-87.9090751
+Owen,Garber,garberow@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Parker Hannifin,Hydraulics intern,Kalamazoo,No Defined Metro Area,Michigan,$23.00 ,hourly,Male,White,42.291707,-85.5872286
+Harshil,Jain,jainhar2@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,"LG Energy Solution Michigan, Inc.",Mechanical Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$23.00 ,hourly,Male,International,42.3315509,-83.0466403
+Vanessa,Mendez-Valencia,mendezva@msu.edu,Mechanical Engineering,,Spring 2023,Tenneco,,Detroit,,Michigan,$23.00,hourly,Female,Hispanic/Latine,42.3315509,-83.0466403
+Vanessa,Mendez-Valencia,mendezva@msu.edu,Mechanical Engineering,,Summer 2023,Tenneco,,Detroit,,Michigan,$23.00,hourly,Female,Hispanic/Latine,42.3315509,-83.0466403
+Luke,Muller,mullerlu@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,MAHLE,HVAC Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$23.00 ,hourly,Male,White,42.3315509,-83.0466403
+Aliza,Opolka,opolkaal@msu.edu,Mechanical Engineering,Internship/Co-op,Fall 2023,Gallo,Mechanical Engineering Intern,Modesto,No Defined Metro Area,California,$23.00 ,hourly,Female,White,37.6393419,-120.9968892
+Ryan,Qualley,qualleyr@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Consumers Energy,Mechanical Engineering Intern,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$23.00 ,hourly,Male,White,42.7337712,-84.5553805
+Aditya,Varma,varmaadi@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Milwaukee Tool,Quality and Reliability Engineering Intern,Milwaukee,Milwaukee-Racine-Waukesha -- WI,Wisconsin,$23.00 ,hourly,Male,International,43.0386475,-87.9090751
+Justin,Gauthier,gauthi89@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,FANUC America,Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$23.00,hourly,Male,White,42.3315509,-83.0466403
+Rachel,Paul,paulrac3@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,FANUC America,Paint group intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$23.00,hourly,Female,White,42.3315509,-83.0466403
+Luke,Willemsen,willems7@msu.edu,Mechanical Engineering,Internship/Co-op,Fall 2022,Hanon Systems,HVAC Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$23.00,hourly,Male,White,42.3315509,-83.0466403
+Kenny,Yue,yuekenny@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Kautex,CWC Automation Intern,Grand Rapids,Grand Rapids-Muskegon-Holland -- MI,Michigan,$23.00,hourly,Male,Asian,42.9632425,-85.6678639
+Abigail,Bowman,bowmanab@msu.edu,Mechanical Engineering,,Spring 2021,Tenneco,,Lansing,,Michigan,$23.00,hourly,Female,White,42.7337712,-84.5553805
+Caleb,Holtschlag,holtsch5@msu.edu,Mechanical Engineering,,Fall 2021,,,Neenah,,Wisconsin,$23.00,hourly,Male,White,44.1858193,-88.462609
+Tom,Ott,ottthoma@msu.edu,Mechanical Engineering,,Summer 2021,Tenneco,"Manufacturing Engineering Intern - Summer 2021 - Litchfield, MI",Litchfield,,Michigan,$23.00,hourly,Male,White,41.747319,-73.1887243
+Chad,Fowler,fowlerc8@msu.edu,Mechanical Engineering,,Summer 2023,,,Grand Rapids,,Michigan,$22.88,hourly,Male,White,42.9632425,-85.6678639
+Sean,Blanchard,blanc124@msu.edu,Mechanical Engineering,Internship/Co-op,Spring 2023,Cognizant Technology Solutions,Automotive engineering intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$22.00 ,hourly,Male,White,42.3315509,-83.0466403
+Sean,Britt,brittsea@msu.edu,Mechanical Engineering,,Fall 2023,Copeland,,Sidney,,Ohio,$22.00,hourly,Male,Two or More Races,-33.8698439,151.2082848
+Cameron,Hesano,hesanoc2@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Pratt Miller,Design Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$22.00 ,hourly,Male,White,42.3315509,-83.0466403
+Abbey,Michaels,micha231@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,General Dynamics,Engineering Summer intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$22.00 ,hourly,Female,White,42.3315509,-83.0466403
+Kyle,Pahl,pahlkyle@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Autokiniton,CI intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$22.00 ,hourly,Male,White,42.3315509,-83.0466403
+Gina,Sapiano,sapianog@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,"LG Energy Solution Michigan, Inc.",Mechanical Engineering Intern,Grand Rapids,Grand Rapids-Muskegon-Holland -- MI,Michigan,$22.00 ,hourly,Female,Hispanic/Latine,42.9632425,-85.6678639
+Saketh,Vaka,vakasake@msu.edu,Mechanical Engineering,,Spring 2023,Johnson Controls,,Wichita,,Kansas,$22.00,hourly,Male,International,37.6922361,-97.3375448
+Tate,Virkus,virkusbr@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Generac Power Systems,Portable Products Intern,Jefferson,No Defined Metro Area,Wisconsin,$22.00 ,hourly,Male,White,29.834772,-94.1704496
+Erin,Chynoweth,chynowe5@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Mikron Group,2022 intern,Denver,Denver-Aurora-Boulder -- CO,Colorado,$22.00,hourly,Female,White,39.7392364,-104.984862
+Joseph,Deschaine,descha13@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Nissan Motor Company Ltd,Thermal Design Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$22.00,hourly,Male,Hispanic/Latine,42.3315509,-83.0466403
+Brett,Earnest,earnest6@msu.edu,Mechanical Engineering,,Fall 2022,"Lectronix, Inc.",,Lansing,,Michigan,$22.00,hourly,Male,White,42.7337712,-84.5553805
+Vedi,Patel,patelved@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Phillips-Medisize,Quality Engineering Intern,Hudson,Minneapolis-St. Paul-St. Cloud -- MN-WI,Wisconsin,$22.00,hourly,Female,Asian,40.7381635,-74.0550731
+Andrew,Reddy,reddyand@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,BASF,Mechanical Engineer Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$22.00,hourly,Male,White,42.3315509,-83.0466403
+Kyle,Tomaszewski,tomasz41@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Hanon Systems,PTC/HEX Intern,Novice,No Defined Metro Area,Texas,$22.00,hourly,Male,White,31.9873844,-99.6245383
+Nicholas,Sarver,sarverni@msu.edu,Mechanical Engineering,,Summer 2021,Adient,,Detroit,,Michigan,$22.00,hourly,Male,White,42.3315509,-83.0466403
+Maya,Patel,patelm65@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Yanfeng,Product engineering,Detroit,Detroit-Warren-Flint -- MI,Michigan,$21.50 ,hourly,Female,Asian,42.3315509,-83.0466403
+Joey,Rheaume,rheaume7@msu.edu,Mechanical Engineering,,Summer 2022,,,Detroit,,Michigan,$21.50,hourly,Male,White,42.3315509,-83.0466403
+Jon,Droste,drostej1@msu.edu,Mechanical Engineering,,Fall 2021,BorgWarner,,Detroit,,Michigan,$21.25,hourly,Male,White,42.3315509,-83.0466403
+Natalie,Knisley,knisleyn@msu.edu,Mechanical Engineering,,Spring 2021,BorgWarner,,Detroit,,Michigan,$21.25,hourly,Female,White,42.3315509,-83.0466403
+Kevin,Roche,rochekev@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,NY - Department of Transportation,TCI III,Buffalo,Buffalo-Niagara-Cattaraugus -- NY,New York,$21.06,hourly,Male,White,42.8867166,-78.8783922
+Adi,Agaram,agaramad@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Nexteer Automotive,Manufacturing Engineer Intern,Saginaw,Saginaw-Bay City-Saginaw Township North -- MI,Michigan,$21.00 ,hourly,Male,Not Specified,43.4200387,-83.9490365
+Tanaka,Chonyera,chonyera@msu.edu,Mechanical Engineering,,Summer 2023,First Solar,,Toledo,,Ohio,$21.00,hourly,Male,International,39.8560679,-4.0239568
+James,Fordyce,fordyce4@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Gentex Corporation,Summer Intern,Grand Rapids,Grand Rapids-Muskegon-Holland -- MI,Michigan,$21.00 ,hourly,Male,White,42.9632425,-85.6678639
+Jacob,Kern,kernjaco@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Tenneco,Research and Development Engineering Intern,Waupun,Fond du Lac-Beaver Dam -- WI,Wisconsin,$21.00 ,hourly,Male,White,43.633216,-88.7296352
+Marianna,Osentoski,osento19@msu.edu,Mechanical Engineering,,Summer 2023,HIROTEC AMERICA,,Detroit,,Michigan,$21.00,hourly,Female,White,42.3315509,-83.0466403
+Miles,Peters,pete1380@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Tokai Rika,Test Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$21.00 ,hourly,Male,Two or More Races,42.3315509,-83.0466403
+Michael,Taylor,tayl1370@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Roush Industries,Advanced Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$21.00 ,hourly,Male,Not Specified,42.3315509,-83.0466403
+Shane,Beers,beerssha@msu.edu,Mechanical Engineering,,Summer 2022,The Christman Company,,Lansing,,Michigan,$21.00,hourly,Male,White,42.7337712,-84.5553805
+Bashhar,Byrouthy,byrouthy@msu.edu,Mechanical Engineering,,Summer 2022,"American Axle & Manufacturing, Inc.",,Detroit,,Michigan,$21.00,hourly,Male,International,42.3315509,-83.0466403
+Parker,Grover,groverp1@msu.edu,Mechanical Engineering,,Summer 2022,,,Detroit,,Michigan,$21.00,hourly,Male,White,42.3315509,-83.0466403
+Cameron,Hesano,hesanoc2@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Pratt Miller,Design Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$21.00,hourly,Male,White,42.3315509,-83.0466403
+Aliza,Opolka,opolkaal@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Gerdau,Engineering Intern,Jackson,No Defined Metro Area,Michigan,$21.00,hourly,Female,White,32.2998686,-90.1830408
+Sara,Purdue,purduesa@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,NuVasive Clinical Service,Lean Manufacturing Intern,Dayton,Dayton-Springfield-Greenville -- OH,Ohio,$21.00,hourly,Female,White,39.7589478,-84.1916069
+Spencer,Stefani,stefan59@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,AAM - American Axle & Manufacturing,Quality/Manufacturing Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$21.00,hourly,Male,White,42.3315509,-83.0466403
+Gianna,Andriacchi,andriac2@msu.edu,Mechanical Engineering,,Summer 2021,Tenneco,"Manufacturing Engineering Intern - Summer 2021 (Skokie, IL)",Chicago,,Illinois,$21.00,hourly,Female,White,41.8755616,-87.6244212
+Spencer,Labuda,labudasp@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2021,Mercedes-Benz Research & Development North America,Powertrain Calibration Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$21.00,hourly,Male,White,42.3315509,-83.0466403
+Dexter,Lynch,lynchdex@msu.edu,Mechanical Engineering,,Summer 2021,Tenneco,,Jackson,,Michigan,$21.00,hourly,Male,White,32.2998686,-90.1830408
+Rob,Paquette,paquet51@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2021,Precision Machined Products,Summer Intern,Fort Collins,No Defined Metro Area,Colorado,$21.00,hourly,Male,White,40.5871782,-105.0770113
+John,Jaaska,jaaskaj1@msu.edu,Mechanical Engineering,,Fall 2021,DTE Energy,,Detroit,,Michigan,$20.50,hourly,Male,White,42.3315509,-83.0466403
+Ian,Calandrino,calandr8@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,DTE Energy,Student Co-op,Detroit,Detroit-Warren-Flint -- MI,Michigan,$20.25,hourly,Male,White,42.3315509,-83.0466403
+Bryant,Hixson,hixsonb3@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Yanfeng Automotive Interiors,Seating Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$20.25,hourly,Male,White,42.3315509,-83.0466403
+Drew,Darin,darindre@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,ZF,Mechanical Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$20.00 ,hourly,Male,White,42.3315509,-83.0466403
+Rafael Abage,De Assis Zanetti Pinto Abage,abageraf@msu.edu,Mechanical Engineering,,Summer 2023,,,Detroit,,Michigan,$20.00,hourly,Male,International,42.3315509,-83.0466403
+Yahia,Guenena,guenenay@msu.edu,Mechanical Engineering,,Fall 2023,Magna International,APQP Intern,Detroit,,Michigan,$20.00,hourly,Male,International,42.3315509,-83.0466403
+Joey,Harwood,harwoo31@msu.edu,Mechanical Engineering,,Summer 2023,NORMA Group,,Detroit,,Michigan,$20.00,hourly,Male,White,42.3315509,-83.0466403
+Bradley,Haskin,haskinb1@msu.edu,Mechanical Engineering,,Summer 2023,Laser Mechanisms,,Detroit,,Michigan,$20.00,hourly,Male,White,42.3315509,-83.0466403
+Liam,Keane,keanelia@msu.edu,Mechanical Engineering,,Summer 2023,,,Port Huron,,Michigan,$20.00,hourly,Male,White,42.9760854,-82.4333742
+Chase,Marcath,marcath1@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Whisker,Quality Engineer,Detroit,Detroit-Warren-Flint -- MI,Michigan,$20.00 ,hourly,Male,White,42.3315509,-83.0466403
+Elizabeth,Milne,milneel3@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,General Dynamics,Firepower hardware,Detroit,Detroit-Warren-Flint -- MI,Michigan,$20.00 ,hourly,Female,White,42.3315509,-83.0466403
+Lauren,Osiwala,osiwalal@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,MAHLE,Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$20.00 ,hourly,Female,White,42.3315509,-83.0466403
+Trent,Warren,warrentr@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Aster Brands,Mechanical Engineering Intern,Charlevoix,No Defined Metro Area,Michigan,$20.00 ,hourly,Male,White,45.202075,-84.9676387
+Jordan,Arnold,arnol148@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Hitachi,Suspension lab engineering internn,Detroit,Detroit-Warren-Flint -- MI,Michigan,$20.00,hourly,Male,White,42.3315509,-83.0466403
+Ashley,Bolt,boltashl@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,MAHLE,Product development intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$20.00,hourly,Female,White,42.3315509,-83.0466403
+Jonathan,Elias,eliasjon@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Gentex Corporation,Industrial Engineer,Grand Rapids,Grand Rapids-Muskegon-Holland -- MI,Michigan,$20.00,hourly,Male,White,42.9632425,-85.6678639
+James,Fordyce,fordyce4@msu.edu,Mechanical Engineering,,Summer 2022,First Solar,,Toledo,,Ohio,$20.00,hourly,Male,White,39.8560679,-4.0239568
+James,Fordyce,fordyce4@msu.edu,Mechanical Engineering,Internship/Co-op,Fall 2022,First Solar,Product and Technology Intern,Toledo,Toledo-Fremont -- OH,Ohio,$20.00,hourly,Male,White,39.8560679,-4.0239568
+Chad,Fowler,fowlerc8@msu.edu,Mechanical Engineering,,Fall 2022,Navico,,Grand Rapids,,Michigan,$20.00,hourly,Male,White,42.9632425,-85.6678639
+Charles,Mercer,mercerc3@msu.edu,Mechanical Engineering,,Summer 2022,Loc Performance,Engineering Intern,Lansing,,Michigan,$20.00,hourly,Male,White,42.7337712,-84.5553805
+Zoe,Quinn,quinnzoe@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,LG,Mechanical Engineering Intern,Grand Rapids,Grand Rapids-Muskegon-Holland -- MI,Michigan,$20.00,hourly,Female,White,42.9632425,-85.6678639
+Abhyuday,Rastogi,rastogi5@msu.edu,Mechanical Engineering,,Spring 2022,,,Detroit,,Michigan,$20.00,hourly,Male,International,42.3315509,-83.0466403
+Catherine,Schenone,schenone@msu.edu,Mechanical Engineering,,Spring 2022,Greif,,Lansing,,Michigan,$20.00,hourly,Female,White,42.7337712,-84.5553805
+Connor,Trask,traskcon@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Kautex,Quality Engineer Intern,Baltimore,Washington-Baltimore-Northern Virginia -- DC-MD-VA-WV,Maryland,$20.00,hourly,Male,White,39.2908816,-76.610759
+Ben,Walters,walte384@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Gentex Corporation,Engineering Summer intern,Grand Rapids,Grand Rapids-Muskegon-Holland -- MI,Michigan,$20.00,hourly,Male,Not Specified,42.9632425,-85.6678639
+Paige,Brechtelsbauer,brechte9@msu.edu,Mechanical Engineering,,Summer 2021,Plastic Omnium,,Detroit,,Michigan,$20.00,hourly,Female,White,42.3315509,-83.0466403
+Lexi,Dewey,deweyale@msu.edu,Mechanical Engineering,,Spring 2021,,,Dothan,,Alabama,$20.00,hourly,Female,White,31.2237285,-85.3934375
+Parang,Khanal,khanalpa@msu.edu,Mechanical Engineering,,Summer 2021,Amcor,,Appleton,,Wisconsin,$20.00,hourly,Male,Asian,44.2613967,-88.4069744
+Parang,Khanal,khanalpa@msu.edu,Mechanical Engineering,,Fall 2021,,,Elyria,,Ohio,$20.00,hourly,Male,Asian,41.3673191,-82.1073583
+Mitch,LeBlanc,leblan48@msu.edu,Mechanical Engineering,,Summer 2021,MAHLE,,Detroit,,Michigan,$20.00,hourly,Male,White,42.3315509,-83.0466403
+Catherine,Schenone,schenone@msu.edu,Mechanical Engineering,,Spring 2021,,,Lansing,,Michigan,$20.00,hourly,Female,White,42.7337712,-84.5553805
+Catherine,Schenone,schenone@msu.edu,Mechanical Engineering,,Fall 2021,Greif,,Lansing,,Michigan,$20.00,hourly,Female,White,42.7337712,-84.5553805
+Jacob,Wescott,wescott6@msu.edu,Mechanical Engineering,,Spring 2021,Amcor,Spring 2021 Project Co-op,Oshkosh,,Wisconsin,$20.00,hourly,Male,White,44.0206919,-88.5408574
+Chak Sing,Kwok,kwokchak@msu.edu,Mechanical Engineering,,Summer 2022,,,Lansing,,Michigan,$19.86,hourly,Male,International,42.7337712,-84.5553805
+Arjun,Patel,patela70@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Denso International America,Technical Co-Op 2,Battle Creek,No Defined Metro Area,Michigan,$19.85,hourly,Male,Asian,42.3192548,-85.1824269
+Nico,Boehlert Somohano,boehler1@msu.edu,Mechanical Engineering,Internship/Co-op,Fall 2022,BorgWarner,Co-op Engineer,Detroit,Detroit-Warren-Flint -- MI,Michigan,$19.72,hourly,Male,Hispanic/Latine,42.3315509,-83.0466403
+Jaclyn,Duff,duffjacl@msu.edu,Mechanical Engineering,,Fall 2021,DTE Energy,,Detroit,,Michigan,$19.25,hourly,Female,White,42.3315509,-83.0466403
+Bashhar,Byrouthy,byrouthy@msu.edu,Mechanical Engineering,,Summer 2021,BorgWarner,,Detroit,,Michigan,$19.05,hourly,Male,International,42.3315509,-83.0466403
+Stephen,Tamboer,tamboers@msu.edu,Mechanical Engineering,,Summer 2021,BorgWarner,,Detroit,,Michigan,$19.05,hourly,Male,Hispanic/Latine,42.3315509,-83.0466403
+Stephen,Tamboer,tamboers@msu.edu,Mechanical Engineering,,Spring 2021,BorgWarner,,Detroit,,Michigan,$19.05,hourly,Male,Hispanic/Latine,42.3315509,-83.0466403
+Jonathan,Hakim,hakimjo1@msu.edu,Mechanical Engineering,Internship/Co-op,Spring 2023,Nexteer Automotive,Mechanical Engineering Intern,Saginaw,Saginaw-Bay City-Saginaw Township North -- MI,Michigan,$19.00 ,hourly,Male,White,43.4200387,-83.9490365
+Kylie,Keller,kelle255@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Autocam,Mechanical Engineering Intern,Grand Rapids,Grand Rapids-Muskegon-Holland -- MI,Michigan,$19.00 ,hourly,Female,White,42.9632425,-85.6678639
+Olivia,Lyle,lyleoliv@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,"Navitas Systems, LLC",Manufacturing Engineer,Ann Arbor,Detroit-Warren-Flint -- MI,Michigan,$19.00 ,hourly,Female,White,42.2813722,-83.7484616
+Paxton,Angliss,anglissp@msu.edu,Mechanical Engineering,,Summer 2022,HNI Corporation,,Muscatine,,Iowa,$19.00,hourly,Male,White,41.4776121,-91.1210053
+Jaclyn,Duff,duffjacl@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Walbridge,Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$19.00,hourly,Female,White,42.3315509,-83.0466403
+Bryce,Hitchcock,hitchc39@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,General Dynamics,Mechanical Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$19.00,hourly,Male,White,42.3315509,-83.0466403
+David,Kurylo,kuryloda@msu.edu,Mechanical Engineering,,Spring 2022,,,Ann Arbor,,Michigan,$19.00,hourly,Male,White,42.2813722,-83.7484616
+Ali,Lewis,lewisa44@msu.edu,Mechanical Engineering,,Fall 2022,Amcor,Project Co-op,Oshkosh,,Wisconsin,$19.00,hourly,Female,White,44.0206919,-88.5408574
+Luke,Muller,mullerlu@msu.edu,Mechanical Engineering,,Summer 2022,MAHLE,,Detroit,,Michigan,$19.00,hourly,Male,White,42.3315509,-83.0466403
+Joe,Nelson,nelso803@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Vibracoustic,Program Management Intern,Grand Rapids,No Defined Metro Area,Michigan,$19.00,hourly,Male,White,42.9632425,-85.6678639
+Joe,Nelson,nelso803@msu.edu,Mechanical Engineering,Internship/Co-op,Fall 2022,Vibracoustic,Engineering Intern,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$19.00,hourly,Male,White,42.7337712,-84.5553805
+Rob,Paquette,paquet51@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Nexteer Automotive,Engineering Senior Intern,Saginaw,Saginaw-Bay City-Saginaw Township North -- MI,Michigan,$19.00,hourly,Male,White,43.4200387,-83.9490365
+Ricardo,Paz Weber,pazweber@msu.edu,Mechanical Engineering,,Fall 2022,"Forge Global, Inc.",,San Francisco,,California,$19.00,hourly,Male,White,37.7792588,-122.4193286
+Cameron,Tsivitse,tsivits3@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,SRG Global,Product development intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$19.00,hourly,Male,White,42.3315509,-83.0466403
+Jacob,Demski,demskija@msu.edu,Mechanical Engineering,,Summer 2021,BOSS Snowplow,,Iron Mountain,,Michigan,$19.00,hourly,Male,White,45.820233,-88.06596
+Jacob,Demski,demskija@msu.edu,Mechanical Engineering,,Spring 2021,BOSS Snowplow,,Iron Mountain,,Michigan,$19.00,hourly,Male,White,45.820233,-88.06596
+Eric,Douglas,dougl247@msu.edu,Mechanical Engineering,,Summer 2021,Gentherm,Engineering Intern,Detroit,,Michigan,$19.00,hourly,Male,Black/African American,42.3315509,-83.0466403
+Ricardo,Paz Weber,pazweber@msu.edu,Mechanical Engineering,,Spring 2021,BOSS Snowplow,,Iron Mountain,,Michigan,$19.00,hourly,Male,White,45.820233,-88.06596
+Emily,Peterson,pete1311@msu.edu,Mechanical Engineering,,Spring 2021,MAHLE,,Detroit,,Michigan,$19.00,hourly,Female,White,42.3315509,-83.0466403
+Garrett,Ruhala,ruhalaga@msu.edu,Mechanical Engineering,,Summer 2021,General Dynamics,,Detroit,,Michigan,$19.00,hourly,Male,White,42.3315509,-83.0466403
+Megan,Broughal,brougha8@msu.edu,Mechanical Engineering,,Fall 2023,,,Grand Rapids,,Michigan,$18.50,hourly,Female,Hispanic/Latine,42.9632425,-85.6678639
+Ali,Lewis,lewisa44@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,JR Automation,Mechanical Engineer Intern,Grand Rapids,Grand Rapids-Muskegon-Holland -- MI,Michigan,$18.50 ,hourly,Female,White,42.9632425,-85.6678639
+Ali,Lewis,lewisa44@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,JR Automation,Mechanical Engineering Intern,Grand Rapids,Grand Rapids-Muskegon-Holland -- MI,Michigan,$18.50 ,hourly,Female,White,42.9632425,-85.6678639
+Aidan,Svoboda,svobodaa@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,NASA,Engineering Intern,Newport News,No Defined Metro Area,Virginia,$18.50 ,hourly,Male,White,37.0914429,-76.5213892
+Robert,Dessy,dessyrob@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,GE,Manufacturing/Supply Chain,Grand Rapids,Grand Rapids-Muskegon-Holland -- MI,Michigan,$18.00 ,hourly,Male,White,42.9632425,-85.6678639
+Daniel,Staal,staaldan@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Altron Automation,Mechanical Engineering Intern,Grand Rapids,Grand Rapids-Muskegon-Holland -- MI,Michigan,$18.00 ,hourly,Male,White,42.9632425,-85.6678639
+Paxton,Angliss,anglissp@msu.edu,Mechanical Engineering,,Spring 2022,HNI Corporation,,Muscatine,,Iowa,$18.00,hourly,Male,White,41.4776121,-91.1210053
+Beth,Caldwell,caldw180@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Bosch,Mechanical Engineer Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$18.00,hourly,Female,White,42.3315509,-83.0466403
+Robert,Crouse,crousero@msu.edu,Mechanical Engineering,,Summer 2022,Tenneco,,Detroit,,Michigan,$18.00,hourly,Male,Not Specified,42.3315509,-83.0466403
+Nathan,Jansen,jansenn2@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,"Michigan Automotive Compressor, Inc.",Quality/Manufacturing Engineering Intern,Jackson,No Defined Metro Area,Michigan,$18.00,hourly,Male,Not Specified,32.2998686,-90.1830408
+Mark,Kemp,kempmar1@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,MACI,Industrial Engineer,Jackson,No Defined Metro Area,Michigan,$18.00,hourly,Male,White,32.2998686,-90.1830408
+Lauren,Osiwala,osiwalal@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Fisher Dynamics,engineer/bussiness Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$18.00,hourly,Female,White,42.3315509,-83.0466403
+Andrew,Tabaka,tabakaan@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,UHI Group (Ultimate Hydroforming Inc.),Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$18.00,hourly,Male,White,42.3315509,-83.0466403
+Aditya,Varma,varmaadi@msu.edu,Mechanical Engineering,,Fall 2022,Michigan Public Power Agency,Energy Market Operations Internship,Lansing,,Michigan,$18.00,hourly,Male,International,42.7337712,-84.5553805
+Aditya,Varma,varmaadi@msu.edu,Mechanical Engineering,,Summer 2022,Michigan Public Power Agency,Energy Market Operations Internship,Lansing,,Michigan,$18.00,hourly,Male,International,42.7337712,-84.5553805
+Jaclyn,Duff,duffjacl@msu.edu,Mechanical Engineering,,Spring 2021,DTE Energy,,Detroit,,Michigan,$18.00,hourly,Female,White,42.3315509,-83.0466403
+Kailey,Head,headkail@msu.edu,Mechanical Engineering,,Spring 2021,,,Ann Arbor,,Michigan,$18.00,hourly,Female,White,42.2813722,-83.7484616
+Max,Kempisty,kempist6@msu.edu,Mechanical Engineering,,Summer 2021,Urban Science,,Detroit,,Michigan,$18.00,hourly,Male,White,42.3315509,-83.0466403
+Eli,Pickard,pickarde@msu.edu,Mechanical Engineering,,Summer 2021,Gentex Corporation,,Grand Rapids,,Michigan,$18.00,hourly,Male,White,42.9632425,-85.6678639
+Chase,Rojeck,rojeckch@msu.edu,Mechanical Engineering,,Spring 2021,,,Ann Arbor,,Michigan,$18.00,hourly,Male,White,42.2813722,-83.7484616
+Sophie,Weitzel,weitze10@msu.edu,Mechanical Engineering,,Spring 2021,Amcor,Spring 2021 Project Co-op,New London,,Wisconsin,$18.00,hourly,Female,Asian,41.3556187,-72.0997804
+Sophie,Weitzel,weitze10@msu.edu,Mechanical Engineering,,Summer 2021,Amcor,,Oshkosh,,Wisconsin,$18.00,hourly,Female,Asian,44.0206919,-88.5408574
+Olivia,Lyle,lyleoliv@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Plastic Omnium,Engineering Intern,Adrian,No Defined Metro Area,Michigan,$17.58,hourly,Female,White,41.8975152,-84.0373054
+Ethan,Avery,averyeth@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,"Vanderhorst Brothers, Inc.",Engineering Intern,Los Angeles,Los Angeles-Long Beach-Riverside -- CA,California,$17.50 ,hourly,Male,White,34.0536909,-118.242766
+Aidan,Dettweiler,dettwei1@msu.edu,Mechanical Engineering,,Fall 2021,Wartech Engineering,,Grand Rapids,,Michigan,$17.50,hourly,Male,White,42.9632425,-85.6678639
+Joey,Rheaume,rheaume7@msu.edu,Mechanical Engineering,,Summer 2021,Gentex Corporation,,Grand Rapids,,Michigan,$17.50,hourly,Male,White,42.9632425,-85.6678639
+Bennett,Guensche,guensch1@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Autocam,Quality/Manufacturing Engineering Intern,Grand Rapids,Grand Rapids-Muskegon-Holland -- MI,Michigan,$17.00 ,hourly,Male,White,42.9632425,-85.6678639
+Charlotte,Neu,neucharl@msu.edu,Mechanical Engineering,,Summer 2023,,,Lansing,,Michigan,$17.00,hourly,Female,Not Specified,42.7337712,-84.5553805
+Jacob,Stabler,stabler1@msu.edu,Mechanical Engineering,Internship/Co-op,Spring 2023,Hubbell Roth and Clark,Field Intern,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$17.00 ,hourly,Male,White,42.7337712,-84.5553805
+Taku,Benson,bensont3@msu.edu,Mechanical Engineering,Internship/Co-op,Fall 2022,Lansing Board of Water and Light,PED intern,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$17.00,hourly,Male,Two or More Races,42.7337712,-84.5553805
+Taku,Benson,bensont3@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Lansing Board of Water and Light,PED intern,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$17.00,hourly,Male,Two or More Races,42.7337712,-84.5553805
+Blake,Bur,burblake@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Knights Armament Company,Engineering Intern,Titusville,No Defined Metro Area,Florida,$17.00,hourly,Male,White,28.6126236,-80.8079545
+Kylie,Keller,kelle255@msu.edu,Mechanical Engineering,,Summer 2022,Autocam,,Grand Rapids,,Michigan,$17.00,hourly,Female,White,42.9632425,-85.6678639
+Maya,Patel,patelm65@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Cook Biotech,Process development engineer,West Lafayette,Lafayette-Frankfort -- IN,Indiana,$17.00,hourly,Female,Asian,40.4258686,-86.9080655
+Jake,Stanesa,stanesaj@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Chem-Trend,Global Quality Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$17.00,hourly,Male,White,42.3315509,-83.0466403
+Grace,Veenstra,veenst31@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Models & Tools,Design Intern,Shelby,No Defined Metro Area,Michigan,$17.00,hourly,Female,White,31.7716364,-94.1301652
+Trent,Warren,warrentr@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Manthei Veneer,Mechanical Engineering Intern,Petoskey,No Defined Metro Area,Michigan,$17.00,hourly,Male,White,45.373343,-84.95533
+Garrett,Gould,gouldga1@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2021,ADAC Automotive,Quality/Manufacturing Engineering Intern,Grand Rapids,Grand Rapids-Muskegon-Holland -- MI,Michigan,$17.00,hourly,Male,White,42.9632425,-85.6678639
+Faizan,Malik,malikfa1@msu.edu,Mechanical Engineering,,Summer 2021,"Technique, Inc.",,Jackson,,Michigan,$17.00,hourly,Male,International,32.2998686,-90.1830408
+Abhyuday,Rastogi,rastogi5@msu.edu,Mechanical Engineering,,Summer 2021,,,Detroit,,Michigan,$17.00,hourly,Male,International,42.3315509,-83.0466403
+Ciara,Regan-Moore,reganmoo@msu.edu,Mechanical Engineering,,Summer 2021,Eaton County Road Commission,,Lansing,,Michigan,$17.00,hourly,Female,White,42.7337712,-84.5553805
+Tanaka,Chonyera,chonyera@msu.edu,Mechanical Engineering,,Spring 2023,Fraunhofer USA,,Lansing,,Michigan,$16.50,hourly,Male,International,42.7337712,-84.5553805
+Trent,Treppa,treppatr@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,"Eckhart, Inc.",Design Engineer,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$16.50,hourly,Male,White,42.7337712,-84.5553805
+Veronica,Sellin,sellinve@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,City of St. Joseph,City Engineer Intern,Benton Harbor,No Defined Metro Area,Michigan,$16.00 ,hourly,Female,White,42.1167065,-86.4541894
+Ethan,Wise,wiseetha@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Peter Basso Associates,Manufacturing Mechanical Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$16.00 ,hourly,Male,White,42.3315509,-83.0466403
+Luca,Boson,bosonluc@msu.edu,Mechanical Engineering,,Fall 2022,MSU Facility for Rare Isotope Beams,Student Technical Assistant (Engineering - Superconducting Radio Frequency),Lansing,,Michigan,$16.00,hourly,Male,Hispanic/Latine,42.7337712,-84.5553805
+Bennett,Guensche,guensch1@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Autocam,Quality/Manufacturing Engineering Intern,Grand Rapids,Grand Rapids-Muskegon-Holland -- MI,Michigan,$16.00,hourly,Male,White,42.9632425,-85.6678639
+Kathleen,Dewan,dewankat@msu.edu,Mechanical Engineering,,Summer 2021,LeMatic Inc.,,Jackson,,Michigan,$16.00,hourly,Female,White,32.2998686,-90.1830408
+Aliza,Opolka,opolkaal@msu.edu,Mechanical Engineering,,Summer 2021,Airmaster Fan,,Jackson,,Michigan,$16.00,hourly,Female,White,32.2998686,-90.1830408
+Abhyuday,Rastogi,rastogi5@msu.edu,Mechanical Engineering,,Spring 2021,,,Detroit,,Michigan,$16.00,hourly,Male,International,42.3315509,-83.0466403
+Corey,Smith,smit3431@msu.edu,Mechanical Engineering,,Fall 2023,,,Lansing,,Michigan,$15.91,hourly,Female,White,42.7337712,-84.5553805
+David,Mueller,muell273@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Triple Inc.,Summer Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$15.63,hourly,Male,White,42.3315509,-83.0466403
+Keya,Baxi,baxikeya@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,MSU,ME 280 Lab Assistant,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$15.00 ,hourly,Female,Not Specified,42.7337712,-84.5553805
+Blake,Bur,burblake@msu.edu,Mechanical Engineering,,Spring 2023,MSU Facility for Rare Isotope Beams,,Lansing,,Michigan,$15.00,hourly,Male,White,42.7337712,-84.5553805
+Megan,Fazio,faziomeg@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,ZF,Mechanical Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$15.00 ,hourly,Female,White,42.3315509,-83.0466403
+Kylie,Kuskowski,kuskows1@msu.edu,Mechanical Engineering,Internship/Co-op,Spring 2023,Martinrea,Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$15.00 ,hourly,Female,White,42.3315509,-83.0466403
+Vanessa,Mendez-Valencia,mendezva@msu.edu,Mechanical Engineering,,Fall 2023,MSU Facility for Rare Isotope Beams,Student Technical Assistant I,Lansing,,Michigan,$15.00,hourly,Female,Hispanic/Latine,42.7337712,-84.5553805
+Tanaka,Chonyera,chonyera@msu.edu,Mechanical Engineering,,Summer 2022,Fraunhofer USA,,Lansing,,Michigan,$15.00,hourly,Male,International,42.7337712,-84.5553805
+Tanaka,Chonyera,chonyera@msu.edu,Mechanical Engineering,,Fall 2022,Fraunhofer USA,,Lansing,,Michigan,$15.00,hourly,Male,International,42.7337712,-84.5553805
+Sohan,Gupta,guptasoh@msu.edu,Mechanical Engineering,,Fall 2022,MSU Environmental Health & Safety - Office of Research & Regulatory Support,,Lansing,,Michigan,$15.00,hourly,Male,International,42.7337712,-84.5553805
+Harshil,Jain,jainhar2@msu.edu,Mechanical Engineering,,Summer 2022,"Orb Aerospace, Inc",,Grand Rapids,,Michigan,$15.00,hourly,Male,International,42.9632425,-85.6678639
+Richard,Lin,linrich3@msu.edu,Mechanical Engineering,,Summer 2022,,,Lansing,,Michigan,$15.00,hourly,Male,Asian,42.7337712,-84.5553805
+Courtney,Smith,smit3076@msu.edu,Mechanical Engineering,Internship/Co-op,Spring 2022,MSU Facility for Rare Isotope Beams,Student Information Technical Assistant II,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$15.00,hourly,Female,White,42.7337712,-84.5553805
+Anthony,Montemayor,montem22@msu.edu,Mechanical Engineering,,Summer 2021,Konica Minolta,,Detroit,,Michigan,$15.00,hourly,Male,Hispanic/Latine,42.3315509,-83.0466403
+Kyle,Roland,rolandky@msu.edu,Mechanical Engineering,,Summer 2021,Konica Minolta,,Detroit,,Michigan,$15.00,hourly,Male,White,42.3315509,-83.0466403
+Jack,Sikkema,sikkema7@msu.edu,Mechanical Engineering,,Fall 2021,MSU Environmental Health & Safety - Office of Research & Regulatory Support,,Lansing,,Michigan,$14.04,hourly,Male,White,42.7337712,-84.5553805
+Jack,Sikkema,sikkema7@msu.edu,Mechanical Engineering,,Spring 2021,MSU Environmental Health & Safety - Office of Research & Regulatory Support,,Lansing,,Michigan,$14.04,hourly,Male,White,42.7337712,-84.5553805
+Henry,Kantzes,kantzesh@msu.edu,Mechanical Engineering,,Spring 2022,MSU Infrastructure Planning & Facilities (IPF),Power & Water Student Technical Assistant,Lansing,,Michigan,$13.50,hourly,Male,White,42.7337712,-84.5553805
+Henry,Kantzes,kantzesh@msu.edu,Mechanical Engineering,,Fall 2021,MSU Infrastructure Planning & Facilities (IPF),,Lansing,,Michigan,$13.50,hourly,Male,White,42.7337712,-84.5553805
+Hunter,Hansen,hansenh2@msu.edu,Mechanical Engineering,,Summer 2021,MSU Institute of Water Research,Student Research Assistant,Lansing,,Michigan,$13.00,hourly,Male,White,42.7337712,-84.5553805
+Van,Duong,duongkie@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,MSU,Research Assistant,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$12.50,hourly,Male,International,42.7337712,-84.5553805
+Andrew,Debaker,debakera@msu.edu,Mechanical Engineering,,Summer 2021,,,Lansing,,Michigan,$12.50,hourly,Male,White,42.7337712,-84.5553805
+Emily,Holman,holmane3@msu.edu,Mechanical Engineering,Internship/Co-op,Spring 2022,MSU Facility for Rare Isotope Beams,Student Research Assistant,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$12.00,hourly,Female,White,42.7337712,-84.5553805
+Michael,Hayward,haywar34@msu.edu,Mechanical Engineering,,Spring 2021,,,Lansing,,Michigan,$12.00,hourly,Male,White,42.7337712,-84.5553805
+Tommy,Wierzbicki,wierzb23@msu.edu,Mechanical Engineering,,Spring 2021,MSU Facility for Rare Isotope Beams,,Lansing,,Michigan,$12.00,hourly,Male,White,42.7337712,-84.5553805
+Jacob,Pawloske,pawlos36@msu.edu,Mechanical Engineering,,Summer 2021,EZ Metrology,,Detroit,,Michigan,$11.00,hourly,Male,White,42.3315509,-83.0466403
+Ebenezer,Adjah,adjahebe@msu.edu,Mechanical Engineering,,Fall 2023,,,Lansing,,Michigan,,,Male,International,42.7337712,-84.5553805
+Kareem,Algarash,algarash@msu.edu,Mechanical Engineering,,Summer 2023,Toyota Motor Corporation,,Plano,,Texas,,,Male,White,33.0136764,-96.6925096
+Faisal,Alsuhaimi,alsuhai2@msu.edu,Mechanical Engineering,,Summer 2023,,,Atlanta,,Georgia,,,Male,International,33.7489924,-84.3902644
+Dallas,Armstrong,armst441@msu.edu,Mechanical Engineering,Internship/Co-op,Spring 2023,Armstrong Daran & Associates Inc,Repair Technicians,Detroit,Detroit-Warren-Flint -- MI,Michigan,,,Male,White,42.3315509,-83.0466403
+Jack,Bajcz,bajczjac@msu.edu,Mechanical Engineering,,Summer 2023,MSU Facility for Rare Isotope Beams,,Lansing,,Michigan,,,Male,White,42.7337712,-84.5553805
+Braden,Baker,bakerb43@msu.edu,Mechanical Engineering,,Spring 2023,Tenneco,,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+Isaiah,Devougas,devougas@msu.edu,Mechanical Engineering,,Fall 2023,Copeland,,Sidney,,Ohio,,,Male,Two or More Races,-33.8698439,151.2082848
+Ian,Doherty,dohertyi@msu.edu,Mechanical Engineering,,Summer 2023,ST Engineering/Middle River Aerostructure Systems,,Middle River,,Maryland,,,Male,White,48.4343071,-96.1640721
+Tyler,Doral,doraltyl@msu.edu,Mechanical Engineering,,Summer 2023,"LG Energy Solution Michigan, Inc.",,Grand Rapids,,Michigan,,,Male,White,42.9632425,-85.6678639
+Ryan,Geisler,geislerr@msu.edu,Mechanical Engineering,Internship/Co-op,Spring 2023,Daimler Truck North America,Tactical supplier quality engineer,Detroit,Detroit-Warren-Flint -- MI,Michigan,,,Male,White,42.3315509,-83.0466403
+Stephanie,Glaspie,glaspie4@msu.edu,Mechanical Engineering,,Summer 2023,,,Findlay,,Ohio,,,Female,White,41.0413873,-83.6503982
+Edmond,Hashem,hashemed@msu.edu,Mechanical Engineering,,Spring 2023,DTE Energy,,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+David,Kurylo,kuryloda@msu.edu,Mechanical Engineering,,Fall 2023,Pratt Miller,,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+David,Kurylo,kuryloda@msu.edu,Mechanical Engineering,,Spring 2023,Pratt Miller,,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+Malachi,Locke,lockemal@msu.edu,Mechanical Engineering,,Summer 2023,General Motors,2023 Summer Intern  Hardware Engineering,Detroit,,Michigan,,,Male,Black/African American,42.3315509,-83.0466403
+Joshua,Lyijynen,lyijyne7@msu.edu,Mechanical Engineering,,Summer 2023,Lumen North America,,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+Saransh,Mehta,mehtasa7@msu.edu,Mechanical Engineering,,Summer 2023,,,Los Angeles,,California,,,Male,International,34.0536909,-118.242766
+Anirudh,Menon,menonan2@msu.edu,Mechanical Engineering,,Summer 2023,Nexteer Automotive,,Saginaw,,Michigan,,,Male,International,43.4200387,-83.9490365
+Sara,Moscone,moscone2@msu.edu,Mechanical Engineering,,Summer 2023,,,Detroit,,Michigan,,,Female,White,42.3315509,-83.0466403
+Lily,Reinke,reinkeli@msu.edu,Mechanical Engineering,,Summer 2023,Progressive AE,,Grand Rapids,,Michigan,,,Female,Asian,42.9632425,-85.6678639
+Evan,Rushbrook,rushbro1@msu.edu,Mechanical Engineering,,Summer 2023,Bosch,,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+Elizabeth,Sharkevich,sharkevi@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2023,Wipro PARI,Sales/Program Engineer,Detroit,Detroit-Warren-Flint -- MI,Michigan,,,Female,White,42.3315509,-83.0466403
+Aditya,Swarnkar,swarnkar@msu.edu,Mechanical Engineering,,Summer 2023,Michigan Solar and Roofing,,Grand Rapids,,Michigan,,,Male,International,42.9632425,-85.6678639
+Aditya,Tarle,tarleadi@msu.edu,Mechanical Engineering,,Summer 2023,Purem by Eberspächer,,Detroit,,Michigan,,,Male,International,42.3315509,-83.0466403
+Alejandro,Tlatelpa,tlatelpa@msu.edu,Mechanical Engineering,,Summer 2023,Toyota Motor Corporation,,Plano,,Texas,,,Male,Hispanic/Latine,33.0136764,-96.6925096
+Wade,Varney,varneywa@msu.edu,Mechanical Engineering,Externship or Leadership Program,Spring 2023,Whirlpool,,Benton Harbor,No Defined Metro Area,Michigan,,,Male,White,42.1167065,-86.4541894
+Joe,Watza,watzajos@msu.edu,Mechanical Engineering,Externship or Leadership Program,Spring 2023,Johnson Controls,,Milwaukee,Milwaukee-Racine-Waukesha -- WI,Wisconsin,,,Male,White,43.0386475,-87.9090751
+Tommy,Wierzbicki,wierzb23@msu.edu,Mechanical Engineering,Internship/Co-op,Spring 2023,MSU,Undergrad Research Assistant,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,,,Male,White,42.7337712,-84.5553805
+Kareem,Algarash,algarash@msu.edu,Mechanical Engineering,,Summer 2022,Flex N Gate Detroit,,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+Kareem,Algarash,algarash@msu.edu,Mechanical Engineering,,Fall 2022,Toyota Motor North America,,Plano,,Texas,,,Male,White,33.0136764,-96.6925096
+Graham,Bailey,baileygr@msu.edu,Mechanical Engineering,,Spring 2022,BorgWarner,,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+Graham,Bailey,baileygr@msu.edu,Mechanical Engineering,,Summer 2022,BorgWarner,,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+Mallory,Brooks,brook373@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,MSU Innovation Center,,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,,,Female,White,42.7337712,-84.5553805
+Nick,Dodge,dodgenic@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2022,Eaton,Project Management Intern,Jackson,No Defined Metro Area,Michigan,,,Male,White,32.2998686,-90.1830408
+Eric,Douglas,dougl247@msu.edu,Mechanical Engineering,,Summer 2022,NASA Jet Propulsion Laboratory,,Los Angeles,,California,,,Male,Black/African American,34.0536909,-118.242766
+Mitchell,Essenmacher,essenm35@msu.edu,Mechanical Engineering,,Summer 2022,,,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+Dylan,Gumbinger,gumbinge@msu.edu,Mechanical Engineering,,Summer 2022,Magna International,,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+Sohan,Gupta,guptasoh@msu.edu,Mechanical Engineering,,Fall 2022,Halla Mechatronics,,Flint,,Michigan,,,Male,International,43.0161693,-83.6900211
+Sohan,Gupta,guptasoh@msu.edu,Mechanical Engineering,,Summer 2022,Halla Mechatronics,,Flint,,Michigan,,,Male,International,43.0161693,-83.6900211
+Edmond,Hashem,hashemed@msu.edu,Mechanical Engineering,,Fall 2022,DTE Energy,,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+Edmond,Hashem,hashemed@msu.edu,Mechanical Engineering,,Spring 2022,DTE Energy,,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+Elan,Krakoff,krakoffe@msu.edu,Mechanical Engineering,,Summer 2022,,,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+Dayton,Kullman,kullmand@msu.edu,Mechanical Engineering,Internship/Co-op,Spring 2022,Aptiv,Quality/Manufacturing Engineering Intern,San Francisco,San Jose-San Francisco-Oakland -- CA,California,,,Male,White,37.7792588,-122.4193286
+Anjali,Patel,patela65@msu.edu,Mechanical Engineering,,Fall 2022,,,Lansing,,Michigan,,,Female,Asian,42.7337712,-84.5553805
+Anjali,Patel,patela65@msu.edu,Mechanical Engineering,,Spring 2022,,,Lansing,,Michigan,,,Female,Asian,42.7337712,-84.5553805
+Anjali,Patel,patela65@msu.edu,Mechanical Engineering,,Summer 2022,,,Lansing,,Michigan,,,Female,Asian,42.7337712,-84.5553805
+Noah,Shephard,shepha12@msu.edu,Mechanical Engineering,Internship/Co-op,Fall 2022,LyondellBasell Industries,Lab Assistant,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,,,Male,White,42.7337712,-84.5553805
+Stephen,Tamboer,tamboers@msu.edu,Mechanical Engineering,,Summer 2022,Stellantis - FCA Fiat Chrysler Automobiles,,Detroit,,Michigan,,,Male,Hispanic/Latine,42.3315509,-83.0466403
+Alejandro,Tlatelpa,tlatelpa@msu.edu,Mechanical Engineering,,Fall 2022,Toyota Motor North America,,Ann Arbor,,Michigan,,,Male,Hispanic/Latine,42.2813722,-83.7484616
+Tommy,Wierzbicki,wierzb23@msu.edu,Mechanical Engineering,Internship/Co-op,Fall 2022,MSU,Undergrad Research Assistant,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,,,Male,White,42.7337712,-84.5553805
+Nico,Boehlert Somohano,boehler1@msu.edu,Mechanical Engineering,,Summer 2021,Konica Minolta,,Detroit,,Michigan,,,Male,Hispanic/Latine,42.3315509,-83.0466403
+Josh,Bravo,bravojos@msu.edu,Mechanical Engineering,,Spring 2021,ZF,,Detroit,,Michigan,,,Male,Hispanic/Latine,42.3315509,-83.0466403
+Bashhar,Byrouthy,byrouthy@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2021,Advanced Engineering,,Hammond,Chicago-Naperville-Michigan City -- IL-IN-WI,Indiana,,,Male,International,41.6173959,-87.5220108
+Beth,Caldwell,caldw180@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2021,Bosch,,Detroit,Detroit-Warren-Flint -- MI,Michigan,,,Female,White,42.3315509,-83.0466403
+Jacob,Campion,campio15@msu.edu,Mechanical Engineering,Internship/Co-op,Fall 2021,AP Lazer,,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,,,Male,White,42.7337712,-84.5553805
+Jacob,Campion,campio15@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2021,Brose North America,,Detroit,Detroit-Warren-Flint -- MI,Michigan,,,Male,White,42.3315509,-83.0466403
+Cayla,Coury,courycay@msu.edu,Mechanical Engineering,,Spring 2021,,,Greenbelt,,Maryland,,,Female,White,38.9933654,-76.88333238304114
+Jon,Droste,drostej1@msu.edu,Mechanical Engineering,,Summer 2021,,,Lansing,,Michigan,,,Male,White,42.7337712,-84.5553805
+Kyle,Fischer,fisch257@msu.edu,Mechanical Engineering,Internship/Co-op,Spring 2021,MSU Innovations Center,,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,,,Male,White,42.7337712,-84.5553805
+Emily,Fitzsimons,fitzsi38@msu.edu,Mechanical Engineering,,Summer 2021,Gentex Corporation,,Grand Rapids,,Michigan,,,Female,White,42.9632425,-85.6678639
+James,Fordyce,fordyce4@msu.edu,Mechanical Engineering,,Summer 2021,,,Lansing,,Michigan,,,Male,White,42.7337712,-84.5553805
+Zack,Friess,friessz1@msu.edu,Mechanical Engineering,,Summer 2021,Forvia Faurecia,,Ann Arbor,,Michigan,,,Male,White,42.2813722,-83.7484616
+Ben,Gaynier,gaynier7@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2021,Aptiv,,Detroit,Detroit-Warren-Flint -- MI,Michigan,,,Male,White,42.3315509,-83.0466403
+Sohan,Gupta,guptasoh@msu.edu,Mechanical Engineering,,Summer 2021,,,Lansing,,Michigan,,,Male,International,42.7337712,-84.5553805
+Zach,Harrison,harr1479@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2021,Adient,VAVE Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,,,Male,White,42.3315509,-83.0466403
+Edmond,Hashem,hashemed@msu.edu,Mechanical Engineering,,Summer 2021,DTE Energy,,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+Edmond,Hashem,hashemed@msu.edu,Mechanical Engineering,,Spring 2021,DTE Energy,Student Co-Op #5120,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+Muad,Hassan,hassan20@msu.edu,Mechanical Engineering,,Summer 2021,,,Lansing,,Michigan,,,Male,Not Specified,42.7337712,-84.5553805
+Justin,Helmer,helmerju@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2021,Architectural Metals Inc.,,Grand Rapids,Grand Rapids-Muskegon-Holland -- MI,Michigan,,,Male,White,42.9632425,-85.6678639
+Jacob,Hoffman,hoffm538@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2021,ZF,,Detroit,Detroit-Warren-Flint -- MI,Michigan,,,Male,White,42.3315509,-83.0466403
+Parang,Khanal,khanalpa@msu.edu,Mechanical Engineering,,Spring 2021,Amcor,,Appleton,,Wisconsin,,,Male,Asian,44.2613967,-88.4069744
+Zachary,Lang,langzac1@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2021,MI - Department of Transportation,Mechanical Engineer Intern,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,,,Male,White,42.7337712,-84.5553805
+Richard,Lin,linrich3@msu.edu,Mechanical Engineering,,Summer 2021,,,Grand Rapids,,Michigan,,,Male,Asian,42.9632425,-85.6678639
+Jessica,Lypka,lypkajes@msu.edu,Mechanical Engineering,,Summer 2021,Kellanova,Intern  Global Engineering  Summer 2021 - ENG000842,Battle Creek,,Michigan,,,Female,White,42.3192548,-85.1824269
+Brendan,MacDonald,macdo263@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2021,Trane Technologies,,Detroit,Detroit-Warren-Flint -- MI,Michigan,,,Male,Hispanic/Latine,42.3315509,-83.0466403
+Mert,Ozmete,ozmeteme@msu.edu,Mechanical Engineering,,Summer 2021,Comodo Cyber Security,,Clifton,,New Jersey,,,Male,International,40.8584328,-74.1637553
+Tyler,Paparella,paparel9@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2021,BAE Systems,Technical Intern II,Detroit,Detroit-Warren-Flint -- MI,Michigan,,,Male,White,42.3315509,-83.0466403
+Meghan,Parkinson,parkin44@msu.edu,Mechanical Engineering,,Summer 2021,,,Grand Rapids,,Michigan,,,Female,Not Specified,42.9632425,-85.6678639
+Anjali,Patel,patela65@msu.edu,Mechanical Engineering,,Fall 2021,,,Lansing,,Michigan,,,Female,Asian,42.7337712,-84.5553805
+Evan,Petersen,pete1312@msu.edu,Mechanical Engineering,,Summer 2021,Adient,,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+Maggie,Ritchie,ritchi44@msu.edu,Mechanical Engineering,,Spring 2021,DePuy Synthes,,Warsaw,,Indiana,,,Female,White,52.2337172,21.071432235636493
+Hammer,Shalawylo,shalawy1@msu.edu,Mechanical Engineering,,Summer 2021,Consumers Energy,,Jackson,,Michigan,,,Male,White,32.2998686,-90.1830408
+Youngbin,Song,songyo13@msu.edu,Mechanical Engineering,,Summer 2021,,,Lansing,,Michigan,,,Male,International,42.7337712,-84.5553805
+Stephen,Stormzand,stormza5@msu.edu,Mechanical Engineering,,Summer 2021,,,Lansing,,Michigan,,,Male,White,42.7337712,-84.5553805
+Hailey,Swamy,swamyhai@msu.edu,Mechanical Engineering,,Summer 2021,Trane Technologies,,Grand Rapids,,Michigan,,,Female,Two or More Races,42.9632425,-85.6678639
+Val,Vargas,vargasv1@msu.edu,Mechanical Engineering,,Spring 2021,First Solar,,Toledo,,Ohio,,,Female,Hispanic/Latine,39.8560679,-4.0239568
+Val,Vargas,vargasv1@msu.edu,Mechanical Engineering,Internship/Co-op,Fall 2021,First Solar,Dvelopment Engineering Intern,Toledo,Toledo-Fremont -- OH,Ohio,,,Female,Hispanic/Latine,39.8560679,-4.0239568
+Willis,Wuebben,wuebbenw@msu.edu,Mechanical Engineering,Internship/Co-op,Summer 2021,Vconverter Corporation,Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,,,Male,Hispanic/Latine,42.3315509,-83.0466403

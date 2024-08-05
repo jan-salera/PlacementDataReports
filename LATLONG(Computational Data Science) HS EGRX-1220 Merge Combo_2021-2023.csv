@@ -1,0 +1,27 @@
+First Name,Last Name,Email,Major,Outcome Type Placeholder,Academic Term,Employer Name,Job Title,City,Metro Area Placeholder,State,Salary,Pay Period,Gender,Ethnicity,Employer Latitude,Employer Longitude
+Kofi,Debrah,debrahko@msu.edu,Computational Data Science,,Summer 2023,Google,,San Francisco,,California,$50.00,hourly,Male,International,37.7792588,-122.4193286
+Kofi,Debrah,debrahko@msu.edu,Computational Data Science,,Summer 2022,Google,,San Francisco,,California,$42.13,hourly,Male,International,37.7792588,-122.4193286
+Jack,Nugent,nugentj3@msu.edu,Computational Data Science,Internship/Co-op,Summer 2022,Thermo Fisher Scientific,Data Science Intern,Pittsburgh ,Pittsburgh-New Castle -- PA,Pennsylvania,$34.50,hourly,Male,Two or More Races,40.4416941,-79.9900861
+Sai,Ramesh,rameshs5@msu.edu,Computational Data Science,Internship/Co-op,Summer 2022,Ford Motor Company,GDIA Summer Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$32.13,hourly,Male,Not Reported,42.3315509,-83.0466403
+Noor,Al Haidari,alhaida1@msu.edu,Computational Data Science,,Spring 2023,Blue Cross Blue Shield,,Detroit,,Michigan,$25.00,hourly,Female,White,42.3315509,-83.0466403
+Harshan,Ramakrishnan,ramakr24@msu.edu,Computational Data Science,Internship/Co-op,Summer 2022,Wells Fargo,Analytics and Data Intern,Charlotte,Charlotte-Gastonia-Salisbury -- NC-SC,North Carolina,$25.00,hourly,Male,Asian,35.2272086,-80.8430827
+Myles,Yankie,yankiemy@msu.edu,Computational Data Science,,Summer 2023,Ford Motor Company,,Detroit,,Michigan,$24.00,hourly,Male,Not Specified,42.3315509,-83.0466403
+Griffin,Frendo,frendogr@msu.edu,Computational Data Science,Internship/Co-op,Summer 2022,Humana,Information Technology Intern,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$24.00,hourly,Male,White,42.7337712,-84.5553805
+Ethan,Demott,demottet@msu.edu,Computational Data Science,Internship/Co-op,Spring 2023,Humana,College Tech Intern,Louisville,Louisville-Jefferson County--Elizabethtown--Scottsburg -- KY-IN,Kentucky,$23.00 ,hourly,Male,Not Specified,38.2542376,-85.759407
+Griffin,Frendo,frendogr@msu.edu,Computational Data Science,Internship/Co-op,Fall 2022,Roosevelt Innovations,Data Science Intern,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$21.00,hourly,Male,White,42.7337712,-84.5553805
+Myles,Yankie,yankiemy@msu.edu,Computational Data Science,,Spring 2023,Ford Motor Company,,Detroit,,Michigan,$20.00,hourly,Male,Not Specified,42.3315509,-83.0466403
+Noor,Al Haidari,alhaida1@msu.edu,Computational Data Science,,Fall 2022,Blue Cross Blue Shield,,Detroit,,Michigan,$20.00,hourly,Female,White,42.3315509,-83.0466403
+Myles,Yankie,yankiemy@msu.edu,Computational Data Science,,Fall 2022,Ford Motor Company,,Detroit,,Michigan,$19.17,hourly,Male,Not Specified,42.3315509,-83.0466403
+Pratham,Pradhan,pradha11@msu.edu,Computational Data Science,,Summer 2023,GreenStone Farm Credit Services,,Lansing,,Michigan,$19.00,hourly,Male,Asian,42.7337712,-84.5553805
+Brady,Berg,bergbrae@msu.edu,Computational Data Science,Internship/Co-op,Summer 2022,Roosevelt Innovations,Data Science Intern,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$19.00,hourly,Male,White,42.7337712,-84.5553805
+Adam,Dec,decadam@msu.edu,Computational Data Science,Internship/Co-op,Summer 2022,Roosevelt Innovations,Data Science Intern,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$19.00,hourly,Male,White,42.7337712,-84.5553805
+Noor,Al Haidari,alhaida1@msu.edu,Computational Data Science,,Spring 2022,Blue Cross Blue Shield,,Detroit,,Michigan,$18.50,hourly,Female,White,42.3315509,-83.0466403
+Griffin,Frendo,frendogr@msu.edu,Computational Data Science,Internship/Co-op,Spring 2022,Roosevelt Innovations,Data Science Intern,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$18.00,hourly,Male,White,42.7337712,-84.5553805
+Noor,Al Haidari,alhaida1@msu.edu,Computational Data Science,,Fall 2021,Blue Cross Blue Shield,,Detroit,,Michigan,$17.50,hourly,Female,White,42.3315509,-83.0466403
+Thao,Nguyen,nguye734@msu.edu,Computational Data Science,,Summer 2021,Comerica Bank,,Dallas,,Texas,$16.00,hourly,Female,International,32.7762719,-96.7968559
+Lia,Du,duyuton1@msu.edu,Computational Data Science,,Summer 2023,United Machining,,Detroit,,Michigan,,,Female,International,42.3315509,-83.0466403
+Thao,Nguyen,nguye734@msu.edu,Computational Data Science,,Summer 2022,Comerica,,Dallas,,Texas,,,Female,International,32.7762719,-96.7968559
+Manar,Saiyad,saiyadma@msu.edu,Computational Data Science,,Fall 2022,Sparrow Health System,,Lansing,,Michigan,,,Female,Asian,42.7337712,-84.5553805
+Advaith,Vuppala,vuppalaa@msu.edu,Computational Data Science,,Summer 2022,,,Lansing,,Michigan,,,Male,Asian,42.7337712,-84.5553805
+Myles,Yankie,yankiemy@msu.edu,Computational Data Science,,Summer 2022,Ford Motor Company,,Detroit,,Michigan,,,Male,Not Specified,42.3315509,-83.0466403
+Ashlin,Riggs,riggsash@msu.edu,Computational Data Science,Internship/Co-op,Spring 2021,MSU College of Engineering,,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,,,Female,Hispanic/Latine,42.7337712,-84.5553805

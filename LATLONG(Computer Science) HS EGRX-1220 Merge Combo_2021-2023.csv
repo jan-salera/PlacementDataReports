@@ -1,0 +1,334 @@
+First Name,Last Name,Email,Major,Outcome Type Placeholder,Academic Term,Employer Name,Job Title,City,Metro Area Placeholder,State,Salary,Pay Period,Gender,Ethnicity,Employer Latitude,Employer Longitude
+Alan,Fierro,fierroa1@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Amazon,Software Developer Engineer intern,Seattle,Seattle-Tacoma-Olympia -- WA,Washington,$70.87,hourly,Male,Hispanic/Latine,47.6038321,-122.330062
+Alex,Stornant,storna10@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Amazon,SDE Intern,San Francisco,San Jose-San Francisco-Oakland -- CA,California,$65.70,hourly,Male,White,37.7792588,-122.4193286
+Aj,Bensman,bensmana@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Capital One,Technology Internship Program,McLean,Washington-Baltimore-Northern Virginia -- DC-MD-VA-WV,Virginia,$58.00,hourly,Male,White,40.4631789,-88.8196613
+Zongyuan,Li,lizongy1@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Amazon,Software Development Engineer Intern,Seattle,Seattle-Tacoma-Olympia -- WA,Washington,$57.33,hourly,Male,International,47.6038321,-122.330062
+Joshua,Fosu-Agyemang,fosuagye@msu.edu,Computer Science,,Summer 2023,AMAZON,,Seattle,,Washington,$57.11,hourly,Male,International,47.6038321,-122.330062
+Steve,Kodua,koduaste@msu.edu,Computer Science,,Summer 2023,AMAZON,,Seattle,,Washington,$57.11,hourly,Male,International,47.6038321,-122.330062
+Juan,Sabogal Olarte,sabogalo@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Amazon,Software Development Engineer,Arlington,Washington-Baltimore-Northern Virginia -- DC-MD-VA-WV,Virginia,$57.11,hourly,Male,International,32.7355816,-97.1071186
+Shrey,Jindal,jindalsh@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Amazon,SDE Intern,Seattle,Seattle-Tacoma-Olympia -- WA,Washington,$57.11,hourly,Male,International,47.6038321,-122.330062
+Juan,Sabogal Olarte,sabogalo@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Amazon,Software Development Engineer Intern,Arlington,Washington-Baltimore-Northern Virginia -- DC-MD-VA-WV,Virginia,$57.11,hourly,Male,International,32.7355816,-97.1071186
+Gabriel,Sotelo Justo,soteloju@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Microsoft,Software Engineer Intern,Seattle,Seattle-Tacoma-Olympia -- WA,Washington,$56.25,hourly,Male,International,47.6038321,-122.330062
+Han,Nguyen,nguye714@msu.edu,Computer Science,Internship/Co-op,Spring 2022,Amazon,Software Development Engineer Intern,Seattle,Seattle-Tacoma-Olympia -- WA,Washington,$56.25,hourly,Female,International,47.6038321,-122.330062
+Ria,Mokashi,mokashir@msu.edu,Computer Science,,Fall 2022,AMAZON,,Detroit,,Michigan,$55.00,hourly,Female,Asian,42.3315509,-83.0466403
+Preston,Harrell,harrel49@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Garmin,Software Engineer 1,Detroit,Detroit-Warren-Flint -- MI,Michigan,$53.13,hourly,Male,White,42.3315509,-83.0466403
+Frederick,Pagadam,pagadamf@msu.edu,Computer Science,,Summer 2023,Morgan Stanley - ARCHIVED ACCOUNT,,New York,,New York,$52.88,hourly,Male,International,40.7127281,-74.0060152
+Ria,Mokashi,mokashir@msu.edu,Computer Science,,Spring 2023,Amazon,,Detroit,,Michigan,$52.00,hourly,Female,Asian,42.3315509,-83.0466403
+Chandan,Aralikatti,aralikat@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Google,Software Engineering Intern,Boston,Boston-Worcester-Manchester -- MA-NH,Massachusetts,$51.88,hourly,Male,Asian,42.3554334,-71.060511
+Felipe,Marques Allevato,marques6@msu.edu,Computer Science,,Summer 2023,Microsoft,,Seattle,,Washington,$49.31,hourly,Male,International,47.6038321,-122.330062
+Joel,Nataren Moran,natarenm@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Microsoft,Software Engineer 1,Seattle,Seattle-Tacoma-Olympia -- WA,Washington,$48.75,hourly,Male,International,47.6038321,-122.330062
+Jake,Lankfer,lankfer1@msu.edu,Computer Science,Internship/Co-op,Fall 2021,Splunk,TechOps Engineer Intern,San Francisco,San Jose-San Francisco-Oakland -- CA,California,$48.00,hourly,Male,White,37.7792588,-122.4193286
+Nash,Longmire,longmir8@msu.edu,Computer Science,Internship/Co-op,Summer 2021,ServiceNow,Software Developer,San Diego,San Diego -- CA,California,$48.00,hourly,Male,Black/African American,32.7174202,-117.162772
+Matt,Anikiej,anikiejm@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Microsoft,Software Engineering Intern,Seattle,Seattle-Tacoma-Olympia -- WA,Washington,$46.88,hourly,Male,White,47.6038321,-122.330062
+Ethan,Fulcher,fulchere@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Credit Karma,Software Engineering Intern,Charlotte,Charlotte-Gastonia-Salisbury -- NC-SC,North Carolina,$46.15,hourly,Male,White,35.2272086,-80.8430827
+Claire,Lavalley,lavall22@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Bank of America,Software Engineering Intern,New York,New York-Newark-Bridgeport -- NY-NJ-CT-PA,New York,$45.50 ,hourly,Female,Asian,40.7127281,-74.0060152
+Eunhye,Park,parkeu24@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Bank of America,Global Technology Summer Analyst,New York,New York-Newark-Bridgeport -- NY-NJ-CT-PA,New Jersey,$45.50 ,hourly,Female,Not Specified,40.7127281,-74.0060152
+Tatiana,Voegerl,voegerlt@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Bank of America,Global Technology Summer Analyst,New York,New York-Newark-Bridgeport -- NY-NJ-CT-PA,New York,$45.50 ,hourly,Female,White,40.7127281,-74.0060152
+Varsha,Narmat,vinodvar@msu.edu,Computer Science,,Fall 2021,Amazon,,Chicago,,Illinois,$45.25,hourly,Female,Asian,41.8755616,-87.6244212
+Riley,Cook,cookril2@msu.edu,Computer Science,,Summer 2023,Deloitte,,Detroit,,Michigan,$45.00,hourly,Male,White,42.3315509,-83.0466403
+Vetri,Vijay,vijayvet@msu.edu,Computer Science,,Fall 2023,Amazon,,Detroit,,Michigan,$44.72,hourly,Male,Asian,42.3315509,-83.0466403
+Hailey,Cohen,cohenhai@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Deloitte,Analyst,Detroit,Detroit-Warren-Flint -- MI,Michigan,$44.27,hourly,Female,White,42.3315509,-83.0466403
+Aj,Brummel,brumme20@msu.edu,Computer Science,Internship/Co-op,Summer 2023,J.P. Morgan Chase,,Chicago,Chicago-Naperville-Michigan City -- IL-IN-WI,Illinois,$43.00 ,hourly,Male,White,41.8755616,-87.6244212
+Ria,Mokashi,mokashir@msu.edu,Computer Science,,Spring 2022,Amazon,,Detroit,,Michigan,$43.00,hourly,Female,Asian,42.3315509,-83.0466403
+Khushi,Vora,vorakhus@msu.edu,Computer Science,,Summer 2023,PwC,,San Francisco,,California,$41.00,hourly,Female,International,37.7792588,-122.4193286
+Christopher,Suarez,suarezc4@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Google,Google STEP,Los Angeles,Los Angeles-Long Beach-Riverside -- CA,California,$40.13 ,hourly,Male,Hispanic/Latine,34.0536909,-118.242766
+Ethan,Rylko,rylkoeth@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Deloitte,Cyber Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$40.00 ,hourly,Male,White,42.3315509,-83.0466403
+Stanley,Duru,durustan@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Citigroup,Software Analyst Intern,Tampa,Tampa-St. Petersburg-Clearwater -- FL,Florida,$40.00,hourly,Male,Black/African American,27.9477595,-82.458444
+Joshua,Fosu-Agyemang,fosuagye@msu.edu,Computer Science,,Summer 2022,Meta,,San Francisco,,California,$38.10,hourly,Male,International,37.7792588,-122.4193286
+Nikit,Parakh,parakhni@msu.edu,Computer Science,,Fall 2022,Autodesk,"Intern, Software Engineer",San Francisco,,California,$38.00,hourly,Male,International,37.7792588,-122.4193286
+Ishita,Kokil,kokilish@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Carrier Global Corporation,Software Engineer Intern,Syracuse,Syracuse-Auburn -- NY,New York,$37.50,hourly,Female,International,43.0481221,-76.1474244
+Ashu,Kher,kherashu@msu.edu,Computer Science,Internship/Co-op,Summer 2022,The Vanguard Group,Application Development Intern,Philadelphia,Philadelphia-Camden-Vineland -- PA-NJ-DE-MD,Pennsylvania,$37.00,hourly,Male,Asian,39.9527237,-75.1635262
+Pranav,Shukla,shuklapr@msu.edu,Computer Science,Internship/Co-op,Summer 2022,The Vanguard Group,Application Developer Intern,Philadelphia,Philadelphia-Camden-Vineland -- PA-NJ-DE-MD,Pennsylvania,$37.00,hourly,Male,Asian,39.9527237,-75.1635262
+Arjun,Gupta,guptaar4@msu.edu,Computer Science,,Fall 2023,Nutshell,,Ann Arbor,,Michigan,$35.00,hourly,Male,International,42.2813722,-83.7484616
+Arjun,Gupta,guptaar4@msu.edu,Computer Science,,Summer 2023,Nutshell,,Ann Arbor,,Michigan,$35.00,hourly,Male,International,42.2813722,-83.7484616
+Craig,Smith,smit2844@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Nutshell,Software Engineer Intern,Ann Arbor,Detroit-Warren-Flint -- MI,Michigan,$35.00,hourly,Male,White,42.2813722,-83.7484616
+Nikit,Parakh,parakhni@msu.edu,Computer Science,,Fall 2021,Autodesk,"Intern, Software Engineer",San Francisco,,California,$35.00,hourly,Male,International,37.7792588,-122.4193286
+Nikit,Parakh,parakhni@msu.edu,Computer Science,,Summer 2021,Autodesk,"Intern, Software Engineer",San Francisco,,California,$35.00,hourly,Male,International,37.7792588,-122.4193286
+Santiago,Rodriguez-Papa,rodri816@msu.edu,Computer Science,,Summer 2022,Intel Corporation,,Portland,,Oregon,$34.90,hourly,Male,International,45.5202471,-122.674194
+David Cody,Lingan,linganda@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Target,Software Development Engineer,Minneapolis,Minneapolis-St. Paul-St. Cloud -- MN-WI,Minnesota,$34.00 ,hourly,Male,Asian,44.9772995,-93.2654692
+Joel,Nataren Moran,natarenm@msu.edu,Computer Science,,Summer 2022,Microsoft,,Seattle,,Washington,$34.00,hourly,Male,International,47.6038321,-122.330062
+Andrew,Dagostino,dagost37@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Ford Motor Company,Information Technology Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$33.75,hourly,Male,White,42.3315509,-83.0466403
+Anthony,Masini,masinian@msu.edu,Computer Science,Internship/Co-op,Spring 2023,Ford Motor Company,Software Engineer Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$33.75,hourly,Male,White,42.3315509,-83.0466403
+Anthony,Masini,masinian@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Ford Motor Company,Information Technology Software Engineer Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$33.75,hourly,Male,White,42.3315509,-83.0466403
+Jack,Sleeman,sleeman5@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Publicis Sapeint,Software Engineer Intern,Chicago,Chicago-Naperville-Michigan City -- IL-IN-WI,Illinois,$33.00 ,hourly,Male,White,41.8755616,-87.6244212
+Katherine,White,whitek49@msu.edu,Computer Science,Internship/Co-op,Summer 2022,IBM,Software Development Engineer,Midland,No Defined Metro Area,Michigan,$32.00,hourly,Female,White,31.83688,-102.0103767
+Anurag,Kompalli,kompalli@msu.edu,Computer Science,Internship/Co-op,Summer 2022,IBM,Software Engineering Intern,Austin,Austin-Round Rock -- TX ,Texas,$31.00,hourly,Male,Asian,30.2711286,-97.7436995
+Ilyas,Abdulrahman,abdulr36@msu.edu,Computer Science,Internship/Co-op,Summer 2023,GE,Digital Technology Intern,Cincinnati,Cincinnati-Middletown-Wilmington -- OH-KY-IN,Ohio,$30.00,hourly,Male,White,39.1014537,-84.5124602
+David,Cirenese,cirenese@msu.edu,Computer Science,,Fall 2023,Ford Motor Company,,Detroit,,Michigan,$30.00,hourly,Male,White,42.3315509,-83.0466403
+David,Cirenese,cirenese@msu.edu,Computer Science,,Spring 2023,Ford Motor Company,,Detroit,,Michigan,$30.00,hourly,Male,White,42.3315509,-83.0466403
+Sam,Hus,hussamue@msu.edu,Computer Science,Internship/Co-op,Spring 2023,10a Labs,"10a Labs Graduate Data Science Fellow, Researching and Analyzing Misinformation and Disinformation",Chicago,Chicago-Naperville-Michigan City -- IL-IN-WI,Illinois,$30.00 ,hourly,Male,White,41.8755616,-87.6244212
+Shane,Patrarungrong,patrarun@msu.edu,Computer Science,,Summer 2023,Ford Motor Company,,Detroit,,Michigan,$30.00,hourly,Male,Asian,42.3315509,-83.0466403
+Khushi,Vora,vorakhus@msu.edu,Computer Science,,Spring 2023,,,Lansing,,Michigan,$30.00,hourly,Female,International,42.7337712,-84.5553805
+Ashu,Acharya,achary16@msu.edu,Computer Science,Internship/Co-op,Summer 2022,GE,Software Engineering Intern,Cincinnati,Cincinnati-Middletown-Wilmington -- OH-KY-IN,Ohio,$30.00,hourly,Male,Asian,39.1014537,-84.5124602
+Hemkesh,Agrawal,agrawalh@msu.edu,Computer Science,,Summer 2022,Bentley Systems,Software Engineer Internship,Exton,,Pennsylvania,$30.00,hourly,Male,International,40.02985865,-75.62897763847262
+Zane,Aridi,aridizan@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Ford Motor Company,Intern software engineer,Detroit,milwaukee-Racine-Waukesha -- WI,,$30.00,hourly,Male,White,42.3315509,-83.0466403
+Lexi,Case,caseale4@msu.edu,Computer Science,,Summer 2022,IBM,,Lansing,,Michigan,$30.00,hourly,Female,White,42.7337712,-84.5553805
+David,Cirenese,cirenese@msu.edu,Computer Science,,Fall 2022,Ford Motor Company,2022 Product Development Software Summer Intern,Detroit,,Michigan,$30.00,hourly,Male,White,42.3315509,-83.0466403
+James,Demetris,demetri7@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Relativity,Software Eningeering Intern,Chicago,Chicago-Naperville-Michigan City -- IL-IN-WI,Illinois,$30.00,hourly,Male,White,41.8755616,-87.6244212
+Josh,Erno,ernojosh@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Ford Motor Company,Information Technology Software Engineer Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$30.00,hourly,Male,White,42.3315509,-83.0466403
+Tommy,Hojnicki,hojnick1@msu.edu,Computer Science,Internship/Co-op,Summer 2022,General Motors,Global Product Development - Software Engineering,Detroit,Detroit-Warren-Flint -- MI,Michigan,$30.00,hourly,Male,White,42.3315509,-83.0466403
+Rashon,Poole,pooleras@msu.edu,Computer Science,Internship/Co-op,Summer 2022,GE,Systems Engineer,Grand Rapids,Grand Rapids-Muskegon-Holland -- MI,Michigan,$30.00,hourly,Male,Black/African American,42.9632425,-85.6678639
+Jack,Sleeman,sleeman5@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Ford Motor Company,Software Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$30.00,hourly,Male,White,42.3315509,-83.0466403
+Aditya,Venkata Krishna,venkatak@msu.edu,Computer Science,,Summer 2022,,,Detroit,,Michigan,$30.00,hourly,Male,Asian,42.3315509,-83.0466403
+Amy,Puidokas,puidoka3@msu.edu,Computer Science,,Summer 2021,AppleOne,,Jacksonville,,Florida,$30.00,hourly,Female,White,30.3321838,-81.655651
+Abigail,Murray,murra328@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Humana,Cloud Security Engineering Intern,Washington DC,Washington-Baltimore-Northern Virginia -- DC-MD-VA-WV,District of Columbia,$29.00 ,hourly,Female,White,38.8950368,-77.0365427
+Anna,Parkinson,parkin45@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Mastercard,Software Engineering Intern,St. Louis,St. Louis-St. Charles-Farmington -- MO-IL,Missouri,$29.00,hourly,Female,White,38.6280278,-90.1910154
+Jackson,Haugen,haugenj1@msu.edu,Computer Science,Internship/Co-op,Spring 2023,Trane Technologies,Controls Engineer Intern,Minneapolis,Minneapolis-St. Paul-St. Cloud -- MN-WI,Minnesota,$28.62 ,hourly,Male,White,44.9772995,-93.2654692
+Alex,Bocchi,bocchial@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Kohler Co.,DevOps Engineer,Kohler,No Defined Metro Area,Wisconsin,$28.32 ,hourly,Male,White,43.7391616,-87.7817541
+Aman,Todi,todiaman@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Eaton,Engineering & Technology Intern,Raleigh,Raleigh-Durham-Cary -- NC,North Carolina,$28.13,hourly,Male,International,35.7803977,-78.6390989
+Alexis,Tochiki,tochikia@msu.edu,Computer Science,Internship/Co-op,Summer 2022,USAA,Software Engineer Intern,San Antonio,San Antonio-New Braunfels -- TX ,Texas,$28.00,hourly,Female,Asian,29.4246002,-98.4951405
+Rachel,Townson,townsonr@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Shure Incorporated,Systems Verification Intern,Chicago,Chicago-Naperville-Michigan City -- IL-IN-WI,Illinois,$28.00,hourly,Female,White,41.8755616,-87.6244212
+Henry,Xu,xuhenry1@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Humana,Data Science Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$28.00,hourly,Male,Asian,42.3315509,-83.0466403
+Henry,Xu,xuhenry1@msu.edu,Computer Science,Internship/Co-op,Fall 2022,Humana,Self Service Analytics Platform Enablement Intern,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$28.00,hourly,Male,Asian,42.7337712,-84.5553805
+Nafisa,Lenseni,lensenin@msu.edu,Computer Science,,Summer 2021,Target,,Minneapolis,,Minnesota,$28.00,hourly,Female,International,44.9772995,-93.2654692
+Varsha,Narmat,vinodvar@msu.edu,Computer Science,,Summer 2021,Target,,Minneapolis,,Minnesota,$28.00,hourly,Female,Asian,44.9772995,-93.2654692
+Eduardo,Ferdinandi de la Parte,ferdina9@msu.edu,Computer Science,,Summer 2023,General Motors,,Detroit,,Michigan,$27.50,hourly,Male,Hispanic/Latine,42.3315509,-83.0466403
+Suryansh,Singh,singhs70@msu.edu,Computer Science,,Summer 2023,TechSmith Corporation,,Lansing,,Michigan,$27.00,hourly,Male,International,42.7337712,-84.5553805
+Becca,Winkler,winkle68@msu.edu,Computer Science,Internship/Co-op,Summer 2023,The Wendy's Company,IT intern,Columbus,Columbus-Marion-Chillicothe -- OH,Ohio,$26.00 ,hourly,Female,White,39.9622601,-83.0007065
+David,Cirenese,cirenese@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Ford Motor Company,Associate Software Developer,Detroit,Detroit-Warren-Flint -- MI,Michigan,$26.00,hourly,Male,White,42.3315509,-83.0466403
+Ryan,Conley,conley24@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Abbott Laboratories,IT intern,Chicago,Chicago-Naperville-Michigan City -- IL-IN-WI,Illinois,$26.00,hourly,Male,White,41.8755616,-87.6244212
+Ashley,Siegmund,siegmun2@msu.edu,Computer Science,Internship/Co-op,Summer 2022,GE,Systems Engineer,Grand Rapids,Grand Rapids-Muskegon-Holland -- MI,Michigan,$26.00,hourly,Female,White,42.9632425,-85.6678639
+Nathan,Srivastava,srivas57@msu.edu,Computer Science,Internship/Co-op,Summer 2022,GE,Aviation Systems Engineering Intern,Grand Rapids,Grand Rapids-Muskegon-Holland -- MI,Michigan,$26.00,hourly,Male,Asian,42.9632425,-85.6678639
+Matthew,McDerment,mcderme3@msu.edu,Computer Science,Internship/Co-op,Summer 2022,USAA,Software Engineer Intern,Dallas,Dallas-Fort Worth -- TX,Texas,$25.75,hourly,Male,White,32.7762719,-96.7968559
+Rajaditya,Bajaj,bajajraj@msu.edu,Computer Science,,Spring 2023,NBCUniversal,,Chicago,,Illinois,$25.00,hourly,Male,International,41.8755616,-87.6244212
+Arnav,Deol,deolarna@msu.edu,Computer Science,,Summer 2023,General Dynamics,,Pittsfield,,Massachusetts,$25.00,hourly,Male,Asian,42.4484778,-73.2541069
+Arjun,Gupta,guptaar4@msu.edu,Computer Science,,Spring 2023,,,Grand Rapids,,Michigan,$25.00,hourly,Male,International,42.9632425,-85.6678639
+Karthik,Kandikonda,kandikon@msu.edu,Computer Science,Internship/Co-op,Summer 2023,TomTom,Software Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$25.00 ,hourly,Male,Asian,42.3315509,-83.0466403
+Joey,Meng,mengjoey@msu.edu,Computer Science,,Spring 2023,Blue Cross Blue Shield,,Detroit,,Michigan,$25.00,hourly,Male,International,42.3315509,-83.0466403
+Ashley,Siegmund,siegmun2@msu.edu,Computer Science,,Summer 2023,Beckman Coulter,,Indianapolis,,Indiana,$25.00,hourly,Female,White,39.7683331,-86.1583502
+Christina,Tagay,tagaychr@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Humana,Engineering Intern,Louisville,Louisville-Jefferson County--Elizabethtown--Scottsburg -- KY-IN,Kentucky,$25.00 ,hourly,Female,Asian,38.2542376,-85.759407
+Andrew,Talbott,talbott8@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Sparrow Health System,Information Technology Intern,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$25.00 ,hourly,Male,White,42.7337712,-84.5553805
+Elida,Villegas,villeg39@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Cummins,Software Engineer 1,Columbia,St. Louis-St. Charles-Farmington -- MO-IL,Illinois,$25.00,hourly,Female,Hispanic/Latine,4.099917,-72.9088133
+Hemanth,Yalamanchili,yalama12@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Athene,Intern,Des Moines,Des Moines-Newton-Pella -- IA,Iowa,$25.00 ,hourly,Male,Not Specified,41.5868654,-93.6249494
+Rajaditya,Bajaj,bajajraj@msu.edu,Computer Science,,Fall 2022,NBCUniversal,,New York,,New York,$25.00,hourly,Male,International,40.7127281,-74.0060152
+Jonathan,Kippe,kippejon@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Harmon International,SW Test Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$25.00,hourly,Male,White,42.3315509,-83.0466403
+Sonia,Moozhayil,moozhayi@msu.edu,Computer Science,Internship/Co-op,Summer 2022,NASA,Software Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$25.00,hourly,Female,Asian,42.3315509,-83.0466403
+Michael,Moss,mossmic5@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Ford Motor Company,Cyber Security/Data Analytics Summer Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$25.00,hourly,Male,White,42.3315509,-83.0466403
+Aref,Zeitoun,zeitouna@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Stellantis - FCA Fiat Chrysler Automobiles,Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$25.00,hourly,Male,White,42.3315509,-83.0466403
+Nikita,Gupta,guptani8@msu.edu,Computer Science,,Spring 2021,,,Denver,,Colorado,$25.00,hourly,Female,International,39.7392364,-104.984862
+Jonathon,Harkness,harkne25@msu.edu,Computer Science,,Summer 2021,Ally Financial Inc,2021 Ally Summer Internship Program,Detroit,,Michigan,$25.00,hourly,Male,Two or More Races,42.3315509,-83.0466403
+Aditya,Ashok,ashokadi@msu.edu,Computer Science,,Summer 2021,Trane Technologies,,Davidson,,North Carolina,$24.50,hourly,Male,International,35.7902384,-80.2115053
+Mounika,Jetti,jettimou@msu.edu,Computer Science,,Summer 2021,Steelcase,,Grand Rapids,,Michigan,$24.33,hourly,Female,International,42.9632425,-85.6678639
+Rushil,Mantripragada,mantrip3@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Bosch,Software Engineer Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$24.00 ,hourly,Male,Not Specified,42.3315509,-83.0466403
+Joanna,Rodriguez Zamarron,rodri896@msu.edu,Computer Science,Internship/Co-op,Summer 2023,NASA,"Mission Control Systems Integration, Test, and Deployment Intern",Los Angeles,Los Angeles-Long Beach-Riverside -- CA,California,$24.00,hourly,Female,Hispanic/Latine,34.0536909,-118.242766
+Deirdre,Eusebi,eusebide@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Comerica,Cyber Security/Data Analytics Summer Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$24.00,hourly,Female,White,42.3315509,-83.0466403
+Gage,Hohwart,hohwartg@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Ascent Cloud,Software Development Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$24.00,hourly,Male,White,42.3315509,-83.0466403
+Henry,Xu,xuhenry1@msu.edu,Computer Science,,Summer 2021,Humana,,Louisville,,Kentucky,$24.00,hourly,Male,Asian,38.2542376,-85.759407
+Henry,Xu,xuhenry1@msu.edu,Computer Science,Internship/Co-op,Fall 2021,Humana,IT Intern - Site Reliability Engineering,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$24.00,hourly,Male,Asian,42.7337712,-84.5553805
+Samantha,Sebestyen,sebesty1@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Cigna,Technology Early Career Development Program Intern,Hartford,Hartford-West Hartford-Willimantic -- CT,Connecticut,$23.50,hourly,Female,White,41.764582,-72.6908547
+Abdullah,Baqai,baqaimuh@msu.edu,Computer Science,,Summer 2023,Mercedes-Benz Financial Services,,Detroit,,Michigan,$23.00,hourly,Male,International,42.3315509,-83.0466403
+William,Chasteen,chastee5@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Kautex,IT intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$23.00 ,hourly,Male,White,42.3315509,-83.0466403
+Ryan,Filipiak,filipi21@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Humana,Summer Tech Intern,Ann Arbor,Detroit-Warren-Flint -- MI,Michigan,$23.00 ,hourly,Male,White,42.2813722,-83.7484616
+Malachi,Hollins,hollin74@msu.edu,Computer Science,,Fall 2023,Warner Bros. Discovery,,New York,,New York,$23.00,hourly,Male,Two or More Races,40.7127281,-74.0060152
+Krish,Magal,magalkri@msu.edu,Computer Science,,Fall 2023,,,Detroit,,Michigan,$23.00,hourly,Male,Asian,42.3315509,-83.0466403
+Krish,Magal,magalkri@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Mercedes-Benz Financial Services,IT intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$23.00 ,hourly,Male,Asian,42.3315509,-83.0466403
+Nate,Mikkola,mikkola1@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Humana,IT intern,Louisville,Louisville-Jefferson County--Elizabethtown--Scottsburg -- KY-IN,Kentucky,$23.00 ,hourly,Male,White,38.2542376,-85.759407
+Campbell,Robertson,robe1149@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Humana,Tech Intern,Louisville,Louisville-Jefferson County--Elizabethtown--Scottsburg -- KY-IN,Kentucky,$23.00 ,hourly,Female,White,38.2542376,-85.759407
+Ishi,Saripalle,saripal7@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Humana,General Intern - 2,Louisville,Louisville-Jefferson County--Elizabethtown--Scottsburg -- KY-IN,Kentucky,$23.00 ,hourly,Female,Asian,38.2542376,-85.759407
+Nikita,Gupta,guptani8@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Kautex,IT intern,San Antonio,San Antonio-New Braunfels -- TX ,Texas,$23.00,hourly,Female,International,29.4246002,-98.4951405
+Treasure,Puso,pusomoth@msu.edu,Computer Science,,Fall 2022,"Altair Engineering, Inc.",,Detroit,,Michigan,$23.00,hourly,Male,International,42.3315509,-83.0466403
+Treasure,Puso,pusomoth@msu.edu,Computer Science,,Summer 2022,"Altair Engineering, Inc.",,Detroit,,Michigan,$23.00,hourly,Male,International,42.3315509,-83.0466403
+Lily,Albitar,albitarl@msu.edu,Computer Science,,Summer 2021,Mastercard,,O Fallon,,Missouri,$23.00,hourly,Female,White,38.7902503,-90.7033292
+Andrew,Byerly,byerlyan@msu.edu,Computer Science,Internship/Co-op,Fall 2023,Jackson,Software Development Intern,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$22.00 ,hourly,Male,White,42.7337712,-84.5553805
+Sanju,Kona,konasanj@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Cigna,TECDP Intern,Hartford,Hartford-West Hartford-Willimantic -- CT,Connecticut,$22.00 ,hourly,Female,Asian,41.764582,-72.6908547
+Mufeez,Mulbagal,mulbaga1@msu.edu,Computer Science,,Summer 2023,Visteon,,Detroit,,Michigan,$22.00,hourly,Male,International,42.3315509,-83.0466403
+Duong,Nguyen,nguye958@msu.edu,Computer Science,,Fall 2023,Dassault Systemes,,Detroit,,Michigan,$22.00,hourly,Male,International,42.3315509,-83.0466403
+Duong,Nguyen,nguye958@msu.edu,Computer Science,,Summer 2023,Dassault Systemes,,Detroit,,Michigan,$22.00,hourly,Male,International,42.3315509,-83.0466403
+Blake,Potvin,potvinbl@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Auto-Owners Insurance Company,Software Developer Intern,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$22.00 ,hourly,Male,Two or More Races,42.7337712,-84.5553805
+Arjun,Gupta,guptaar4@msu.edu,Computer Science,,Summer 2022,,,Grand Rapids,,Michigan,$22.00,hourly,Male,International,42.9632425,-85.6678639
+Arjun,Gupta,guptaar4@msu.edu,Computer Science,,Fall 2022,,,Grand Rapids,,Michigan,$22.00,hourly,Male,International,42.9632425,-85.6678639
+Akansha,Dey,deyakans@msu.edu,Computer Science,,Summer 2021,Tyler Technologies,,Dallas,,Texas,$21.00,hourly,Female,International,32.7762719,-96.7968559
+Akansha,Dey,deyakans@msu.edu,Computer Science,,Fall 2021,Tyler Technologies,,Dallas,,Texas,$21.00,hourly,Female,International,32.7762719,-96.7968559
+Connor,Mears,mearscon@msu.edu,Computer Science,,Summer 2021,Auto-Owners Insurance Company,,Lansing,,Michigan,$21.00,hourly,Male,White,42.7337712,-84.5553805
+Vijay,Vatti,vattivij@msu.edu,Computer Science,,Summer 2021,Ally Financial Inc,2021 Ally Summer Internship Program,Detroit,,Michigan,$21.00,hourly,Male,Asian,42.3315509,-83.0466403
+Alex,Stornant,storna10@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Ford Motor Company,Software Engineer Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$20.77,hourly,Male,White,42.3315509,-83.0466403
+Alex,Stornant,storna10@msu.edu,Computer Science,Internship/Co-op,Fall 2022,Ford Motor Company,Software Engineer Co-op,Detroit,Detroit-Warren-Flint -- MI,Michigan,$20.77,hourly,Male,White,42.3315509,-83.0466403
+Ishita,Kokil,kokilish@msu.edu,Computer Science,,Spring 2023,DTE Energy,Student Co-op Southeast Michigan,Detroit,,Michigan,$20.25,hourly,Female,International,42.3315509,-83.0466403
+Sagar,Ashwathanarayana Kikkeri,ashwatha@msu.edu,Computer Science,,Summer 2023,KPIT Technologies Inc.,,Detroit,,Michigan,$20.00,hourly,Male,International,42.3315509,-83.0466403
+Brendan,Cleland,clelandb@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Delta Dental,Information Security Analyst - Trainee,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$20.00 ,hourly,Male,White,42.7337712,-84.5553805
+Max,Resch,reschmax@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Rocket Companies,Software Development Engineer,Detroit,Detroit-Warren-Flint -- MI,Michigan,$20.00 ,hourly,Male,White,42.3315509,-83.0466403
+Manav,Singh,singhm29@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Lansing Board of Water and Light,Cyber Secuirty Consulting,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$20.00 ,hourly,Male,Asian,42.7337712,-84.5553805
+Tejas,Singhal,singhalt@msu.edu,Computer Science,,Summer 2023,Ascent Cloud,,Detroit,,Michigan,$20.00,hourly,Male,International,42.3315509,-83.0466403
+Cole,Coughlin,coughl52@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Auto-Owners Insurance Company,Software Development Intern,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$20.00,hourly,Male,White,42.7337712,-84.5553805
+Mounika,Jetti,jettimou@msu.edu,Computer Science,,Summer 2022,Delta Dental,,Lansing,,Michigan,$20.00,hourly,Female,International,42.7337712,-84.5553805
+Rishika,Juloori,juloorir@msu.edu,Computer Science,,Summer 2022,,,Lansing,,Michigan,$20.00,hourly,Female,International,42.7337712,-84.5553805
+Matt,Kight,kightmat@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Crane Technologies,Student Trainee,Crane,No Defined Metro Area,Indiana,$20.00,hourly,Male,White,31.4486118,-102.5163544
+Claire,Lavalley,lavall22@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Ascent Cloud,Software Development Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$20.00,hourly,Female,Asian,42.3315509,-83.0466403
+Ethan,Rylko,rylkoeth@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Sleep Number Corporation,Information Technology Intern,Minneapolis,Minneapolis-St. Paul-St. Cloud -- MN-WI,Minnesota,$20.00,hourly,Male,White,44.9772995,-93.2654692
+Md,Samad,samadmd@msu.edu,Computer Science,,Spring 2022,Delta Dental,,Lansing,,Michigan,$20.00,hourly,Male,International,42.7337712,-84.5553805
+Nandini,Tengli,tenglina@msu.edu,Computer Science,,Summer 2022,Sleep Number Corporation,,Minneapolis,,Minnesota,$20.00,hourly,Female,International,44.9772995,-93.2654692
+Connor,Mears,mearscon@msu.edu,Computer Science,,Spring 2021,Auto-Owners Insurance Company,,Lansing,,Michigan,$20.00,hourly,Male,White,42.7337712,-84.5553805
+Dhiloj,Vigneswaran,vigneswa@msu.edu,Computer Science,,Spring 2021,,,Kalamazoo,,Michigan,$20.00,hourly,Male,International,42.291707,-85.5872286
+Shafkat,Kabir,kabirmd@msu.edu,Computer Science,,Summer 2023,Rocket Companies,,Detroit,,Michigan,$19.50,hourly,Male,International,42.3315509,-83.0466403
+John,Samsell,samsellj@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Rocket Companies,Applications Engineer Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$19.50,hourly,Male,Two or More Races,42.3315509,-83.0466403
+Daniel,Adu-Djan,adudjand@msu.edu,Computer Science,,Summer 2021,Rocket Companies,,Detroit,,Michigan,$19.50,hourly,Male,International,42.3315509,-83.0466403
+Ashrey,Gupta,guptaas8@msu.edu,Computer Science,,Fall 2021,ZF,,Detroit,,Michigan,$19.50,hourly,Male,International,42.3315509,-83.0466403
+Mannan,Dhillon,dhillo17@msu.edu,Computer Science,,Summer 2023,,,Detroit,,Michigan,$19.00,hourly,Male,International,42.3315509,-83.0466403
+Tejas,Singhal,singhalt@msu.edu,Computer Science,,Spring 2023,Delta Dental,,Lansing,,Michigan,$19.00,hourly,Male,International,42.7337712,-84.5553805
+Amanda,Catey,cateyama@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Rocket Companies,Data Analyst Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$19.00,hourly,Female,White,42.3315509,-83.0466403
+Marshal,Digiovanni,digiov26@msu.edu,Computer Science,Internship/Co-op,Fall 2022,STG,Full Stack Web Developer,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$19.00,hourly,Male,White,42.7337712,-84.5553805
+Shafkat,Kabir,kabirmd@msu.edu,Computer Science,Internship/Co-op,Summer 2022,Rocket Companies,Software Engineer Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$19.00,hourly,Male,International,42.3315509,-83.0466403
+Ayaan,Shaik,shaikaya@msu.edu,Computer Science,,Summer 2022,Delta Dental,,Lansing,,Michigan,$19.00,hourly,Male,International,42.7337712,-84.5553805
+Palkin,Rampal,rampalpa@msu.edu,Computer Science,,Spring 2021,Delta Dental,Internship - IT Application Development,Lansing,,Michigan,$19.00,hourly,Female,International,42.7337712,-84.5553805
+Will,Teasley,teasleyw@msu.edu,Computer Science,,Summer 2021,NORMA Group,,Detroit,,Michigan,$19.00,hourly,Male,White,42.3315509,-83.0466403
+Luke,Antone,antonelu@msu.edu,Computer Science,,Summer 2023,"American Axle & Manufacturing, Inc.",,Detroit,,Michigan,$18.50,hourly,Male,Not Specified,42.3315509,-83.0466403
+Joey,Meng,mengjoey@msu.edu,Computer Science,,Summer 2022,Blue Cross Blue Shield,,Detroit,,Michigan,$18.50,hourly,Male,International,42.3315509,-83.0466403
+Andrew,Naumoff,naumoffa@msu.edu,Computer Science,Internship/Co-op,Summer 2022,"Magnet-Schultz of America, Inc.","Manager, Network Services",Chicago,Chicago-Naperville-Michigan City -- IL-IN-WI,Illinois,$18.25,hourly,Male,White,41.8755616,-87.6244212
+Baran,Manti,mantibar@msu.edu,Computer Science,,Fall 2023,i3 Verticals,,Nashville,,Tennessee,$18.00,hourly,Male,International,36.1622767,-86.7742984
+Baran,Manti,mantibar@msu.edu,Computer Science,,Summer 2023,,,Detroit,,Michigan,$18.00,hourly,Male,International,42.3315509,-83.0466403
+Baran,Manti,mantibar@msu.edu,Computer Science,,Spring 2023,ImageSoft,,Detroit,,Michigan,$18.00,hourly,Male,International,42.3315509,-83.0466403
+Lemuel,Mensah,mensahle@msu.edu,Computer Science,,Summer 2023,iD Tech Camps,,Ann Arbor,,Michigan,$18.00,hourly,Male,International,42.2813722,-83.7484616
+Yash,Pasale,pasaleya@msu.edu,Computer Science,,Summer 2023,,,Detroit,,Michigan,$18.00,hourly,Male,International,42.3315509,-83.0466403
+Daniyal,Dar,dardaniy@msu.edu,Computer Science,,Spring 2022,Delta Dental,,Lansing,,Michigan,$18.00,hourly,Male,International,42.7337712,-84.5553805
+Baran,Manti,mantibar@msu.edu,Computer Science,,Summer 2022,ImageSoft,,Detroit,,Michigan,$18.00,hourly,Male,International,42.3315509,-83.0466403
+Baran,Manti,mantibar@msu.edu,Computer Science,,Fall 2022,,,Detroit,,Michigan,$18.00,hourly,Male,International,42.3315509,-83.0466403
+Yanni,Speron,speronya@msu.edu,Computer Science,,Spring 2022,NetherRealm Studios,,Chicago,,Illinois,$18.00,hourly,Male,White,41.8755616,-87.6244212
+Srijith,Venkateshwaran,venkat34@msu.edu,Computer Science,,Summer 2022,Tegrit,,Detroit,,Michigan,$18.00,hourly,Male,Asian,42.3315509,-83.0466403
+Hemkesh,Agrawal,agrawalh@msu.edu,Computer Science,,Summer 2021,"Enterprise Tax Solutions, Inc.",Programming Intern,Mount Pleasant,,Michigan,$18.00,hourly,Male,International,33.1570582,-94.9694007
+Jaelin,Burge,burgejae@msu.edu,Computer Science,Internship/Co-op,Fall 2021,Rocket Companies,Software Engineer Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$18.00,hourly,Male,Black/African American,42.3315509,-83.0466403
+Joanna,Rodriguez Zamarron,rodri896@msu.edu,Computer Science,,Fall 2022,"NASA Life Sciences Data Archive, Johnson Space Center",,Houston,,Texas,$17.19,hourly,Female,Hispanic/Latine,29.7589382,-95.3676974
+Phoebe,Mensah,mensahph@msu.edu,Computer Science,,Summer 2023,Lavner Education,Paid Summer IT Internship - Genius Squad,Washington,,District of Columbia,$17.09,hourly,Female,International,47.2868352,-120.212613
+Ryon,Baldwin-Williams,baldw266@msu.edu,Computer Science,,Summer 2022,Konica Minolta,,Detroit,,Michigan,$17.00,hourly,Male,Black/African American,42.3315509,-83.0466403
+Shrey,Jindal,jindalsh@msu.edu,Computer Science,,Spring 2022,,,Lansing,,Michigan,$17.00,hourly,Male,International,42.7337712,-84.5553805
+Arman,Newaz,newazahm@msu.edu,Computer Science,,Summer 2022,Delta Dental,,Lansing,,Michigan,$17.00,hourly,Male,International,42.7337712,-84.5553805
+Shashwat,Bhatia,bhatias6@msu.edu,Computer Science,,Summer 2021,AAA - The Auto Club Group,,Detroit,,Michigan,$17.00,hourly,Male,Asian,42.3315509,-83.0466403
+Shrey,Jindal,jindalsh@msu.edu,Computer Science,,Fall 2021,Jackson,,Lansing,,Michigan,$17.00,hourly,Male,International,42.7337712,-84.5553805
+Berkay,Aydin,aydinber@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Universal Music Group,Engineering Intern,Los Angeles,Los Angeles-Long Beach-Riverside -- CA,California,$16.00 ,hourly,Male,International,34.0536909,-118.242766
+Jonathan,Ayoub,ayoubjon@msu.edu,Computer Science,Internship/Co-op,Fall 2023,"SolvIT, Inc.",Software Development Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$16.00 ,hourly,Male,White,42.3315509,-83.0466403
+Savvy,Barnes,barne329@msu.edu,Computer Science,,Fall 2022,Interoperability Institute,,Lansing,,Michigan,$16.00,hourly,Female,White,42.7337712,-84.5553805
+Sirena,Ly,lysirena@msu.edu,Computer Science,,Summer 2021,,,Grand Rapids,,Michigan,$16.00,hourly,Female,Asian,42.9632425,-85.6678639
+Rohan,Banerjee,banerj37@msu.edu,Computer Science,,Summer 2023,TechSmith Corporation,,Lansing,,Michigan,$15.50,hourly,Male,International,42.7337712,-84.5553805
+Berkay,Aydin,aydinber@msu.edu,Computer Science,,Summer 2023,CG Financial,,Lansing,,Michigan,$15.00,hourly,Male,International,42.7337712,-84.5553805
+Manan,Vyas,vyasmana@msu.edu,Computer Science,,Fall 2023,Strategic Staffing Solutions,,Detroit,,Michigan,$15.00,hourly,Male,International,42.3315509,-83.0466403
+Nikita,Gupta,guptani8@msu.edu,Computer Science,,Spring 2022,Broadcast Hub LLC,,Atlanta,,Georgia,$15.00,hourly,Female,International,33.7489924,-84.3902644
+Aidan,McCoy,mccoyaid@msu.edu,Computer Science,Internship/Co-op,Summer 2022,XPROfintech,Software Engineering Intern,Saint Petersburg,Tampa-St. Petersburg-Clearwater -- FL,Florida,$15.00,hourly,Male,White,59.9606739,30.1586551
+Andrew,Talbott,talbott8@msu.edu,Computer Science,,Summer 2021,Konica Minolta,,Detroit,,Michigan,$15.00,hourly,Male,White,42.3315509,-83.0466403
+Nafisa,Lenseni,lensenin@msu.edu,Computer Science,,Fall 2021,,,Lansing,,Michigan,$14.00,hourly,Female,International,42.7337712,-84.5553805
+Camilo,Carmona,carmon22@msu.edu,Computer Science,Internship/Co-op,Spring 2023,SLE Digital Strategies,Student Web Developer,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$13.66 ,hourly,Male,Hispanic/Latine,42.7337712,-84.5553805
+Daniyal,Dar,dardaniy@msu.edu,Computer Science,,Fall 2022,MSU,,Lansing,,Michigan,$13.00,hourly,Male,International,42.7337712,-84.5553805
+Divyalakshmi,Varadha Rajan Prem Sudha,varadhad@msu.edu,Computer Science,,Spring 2023,MSU Institute for Cyber-Enabled Research,,Lansing,,Michigan,$12.50,hourly,Female,International,42.7337712,-84.5553805
+Josie,Beach,beachjo3@msu.edu,Computer Science,,Summer 2022,UWM (United Wholesale Mortgage),,Detroit,,Michigan,$12.00,hourly,Female,White,42.3315509,-83.0466403
+Phoebe,Mensah,mensahph@msu.edu,Computer Science,,Fall 2022,MSU,,Lansing,,Michigan,$12.00,hourly,Female,International,42.7337712,-84.5553805
+Valdine Pegy,Tchinda Pegou,tchindap@msu.edu,Computer Science,,Fall 2022,MSU,,Lansing,,Michigan,$12.00,hourly,Female,International,42.7337712,-84.5553805
+Jonathon,Harkness,harkne25@msu.edu,Computer Science,,Fall 2021,MSU Facility for Rare Isotope Beams,,Lansing,,Michigan,$12.00,hourly,Male,Two or More Races,42.7337712,-84.5553805
+Akshit,Bansal,bansala9@msu.edu,Computer Science,,Summer 2022,MSU Facility for Rare Isotope Beams,,Lansing,,Michigan,$11.00,hourly,Male,International,42.7337712,-84.5553805
+Akshit,Bansal,bansala9@msu.edu,Computer Science,,Spring 2022,,,Lansing,,Michigan,$11.00,hourly,Male,International,42.7337712,-84.5553805
+Akshit,Bansal,bansala9@msu.edu,Computer Science,,Fall 2021,,,Lansing,,Michigan,$11.00,hourly,Male,International,42.7337712,-84.5553805
+Zhilong,Feng,fengzhi2@msu.edu,Computer Science,,Summer 2022,FGrand Rapids,Software Development Intern - Remote,Middletown,,Delaware,$10.00,hourly,Male,International,41.5623178,-72.6509061
+Khloe,Hayes,hayeskhl@msu.edu,Computer Science,,Summer 2021,Simplified Investments,,Grand Rapids,,Michigan,$10.00,hourly,Female,White,42.9632425,-85.6678639
+Zayd,Abualfellat,abualfel@msu.edu,Computer Science,,Summer 2023,Roblox,,San Francisco,,California,,,Male,White,37.7792588,-122.4193286
+Neha,Aigalikar,aigalik1@msu.edu,Computer Science,,Summer 2023,,,Lansing,,Michigan,,,Female,Asian,42.7337712,-84.5553805
+Al,Al-Hassan,alhass15@msu.edu,Computer Science,,Summer 2023,Dematic,,Grand Rapids,,Michigan,,,Male,International,42.9632425,-85.6678639
+Lewi,Anamo,anamolew@msu.edu,Computer Science,,Summer 2023,,,Lansing,,Michigan,,,Male,Black/African American,42.7337712,-84.5553805
+Roshan,Atluri,atluriro@msu.edu,Computer Science,,Summer 2023,Rocket Companies,,Detroit,,Michigan,,,Male,Asian,42.3315509,-83.0466403
+Berkay,Aydin,aydinber@msu.edu,Computer Science,,Fall 2023,CG Financial,,Lansing,,Michigan,,,Male,International,42.7337712,-84.5553805
+Ajuisiwon,Azantilow,azantilo@msu.edu,Computer Science,,Summer 2023,,,San Francisco,,California,,,Male,International,37.7792588,-122.4193286
+Ryon,Baldwin-Williams,baldw266@msu.edu,Computer Science,,Summer 2023,Accenture,,Ann Arbor,,Michigan,,,Male,Black/African American,42.2813722,-83.7484616
+Daniel,Berezovsky,berezov2@msu.edu,Computer Science,,Summer 2023,,,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+Achyut,Byanjankar,byanjank@msu.edu,Computer Science,,Summer 2023,"Cell Work, LLC",,Tucson,,Arizona,,,Male,International,32.2228765,-110.974847
+Achyut,Byanjankar,byanjank@msu.edu,Computer Science,,Fall 2023,"Cell Work, LLC",,Tucson,,Arizona,,,Male,International,32.2228765,-110.974847
+Randy,Carnahan,carnah13@msu.edu,Computer Science,,Spring 2023,Humana,,Louisville,,Kentucky,,,Male,White,38.2542376,-85.759407
+Grant,Carr,carrgran@msu.edu,Computer Science,,Spring 2023,Humana,,Louisville,,Kentucky,,,Male,White,38.2542376,-85.759407
+Shubham,Chandna,chandnas@msu.edu,Computer Science,,Spring 2023,Delta Dental,,Lansing,,Michigan,,,Male,International,42.7337712,-84.5553805
+Rajmeet,Chandok,chandok1@msu.edu,Computer Science,,Summer 2023,ServiceNow,Software Engineering Intern,San Francisco,,California,,,Male,International,37.7792588,-122.4193286
+Harika,Gatla,gatlahar@msu.edu,Computer Science,,Fall 2023,XALT Energy,,Detroit,,Michigan,,,Female,International,42.3315509,-83.0466403
+Harika,Gatla,gatlahar@msu.edu,Computer Science,,Summer 2023,XALT Energy,,Detroit,,Michigan,,,Female,International,42.3315509,-83.0466403
+Benjamin,Harrison,harr1890@msu.edu,Computer Science,,Summer 2023,Fraunhofer USA,,Detroit,,Michigan,,,Male,International,42.3315509,-83.0466403
+Ricky,Huang,huangl31@msu.edu,Computer Science,,Summer 2023,,,Lansing,,Michigan,,,Male,International,42.7337712,-84.5553805
+Monika,Kanphade,kanphade@msu.edu,Computer Science,Internship/Co-op,Summer 2023,HAAIL Lab,Undergraduate Research Assistant,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,,,Female,Asian,42.7337712,-84.5553805
+Ulas,Kaygisiz,kaygisiz@msu.edu,Computer Science,,Spring 2023,,,Carlstadt,,New Jersey,,,Male,International,40.8403778,-74.0906974
+Christopher,Kocher,kocherch@msu.edu,Computer Science,,Summer 2023,"Ideal Innovations, Inc.",,Arlington,,Virginia,,,Male,White,32.7355816,-97.1071186
+Kellen,Lear,learkell@msu.edu,Computer Science,,Summer 2023,,,Chicago,,Illinois,,,Male,White,41.8755616,-87.6244212
+Lemmy,Lin,linbingz@msu.edu,Computer Science,,Spring 2023,,,Lansing,,Michigan,,,Male,International,42.7337712,-84.5553805
+Aditya Manoj,Menon,menonad1@msu.edu,Computer Science,,Summer 2023,WikiCharities,,Salt Lake City,,Utah,,,Male,International,40.7596198,-111.886797
+Sardar,Murtaza,murtaza1@msu.edu,Computer Science,,Summer 2023,Mayo Clinic,,Rochester,,Minnesota,,,Male,International,43.157285,-77.615214
+Shane,Patrarungrong,patrarun@msu.edu,Computer Science,,Spring 2023,MSU College of Engineering,,Lansing,,Michigan,,,Male,Asian,42.7337712,-84.5553805
+Shane,Patrarungrong,patrarun@msu.edu,Computer Science,,Fall 2023,GE,,Grand Rapids,,Michigan,,,Male,Asian,42.9632425,-85.6678639
+Zihao,Qian,qianziha@msu.edu,Computer Science,,Fall 2023,MSU College of Engineering,,Lansing,,Michigan,,,Male,International,42.7337712,-84.5553805
+Leo,Suguimoto Specht,spechtle@msu.edu,Computer Science,,Spring 2023,,,Lansing,,Michigan,,,Male,International,42.7337712,-84.5553805
+Leo,Suguimoto Specht,spechtle@msu.edu,Computer Science,,Summer 2023,,,Seattle,,Washington,,,Male,International,47.6038321,-122.330062
+Aman Dhruva,Thamminana,thammina@msu.edu,Computer Science,Internship/Co-op,Summer 2023,Auto-Owners Insurance Company,Tech Intern,Midland,No Defined Metro Area,Michigan,,,Male,Asian,31.83688,-102.0103767
+Vetri,Vijay,vijayvet@msu.edu,Computer Science,,Spring 2023,NASA,,Huntsville,,Alabama,,,Male,Asian,34.729847,-86.5859011
+Lily,Albitar,albitarl@msu.edu,Computer Science,,Summer 2022,Mastercard,,O'Fallon,,Missouri,,,Female,White,38.7902503,-90.7033292
+Ajuisiwon,Azantilow,azantilo@msu.edu,Computer Science,,Summer 2022,,,California City,,California,,,Male,International,35.125801,-117.9859038
+Rajaditya,Bajaj,bajajraj@msu.edu,Computer Science,,Summer 2022,Public Consulting Group Inc.,,Boston,,Massachusetts,,,Male,International,42.3554334,-71.060511
+Grant,Carr,carrgran@msu.edu,Computer Science,,Fall 2022,Humana,,Louisville,,Kentucky,,,Male,White,38.2542376,-85.759407
+Shubham,Chandna,chandnas@msu.edu,Computer Science,,Fall 2022,Delta Dental,,Lansing,,Michigan,,,Male,International,42.7337712,-84.5553805
+Shubham,Chandna,chandnas@msu.edu,Computer Science,,Summer 2022,GNF Unlimited Inc.,Software Development Intern,Pittsburgh,,Pennsylvania,,,Male,International,40.4416941,-79.9900861
+Rajmeet,Chandok,chandok1@msu.edu,Computer Science,,Summer 2022,Ascent Cloud,,Detroit,,Michigan,,,Male,International,42.3315509,-83.0466403
+David,Cirenese,cirenese@msu.edu,Computer Science,,Spring 2022,Fraunhofer USA,,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+Anna,Clark,clarka58@msu.edu,Computer Science,,Fall 2022,U.S. Department of Defense,,Washington,,District of Columbia,,,Female,White,47.2868352,-120.212613
+Marcus,Cohen,cohenm16@msu.edu,Computer Science,,Summer 2022,,,Lansing,,Michigan,,,Male,White,42.7337712,-84.5553805
+Daniyal,Dar,dardaniy@msu.edu,Computer Science,,Summer 2022,MSU,,Lansing,,Michigan,,,Male,International,42.7337712,-84.5553805
+Chuck,Foor,foorchar@msu.edu,Computer Science,,Fall 2022,Auto-Owners Insurance Company,,Lansing,,Michigan,,,Male,White,42.7337712,-84.5553805
+Andrew,Fritz,fritzan2@msu.edu,Computer Science,Internship/Co-op,Fall 2022,SLE Digital Strategies,,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,,,Male,White,42.7337712,-84.5553805
+Ashrey,Gupta,guptaas8@msu.edu,Computer Science,,Spring 2022,ZF,,Detroit,,Michigan,,,Male,International,42.3315509,-83.0466403
+Ashrey,Gupta,guptaas8@msu.edu,Computer Science,,Summer 2022,Qualcomm,,San Diego,,California,,,Male,International,32.7174202,-117.162772
+Jonathon,Harkness,harkne25@msu.edu,Computer Science,,Spring 2022,MSU Facility for Rare Isotope Beams,,Lansing,,Michigan,,,Male,Two or More Races,42.7337712,-84.5553805
+Quinn,James,jamesqui@msu.edu,Computer Science,,Summer 2022,Epic Systems,,Verona,,Wisconsin,,,Male,White,45.4384958,10.9924122
+Suraj,Karthikeyan,karthik3@msu.edu,Computer Science,,Summer 2022,,,Ann Arbor,,Michigan,,,Male,International,42.2813722,-83.7484616
+Ulas,Kaygisiz,kaygisiz@msu.edu,Computer Science,,Spring 2022,,,Carlstadt,,New Jersey,,,Male,International,40.8403778,-74.0906974
+Ulas,Kaygisiz,kaygisiz@msu.edu,Computer Science,,Fall 2022,,,Carlstadt,,New Jersey,,,Male,International,40.8403778,-74.0906974
+Varun,Kodandapuram,kodanda1@msu.edu,Computer Science,,Spring 2022,Delta Dental,,Lansing,,Michigan,,,Male,International,42.7337712,-84.5553805
+Varun,Kodandapuram,kodanda1@msu.edu,Computer Science,,Summer 2022,Delta Dental,,Lansing,,Michigan,,,Male,International,42.7337712,-84.5553805
+Steve,Kodua,koduaste@msu.edu,Computer Science,,Summer 2022,,,San Francisco,,California,,,Male,International,37.7792588,-122.4193286
+Nafisa,Lenseni,lensenin@msu.edu,Computer Science,Internship/Co-op,Spring 2022,MSU Residential Hospitality Services,,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,,,Female,International,42.7337712,-84.5553805
+Lemmy,Lin,linbingz@msu.edu,Computer Science,,Summer 2022,Fidelity Investments,,Merrimack,,New Hampshire,,,Male,International,43.3260376,-71.6854725
+David Cody,Lingan,linganda@msu.edu,Computer Science,Internship/Co-op,Summer 2022,University of Southern California,Research Intern,Los Angeles,Los Angeles-Long Beach-Riverside -- CA,California,,,Male,Asian,34.0536909,-118.242766
+Sai,Morusupalli,morusup1@msu.edu,Computer Science,,Summer 2022,,,Providence,,Rhode Island,,,Male,International,41.8239891,-71.4128343
+Treasure,Ogundiran,ogundir2@msu.edu,Computer Science,,Summer 2022,LinkedIn,,San Francisco,,California,,,Male,International,37.7792588,-122.4193286
+Frederick,Pagadam,pagadamf@msu.edu,Computer Science,Internship/Co-op,Spring 2022,MSU Residential Hospitality Services,,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,,,Male,International,42.7337712,-84.5553805
+Joseph,Pallipadan,pallipad@msu.edu,Computer Science,,Summer 2022,Meta,,San Francisco,,California,,,Male,International,37.7792588,-122.4193286
+Nikit,Parakh,parakhni@msu.edu,Computer Science,,Summer 2022,Autodesk,"Intern, Software Engineer",San Francisco,,California,,,Male,International,37.7792588,-122.4193286
+Nikit,Parakh,parakhni@msu.edu,Computer Science,,Spring 2022,Autodesk,"Intern, Software Engineer",San Francisco,,California,,,Male,International,37.7792588,-122.4193286
+McKenna,Roberts,robe1242@msu.edu,Computer Science,,Summer 2022,,,Lansing,,Michigan,,,Female,White,42.7337712,-84.5553805
+Santiago,Rodriguez-Papa,rodri816@msu.edu,Computer Science,,Spring 2022,MSU,,Lansing,,Michigan,,,Male,International,42.7337712,-84.5553805
+Santiago,Rodriguez-Papa,rodri816@msu.edu,Computer Science,,Fall 2022,MSU,,Lansing,,Michigan,,,Male,International,42.7337712,-84.5553805
+Paul,Schulte,schul667@msu.edu,Computer Science,Internship/Co-op,Spring 2022,MSU Residential Hospitality Services,,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,,,Male,White,42.7337712,-84.5553805
+Gabriel,Sotelo Justo,soteloju@msu.edu,Computer Science,,Summer 2022,Microsoft,,Seattle,,Washington,,,Male,International,47.6038321,-122.330062
+Leo,Suguimoto Specht,spechtle@msu.edu,Computer Science,,Fall 2022,,,Lansing,,Michigan,,,Male,International,42.7337712,-84.5553805
+Nandini,Tengli,tenglina@msu.edu,Computer Science,Internship/Co-op,Spring 2022,MSU Residential Hospitality Services,,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,,,Female,International,42.7337712,-84.5553805
+Abhinav Nadh,Thirupathi,thirupa3@msu.edu,Computer Science,,Spring 2022,Delta Dental,,Lansing,,Michigan,,,Male,Not Reported,42.7337712,-84.5553805
+Daniel,Adu-Djan,adudjand@msu.edu,Computer Science,,Fall 2021,Google,,San Francisco,,California,,,Male,International,37.7792588,-122.4193286
+Flower,Akaliza,akalizaf@msu.edu,Computer Science,,Summer 2021,Google,,San Francisco,,California,,,Female,International,37.7792588,-122.4193286
+Hayford,Akomeah,akomeahh@msu.edu,Computer Science,,Summer 2021,Microsoft,,Seattle,,Washington,,,Male,International,47.6038321,-122.330062
+Zane,Aridi,aridizan@msu.edu,Computer Science,Internship/Co-op,Summer 2021,Learning A-Z,Software Engineering Intern,Los Angeles,Los Angeles-Long Beach-Riverside -- CA,California,,,Male,White,34.0536909,-118.242766
+Justin,Armstrong,armst369@msu.edu,Computer Science,,Summer 2021,,,Lansing,,Michigan,,,Male,White,42.7337712,-84.5553805
+Akhil,Arora,aroraakh@msu.edu,Computer Science,,Summer 2021,Amazon,Software Development Engineer Summer 2021 Internship,Seattle,,Washington,,,Male,Asian,47.6038321,-122.330062
+Savvy,Barnes,barne329@msu.edu,Computer Science,,Summer 2021,NASA,,Washington,,District of Columbia,,,Female,White,47.2868352,-120.212613
+Tyler,Brush,brushty1@msu.edu,Computer Science,Internship/Co-op,Summer 2021,KLA,Software Engineer Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,,,Male,White,42.3315509,-83.0466403
+Chad,Burnham,burnha42@msu.edu,Computer Science,,Summer 2021,,,Lansing,,Michigan,,,Male,White,42.7337712,-84.5553805
+Brandon,Byiringiro,byiring2@msu.edu,Computer Science,Internship/Co-op,Summer 2021,MSU,,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,,,Male,Black/African American,42.7337712,-84.5553805
+Lexi,Case,caseale4@msu.edu,Computer Science,,Summer 2021,,,Lansing,,Michigan,,,Female,White,42.7337712,-84.5553805
+Ethan,Colbert,colber31@msu.edu,Computer Science,Internship/Co-op,Fall 2021,MSU Capstone Software Engineer,,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,,,Male,White,42.7337712,-84.5553805
+Daniyal,Dar,dardaniy@msu.edu,Computer Science,,Summer 2021,MSU Environmental Health & Safety - Office of Research & Regulatory Support,,Lansing,,Michigan,,,Male,International,42.7337712,-84.5553805
+Daniyal,Dar,dardaniy@msu.edu,Computer Science,,Fall 2021,FedEx Ground,,Coraopolis,,Pennsylvania,,,Male,International,40.5175351,-80.1643232
+Shaheer,Hasan,hasansh3@msu.edu,Computer Science,,Summer 2021,,,Lansing,,Michigan,,,Male,Asian,42.7337712,-84.5553805
+Tommy,Hojnicki,hojnick1@msu.edu,Computer Science,,Summer 2021,MSU The Center,,Lansing,,Michigan,,,Male,White,42.7337712,-84.5553805
+Jason,Israilov,israilo1@msu.edu,Computer Science,,Summer 2021,Equifax,,Atlanta,,Georgia,,,Male,Not Specified,33.7489924,-84.3902644
+Tyler,Kabaker,kabakert@msu.edu,Computer Science,Internship/Co-op,Summer 2021,KPMG LLP,BPG Intern,Chicago,Chicago-Naperville-Michigan City -- IL-IN-WI,Illinois,,,Male,White,41.8755616,-87.6244212
+Nicole,Keller,kelle190@msu.edu,Computer Science,,Summer 2021,Blue Cross Blue Shield,,Detroit,,Michigan,,,Female,White,42.3315509,-83.0466403
+Nicole,Keller,kelle190@msu.edu,Computer Science,,Spring 2021,,,Detroit,,Michigan,,,Female,White,42.3315509,-83.0466403
+Nicole,Keller,kelle190@msu.edu,Computer Science,,Fall 2021,Blue Cross Blue Shield,,Detroit,,Michigan,,,Female,White,42.3315509,-83.0466403
+Juston,Ko,kojuston@msu.edu,Computer Science,,Spring 2021,,,Wallingford,,Connecticut,,,Male,Asian,41.4570418,-72.8231552
+Nash,Longmire,longmir8@msu.edu,Computer Science,,Spring 2021,MSU Environmental Health & Safety - Office of Research & Regulatory Support,,Lansing,,Michigan,,,Male,Black/African American,42.7337712,-84.5553805
+Cody,Lowen,lowencod@msu.edu,Computer Science,,Spring 2021,MSU Environmental Health & Safety - Office of Research & Regulatory Support,,Lansing,,Michigan,,,Male,White,42.7337712,-84.5553805
+Stefan,Najor,najorst1@msu.edu,Computer Science,,Summer 2021,"HED, Inc.",Software/Firmware Test Engineering Co-Op or Intern,Hartford,,Wisconsin,,,Male,White,41.764582,-72.6908547
+Han,Nguyen,nguye714@msu.edu,Computer Science,,Summer 2021,ESURGI,Software Engineer Internship,Baltimore,,Maryland,,,Female,International,39.2908816,-76.610759
+Han,Nguyen,nguye714@msu.edu,Computer Science,,Fall 2021,ESURGI,Software Engineer Internship,Baltimore,,Maryland,,,Female,International,39.2908816,-76.610759
+Sean,Nguyen,nguye610@msu.edu,Computer Science,Internship/Co-op,Spring 2021,MSU Residential Hospitality Services,,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,,,Male,Asian,42.7337712,-84.5553805
+Tim,Nwanze,nwanzec2@msu.edu,Computer Science,,Summer 2021,,,Lansing,,Michigan,,,Male,Black/African American,42.7337712,-84.5553805
+Frederick,Pagadam,pagadamf@msu.edu,Computer Science,,Summer 2021,,,Detroit,,Michigan,,,Male,International,42.3315509,-83.0466403
+Anika,Patel,patela60@msu.edu,Computer Science,,Summer 2021,Target,,Minneapolis,,Minnesota,,,Female,Asian,44.9772995,-93.2654692
+Santiago,Rodriguez-Papa,rodri816@msu.edu,Computer Science,,Spring 2021,MSU Environmental Health & Safety - Office of Research & Regulatory Support,,Lansing,,Michigan,,,Male,International,42.7337712,-84.5553805
+Santiago,Rodriguez-Papa,rodri816@msu.edu,Computer Science,,Fall 2021,MSU Environmental Health & Safety - Office of Research & Regulatory Support,,Lansing,,Michigan,,,Male,International,42.7337712,-84.5553805
+Md,Samad,samadmd@msu.edu,Computer Science,,Summer 2021,TIAA,,Charlotte,,North Carolina,,,Male,International,35.2272086,-80.8430827
+Paul,Schulte,schul667@msu.edu,Computer Science,Internship/Co-op,Spring 2021,MSU Residential Hospitality Services,,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,,,Male,White,42.7337712,-84.5553805
+Jack,Sleeman,sleeman5@msu.edu,Computer Science,,Summer 2021,Konica Minolta,,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+Mitch,Smith,smit2820@msu.edu,Computer Science,,Summer 2021,,,Lansing,,Michigan,,,Male,White,42.7337712,-84.5553805
+Kyle,Soderlund,soderlun@msu.edu,Computer Science,,Summer 2021,,,Lansing,,Michigan,,,Male,White,42.7337712,-84.5553805
+Nathan,Srivastava,srivas57@msu.edu,Computer Science,,Summer 2021,,,Lansing,,Michigan,,,Male,Asian,42.7337712,-84.5553805
+Nandini,Tengli,tenglina@msu.edu,Computer Science,Internship/Co-op,Fall 2021,MSU Residential Hospitality Services,,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,,,Female,International,42.7337712,-84.5553805
+Abhinav Nadh,Thirupathi,thirupa3@msu.edu,Computer Science,,Spring 2021,Delta Dental,,Lansing,,Michigan,,,Male,Not Reported,42.7337712,-84.5553805
+Abhinav Nadh,Thirupathi,thirupa3@msu.edu,Computer Science,,Summer 2021,Delta Dental,,Lansing,,Michigan,,,Male,Not Reported,42.7337712,-84.5553805
+Abhinav Nadh,Thirupathi,thirupa3@msu.edu,Computer Science,,Fall 2021,Delta Dental,,Lansing,,Michigan,,,Male,Not Reported,42.7337712,-84.5553805

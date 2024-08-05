@@ -1,0 +1,238 @@
+First Name,Last Name,Email,Major,Outcome Type Placeholder,Academic Term,Employer Name,Job Title,City,Metro Area Placeholder,State,Salary,Pay Period,Gender,Ethnicity,Employer Latitude,Employer Longitude
+Howard,Hu,huhoward@msu.edu,Electrical Engineering,,Spring 2023,MSU,,Lansing,,Michigan,$11.00,hourly,Male,Asian,42.7337712,-84.5553805
+Bryan,Clarke,clarkeb4@msu.edu,Electrical Engineering,,Summer 2022,UACJ Automotive Whitehall Industries,,Ludington,,Michigan,$12.00,hourly,Male,White,43.9555406,-86.4477416
+Nolan,Ott,ottnolan@msu.edu,Electrical Engineering,,Spring 2021,"Fraunhofer USA, Inc.",,Detroit,,Michigan,$12.00,hourly,Male,White,42.3315509,-83.0466403
+Sophia,Sutter,sutterso@msu.edu,Electrical Engineering,,Summer 2023,MSU,,Lansing,,Michigan,$13.00,hourly,Female,Asian,42.7337712,-84.5553805
+Kylie,Clink,clinkkyl@msu.edu,Electrical Engineering,,Spring 2022,MSU Infrastructure Planning & Facilities (IPF),Power & Water Student Technical Assistant,Lansing,,Michigan,$13.00,hourly,Female,White,42.7337712,-84.5553805
+Howard,Hu,huhoward@msu.edu,Electrical Engineering,,Summer 2022,MSU,,Lansing,,Michigan,$13.00,hourly,Male,Asian,42.7337712,-84.5553805
+Elijah,Savoie,savoiee1@msu.edu,Electrical Engineering,Internship/Co-op,Fall 2022,MSU,Undergraduate Research Assistant,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$13.00,hourly,Male,White,42.7337712,-84.5553805
+Kylie,Clink,clinkkyl@msu.edu,Electrical Engineering,,Fall 2021,MSU Infrastructure Planning & Facilities (IPF),Power & Water Student Technical Assistant,Lansing,,Michigan,$13.00,hourly,Female,White,42.7337712,-84.5553805
+Kylie,Clink,clinkkyl@msu.edu,Electrical Engineering,,Summer 2021,MSU Infrastructure Planning & Facilities (IPF),Power & Water Student Technical Assistant,Lansing,,Michigan,$13.00,hourly,Female,White,42.7337712,-84.5553805
+Sophia,Sutter,sutterso@msu.edu,Electrical Engineering,,Fall 2023,,,Lansing,,Michigan,$13.39,hourly,Female,Asian,42.7337712,-84.5553805
+Nick,Flammini,flammini@msu.edu,Electrical Engineering,,Spring 2021,"Fraunhofer USA, Inc.",,Lansing,,Michigan,$14.00,hourly,Male,White,42.7337712,-84.5553805
+Jose,Garcia-Jimenez,garci439@msu.edu,Electrical Engineering,,Fall 2023,MSU Electrical and Computer Engineering Department,,Lansing,,Michigan,$15.00,hourly,Male,Hispanic/Latine,42.7337712,-84.5553805
+Adarsh,Vatts,vattsada@msu.edu,Electrical Engineering,,Summer 2023,KDM Engineering,KDM Engineering 2023 Summer Internship,Chicago,,Illinois,$15.00,hourly,Male,International,41.8755616,-87.6244212
+Mason,Rice,ricemaso@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2022,Magna International,Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$15.00,hourly,Male,White,42.3315509,-83.0466403
+Doriana,Vuljaj,vuljajdo@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2022,DTE Energy,Student Co-op,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$15.00,hourly,Female,White,42.7337712,-84.5553805
+Jason,Jeyakumar,jeyakuma@msu.edu,Electrical Engineering,,Summer 2021,Roush Industries,,Detroit,,Michigan,$15.00,hourly,Male,International,42.3315509,-83.0466403
+Jason,Jeyakumar,jeyakuma@msu.edu,Electrical Engineering,,Fall 2021,Roush Industries,,Detroit,,Michigan,$15.00,hourly,Male,International,42.3315509,-83.0466403
+Joshua,Paull,paulljos@msu.edu,Electrical Engineering,,Fall 2021,"American Battery Solutions, Inc.",,Detroit,,Michigan,$15.00,hourly,Male,Two or More Races,42.3315509,-83.0466403
+Joshua,Paull,paulljos@msu.edu,Electrical Engineering,,Summer 2021,"American Battery Solutions, Inc.",,Detroit,,Michigan,$15.00,hourly,Male,Two or More Races,42.3315509,-83.0466403
+Yuchen,Wang,wangyu91@msu.edu,Electrical Engineering,,Spring 2021,Dicastal North America,,Grand Rapids,,Michigan,$15.00,hourly,Male,International,42.9632425,-85.6678639
+Ben,Yee,yeebenja@msu.edu,Electrical Engineering,,Summer 2021,,,Detroit,,Michigan,$15.00,hourly,Male,Asian,42.3315509,-83.0466403
+Chakradhara,Pemmasani,pemmasan@msu.edu,Electrical Engineering,,Fall 2023,MSU Facility for Rare Isotope Beams,Student Technical Assistant I,Lansing,,Michigan,$15.45,hourly,Male,International,42.7337712,-84.5553805
+John,Murdoch,murdoc37@msu.edu,Electrical Engineering,,Summer 2022,Invio Automation,,Lansing,,Michigan,$15.50,hourly,Male,White,42.7337712,-84.5553805
+Connor,Kempisty,kempist8@msu.edu,Electrical Engineering,,Spring 2021,DTE Energy,,Detroit,,Michigan,$16.25,hourly,Male,White,42.3315509,-83.0466403
+Connor,Kempisty,kempist8@msu.edu,Electrical Engineering,,Summer 2021,DTE Energy,,Detroit,,Michigan,$16.25,hourly,Male,White,42.3315509,-83.0466403
+Kj,Hobday,hobdayke@msu.edu,Electrical Engineering,,Spring 2023,Fraunhofer USA,Undergraduate Internship,Detroit,,Michigan,$16.50,hourly,Male,White,42.3315509,-83.0466403
+Adishvar,Jeyaranjan,jeyaranj@msu.edu,Electrical Engineering,,Fall 2023,MSU Innovation Center,,Lansing,,Michigan,$17.00,hourly,Male,Asian,42.7337712,-84.5553805
+Fariz,Azam,azamsuha@msu.edu,Electrical Engineering,,Summer 2022,Lansing Board of Water and Light,,Lansing,,Michigan,$17.00,hourly,Male,Asian,42.7337712,-84.5553805
+Parfait,Iradukunda,iraduku3@msu.edu,Electrical Engineering,,Summer 2022,"Consumer Energy Solutions, Inc.",,Jackson,,Michigan,$17.00,hourly,Male,Black/African American,32.2998686,-90.1830408
+Luke,Stern,sternluc@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2022,Lansing Board of Water and Light,Work Management Planner Intern,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$17.00,hourly,Male,White,42.7337712,-84.5553805
+Nick,Fedewa,fedewan5@msu.edu,Electrical Engineering,,Summer 2021,DornerWorks Ltd.,,Grand Rapids,,Michigan,$17.00,hourly,Male,White,42.9632425,-85.6678639
+Kyle,Heslop,heslopky@msu.edu,Electrical Engineering,,Summer 2021,Lansing Board of Water and Light,,Lansing,,Michigan,$17.00,hourly,Male,White,42.7337712,-84.5553805
+Remy,Van Wert,vanwert3@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2023,NGK Spark Plugs USA,Electrical Engineer Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$17.50,hourly,Male,Two or More Races,42.3315509,-83.0466403
+Maximus,Sese,sesemaxi@msu.edu,Electrical Engineering,,Summer 2022,Nexteer Automotive,,Saginaw,,Michigan,$17.50,hourly,Male,White,43.4200387,-83.9490365
+Connor,Kempisty,kempist8@msu.edu,Electrical Engineering,,Fall 2021,DTE Energy,,Detroit,,Michigan,$17.75,hourly,Male,White,42.3315509,-83.0466403
+Maya,Weisberger,weisbe38@msu.edu,Electrical Engineering,,Spring 2023,DTE Energy,,Detroit,,Michigan,$18.00,hourly,Female,White,42.3315509,-83.0466403
+Carter,Mayfield,mayfie27@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2022,Roush Industries,Electrical Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$18.00,hourly,Male,White,42.3315509,-83.0466403
+Dylan,Stanfill,stanfil2@msu.edu,Electrical Engineering,,Summer 2022,Purem by Eberspächer,,Detroit,,Michigan,$18.00,hourly,Male,White,42.3315509,-83.0466403
+Brandon,Kushion,kushion3@msu.edu,Electrical Engineering,,Spring 2021,Lansing Board of Water and Light,,Lansing,,Michigan,$18.00,hourly,Male,White,42.7337712,-84.5553805
+Brandon,Kushion,kushion3@msu.edu,Electrical Engineering,,Summer 2021,Lansing Board of Water and Light,,Lansing,,Michigan,$18.00,hourly,Male,White,42.7337712,-84.5553805
+Nadiah,Shoubah,shoubahn@msu.edu,Electrical Engineering,,Summer 2021,Gentex Corporation,,Grand Rapids,,Michigan,$18.00,hourly,Female,White,42.9632425,-85.6678639
+Yuchen,Wang,wangyu91@msu.edu,Electrical Engineering,,Summer 2021,Miller Industries LLC,,Flint,,Michigan,$18.00,,Male,International,43.0161693,-83.6900211
+Colin,Watkins,watki251@msu.edu,Electrical Engineering,,Summer 2022,Systems Control,,Iron Mountain,,Michigan,$18.50,hourly,Male,White,45.820233,-88.06596
+Kurk,Edwards,edwar746@msu.edu,Electrical Engineering,,Spring 2023,DTE Energy,,Detroit,,Michigan,$19.00,hourly,Male,Black/African American,42.3315509,-83.0466403
+Colten,Zehnder,zehnde15@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2023,Nexteer Automotive,Validation Engineer,Detroit,Detroit-Warren-Flint -- MI,Michigan,$19.00 ,hourly,Male,White,42.3315509,-83.0466403
+Kurk,Edwards,edwar746@msu.edu,Electrical Engineering,,Fall 2022,DTE Energy,,Detroit,,Michigan,$19.00,hourly,Male,Black/African American,42.3315509,-83.0466403
+Abel,Hunegnaw,hunegnaw@msu.edu,Electrical Engineering,,Fall 2022,DTE Energy,,Detroit,,Michigan,$19.00,hourly,Male,Black/African American,42.3315509,-83.0466403
+Abel,Hunegnaw,hunegnaw@msu.edu,Electrical Engineering,,Summer 2022,DTE Energy,,Detroit,,Michigan,$19.00,hourly,Male,Black/African American,42.3315509,-83.0466403
+Abel,Hunegnaw,hunegnaw@msu.edu,Electrical Engineering,,Spring 2022,DTE Energy,,Detroit,,Michigan,$19.00,hourly,Male,Black/African American,42.3315509,-83.0466403
+Connor,Kempisty,kempist8@msu.edu,Electrical Engineering,,Summer 2022,DTE Energy,,Detroit,,Michigan,$19.00,hourly,Male,White,42.3315509,-83.0466403
+Spencer,Barrer,barrersp@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2021,Continental Automotive,Electrical Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$19.00,hourly,Male,White,42.3315509,-83.0466403
+Aaron,Cyril John,cyriljoh@msu.edu,Electrical Engineering,,Summer 2021,Dematic,,Grand Rapids,,Michigan,$19.00,hourly,Male,International,42.9632425,-85.6678639
+Emma,Stanavich,stanavic@msu.edu,Electrical Engineering,,Summer 2021,Consumers Energy,,Jackson,,Michigan,$19.00,hourly,Female,White,32.2998686,-90.1830408
+Max,Van Wert,vanwert2@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2023,Magna International,Electrical Engineer intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$19.50 ,hourly,Male,Two or More Races,42.3315509,-83.0466403
+Ali,Shami,shamiali@msu.edu,Electrical Engineering,,Spring 2021,DTE Energy,,Detroit,,Michigan,$19.50,hourly,Male,Not Specified,42.3315509,-83.0466403
+Nadiah,Shoubah,shoubahn@msu.edu,Electrical Engineering,,Spring 2021,DTE Energy,,Detroit,,Michigan,$19.50,hourly,Female,White,42.3315509,-83.0466403
+Josh,Buggs,buggsjos@msu.edu,Electrical Engineering,,Summer 2023,Martinrea,,Detroit,,Michigan,$20.00,hourly,Male,Black/African American,42.3315509,-83.0466403
+Kurk,Edwards,edwar746@msu.edu,Electrical Engineering,,Summer 2023,Commonwealth Associates,,Jackson,,Michigan,$20.00,hourly,Male,Black/African American,32.2998686,-90.1830408
+Dauan,Hendley,hendley2@msu.edu,Electrical Engineering,,Fall 2023,Lansing Board of Water and Light,,Lansing,,Michigan,$20.00,hourly,Male,Black/African American,42.7337712,-84.5553805
+Sangwoon,Jeong,jeongsa8@msu.edu,Electrical Engineering,,Summer 2023,Vitesco Technologies,,Detroit,,Michigan,$20.00,hourly,Male,Asian,42.3315509,-83.0466403
+Sangwoon,Jeong,jeongsa8@msu.edu,Electrical Engineering,,Fall 2023,Vitesco Technologies,,Detroit,,Michigan,$20.00,hourly,Male,Asian,42.3315509,-83.0466403
+Janet,Johnson,john7588@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2023,Lansing Board of Water and Light,Safety Engineer Intern,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$20.00 ,hourly,Female,Asian,42.7337712,-84.5553805
+Dylan,Stanfill,stanfil2@msu.edu,Electrical Engineering,,Fall 2023,Purem by Eberspächer,,Detroit,,Michigan,$20.00,hourly,Male,White,42.3315509,-83.0466403
+Dylan,Stanfill,stanfil2@msu.edu,Electrical Engineering,,Summer 2023,Purem by Eberspächer,,Detroit,,Michigan,$20.00,hourly,Male,White,42.3315509,-83.0466403
+Nyah,Williams,will3671@msu.edu,Electrical Engineering,,Fall 2023,Lansing Board of Water and Light,,Lansing,,Michigan,$20.00,hourly,Female,Black/African American,42.7337712,-84.5553805
+Nyah,Williams,will3671@msu.edu,Electrical Engineering,,Summer 2023,Lansing Board of Water and Light,,Lansing,,Michigan,$20.00,hourly,Female,Black/African American,42.7337712,-84.5553805
+Kevin,Chen,chenke10@msu.edu,Electrical Engineering,,Summer 2022,"Delta Air Lines, Inc.",,Atlanta,,Georgia,$20.00,hourly,Male,Asian,33.7489924,-84.3902644
+Di,Du,dudi1@msu.edu,Electrical Engineering,,Summer 2022,Propel Technologies,Low Voltage AV/Electrical Internship Lansing,Detroit,,Michigan,$20.00,hourly,Male,International,42.3315509,-83.0466403
+Dauan,Hendley,hendley2@msu.edu,Electrical Engineering,,Fall 2022,Lansing Board of Water and Light,,Lansing,,Michigan,$20.00,hourly,Male,Black/African American,42.7337712,-84.5553805
+Mohammed,Nasir,nasirmo1@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2022,Gentex Corporation,Software Requirements Engineer,Grand Rapids,Grand Rapids-Muskegon-Holland -- MI,Michigan,$20.00,hourly,Male,White,42.9632425,-85.6678639
+Danny,Nowicki,nowick56@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2022,Ascent Aerospace LLC,Controls/Software Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$20.00,hourly,Male,White,42.3315509,-83.0466403
+Brian,Alder,alderbri@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2021,Brose North America,Evaluation and Test Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$20.00,hourly,Male,White,42.3315509,-83.0466403
+Noah,Dreiling,dreilin2@msu.edu,Electrical Engineering,,Summer 2021,First Solar,,Toledo,,Ohio,$20.00,hourly,Male,White,39.8560679,-4.0239568
+Noah,Dreiling,dreilin2@msu.edu,Electrical Engineering,,Fall 2021,First Solar,,Toledo,,Ohio,$20.00,hourly,Male,White,39.8560679,-4.0239568
+Noah,Dreiling,dreilin2@msu.edu,Electrical Engineering,,Spring 2021,,,Toledo,,Ohio,$20.00,hourly,Male,White,39.8560679,-4.0239568
+Alicia,Duenas,duenasal@msu.edu,Electrical Engineering,,Summer 2021,Michelin,,Midland City,,Alabama,$20.00,hourly,Female,Hispanic/Latine,31.3187878,-85.4938975
+Daniel,Karczmarczyk,karczma2@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2021,Accent Controls Inc,Automation Controls Engineer Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$20.00,hourly,Male,White,42.3315509,-83.0466403
+Sepehr,Rahgozar,rahgozar@msu.edu,Electrical Engineering,,Summer 2021,MAHLE,,Detroit,,Michigan,$20.00,hourly,Male,White,42.3315509,-83.0466403
+Ali,Shami,shamiali@msu.edu,Electrical Engineering,,Fall 2021,DTE Energy,,Detroit,,Michigan,$20.00,hourly,Male,Not Specified,42.3315509,-83.0466403
+Nadiah,Shoubah,shoubahn@msu.edu,Electrical Engineering,,Fall 2021,DTE Energy,Engineering Co-op,Detroit,,Michigan,$20.50,hourly,Female,White,42.3315509,-83.0466403
+Evan,Bennett,benne651@msu.edu,Electrical Engineering,,Summer 2022,,,Detroit,,Michigan,$20.83,hourly,Male,White,42.3315509,-83.0466403
+Abel,Hunegnaw,hunegnaw@msu.edu,Electrical Engineering,,Spring 2023,DTE Energy,,Detroit,,Michigan,$21.00,hourly,Male,Black/African American,42.3315509,-83.0466403
+Michael,Scruggs,scruggsm@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2022,IHS Markit,Managed Corporate Actions Intern,Dallas,Dallas-Fort Worth -- TX,Texas,$21.00,hourly,Male,Black/African American,32.7762719,-96.7968559
+Will,Chisholm,chisho30@msu.edu,Electrical Engineering,,Summer 2021,Michelin,,Greenville,,South Carolina,$21.00,hourly,Male,White,34.851354,-82.3984882
+Jason,Clark,clark115@msu.edu,Electrical Engineering,,Summer 2021,"fairlife, LLC",,Grand Rapids,,Michigan,$21.00,hourly,Male,White,42.9632425,-85.6678639
+Erin,McAlinden,mcalind2@msu.edu,Electrical Engineering,,Summer 2021,Consumers Energy,,Jackson,,Michigan,$21.00,hourly,Female,White,32.2998686,-90.1830408
+Shane,Moir,moirshan@msu.edu,Electrical Engineering,,Summer 2022,DTE Energy,,Detroit,,Michigan,$21.50,hourly,Male,White,42.3315509,-83.0466403
+Ishwari,Kapale,kapaleis@msu.edu,Electrical Engineering,,Summer 2023,Shape Corporation,,Grand Rapids,,Michigan,$22.00,hourly,Female,International,42.9632425,-85.6678639
+Ishwari,Kapale,kapaleis@msu.edu,Electrical Engineering,,Fall 2023,Avancez Assembly,,Lansing,,Michigan,$22.00,hourly,Female,International,42.7337712,-84.5553805
+Sergio,Ramos-Rivera,ramosriv@msu.edu,Electrical Engineering,,Summer 2023,BASF,,Ann Arbor,,Michigan,$22.00,hourly,Male,Hispanic/Latine,42.2813722,-83.7484616
+Sergio,Ramos-Rivera,ramosriv@msu.edu,Electrical Engineering,,Fall 2023,BASF,,Jackson,,Michigan,$22.00,hourly,Male,Hispanic/Latine,32.2998686,-90.1830408
+Pradnya,Ghorpade,ghorpad4@msu.edu,Electrical Engineering,,Summer 2022,GKN Automotive,,Detroit,,Michigan,$22.00,hourly,Female,International,42.3315509,-83.0466403
+Kyle,Heslop,heslopky@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2022,Commonwealth Associates,Electrical Systems Intern,Jackson,No Defined Metro Area,Michigan,$22.00,hourly,Male,White,32.2998686,-90.1830408
+Daniel,Karczmarczyk,karczma2@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2022,PARI,Project Engineer Intern,Shelby,No Defined Metro Area,Michigan,$22.00,hourly,Male,White,31.7716364,-94.1301652
+Ronald,Carr,carrron1@msu.edu,Electrical Engineering,,Spring 2021,Commonwealth Associates,Electrical Engineer Intern,Jackson,,Michigan,$22.00,hourly,Male,Black/African American,32.2998686,-90.1830408
+Alicia,Duenas,duenasal@msu.edu,Electrical Engineering,,Fall 2021,Michelin,,Lexington,,South Carolina,$22.00,hourly,Female,Hispanic/Latine,38.0464066,-84.4970393
+Andrew,Barton,barton29@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2023,The Toro Company,Contract Engineer,Minneapolis,Minneapolis-St. Paul-St. Cloud -- MN-WI,Minnesota,$22.50 ,hourly,Male,White,44.9772995,-93.2654692
+Nick,Delisle,delisl13@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2022,Milwaukee Electric Tool Corp,Electrical Engineer Intern,Milwaukee,Milwaukee-Racine-Waukesha -- WI,Wisconsin,$23.00,hourly,Male,White,43.0386475,-87.9090751
+Sam,Evans,evanss14@msu.edu,Electrical Engineering,,Fall 2022,Pratt Miller,,Detroit,,Michigan,$23.00,hourly,Male,White,42.3315509,-83.0466403
+Ronald,Hodge,hodgero1@msu.edu,Electrical Engineering,,Fall 2021,,,Detroit,,Michigan,$23.00,hourly,Male,White,42.3315509,-83.0466403
+Brendan,Somers,somersb2@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2022,PSEG - Public Service Enterprise Group,Summer 2022 - SCADA - Utility Technologies Intern for Public Service Electric & Gas Co,Somerset,New York-Newark-Bridgeport -- NY-NJ-CT-PA,New Jersey,$23.36,hourly,Male,White,51.161750850000004,-3.0753867062227487
+Evan,Bennett,benne651@msu.edu,Electrical Engineering,,Summer 2023,Firefly Drone Shows,,Detroit,,Michigan,$23.44,hourly,Male,White,42.3315509,-83.0466403
+Malachi,Keener,keenerm3@msu.edu,Electrical Engineering,,Summer 2022,Trane Technologies,,Davidson,,North Carolina,$23.44,hourly,Male,Hispanic/Latine,35.7902384,-80.2115053
+Michael,Stevenson,steve746@msu.edu,Electrical Engineering,,Summer 2022,Consumers Energy,,Jackson,,Michigan,$23.50,hourly,Male,White,32.2998686,-90.1830408
+Kylie,Clink,clinkkyl@msu.edu,Electrical Engineering,,Spring 2023,Consumers Energy,,Jackson,,Michigan,$24.00,hourly,Female,White,32.2998686,-90.1830408
+Ben,Schuchardt,schuch19@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2023,"Naval Surface Warfare Center (NSWC), Crane Division",Electrical Engineering Intern,Crane,No Defined Metro Area,Indiana,$24.00 ,hourly,Male,White,31.4486118,-102.5163544
+Kylie,Clink,clinkkyl@msu.edu,Electrical Engineering,,Fall 2022,Consumers Energy,,Jackson,,Michigan,$24.00,hourly,Female,White,32.2998686,-90.1830408
+Alicia,Duenas,duenasal@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2022,Michelin,Electrical engineering co op,Greenville,No Defined Metro Area,Alabama,$24.00,hourly,Female,Hispanic/Latine,34.851354,-82.3984882
+Prince,Funwie,funwiepr@msu.edu,Electrical Engineering,,Summer 2021,General Motors,,Detroit,,Michigan,$24.00,hourly,Male,Black/African American,42.3315509,-83.0466403
+Alan,Smith,smit2810@msu.edu,Electrical Engineering,,Summer 2021,Aptiv,Engineering Internship,Detroit,,Michigan,$24.38,hourly,Male,White,42.3315509,-83.0466403
+Ronald,Hodge,hodgero1@msu.edu,Electrical Engineering,,Summer 2021,Texas Instruments Inc.,Applications Engineer Intern,Dallas,,Texas,$24.80,hourly,Male,White,32.7762719,-96.7968559
+Ian,Ashley,ashleyia@msu.edu,Electrical Engineering,,Summer 2022,,,Andover,,Massachusetts,$24.98,hourly,Male,White,45.2332985,-93.2913405
+Anne Marie,Clinger,clinger7@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2023,BWI Group,Engineering Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$25.00 ,hourly,Female,White,42.3315509,-83.0466403
+Spencer,Barrer,barrersp@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2022,KLA,Electrical Engineering Intern,Ann Arbor,Detroit-Warren-Flint -- MI,Michigan,$25.00,hourly,Male,White,42.2813722,-83.7484616
+Josiah,Bostic,bosticjo@msu.edu,Electrical Engineering,,Summer 2022,FANUC America,,Detroit,,Michigan,$25.00,hourly,Male,Two or More Races,42.3315509,-83.0466403
+Sam,Evans,evanss14@msu.edu,Electrical Engineering,,Summer 2022,Kautex,,Providence,,Rhode Island,$25.00,hourly,Male,White,41.8239891,-71.4128343
+Prince,Funwie,funwiepr@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2022,General Motors,Electrical Engineer Intern,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,$25.00,hourly,Male,Black/African American,42.7337712,-84.5553805
+Kj,Hobday,hobdayke@msu.edu,Electrical Engineering,,Summer 2022,Stellantis - FCA Fiat Chrysler Automobiles,,Detroit,,Michigan,$25.00,hourly,Male,White,42.3315509,-83.0466403
+Andrew,Maciejewski,maciej19@msu.edu,Electrical Engineering,,Summer 2022,Bosch,,Detroit,,Michigan,$25.00,hourly,Male,White,42.3315509,-83.0466403
+Mohamed,Saleh,salehmo3@msu.edu,Electrical Engineering,Internship/Co-op,Spring 2022,Detroit Diesel Corporation,Quality Engineer Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,$25.00,hourly,Male,White,42.3315509,-83.0466403
+Ben,Dubey,dubeyben@msu.edu,Electrical Engineering,,Summer 2022,,,East Chicago,,Indiana,$25.20,hourly,Male,White,41.6397857,-87.4548466
+Adishvar,Jeyaranjan,jeyaranj@msu.edu,Electrical Engineering,,Summer 2022,Cleveland-Cliffs,,Burns Harbor,,Indiana,$25.20,hourly,Male,Asian,41.6258708,-87.1333676
+Mason,Gates,gatesmas@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2022,ComEd,Intern,Chicago,Chicago-Naperville-Michigan City -- IL-IN-WI,Illinois,$25.25,hourly,Female,Black/African American,41.8755616,-87.6244212
+Nick,Fedewa,fedewan5@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2023,Polaris Industries,Electrical Engineering Intern,Minneapolis,Minneapolis-St. Paul-St. Cloud -- MN-WI,Minnesota,$25.50 ,hourly,Male,White,44.9772995,-93.2654692
+Erin,McAlinden,mcalind2@msu.edu,Electrical Engineering,,Summer 2022,Ford Motor Company,,Detroit,,Michigan,$25.96,hourly,Female,White,42.3315509,-83.0466403
+Ben,Dubey,dubeyben@msu.edu,Electrical Engineering,,Summer 2023,FANUC America,,Detroit,,Michigan,$26.00,hourly,Male,White,42.3315509,-83.0466403
+Adishvar,Jeyaranjan,jeyaranj@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2023,Mortenson,Electrical intern,Minneapolis,Minneapolis-St. Paul-St. Cloud -- MN-WI,Minnesota,$26.00 ,hourly,Male,Asian,44.9772995,-93.2654692
+Sara,Tatreau,tatreaus@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2023,GE,Engineering Summer intern,Grand Rapids,Grand Rapids-Muskegon-Holland -- MI,Michigan,$26.00,hourly,Female,White,42.9632425,-85.6678639
+Andrew,Wojciechowski,wojcie45@msu.edu,Electrical Engineering,Internship/Co-op,Fall 2023,GE,Electrical Engineer intern,Grand Rapids,Grand Rapids-Muskegon-Holland -- MI,Michigan,$26.00,hourly,Male,White,42.9632425,-85.6678639
+Marcus,Wolff,wolffma1@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2023,MIT Lincoln Laboratory,Summer Research Intern,Boston,Boston-Worcester-Manchester -- MA-NH,Massachusetts,$26.00 ,hourly,Male,White,42.3554334,-71.060511
+Howard,Hu,huhoward@msu.edu,Electrical Engineering,,Summer 2022,Arup,Electrical Engineering Intern (June 2022),Chicago,,Illinois,$26.00,hourly,Male,Asian,41.8755616,-87.6244212
+Jorge,Penalozano,penaloz2@msu.edu,Electrical Engineering,,Summer 2022,Texas Instruments Inc.,,Dallas,,Texas,$26.00,hourly,Male,International,32.7762719,-96.7968559
+Zainub,Larji,larjizai@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2023,Eaton,Operations Management Intern,Baltimore,Washington-Baltimore-Northern Virginia -- DC-MD-VA-WV,Maryland,$26.25,hourly,Female,Asian,39.2908816,-76.610759
+Henry,Menigoz,menigozh@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2022,Eaton,Field service engineer,Minneapolis,Minneapolis-St. Paul-St. Cloud -- MN-WI,Minnesota,$26.25,hourly,Male,White,44.9772995,-93.2654692
+Gavin,Gardner,gardn370@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2022,Northrop Grumman Corporation,Systems Engineering Intern,Baltimore,Washington-Baltimore-Northern Virginia -- DC-MD-VA-WV,Maryland,$26.50,hourly,Male,White,39.2908816,-76.610759
+Lucas,Hendershot,hende480@msu.edu,Electrical Engineering,Internship/Co-op,Spring 2022,Northrop Grumman Corporation,Hardware Engineer Intern,Baltimore,Washington-Baltimore-Northern Virginia -- DC-MD-VA-WV,Maryland,$26.50,hourly,Male,White,39.2908816,-76.610759
+Derek,Luzano,luzanode@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2022,Northrop Grumman Corporation,Systems Engineering Intern,Baltimore,Washington-Baltimore-Northern Virginia -- DC-MD-VA-WV,Maryland,$26.50,hourly,Male,Two or More Races,39.2908816,-76.610759
+Marcus,Wolff,wolffma1@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2022,Raytheon,Low Voltage Power Products Intern,Dallas,Dallas-Fort Worth -- TX,Texas,$26.66,hourly,Male,White,32.7762719,-96.7968559
+Kylie,Clink,clinkkyl@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2023,GE,Control Systems Engineer (Software Engineer),Greenville,Greenville-Spartanburg-Anderson -- SC,South Carolina,$27.00 ,hourly,Female,White,34.851354,-82.3984882
+Rachel,White,whiter21@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2023,Texas Instruments,Field Application Engineer,Detroit,Detroit-Warren-Flint -- MI,Michigan,$27.00 ,hourly,Female,White,42.3315509,-83.0466403
+Ghazi,Rizvi,rizvigha@msu.edu,Electrical Engineering,,Summer 2021,,,Des Moines,,Iowa,$27.00,hourly,Male,Asian,41.5868654,-93.6249494
+Brian,Garcia Ibarra,garciaib@msu.edu,Electrical Engineering,,Summer 2023,,,Detroit,,Michigan,$27.12,hourly,Male,Hispanic/Latine,42.3315509,-83.0466403
+Justin,Littleton,littl144@msu.edu,Electrical Engineering,,Fall 2023,GE,GE Aviation Systems Engineering Co-op - Fall 2023,Grand Rapids,,Michigan,$28.00,hourly,Male,White,42.9632425,-85.6678639
+Alayna,Schumaker,schum180@msu.edu,Electrical Engineering,Internship/Co-op,Spring 2023,Stryker,Electrical Engineering Intern,Kalamazoo,No Defined Metro Area,Michigan,$28.00 ,hourly,Female,White,42.291707,-85.5872286
+Kj,Hobday,hobdayke@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2023,Texas Instruments,Field Application Engineer,Detroit,Detroit-Warren-Flint -- MI,Michigan,$28.50 ,hourly,Male,White,42.3315509,-83.0466403
+Ian,Ashley,ashleyia@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2023,Raytheon,Test Engineering Intern,Boston,Boston-Worcester-Manchester -- MA-NH,Massachusetts,$29.00 ,hourly,Male,White,42.3554334,-71.060511
+Isabella,Cureton,curetoni@msu.edu,Electrical Engineering,,Summer 2022,General Motors,,Detroit,,Michigan,$29.38,hourly,Female,White,42.3315509,-83.0466403
+Chidera,Ikpeama,ikpeamac@msu.edu,Electrical Engineering,,Spring 2023,Marathon Petroleum Company,,Detroit,,Ohio,$29.85,hourly,Male,Black/African American,42.3315509,-83.0466403
+Kyle,Heverly,heverlyk@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2022,Black and Veatch,Electrical Engineer Intern,Ann Arbor,Detroit-Warren-Flint -- MI,Michigan,$29.88,hourly,Male,White,42.2813722,-83.7484616
+Megan,Arnold,arnol156@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2023,Johnson & Johnson,Engineering Intern,San Francisco,San Jose-San Francisco-Oakland -- CA,California,$30.00 ,hourly,Female,White,37.7792588,-122.4193286
+Dauan,Hendley,hendley2@msu.edu,Electrical Engineering,,Summer 2023,Nissan Motor Company Ltd,,Detroit,,Michigan,$30.00,hourly,Male,Black/African American,42.3315509,-83.0466403
+Dashiel,Matlock,matloc13@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2023,SpaceX,Electrical Engineer intern,Seattle,Seattle-Tacoma-Olympia -- WA,Washington,$30.00 ,hourly,Male,White,47.6038321,-122.330062
+Isabella,Cureton,curetoni@msu.edu,Electrical Engineering,,Summer 2021,,,Bohemia,,New York,$30.00,hourly,Female,White,40.7694091,-73.1148664
+Dwight,Reed,reeddwig@msu.edu,Electrical Engineering,,Summer 2021,,,Grand Rapids,,Michigan,$30.00,hourly,Male,American Indian/Alaska Native,42.9632425,-85.6678639
+Turuu,Ariunbold,ariunbol@msu.edu,Electrical Engineering,,Spring 2023,Tesla,,San Francisco,,California,$30.29,hourly,Male,International,37.7792588,-122.4193286
+Turuu,Ariunbold,ariunbol@msu.edu,Electrical Engineering,,Summer 2023,Tesla,,San Francisco,,California,$32.70,hourly,Male,International,37.7792588,-122.4193286
+Nolan,Ott,ottnolan@msu.edu,Electrical Engineering,,Summer 2021,Marathon Petroleum Company,,Houston,,Texas,$33.00,hourly,Male,White,29.7589382,-95.3676974
+Colin,Watkins,watki251@msu.edu,Electrical Engineering,,Fall 2023,Dow,,Midland,,Michigan,$33.31,hourly,Male,White,31.83688,-102.0103767
+Colin,Watkins,watki251@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2023,Dow,Power Transmission Department,Houston,Houston-Baytown-Huntsville -- TX,Texas,$33.31,hourly,Male,White,29.7589382,-95.3676974
+Jeremy,Molargik,molargik@msu.edu,Electrical Engineering,,Summer 2021,Rivian,,Normal,,Illinois,$35.00,hourly,Male,White,40.5092961,-88.9843937
+Jason,Clark,clark115@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2022,Marathon Petroleum Company,Refining Engineer Intern,Los Angeles,Los Angeles-Long Beach-Riverside -- CA,California,$35.83,hourly,Male,White,34.0536909,-118.242766
+Gautham,Kanakasabai,kanakasa@msu.edu,Electrical Engineering,Internship/Co-op,Fall 2023,HELLA Electronics Corporation,Associate Application Calibration Engineer,Detroit,Detroit-Warren-Flint -- MI,Michigan,$39.00,hourly,Male,Asian,42.3315509,-83.0466403
+Jennifer,Rousseau,rousse49@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2022,Apple,Mac Systems Hardware Engineering Intern,San Francisco,San Jose-San Francisco-Oakland -- CA,California,$46.00,hourly,Female,White,37.7792588,-122.4193286
+Ryan,Atkinson,atkin160@msu.edu,Electrical Engineering,,Summer 2023,Northrop Grumman Corporation,,Melbourne,,Florida,,,Male,White,-37.8142454,144.9631732
+Grant,Brisley,brisleyg@msu.edu,Electrical Engineering,,Summer 2023,Industrial Automation LLC.,,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+Lansing,Burk,burkmaso@msu.edu,Electrical Engineering,,Summer 2023,General Motors,,Saginaw,,Michigan,,,Male,White,43.4200387,-83.9490365
+Hugo,Ceron,ceronhug@msu.edu,Electrical Engineering,,Summer 2023,Ford Motor Company,,Detroit,,Michigan,,,Male,Hispanic/Latine,42.3315509,-83.0466403
+Kevin,Chen,chenke10@msu.edu,Electrical Engineering,,Spring 2023,"Delta Air Lines, Inc.",,Atlanta,,Georgia,,,Male,Asian,33.7489924,-84.3902644
+Kylie,Clink,clinkkyl@msu.edu,Electrical Engineering,,Fall 2023,MSU Infrastructure Planning & Facilities (IPF),,Lansing,,Michigan,,,Female,White,42.7337712,-84.5553805
+Pranshu,Dixit,dixitpr1@msu.edu,Electrical Engineering,,Summer 2023,Nexteer Automotive,,Saginaw,,Michigan,,,Male,International,43.4200387,-83.9490365
+Kyle,Foster,foste346@msu.edu,Electrical Engineering,,Summer 2023,MSU Infrastructure Planning & Facilities (IPF),IPF-PDC - Student Assistant to Electrical Engineer,Lansing,,Michigan,,,Male,Black/African American,42.7337712,-84.5553805
+Gryson,Gardner,gardn391@msu.edu,Electrical Engineering,,Summer 2023,,,Melbourne,,Florida,,,Male,White,-37.8142454,144.9631732
+Jack,Geisler,geisler5@msu.edu,Electrical Engineering,,Fall 2023,SSOE Group,,Toledo,,Ohio,,,Male,White,39.8560679,-4.0239568
+Jack,Geisler,geisler5@msu.edu,Electrical Engineering,,Summer 2023,,,Ann Arbor,,Michigan,,,Male,White,42.2813722,-83.7484616
+Martin,Goleski,goleski1@msu.edu,Electrical Engineering,,Fall 2023,"Altair Engineering, Inc.",,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+Aryan,Gondkar,gondkara@msu.edu,Electrical Engineering,,Spring 2023,MSU,,Lansing,,Michigan,,,Male,International,42.7337712,-84.5553805
+Aryan,Gondkar,gondkara@msu.edu,Electrical Engineering,,Summer 2023,Halla Mechatronics,,Saginaw,,Michigan,,,Male,International,43.4200387,-83.9490365
+Prerana,Gunda,gundapre@msu.edu,Electrical Engineering,,Summer 2023,Tesla,,Austin,,Texas,,,Female,Asian,30.2711286,-97.7436995
+Dauan,Hendley,hendley2@msu.edu,Electrical Engineering,,Spring 2023,Lansing Board of Water and Light,,Lansing,,Michigan,,,Male,Black/African American,42.7337712,-84.5553805
+Janet,Johnson,john7588@msu.edu,Electrical Engineering,,Fall 2023,Lansing Board of Water and Light,,Lansing,,Michigan,,,Female,Asian,42.7337712,-84.5553805
+Spenser,Lafferty,laffer21@msu.edu,Electrical Engineering,,Summer 2023,Nexteer Automotive,,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+Chris,Martin,mart2431@msu.edu,Electrical Engineering,,Summer 2023,"American Axle & Manufacturing, Inc.",,Detroit,,Michigan,,,Male,Two or More Races,42.3315509,-83.0466403
+Colin,McNeal,mcnealco@msu.edu,Electrical Engineering,,Summer 2023,Rampf Group,,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+Hans,Ross,rosshans@msu.edu,Electrical Engineering,,Summer 2023,General Motors,,Saginaw,,Michigan,,,Male,White,43.4200387,-83.9490365
+Evan,Schleis,schleise@msu.edu,Electrical Engineering,,Summer 2023,Marathon Petroleum Company,,Findlay,,Ohio,,,Male,Not Specified,41.0413873,-83.6503982
+Josh,Warminski,warmins2@msu.edu,Electrical Engineering,,Summer 2023,Texas Instruments,,Dallas,,Texas,,,Male,White,32.7762719,-96.7968559
+Elise,Wright,wrigh904@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2023,Triangle Electric,Staff Engineer,Detroit,Detroit-Warren-Flint -- MI,Michigan,,,Female,White,42.3315509,-83.0466403
+Megan,Arnold,arnol156@msu.edu,Electrical Engineering,,Summer 2022,Lear Corporation,,Detroit,,Michigan,,,Female,White,42.3315509,-83.0466403
+Ryan,Atkinson,atkin160@msu.edu,Electrical Engineering,,Summer 2022,Wacker Chemical Corporation,,Adrian,,Michigan,,,Male,White,41.8975152,-84.0373054
+Fariz,Azam,azamsuha@msu.edu,Electrical Engineering,,Spring 2022,Lansing Board of Water and Light,,Lansing,,Michigan,,,Male,Asian,42.7337712,-84.5553805
+Gryson,Gardner,gardn391@msu.edu,Electrical Engineering,,Summer 2022,blueflite,,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+Aryan,Gondkar,gondkara@msu.edu,Electrical Engineering,,Fall 2022,MSU,,Lansing,,Michigan,,,Male,International,42.7337712,-84.5553805
+Paul,Merritt,merri113@msu.edu,Electrical Engineering,,Summer 2022,FEV North America Inc,,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+Andrew,Morgan,morga337@msu.edu,Electrical Engineering,,Summer 2022,Spindel Electronics,,Grand Rapids,,Michigan,,,Male,White,42.9632425,-85.6678639
+Aditya,Purandare,puranda1@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2022,Axia Institute,,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,,,Male,Asian,42.7337712,-84.5553805
+Evan,Schleis,schleise@msu.edu,Electrical Engineering,,Summer 2022,Aptiv,,Detroit,,Michigan,,,Male,Not Specified,42.3315509,-83.0466403
+Sherwin,Shiran,shirans1@msu.edu,Electrical Engineering,,Summer 2022,,,Lansing,,Michigan,,,Male,White,42.7337712,-84.5553805
+Jake,Sime,simejako@msu.edu,Electrical Engineering,,Summer 2022,MSU Infrastructure Planning & Facilities (IPF),,Lansing,,Michigan,,,Male,White,42.7337712,-84.5553805
+John,Slivka,slivkaj1@msu.edu,Electrical Engineering,,Summer 2022,MAHLE,,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+Michael,Stevenson,steve746@msu.edu,Electrical Engineering,,Spring 2022,Consumers Energy,,Jackson,,Michigan,,,Male,White,32.2998686,-90.1830408
+Yuchen,Wang,wangyu91@msu.edu,Electrical Engineering,,Spring 2022,BorgWarner,,Detroit,,Michigan,,,Male,International,42.3315509,-83.0466403
+Josh,Warminski,warmins2@msu.edu,Electrical Engineering,,Summer 2022,Arctic Cat,,Thief River Falls,,Minnesota,,,Male,White,48.1172301,-96.1770667
+Fariz,Azam,azamsuha@msu.edu,Electrical Engineering,,Summer 2021,Lansing Board of Water and Light,,Lansing,,Michigan,,,Male,Asian,42.7337712,-84.5553805
+Fariz,Azam,azamsuha@msu.edu,Electrical Engineering,,Fall 2021,Lansing Board of Water and Light,,Lansing,,Michigan,,,Male,Asian,42.7337712,-84.5553805
+Kevin,Chen,chenke10@msu.edu,Electrical Engineering,,Fall 2021,"Delta Air Lines, Inc.",,Atlanta,,Georgia,,,Male,Asian,33.7489924,-84.3902644
+Shadman,Chowdhury,chowdh70@msu.edu,Electrical Engineering,,Summer 2021,,,Lansing,,Michigan,,,Male,Asian,42.7337712,-84.5553805
+Tashfi,Chowdhury,chowdh63@msu.edu,Electrical Engineering,,Summer 2021,General Motors,Manufacturing  EXCEL Intern  Electrical Engineer,Detroit,,Michigan,,,Female,Asian,42.3315509,-83.0466403
+Bryan,Clarke,clarkeb4@msu.edu,Electrical Engineering,,Summer 2021,UACJ Automotive Whitehall Industries,,Ludington,,Michigan,,,Male,White,43.9555406,-86.4477416
+Josh,Comiska,comiskaj@msu.edu,Electrical Engineering,,Summer 2021,,,Grand Rapids,,Michigan,,,Male,White,42.9632425,-85.6678639
+Madison,Desormeau,desorme2@msu.edu,Electrical Engineering,,Summer 2021,Air Force Sustainment Center - Tinker Air Force Base,,Tinker AFB,,Oklahoma,,,Female,White,35.4117548,-97.39079739063683
+Keenan,Eadelman,eadelman@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2021,Avasure,,Grand Rapids,Grand Rapids-Muskegon-Holland -- MI,Michigan,,,Male,White,42.9632425,-85.6678639
+Aidan,Fadool,fadooljo@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2021,American Axle and Manufacturing,Project Management Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,,,Male,White,42.3315509,-83.0466403
+Aaron,Friedland,friedl26@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2021,"Coherent, INC",Summer Intern,Detroit,Detroit-Warren-Flint -- MI,Michigan,,,Male,White,42.3315509,-83.0466403
+Zach,Grycza,gryczaza@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2021,Lansing Board of Water and Light,,Lansing,Lansing-East Lansing-Owosso -- MI,Michigan,,,Male,White,42.7337712,-84.5553805
+Prerana,Gunda,gundapre@msu.edu,Electrical Engineering,,Summer 2021,Veoneer,,Detroit,,Michigan,,,Female,Asian,42.3315509,-83.0466403
+Prerana,Gunda,gundapre@msu.edu,Electrical Engineering,,Fall 2021,Veoneer,,Detroit,,Michigan,,,Female,Asian,42.3315509,-83.0466403
+Prerana,Gunda,gundapre@msu.edu,Electrical Engineering,,Spring 2021,Veoneer,,Detroit,,Michigan,,,Female,Asian,42.3315509,-83.0466403
+Victor,Huang,huangvi1@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2021,Gentex Corporation,Coatings R&D Intern,Grand Rapids,Grand Rapids-Muskegon-Holland -- MI,Michigan,,,Male,Asian,42.9632425,-85.6678639
+Mohamad,Kaafarani,kaafara4@msu.edu,Electrical Engineering,,Summer 2021,General Motors,,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+Lauren,Kaliszewski,kalisze6@msu.edu,Electrical Engineering,,Spring 2021,Cenovus Energy,"Spring 2021 Co-op Student, Electrical Engineering",Lima,,Ohio,,,Female,White,-12.0621065,-77.0365256
+Malachi,Keener,keenerm3@msu.edu,Electrical Engineering,,Summer 2021,,,Bloomington,,Minnesota,,,Male,Hispanic/Latine,39.1670396,-86.5342881
+Ayesha,Khan,khanaye3@msu.edu,Electrical Engineering,,Summer 2021,General Motors,,Detroit,,Michigan,,,Female,Asian,42.3315509,-83.0466403
+Aime,Mafuta,mafutaai@msu.edu,Electrical Engineering,Internship/Co-op,Summer 2021,Commonwealth Associates,,Jackson,No Defined Metro Area,Michigan,,,Male,Black/African American,32.2998686,-90.1830408
+Vigneshwer,Ramamoorthi,ramamoo3@msu.edu,Electrical Engineering,,Summer 2021,Steelcase,,Grand Rapids,,Michigan,,,Male,International,42.9632425,-85.6678639
+Ghazi,Rizvi,rizvigha@msu.edu,Electrical Engineering,,Fall 2021,Bridgestone Americas Manufacturing,,Des Moines,,Iowa,,,Male,Asian,41.5868654,-93.6249494
+Connor,Rosekrans,rosekr18@msu.edu,Electrical Engineering,,Summer 2021,Colliers Engineering & Design,,Lansing,,Michigan,,,Male,White,42.7337712,-84.5553805
+Jennifer,Rousseau,rousse49@msu.edu,Electrical Engineering,,Spring 2021,Apple,,San Francisco,,California,,,Female,White,37.7792588,-122.4193286
+Evan,Schleis,schleise@msu.edu,Electrical Engineering,,Spring 2021,Amcor,,Des Moines,,Iowa,,,Male,Not Specified,41.5868654,-93.6249494
+Evan,Schleis,schleise@msu.edu,Electrical Engineering,,Summer 2021,Amcor,,Des Moines,,Iowa,,,Male,Not Specified,41.5868654,-93.6249494
+John,Slivka,slivkaj1@msu.edu,Electrical Engineering,,Summer 2021,Highlight Industries INC,Summer Full-time Electrical or Mechanical Engineering Student Help,Detroit,,Michigan,,,Male,White,42.3315509,-83.0466403
+Cora,Snyder,snyde210@msu.edu,Electrical Engineering,,Summer 2021,Commonwealth Associates,Electrical Engineer Intern,Jackson,,Michigan,,,Female,White,32.2998686,-90.1830408
+Michael,Stevenson,steve746@msu.edu,Electrical Engineering,,Summer 2021,Consumers Energy,,Jackson,,Michigan,,,Male,White,32.2998686,-90.1830408
+Michael,Stevenson,steve746@msu.edu,Electrical Engineering,,Fall 2021,Consumers Energy,,Jackson,,Michigan,,,Male,White,32.2998686,-90.1830408
+Max,Stull,stullmax@msu.edu,Electrical Engineering,,Summer 2021,Gentex Corporation,,Grand Rapids,,Michigan,,,Male,White,42.9632425,-85.6678639
+Max,Stull,stullmax@msu.edu,Electrical Engineering,,Spring 2021,,,Peoria,,Illinois,,,Male,White,40.6938609,-89.5891008
+Yuchen,Wang,wangyu91@msu.edu,Electrical Engineering,,Fall 2021,Mercedes-Benz Research & Development North America,,Detroit,,Michigan,,,Male,International,42.3315509,-83.0466403
+Bret,Williams,will3675@msu.edu,Electrical Engineering,,Summer 2021,,,Lansing,,Michigan,,,Male,White,42.7337712,-84.5553805
