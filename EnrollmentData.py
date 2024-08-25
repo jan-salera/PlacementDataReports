@@ -2,6 +2,26 @@ import streamlit as st
 import plotly.express as px
 import pandas as pd
 
+# Shows the entire graduating class breakdown by major
+def data_major(colors = [], count = [78, 44, 14, 58, 95, 24, 227, 76, 17, 171, 16], majors = ["Applied Engineering Sciences", "Biosystems Engineering",        "Computational Data Science", "Civil Engineering","Chemical Engineering", "Computer Engineering", "Computer Science", "Electrical Engineering", "Environmental Engineering", "Mechanical Engineering", "Materials Science & Engineering"]):
+    """Shows the entire graduating class breakdown by major
+    
+    Args:
+        colors (list): list of strings, Hex values, needs one per value in the graph, default is [] 
+        count (list) : list of ints, count of how many students of each major
+        majors (list) : list of strings, all majors in the graph
+    
+    Returns:
+        streamlit plotly_chart: Circle graph with all majors and how many in each major 
+    """
+    class_data = {
+    'Major': majors,
+    'Count': count
+    }
+    major_fig = px.pie(class_data, values='Count', names='Major', title='Major Distribution', color_discrete_sequence=colors)
+    
+    st.plotly_chart(major_fig)
+
 # Shows the entire graduating class breakdown by gender
 def data_gender(count = [], color = ['#0B1799', '#C70F0F'], name = ['Male', 'Female']):
     gender_data = {'Gender': name, 'Count': count}
@@ -21,7 +41,10 @@ def data_ethnicity(count = [], ethnicity = ['White', 'Asian', 'International', '
 ms_ed = st.multiselect("Note: Only select one option per filter.", options=["Fall 2023", "Fall 2022", "Fall 2021"], placeholder = "Filter By Year", label_visibility="visible", default=["Fall 2023"])
 if ms_ed == ["Fall 2023"]:
     st.header("Fall 2023 Enrollment Data")
-    T1, T2, T3= st.tabs(["Class Level", "Ethnicity", "Gender"])
+    T4, T1, T2, T3= st.tabs(["Major", "Class Level", "Ethnicity", "Gender"])
+    with T4:
+        data_major([], [2085, 1412, 484, 434, 299, 199, 376, 188, 84, 332, 181, 59], ["Computer Science","Mechanical Engineering", "Electrical Engineering","Civil Engineering","Applied Engineering Sciences", "Engineering - Exploratory", "Computer Engineering", "Biosystems Engineering", "Computational Data Science", "Chemical Engineering", "Environmental Engineering", "Materials Science & Engineering"])
+        st.write("**Total Enrollment - 6133**")
     with T1:
 
         class_data = {
@@ -39,10 +62,14 @@ if ms_ed == ["Fall 2023"]:
         st.write("**Total Enrollment - 6133**")
 
     with T2:
-        EnrollEthnicity2023 = ['White - 3481', 'Asian - 790', 'International - 785', 'Hispanic/Latine - 337', 'Black/African American - 324', 'Two or More Races - 243', 'Not Specified - 158', 'American Indian/Alaskan Native - 14', 'Hawaiian/Pacific Islander - 1']
-        data_ethnicity([3481,790,785,337,324,243,158,14,1], EnrollEthnicity2023)
+            EnrollEthnicity2023 = ['White - 3481', 'Asian - 790', 'International - 785', 'Hispanic/Latine - 337', 'Black/African American - 324', 'Two or More Races - 243', 'Not Specified - 158', 'American Indian/Alaskan Native - 14', 'Hawaiian/Pacific Islander - 1']
+            data_ethnicity([3481,790,785,337,324,243,158,14,1], EnrollEthnicity2023)
+            st.write("**Total Enrollment - 6133**")
+            
     with T3:
         data_gender([4747, 1386], ['#0B1799', '#C70F0F'], ['Male - 4747', 'Female - 1386'])
+        st.write("**Total Enrollment - 6133**")
+        
 elif ms_ed == ["Fall 2022"]:
     st.header("Fall 2022 Enrollment Data")
     T1, T2, T3= st.tabs(["Class Level", "Ethnicity", "Gender"])
