@@ -967,7 +967,10 @@ def main():
     ms_ed = st.multiselect("Note: Only select one option per filter.", options=["Fall 2023", "Fall 2022", "Fall 2021"], placeholder = "Filter By Year", label_visibility="visible", default=["Fall 2023"])
     if ms_ed == ["Fall 2023"]:
         st.header("Fall 2023 Enrollment Data")
-        T1, T2, T3= st.tabs(["Class Level", "Ethnicity", "Gender"])
+        T4, T1, T2, T3= st.tabs(["Major", "Class Level", "Ethnicity", "Gender"])
+        with T4:
+            data_major([], [2085, 1412, 484, 434, 299, 199, 376, 188, 84, 332, 181, 59], ["Computer Science","Mechanical Engineering", "Electrical Engineering","Civil Engineering","Applied Engineering Sciences", "Engineering - Exploratory", "Computer Engineering", "Biosystems Engineering", "Computational Data Science", "Chemical Engineering", "Environmental Engineering", "Materials Science & Engineering"])
+            st.write("**Total Enrollment - 6133**")
         with T1:
 
             class_data = {
@@ -987,8 +990,12 @@ def main():
         with T2:
             EnrollEthnicity2023 = ['White - 3481', 'Asian - 790', 'International - 785', 'Hispanic/Latine - 337', 'Black/African American - 324', 'Two or More Races - 243', 'Not Specified - 158', 'American Indian/Alaskan Native - 14', 'Hawaiian/Pacific Islander - 1']
             data_ethnicity([3481,790,785,337,324,243,158,14,1], EnrollEthnicity2023)
+            st.write("**Total Enrollment - 6133**")
+            
         with T3:
             data_gender([4747, 1386], ['#0B1799', '#C70F0F'], ['Male - 4747', 'Female - 1386'])
+            st.write("**Total Enrollment - 6133**")
+
     elif ms_ed == ["Fall 2022"]:
         st.header("Fall 2022 Enrollment Data")
         T1, T2, T3= st.tabs(["Class Level", "Ethnicity", "Gender"])
