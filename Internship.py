@@ -159,6 +159,24 @@ def add_lat_long_to_dataframe(data):
     else:
         st.error("The uploaded CSV file does not contain the 'Employer City' column.")
 
+
+def create_pie_chart(file_path):
+    df = pd.read_csv(file_path)
+    company_counts = df['Employer Name'].value_counts().reset_index()
+    company_counts.columns = ['Employer Name', 'Count'] 
+    filtered_company_counts = company_counts[company_counts['Count'] > 1]
+  
+    fig = px.pie(filtered_company_counts, 
+                 names='Employer Name', 
+                 values='Count',
+                 color_discrete_sequence=px.colors.sequential.Greens)
+
+    fig.update_traces(textinfo='none',
+                      hoverinfo='label+value+percent')
+    
+    return fig
+
+
 def display_city_visualization(file_path):
     data = pd.read_csv(file_path)
     
@@ -230,6 +248,7 @@ def main():
     ms_intern = st.multiselect("Note: Only select one option per filter.", options=options, placeholder = "Filter By Major", label_visibility="visible", default=["All Engineering Majors"])
 
     if ms_intern == ["All Engineering Majors"]:
+        file_path = r"C:\Users\Shayna\Downloads\LATLONGHS EGRX-1220 Merge Combo_2021-2023.csv"
         T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
         with T1:
             st.header("Top Hiring Companies")
@@ -265,7 +284,12 @@ def main():
             with C5:
                 st.write("Consumers Energy")
                 st.image("data:image/png;base64,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")
-            st.write("Insert By Company Circle Graph Here")
+            st.header("Top Internship Destinations")
+            fig = create_pie_chart(file_path)
+            st.plotly_chart(fig)
+
+
+
         with T2:
             st.title("Interactive Map for Internship/Co-op Location Data: 2021 - 2023 College of Engineering")
             choropleth_file_path = r"C:\Users\Shayna\OneDrive - Michigan State University\Documents\MSU The Center - Shayna Laptop\HS EGRX-1220 Merge Combo_2021-2023.csv"
@@ -280,6 +304,7 @@ def main():
             report_salary()
     
     elif ms_intern == ["Applied Engineering Sciences"]:
+        file_path = r"C:\Users\Shayna\Downloads\LATLONG(Applied Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
         T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
         with T1:
             st.header("Top Hiring Companies")
@@ -299,7 +324,9 @@ def main():
             with C5:
                 st.write("Intel Corporation")
                 st.image("data:image/png;base64,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")
-            st.write("Insert By Company Circle Graph Here")
+            st.header("Top Internship Destinations")
+            fig = create_pie_chart(file_path)
+            st.plotly_chart(fig)
         with T2:
             st.title("Interactive Map for Internship/Co-op Location Data: 2021 - 2023 College of Engineering")
             choropleth_file_path = r"C:\Users\Shayna\Downloads\LATLONG(Applied Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
@@ -314,6 +341,7 @@ def main():
             report_salary()
 
     elif ms_intern == ["Biosystems Engineering"]:
+        file_path = r"C:\Users\Shayna\Downloads\LATLONG(Biosystems Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
         T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
         with T1:
             st.header("Top Hiring Companies")
@@ -333,7 +361,9 @@ def main():
             with C5:
                 st.write("Cargill")
                 st.image("https://www.cargill.com/image/1432080092113/cargill-color-logo.jpg?v=1684747481000")                        
-                st.write("Insert By Company Circle Graph Here")
+            st.header("Top Internship Destinations")
+            fig = create_pie_chart(file_path)
+            st.plotly_chart(fig)
         with T2:
             st.title("Interactive Map for Internship/Co-op Location Data: 2021 - 2023 College of Engineering")
             choropleth_file_path = r"C:\Users\Shayna\Downloads\LATLONG(Biosystems Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
@@ -348,6 +378,8 @@ def main():
             report_salary()
 
     elif ms_intern == ["Chemical Engineering"]:
+        file_path = r"C:\Users\Shayna\Downloads\LATLONG(Chemical Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
+
         T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
         with T1:
             st.header("Top Hiring Companies")
@@ -383,7 +415,9 @@ def main():
             with C5:
                 st.write("General Mills")
                 st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/General_Mills_logo.svg/1200px-General_Mills_logo.svg.png")                                   
-            st.write("Insert By Company Circle Graph Here")
+            st.header("Top Internship Destinations")
+            fig = create_pie_chart(file_path)
+            st.plotly_chart(fig)
         with T2:
             st.title("Interactive Map for Internship/Co-op Location Data: 2021 - 2023 College of Engineering")
             choropleth_file_path = r"C:\Users\Shayna\Downloads\LATLONG(Chemical Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
@@ -398,6 +432,7 @@ def main():
             report_salary()
     
     elif ms_intern == ["Civil Engineering"]:
+        file_path = r"C:\Users\Shayna\Downloads\LATLONG(Civil Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
         T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
         with T1:
             st.header("Top Hiring Companies")
@@ -433,7 +468,9 @@ def main():
             with C5:
                 st.write("Black and Veatch")
                 st.image("data:image/png;base64,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")                       
-            st.write("Insert By Company Circle Graph Here")
+            st.header("Top Internship Destinations")
+            fig = create_pie_chart(file_path)
+            st.plotly_chart(fig)
         with T2:
             st.title("Interactive Map for Internship/Co-op Location Data: 2021 - 2023 College of Engineering")
             choropleth_file_path = r"C:\Users\Shayna\Downloads\LATLONG(Civil Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
@@ -448,6 +485,7 @@ def main():
             report_salary()
 
     elif ms_intern == ["Computational Data Science"]:
+        file_path = r"C:\Users\Shayna\Downloads\LATLONG(Computational Data Science) HS EGRX-1220 Merge Combo_2021-2023.csv"
         T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
         with T1:
             st.header("Top Hiring Companies")
@@ -467,7 +505,9 @@ def main():
             with C5:
                 st.write("Comerica")
                 st.image("https://mma.prnewswire.com/media/1830002/Comerica_Logo.jpg?p=facebook")                        
-            st.write("Insert By Company Circle Graph Here")
+            st.header("Top Internship Destinations")
+            fig = create_pie_chart(file_path)
+            st.plotly_chart(fig)
         with T2:
             st.title("Interactive Map for Internship/Co-op Location Data: 2021 - 2023 College of Engineering")
             choropleth_file_path = r"C:\Users\Shayna\Downloads\LATLONG(Computational Data Science) HS EGRX-1220 Merge Combo_2021-2023.csv"
@@ -482,6 +522,7 @@ def main():
             report_salary()
     
     elif ms_intern == ["Computer Engineering"]:
+        file_path = r"C:\Users\Shayna\Downloads\LATLONG(Computer Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
         T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
         with T1:
             st.header("Top Hiring Companies")
@@ -517,7 +558,9 @@ def main():
             with C5:
                 st.write("Tesla")
                 st.image("https://1000logos.net/wp-content/uploads/2021/04/Tesla-logo.png")                        
-            st.write("Insert By Company Circle Graph Here")
+            st.header("Top Internship Destinations")
+            fig = create_pie_chart(file_path)
+            st.plotly_chart(fig)
         with T2:
             st.title("Interactive Map for Internship/Co-op Location Data: 2021 - 2023 College of Engineering")
             choropleth_file_path = r"C:\Users\Shayna\Downloads\LATLONG(Computer Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
@@ -532,6 +575,7 @@ def main():
             report_salary()
     
     elif ms_intern == ["Computer Science"]:
+        file_path = r"C:\Users\Shayna\Downloads\LATLONG(Computer Science) HS EGRX-1220 Merge Combo_2021-2023.csv"
         T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
         with T1:
             st.header("Top Hiring Companies")
@@ -567,7 +611,9 @@ def main():
             with C5:
                 st.write("Google")
                 st.image("https://cdn.vox-cdn.com/thumbor/2ECtQus43_-tjqtlxy0WE8peSEQ=/0x0:2012x1341/1400x1050/filters:focal(1006x670:1007x671)/cdn.vox-cdn.com/uploads/chorus_asset/file/15483559/google2.0.0.1441125613.jpg")                               
-            st.write("Insert By Company Circle Graph Here")
+            st.header("Top Internship Destinations")
+            fig = create_pie_chart(file_path)
+            st.plotly_chart(fig)
         with T2:
             st.title("Interactive Map for Internship/Co-op Location Data: 2021 - 2023 College of Engineering")
             choropleth_file_path = r"C:\Users\Shayna\Downloads\LATLONG(Computer Science) HS EGRX-1220 Merge Combo_2021-2023.csv"
@@ -582,6 +628,7 @@ def main():
             report_salary()
     
     elif ms_intern == ["Electrical Engineering"]:
+        file_path = r"C:\Users\Shayna\Downloads\LATLONG(Electrical Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
         T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
         with T1:
             st.header("Top Hiring Companies")
@@ -617,7 +664,9 @@ def main():
             with C5:
                 st.write("Northrop Grumman Corporation")
                 st.image("https://upload.wikimedia.org/wikipedia/commons/3/36/Northrop_Grumman_logo_blue-on-clear_2020.svg")                        
-                st.write("Insert By Company Circle Graph Here")
+            st.header("Top Internship Destinations")
+            fig = create_pie_chart(file_path)
+            st.plotly_chart(fig)
         with T2:
             st.title("Interactive Map for Internship/Co-op Location Data: 2021 - 2023 College of Engineering")
             choropleth_file_path = r"C:\Users\Shayna\Downloads\LATLONG(Electrical Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
@@ -632,6 +681,7 @@ def main():
             report_salary()
     
     elif ms_intern == ["Environmental Engineering"]:
+        file_path = r"C:\Users\Shayna\Downloads\LATLONG(Environmental Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
         T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
         with T1:
             st.header("Top Hiring Companies")
@@ -651,7 +701,9 @@ def main():
             with C5:
                 st.write("SME")
                 st.image("https://mma.prnewswire.com/media/179413/sme_logo.jpg?p=facebook")
-            st.write("Insert By Company Circle Graph Here")
+            st.header("Top Internship Destinations")
+            fig = create_pie_chart(file_path)
+            st.plotly_chart(fig)
         with T2:
             st.title("Interactive Map for Internship/Co-op Location Data: 2021 - 2023 College of Engineering")
             choropleth_file_path = r"C:\Users\Shayna\Downloads\LATLONG(Environmental Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
@@ -666,6 +718,7 @@ def main():
             report_salary()
 
     elif ms_intern == ["Materials Science & Engineering"]:
+        file_path = r"C:\Users\Shayna\Downloads\LATLONG(Materials Science and Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
         T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
         with T1:
             st.header("Top Hiring Companies")
@@ -685,7 +738,9 @@ def main():
             with C5:
                 st.write("Cleveland-Cliffs")
                 st.image("https://d1io3yog0oux5.cloudfront.net/clevelandcliffs/files/pages/clevelandcliffs/db/1149/description/cc-foundation-logo.jpg")                        
-            st.write("Insert By Company Circle Graph Here")
+            st.header("Top Internship Destinations")
+            fig = create_pie_chart(file_path)
+            st.plotly_chart(fig)
         with T2:
             st.title("Interactive Map for Internship/Co-op Location Data: 2021 - 2023 College of Engineering")
             choropleth_file_path = r"C:\Users\Shayna\Downloads\LATLONG(Materials Science and Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
@@ -700,6 +755,7 @@ def main():
             report_salary()
     
     elif ms_intern == ["Mechanical Engineering"]:
+        file_path = r"C:\Users\Shayna\Downloads\LATLONG(Mechanical Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
         T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
         with T1:
             st.header("Top Hiring Companies")
@@ -735,7 +791,9 @@ def main():
             with C5:
                 st.write("First Solar")
                 st.image("https://upload.wikimedia.org/wikipedia/en/b/bb/First_Solar_logo.svg")                                              
-            st.write("Insert By Company Circle Graph Here")
+            st.header("Top Internship Destinations")
+            fig = create_pie_chart(file_path)
+            st.plotly_chart(fig)
         with T2:
             st.title("Interactive Map for Internship/Co-op Location Data: 2021 - 2023 College of Engineering")
             choropleth_file_path = r"C:\Users\Shayna\Downloads\LATLONG(Mechanical Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
