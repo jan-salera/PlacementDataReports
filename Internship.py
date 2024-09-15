@@ -105,10 +105,8 @@ def choropleth_state_map(file_path):
         'Oregon': 'WI', 'Clifton': 'NJ'
     }
     
-    # Map cities to states
     all_majors_data['Employer State'] = all_majors_data['City'].map(lambda city: city_to_state.get(city, 'Unknown'))
 
-    # Get state counts from the mapped state data
     state_counts = all_majors_data['Employer State'].value_counts().reset_index()
     state_counts.columns = ['State', 'Count']
 
@@ -188,10 +186,8 @@ def display_city_visualization(file_path):
         st.info("Updated CSV file with Latitude and Longitude columns. Please reload the app to visualize.")
 
     if 'Employer Latitude' in data.columns and 'Employer Longitude' in data.columns:
-        # Calculate count of graduates per city
         city_counts = data.groupby('City').size().reset_index(name='Internship Count')
 
-        # Merge with original data to get latitude and longitude
         data_merged = pd.merge(data, city_counts, on='City', how='left')
 
         fig = px.scatter_geo(
@@ -239,16 +235,106 @@ def display_city_visualization(file_path):
     
     return fig
 
+def display_top_5_states(file_path):
+    data = pd.read_csv(file_path, encoding='latin1')
+
+    city_to_state = {
+        'Seattle': 'WA', 'San Francisco': 'CA', 'McLean': 'VA', 'Arlington': 'VA', 'Detroit': 'MI',
+        'New York': 'NY', 'Boston': 'MA', 'Phoenix': 'AZ', 'San Diego': 'CA', 'Dallas': 'TX',
+        'Charlotte': 'NC', 'Chicago': 'IL', 'Los Angeles': 'CA', 'Tampa': 'FL', 'Reno': 'NV',
+        'Syracuse': 'NY', 'Portland': 'OR', 'Kenai': 'AK', 'Indianapolis': 'IN', 'Philadelphia': 'PA',
+        'Findlay': 'OH', 'Ann Arbor': 'MI', 'Cincinnati': 'OH', 'Hoboken': 'NJ', 'Normal': 'IL',
+        'Mandan': 'ND', 'Pittsburgh': 'PA', 'Corpus Christi': 'TX', 'Minneapolis': 'MN', 'Houston': 'TX',
+        'Robinson': 'IL', 'Midland': 'MI', 'Dayton': 'OH', 'Salt Lake City': 'UT', 'Ames': 'IA',
+        'Austin': 'TX', 'Lansing': 'MI', 'Hartford': 'CT', 'Exton': 'PA', 'Bohemia': 'NY',
+        'Jacksonville': 'FL', 'Atlanta': 'GA', 'Washington DC': 'DC', 'St. Louis': 'MO', 'Kohler': 'WI',
+        'Raleigh': 'NC', 'Saginaw': 'MI', 'Kalamazoo': 'MI', 'Milwaukee': 'WI', 'Benton Harbor': 'MI',
+        'Hannibal': 'MO', 'San Antonio': 'TX', 'Durham': 'NC', 'Albany': 'NY', 'Piscataway': 'NJ',
+        'Kansas City': 'MO', 'Traverse City': 'MI', 'Greenville': 'SC', 'Stamford': 'CT', 'Des Moines': 'IA',
+        'Denver': 'CO', 'Baltimore': 'MD', 'East Chicago': 'IN', 'Au Gres': 'MI', 'Modesto': 'CA',
+        'Fort Wayne': 'IN', 'Camden': 'NJ', 'Columbus': 'OH', 'Essex Junction': 'VT', 'La Crosse': 'WI',
+        'Louisville': 'KY', 'Franklin': 'TN', 'Johnston': 'RI', 'Norway': 'MI', 'Quinnesec': 'MI',
+        'Burns Harbor': 'IN', 'Pittsfield': 'MA', 'West Palm Beach': 'FL', 'Freeport': 'IL', 'Jackson': 'MI',
+        'Manistee': 'MI', 'Columbia': 'SC', 'Preston': 'MD', 'Providence': 'RI', 'Fond Du Lac': 'WI',
+        'Fort Worth': 'TX', 'Savannah': 'GA', 'West Greenwich': 'RI', 'Lynn': 'MA', 'Andover': 'MA',
+        'Clark': 'NJ', 'Peoria': 'IL', 'Davidson': 'NC', 'Clarksville': 'TN', 'Warsaw': 'IN',
+        'Skillman': 'NJ', 'Hastings': 'MI', 'Stafford Springs': 'CT', 'Battle Creek': 'MI', 'Crane': 'IN',
+        'Oswego': 'NY', 'Livingston': 'TX', 'Fremont': 'CA', 'Somerset': 'NJ', 'Omaha': 'NE',
+        'O\'Fallon': 'MO', 'Neenah': 'WI', 'Litchfield': 'IL', 'Flint': 'MI', 'Sidney': 'OH',
+        'Oshkosh': 'WI', 'Harbor Beach': 'MI', 'Wichita': 'KS', 'Jefferson': 'WI', 'Shelby': 'NC',
+        'Trumbull': 'CT', 'Hudson': 'OH', 'Novice': 'TX', 'Lexington': 'KY', 'Bloomington': 'IN',
+        'Buffalo': 'NY', 'Toledo': 'OH', 'Gaylord': 'MI', 'Waupun': 'WI', 'Hoffman Estates': 'IL',
+        'Fort Collins': 'CO', 'Spartanburg': 'SC', 'Port Huron': 'MI', 'Sault Sainte Marie': 'MI',
+        'Tell City': 'IN', 'Charlevoix': 'MI', 'Cedar Rapids': 'IA', 'Cleveland': 'OH', 'Elk Rapids': 'MI',
+        'Evansville': 'IN', 'Stratham': 'NH', 'Charleston': 'SC', 'Dothan': 'AL', 'Midland City': 'AL',
+        'Killian': 'AL', 'Sewickley': 'PA', 'Appleton': 'WI', 'Elyria': 'OH', 'Adrian': 'MI',
+        'Kewadin': 'MI', 'Muscatine': 'IA', 'Iron Mountain': 'MI', 'Accokeek': 'MD', 'Jamaica Plain': 'MA',
+        'Newport News': 'VA', 'Nashville': 'TN', 'Rochester': 'NY', 'Mount Pleasant': 'MI', 'Tuscaloosa': 'AL',
+        'New London': 'CT', 'Mason City': 'IA', 'Washington': 'WA', 'Titusville': 'FL', 'Greeley': 'CO',
+        'West Lafayette': 'IN', 'Chantilly': 'VA', 'Petoskey': 'MI', 'Altoona': 'PA', 'Saint Petersburg': 'FL',
+        'Des Plaines': 'IL', 'Pittston Township': 'PA', 'Ludington': 'MI', 'Middletown': 'OH',
+        'Greenbay': 'WI', 'Plano': 'TX', 'Palmyra': 'NJ', 'Melbourne': 'FL', 'Tucson': 'AZ',
+        'Middle River': 'MD', 'Riverton': 'NJ', 'Carlstadt': 'NJ', 'Hahnville': 'LA', 'Huntsville': 'AL',
+        'California City': 'CA', 'Anchorage': 'AK', 'Verona': 'NJ', 'Sarasota': 'FL', 'Merrimack': 'NH',
+        'Boulder': 'CO', 'Gainesville': 'FL', 'Thief River Falls': 'MN', 'Hammond': 'IN', 'Iowa City': 'IA',
+        'Greenbelt': 'MD', 'Coraopolis': 'PA', 'Tinker AFB': 'OK', 'Lima': 'OH', 'Wallingford': 'CT',
+        'Oregon': 'WI', 'Clifton': 'NJ'
+    }
+
+    data['Employer State'] = data['City'].map(lambda city: city_to_state.get(city, 'Unknown'))
+
+    state_abbreviation_to_name = {
+        'AL': 'Alabama', 'AK': 'Alaska', 'AZ': 'Arizona', 'AR': 'Arkansas', 'CA': 'California',
+        'CO': 'Colorado', 'CT': 'Connecticut', 'DE': 'Delaware', 'FL': 'Florida', 'GA': 'Georgia',
+        'HI': 'Hawaii', 'ID': 'Idaho', 'IL': 'Illinois', 'IN': 'Indiana', 'IA': 'Iowa',
+        'KS': 'Kansas', 'KY': 'Kentucky', 'LA': 'Louisiana', 'ME': 'Maine', 'MD': 'Maryland',
+        'MA': 'Massachusetts', 'MI': 'Michigan', 'MN': 'Minnesota', 'MS': 'Mississippi', 'MO': 'Missouri',
+        'MT': 'Montana', 'NE': 'Nebraska', 'NV': 'Nevada', 'NH': 'New Hampshire', 'NJ': 'New Jersey',
+        'NM': 'New Mexico', 'NY': 'New York', 'NC': 'North Carolina', 'ND': 'North Dakota', 'OH': 'Ohio',
+        'OK': 'Oklahoma', 'OR': 'Oregon', 'PA': 'Pennsylvania', 'RI': 'Rhode Island', 'SC': 'South Carolina',
+        'SD': 'South Dakota', 'TN': 'Tennessee', 'TX': 'Texas', 'UT': 'Utah', 'VT': 'Vermont',
+        'VA': 'Virginia', 'WA': 'Washington', 'WV': 'West Virginia', 'WI': 'Wisconsin', 'WY': 'Wyoming'
+    }
+
+    data['Employer State'] = data['Employer State'].map(lambda x: state_abbreviation_to_name.get(x, None))
+    state_counts = data['Employer State'].value_counts().reset_index()
+    state_counts.columns = ['State', 'Count']
+
+    state_counts = state_counts[state_counts['State'].notna()]
+
+    top_5_states = state_counts.nlargest(5, 'Count')
+
+    st.subheader("Top 5 States by Internship Count")
+    for index, row in top_5_states.iterrows():
+        st.write(f"**{row['State']}:** {row['Count']} internships")
+
+
+def display_top_5_cities(file_path):
+    data = pd.read_csv(file_path, encoding='latin1')
+    if 'State' not in data.columns:
+        st.error("'State' column not found in the data.")
+        return
+    mi_cities = data[data['State'] == 'Michigan']
+    non_mi_cities = data[data['State'] != 'Michigan']
+    top_5_mi_cities = mi_cities['City'].value_counts().head(5)
+    top_5_non_mi_cities = non_mi_cities['City'].value_counts().head(5)
+    st.subheader("Top 5 Michigan Cities by Internship Count")
+    for city, count in top_5_mi_cities.items():
+        st.write(f"**{city}:** {count} internships")    
+    st.subheader("Top 5 Non-Michigan Cities by Internship Count")
+    for city, count in top_5_non_mi_cities.items():
+        st.write(f"**{city}:** {count} internships")
+
 
 
 def main():
-    st.header("Internship Data")
+    st.header("Internship Destination Data")
     st.write("The internship/co-op data includes results from student surveys for the period 2021 – 2023. The data has been combined and can be filtered by major, location, and top employers. The hourly salary average and median information is available by year and can be filtered by major.")
     options = ("All Engineering Majors", "Applied Engineering Sciences", "Biosystems Engineering", "Chemical Engineering", "Civil Engineering", "Computational Data Science", "Computer Engineering", "Computer Science", "Electrical Engineering", "Environmental Engineering", "Materials Science & Engineering", "Mechanical Engineering")
     ms_intern = st.multiselect("Note: Only select one option per filter.", options=options, placeholder = "Filter By Major", label_visibility="visible", default=["All Engineering Majors"])
 
     if ms_intern == ["All Engineering Majors"]:
-        file_path = r"C:\Users\Shayna\Downloads\LATLONGHS EGRX-1220 Merge Combo_2021-2023.csv"
+        file_path = r"C:\Users\Shayna\Downloads\LATLONG(All Majors) HS EGRX-1220 Merge Combo_2021-2023.csv"
         T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
         with T1:
             st.header("Top Hiring Companies")
@@ -289,15 +375,16 @@ def main():
             st.plotly_chart(fig)
         with T2:
             st.title("Interactive Map for Internship/Co-op Location Data: 2021 - 2023 College of Engineering")
-            choropleth_file_path = r"C:\Users\Shayna\OneDrive - Michigan State University\Documents\MSU The Center - Shayna Laptop\HS EGRX-1220 Merge Combo_2021-2023.csv"
+            choropleth_file_path = r"C:\Users\Shayna\Downloads\LATLONG(All Majors) HS EGRX-1220 Merge Combo_2021-2023.csv"
             fig = choropleth_state_map(choropleth_file_path)
             st.plotly_chart(fig)
-            
+            display_top_5_states(choropleth_file_path)
             st.title("Interactive City Visualization")
-            file_path = r"C:\Users\Shayna\Downloads\LATLONGHS EGRX-1220 Merge Combo_2021-2023.csv"
+            file_path = r"C:\Users\Shayna\Downloads\LATLONG(All Majors) HS EGRX-1220 Merge Combo_2021-2023.csv"
             display_city_visualization(file_path)
+            display_top_5_cities(file_path)
+
         with T3:
-            st.write("Report Average and Median Salary Here")
             report_salary(avgsal21 = "$20.86", avgsal22 = "$22.69", avgsal23 = "$24.42", avgsal2123 = "$22.66", medsal21 = "$20.00", medsal22 = "$21.00", medsal23 = "$23.00", medsal2123 = "$21.33", count21 = "278", count22 = "506", count23 = "477", count2123 = "1261")
     
     elif ms_intern == ["Applied Engineering Sciences"]:
@@ -329,12 +416,12 @@ def main():
             choropleth_file_path = r"C:\Users\Shayna\Downloads\LATLONG(Applied Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
             fig = choropleth_state_map(choropleth_file_path)
             st.plotly_chart(fig)
-            
+            display_top_5_states(choropleth_file_path)
             st.title("Interactive City Visualization")
             file_path = r"C:\Users\Shayna\Downloads\LATLONG(Applied Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
             display_city_visualization(file_path)
+            display_top_5_cities(file_path)
         with T3:
-            st.write("Report Average and Median Salary Here")
             report_salary(avgsal21 = "$20.73", avgsal22 = "$22.14", avgsal23 = "$24.48", avgsal2123 = "$22.45", medsal21 = "$20.13", medsal22 = "$21.00", medsal23 = "$25.00", medsal2123 = "$22.04", count21 = "22", count22 = "55", count23 = "41", count2123 = "118")
 
     elif ms_intern == ["Biosystems Engineering"]:
@@ -366,12 +453,12 @@ def main():
             choropleth_file_path = r"C:\Users\Shayna\Downloads\LATLONG(Biosystems Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
             fig = choropleth_state_map(choropleth_file_path)
             st.plotly_chart(fig)
-            
+            display_top_5_states(choropleth_file_path)
             st.title("Interactive City Visualization")
             file_path = r"C:\Users\Shayna\Downloads\LATLONG(Biosystems Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
             display_city_visualization(file_path)
+            display_top_5_cities(file_path)
         with T3:
-            st.write("Report Average and Median Salary Here")
             report_salary(avgsal21 = "$18.30", avgsal22 = "$19.04", avgsal23 = "$20.49", avgsal2123 = "$19.28", medsal21 = "$18.25", medsal22 = "$17.00", medsal23 = "$20.00", medsal2123 = "$18.42", count21 = "10", count22 = "21", count23 = "19", count2123 = "50")
 
     elif ms_intern == ["Chemical Engineering"]:
@@ -420,12 +507,12 @@ def main():
             choropleth_file_path = r"C:\Users\Shayna\Downloads\LATLONG(Chemical Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
             fig = choropleth_state_map(choropleth_file_path)
             st.plotly_chart(fig)
-            
+            display_top_5_states(choropleth_file_path)
             st.title("Interactive City Visualization")
             file_path = r"C:\Users\Shayna\Downloads\LATLONG(Chemical Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
             display_city_visualization(file_path)
+            display_top_5_cities(file_path)
         with T3:
-            st.write("Report Average and Median Salary Here")
             report_salary(avgsal21 = "$22.46", avgsal22 = "$24.39", avgsal23 = "$22.85", avgsal2123 = "$23.23", medsal21 = "$22.50", medsal22 = "$24.00", medsal23 = "$22.50", medsal2123 = "$23.00", count21 = "39", count22 = "61", count23 = "54", count2123 = "154")
     
     elif ms_intern == ["Civil Engineering"]:
@@ -473,12 +560,12 @@ def main():
             choropleth_file_path = r"C:\Users\Shayna\Downloads\LATLONG(Civil Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
             fig = choropleth_state_map(choropleth_file_path)
             st.plotly_chart(fig)
-            
+            display_top_5_states(choropleth_file_path)
             st.title("Interactive City Visualization")
             file_path = r"C:\Users\Shayna\Downloads\LATLONG(Civil Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
             display_city_visualization(file_path)
+            display_top_5_cities(file_path)
         with T3:
-            st.write("Report Average and Median Salary Here")
             report_salary(avgsal21 = "$17.86", avgsal22 = "$19.75", avgsal23 = "$22.22", avgsal2123 = "$19.94", medsal21 = "$18.00", medsal22 = "$18.00", medsal23 = "$21.00", medsal2123 = "$19.00", count21 = "14", count22 = "39", count23 = "50", count2123 = "103")
 
     elif ms_intern == ["Computational Data Science"]:
@@ -510,12 +597,12 @@ def main():
             choropleth_file_path = r"C:\Users\Shayna\Downloads\LATLONG(Computational Data Science) HS EGRX-1220 Merge Combo_2021-2023.csv"
             fig = choropleth_state_map(choropleth_file_path)
             st.plotly_chart(fig)
-            
+            display_top_5_states(choropleth_file_path)
             st.title("Interactive City Visualization")
             file_path = r"C:\Users\Shayna\Downloads\LATLONG(Computational Data Science) HS EGRX-1220 Merge Combo_2021-2023.csv"
             display_city_visualization(file_path)
+            display_top_5_cities(file_path)
         with T3:
-            st.write("Report Average and Median Salary Here")
             report_salary(avgsal21 = "$16.75", avgsal22 = "$24.37", avgsal23 = "$26.83", avgsal2123 = "$22.65", medsal21 = "$16.75", medsal22 = "$20.50", medsal23 = "$23.50", medsal2123 = "$20.25", count21 = "2", count22 = "12", count23 = "6", count2123 = "20")
     
     elif ms_intern == ["Computer Engineering"]:
@@ -563,12 +650,12 @@ def main():
             choropleth_file_path = r"C:\Users\Shayna\Downloads\LATLONG(Computer Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
             fig = choropleth_state_map(choropleth_file_path)
             st.plotly_chart(fig)
-            
+            display_top_5_states(choropleth_file_path)
             st.title("Interactive City Visualization")
             file_path = r"C:\Users\Shayna\Downloads\LATLONG(Computer Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
             display_city_visualization(file_path)
+            display_top_5_cities(file_path)
         with T3:
-            st.write("Report Average and Median Salary Here")
             report_salary(avgsal21 = "$19.99", avgsal22 = "$20.33", avgsal23 = "$25.48", avgsal2123 = "$21.93", medsal21 = "$20.00", medsal22 = "$20.00", medsal23 = "$23.00", medsal2123 = "$21.00", count21 = "18", count22 = "18", count23 = "22", count2123 = "58")
     
     elif ms_intern == ["Computer Science"]:
@@ -616,12 +703,12 @@ def main():
             choropleth_file_path = r"C:\Users\Shayna\Downloads\LATLONG(Computer Science) HS EGRX-1220 Merge Combo_2021-2023.csv"
             fig = choropleth_state_map(choropleth_file_path)
             st.plotly_chart(fig)
-            
+            display_top_5_states(choropleth_file_path)
             st.title("Interactive City Visualization")
             file_path = r"C:\Users\Shayna\Downloads\LATLONG(Computer Science) HS EGRX-1220 Merge Combo_2021-2023.csv"
             display_city_visualization(file_path)
+            display_top_5_cities(file_path)
         with T3:
-            st.write("Report Average and Median Salary Here")
             report_salary(avgsal21 = "$23.03", avgsal22 = "$26.84", avgsal23 = "$29.96", avgsal2123 = "$26.61", medsal21 = "$25.00", medsal22 = "$25.00", medsal23 = "$25.00", medsal2123 = "$23.67", count21 = "36", count22 = "92", count23 = "97", count2123 = "225")
     
     elif ms_intern == ["Electrical Engineering"]:
@@ -669,12 +756,12 @@ def main():
             choropleth_file_path = r"C:\Users\Shayna\Downloads\LATLONG(Electrical Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
             fig = choropleth_state_map(choropleth_file_path)
             st.plotly_chart(fig)
-            
+            display_top_5_states(choropleth_file_path)
             st.title("Interactive City Visualization")
             file_path = r"C:\Users\Shayna\Downloads\LATLONG(Electrical Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
             display_city_visualization(file_path)
+            display_top_5_cities(file_path)
         with T3:
-            st.write("Report Average and Median Salary Here")
             report_salary(avgsal21 = "$19.86", avgsal22 = "$22.00", avgsal23 = "$23.13", avgsal2123 = "$21.66", medsal21 = "$19.75", medsal22 = "$22.00", medsal23 = "$22.25", medsal2123 = "$21.33", count21 = "48", count22 = "63", count23 = "58", count2123 = "169")
     
     elif ms_intern == ["Environmental Engineering"]:
@@ -706,12 +793,12 @@ def main():
             choropleth_file_path = r"C:\Users\Shayna\Downloads\LATLONG(Environmental Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
             fig = choropleth_state_map(choropleth_file_path)
             st.plotly_chart(fig)
-            
+            display_top_5_states(choropleth_file_path)
             st.title("Interactive City Visualization")
             file_path = r"C:\Users\Shayna\Downloads\LATLONG(Environmental Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
             display_city_visualization(file_path)
+            display_top_5_cities(file_path)
         with T3:
-            st.write("Report Average and Median Salary Here")
             report_salary(avgsal21 = "$15.00", avgsal22 = "$17.53", avgsal23 = "$21.66", avgsal2123 = "$18.06", medsal21 = "$15.00", medsal22 = "$17.00", medsal23 = "$20.50", medsal2123 = "$17.50", count21 = "5", count22 = "15", count23 = "20", count2123 = "40")
 
     elif ms_intern == ["Materials Science & Engineering"]:
@@ -743,12 +830,12 @@ def main():
             choropleth_file_path = r"C:\Users\Shayna\Downloads\LATLONG(Materials Science and Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
             fig = choropleth_state_map(choropleth_file_path)
             st.plotly_chart(fig)
-            
+            display_top_5_states(choropleth_file_path)
             st.title("Interactive City Visualization")
             file_path = r"C:\Users\Shayna\Downloads\LATLONG(Materials Science and Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
             display_city_visualization(file_path)
+            display_top_5_cities(file_path)
         with T3:
-            st.write("Report Average and Median Salary Here")
             report_salary(avgsal21 = "$26.66", avgsal22 = "$25.61", avgsal23 = "$21.06", avgsal2123 = "$24.44", medsal21 = "$24.25", medsal22 = "$21.88", medsal23 = "$19.00", medsal2123 = "$21.71", count21 = "8", count22 = "11", count23 = "10", count2123 = "29")
     
     elif ms_intern == ["Mechanical Engineering"]:
@@ -796,12 +883,12 @@ def main():
             choropleth_file_path = r"C:\Users\Shayna\Downloads\LATLONG(Mechanical Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
             fig = choropleth_state_map(choropleth_file_path)
             st.plotly_chart(fig)
-            
+            display_top_5_states(choropleth_file_path)
             st.title("Interactive City Visualization")
             file_path = r"C:\Users\Shayna\Downloads\LATLONG(Mechanical Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
             display_city_visualization(file_path)
+            display_top_5_cities(file_path)
         with T3:
-            st.write("Report Average and Median Salary Here")
             report_salary(avgsal21 = "$20.68", avgsal22 = "$21.40", avgsal23 = "$22.96", avgsal2123 = "$21.68", medsal21 = "$20.00", medsal22 = "$20.30", medsal23 = "$22.00", medsal2123 = "$20.77", count21 = "76", count22 = "119", count23 = "100", count2123 = "295")
 
 if __name__ == "__main__":
