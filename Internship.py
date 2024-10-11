@@ -202,7 +202,7 @@ def display_city_visualization(file_path):
                 },
                 size='Internship Count',
                 size_max=25,
-                color_discrete_sequence=px.colors.sequential.Greens
+                color_discrete_sequence=px.colors.qualitative.T10
                 )
 
         fig.update_traces(marker=dict(line=dict(width=2, color='#577b59')))
