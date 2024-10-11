@@ -166,7 +166,7 @@ def create_pie_chart(file_path):
     fig = px.pie(filtered_company_counts, 
                  names='Employer Name', 
                  values='Count',
-                 color_discrete_sequence=px.colors.sequential.Greens)
+                 color_discrete_sequence=px.colors.qualitative.T10)
 
     fig.update_traces(textinfo='none',
                       hoverinfo='label+value+percent')
