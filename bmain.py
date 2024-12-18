@@ -498,7 +498,7 @@ def main():
                     AllGender2022 = [541, 217]
                     data_gender(AllGender2022)
             with tab2:
-                st.header("PLACEHOLDER UNTIL ACTUAL DATA IS CREATED")
+                st.image("2022 (1).jpg")
             with tab3:
                 fig = choropleth_state_map("CSV_Spring 2022_2-21-24.csv")
                 st.header('Interactive Map for Destination Data: Spring 2022 College of Engineering Graduating Class')
@@ -578,7 +578,7 @@ def main():
                     AESGender2022 = [32, 25]
                     data_gender(AESGender2022)
             with t2:
-                st.header("INSERT EMPLOYER DATA HERE")
+                st.image("2022 (2).jpg")
             with t3:
                 st.header("INSERT MAPS")
         elif ["2021"] == ms1:
@@ -655,7 +655,7 @@ def main():
                     BEGender2022 = [21, 29]
                     data_gender(BEGender2022, InverseGender)
             with t2:
-                st.header("INSERT EMPLOYER GRAPHIC")
+                st.image("2022 (3).jpg")
             with t3:
                 st.header("INSERT MAPS")
         elif ["2021"] == ms1:
@@ -734,7 +734,7 @@ def main():
                     ChemEGender2022 = [53, 38]
                     data_gender(ChemEGender2022)
             with t2:
-                st.header("INSERT EMPLOYER GRAPHICS")
+                st.image("2022 (4).jpg")
             with t3:
                 st.header("INSERT MAPS")
         elif ["2021"] == ms1:
@@ -812,7 +812,7 @@ def main():
                     CEGender2022 = [31, 20]
                     data_gender(CEGender2022)
             with t2:
-                st.header("INSERT EMPLOYER GRAPHIC")
+                st.image("2022 (5).jpg")
             with t3:
                 st.header("INSERT MAPS")
         elif ["2021"] == ms1:
@@ -890,7 +890,7 @@ def main():
                 with tab3:
                     data_gender([4, 3])
             with t2:
-                st.header("INSERT EMPLOYER GRAPHIC")
+                st.image("2022 (6).jpg")
             with t3:
                 st.header("INSERT MAPS")
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
@@ -948,7 +948,7 @@ def main():
                     CpEGender2022 = [34, 8]
                     data_gender(CpEGender2022)
             with t2:
-                st.header("INSERT EMPLOYER GRAPHIC")
+                st.image("2022 (7).jpg")
             with t3:
                 st.header("INSERT MAPS")
         elif ["2021"] == ms1:
@@ -1026,7 +1026,7 @@ def main():
                     CSEGender2022 = [164, 29]
                     data_gender(CSEGender2022)
             with t2:
-                st.header("INSERT GRAPHIC")
+                st.image("2022 (8).jpg")
             with t3:
                 st.header("INSERT MAP")   
         elif ["2021"] == ms1:
@@ -1102,7 +1102,7 @@ def main():
                     EEGender2022 = [50, 10]
                     data_gender(EEGender2022)
             with t2:
-                st.header("INSERT GRAPHIC")
+                st.image("2022 (9).jpg")
             with t3:
                 st.header("INSERT MAPS")
         elif ["2021"] == ms1:
@@ -1180,7 +1180,7 @@ def main():
                     ENEGender2022 = [10, 10]
                     data_gender(ENEGender2022)
             with t2:
-                st.header("INSERT GRAPHIC")
+                st.image("2022 (10).jpg")
             with t3:
                 st.header("INSERT MAPS")
         elif ["2021"] == ms1:
@@ -1258,7 +1258,7 @@ def main():
                     MSGender2022 = [15, 8]
                     data_gender(MSGender2022)
             with t2:
-                st.header("INSERT GRAPHIC")
+                st.image("2022 (11).jpg")
             with t3:
                 st.header("INSERT MAPS")
         elif ["2021"] == ms1:
@@ -1335,7 +1335,7 @@ def main():
                     MEGender2022 = [127, 37]
                     data_gender(MEGender2022)
             with t2:
-                st.header("INSERT GRAPHICS")
+                st.image("2022 (12).jpg")
             with t3:
                 st.header("INSERT MAPS")
         elif ["2021"] == ms1:
