@@ -481,8 +481,7 @@ def main():
             with tab3:
                 fig = choropleth_state_map("CSV_Spring 2023_3-7-24.csv")
                 st.header('Interactive Map for Destination Data: Spring 2023 College of Engineering Graduating Class')
-                st.plotly_chart(fig)
-                
+                st.plotly_chart(fig)         
         elif ["2022"] == ms1:
             tab1, tab2, tab3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with tab1:
@@ -504,7 +503,6 @@ def main():
                 fig = choropleth_state_map("CSV_Spring 2022_2-21-24.csv")
                 st.header('Interactive Map for Destination Data: Spring 2022 College of Engineering Graduating Class')
                 st.plotly_chart(fig)
-
         elif ["2021"] == ms1:
             tab1, tab2, tab3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with tab1:
@@ -521,12 +519,11 @@ def main():
                     AllGender2021 = [556, 190]
                     data_gender(AllGender2021)
             with tab2:
-                st.header("PLACEHOLDER UNTIL ACTUAL DATA IS CREATED")
+                st.image("2021 (1).jpg")
             with tab3:
                 fig = choropleth_state_map("CSV_Spring 2021_2-21-24.csv")
                 st.header('Interactive Map for Destination Data: Spring 2021 College of Engineering Graduating Class')
-                st.plotly_chart(fig)
-        
+                st.plotly_chart(fig)    
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -601,7 +598,7 @@ def main():
                     AESGender2021 = [46, 26]
                     data_gender(AESGender2021)
             with t2:
-                st.header("INSERT EMPLOYER GRAPHIC HERE")
+                st.image("2021 (2).jpg")
             with t3:
                 st.header("INSERT MAPS HERE") 
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
@@ -678,7 +675,7 @@ def main():
                     BEGender2021 = [27, 20]
                     data_gender(BEGender2021)
             with t2:
-                st.header("INSERT EMPLOYER GRAPHIC")  
+                st.image("2021 (3).jpg")
             with t3:
                 st.header("INSERT MAPS")      
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
@@ -698,65 +695,85 @@ def main():
                 with tab2:
                     st.header('College of Engineering Spring 21-23 Destination Locations - By City: BE Major')
                     display_city_visualization("LATLONGDestinationCumulativeDataset(Biosystems Engineering).csv")
-                
-    elif ["Computational Data Science"] == ms:
+
+    elif ["Chemical Engineering"] == ms:
         if ["2023"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
-                key_stats(year= "2023", kr = "93%", krinfo = "13/14", pr = "92%", prinfo = "12/13", avgsal = "$91,357", medsal = "$95,000", employ = "84%", grad = "8%")
-                st.header("Spring 2023 Graduating Class Composition: CDS Major")
+                key_stats(year= "2023", kr = "95%", krinfo = "90/95", pr = "98%", prinfo = "88/90", avgsal = "$77,315", medsal = "$76,000", employ = "83%", grad = "15%")
+                st.header("Spring 2023 Graduating Class Composition: ChemE Major")
                 tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
                 with tab1:
-                    CDSColors = ['#CECECE', '#CECECE', '#CECECE','#CECECE',
-                    '#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE', '#18453B']  
-                    data_major(CDSColors)                              
+                    ChemEColors = ['#CECECE', '#CECECE','#18453B','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE']
+                    data_major(ChemEColors)
                 with tab2:
-                    CDSEthnicity2023 = ['White', 'Asian', 'Hispanic/Latine', 'Two or More Races']
-                    CDSCount2023 = [8, 3, 1, 2]
-                    data_ethnicity(CDSCount2023, CDSEthnicity2023)
+                    ChemEEthnicity2023 = ['White', 'Asian', 'International', 'Hispanic/Latine', 'Two or More Races', 'Not Specified', "Black/African American"]
+                    ChemECount2023 = [74, 6, 4, 3, 2, 2, 4]
+                    data_ethnicity(ChemECount2023, ChemEEthnicity2023)
                 with tab3:
-                    CDSGender2023 = [9, 5]
-                    data_gender(CDSGender2023)
+                    ChemEGender2023 = [54, 41]
+                    data_gender(ChemEGender2023)
             with t2:
-                st.header("INSERT GRAPHIC")
+                st.header("INSERT EMPLOYER GRAPHIC")
             with t3:
                 st.header("INSERT MAPS")
         elif ["2022"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
-                key_stats(year= "2022", kr = "86%", krinfo = "6/7", pr = "100%", prinfo = "6/6", avgsal = "$70,333", medsal = "$75,000", employ = "83%", grad = "17%")
-                st.header("Spring 2022 Graduating Class Composition: CDS Major")
+                key_stats(year= "2022", kr = "82%", krinfo = "75/91", pr = "97%", prinfo = "73/75", avgsal = "$71,561", medsal = "$72,500", employ = "87%", grad = "10%")
+                st.header("Spring 2022 Graduating Class Composition: ChemE Major")
                 tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
                 with tab1:
-                    CDSColors = ['#CECECE', '#CECECE', '#CECECE','#CECECE','#CECECE','#CECECE', '#CECECE','#CECECE','#CECECE','#CECECE', '#18453B']
-                    data_major(CDSColors, Major2022)
+                    ChemEColors = ['#CECECE', '#CECECE','#18453B','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE']
+                    data_major(ChemEColors, Major2022)
                 with tab2:
-                    CDSEthnicity2022 = ['White', 'Asian', 'International', 'Not Reported']
-                    CDSCount2022 = [4, 1, 1, 1]
-                    data_ethnicity(CDSCount2022, CDSEthnicity2022)
+                    ChemEEthnicity2022 = ['White', 'Asian', 'International', 'Two or More Races', 'Not Specified', "Black/African American"]
+                    ChemECount2022 = [75, 6, 5, 3, 1 , 1]
+                    data_ethnicity(ChemECount2022, ChemEEthnicity2022)
                 with tab3:
-                    data_gender([4, 3])
+                    ChemEGender2022 = [53, 38]
+                    data_gender(ChemEGender2022)
             with t2:
-                st.header("INSERT EMPLOYER GRAPHIC")
+                st.header("INSERT EMPLOYER GRAPHICS")
             with t3:
                 st.header("INSERT MAPS")
+        elif ["2021"] == ms1:
+            t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
+            with t1:
+                key_stats(year= "2021", kr = "83%", krinfo = "83/100", pr = "94%", prinfo = "78/83", avgsal = "$69,604", medsal = "$70,000", employ = "86%", grad = "8%")
+                st.header("Spring 2021 Graduating Class Composition: ChemE Major")
+                tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
+                with tab1:
+                    ChemEColors = ['#CECECE', '#CECECE','#18453B','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE']
+                    data_major(ChemEColors, Major2021, MajorList2021)
+                with tab2:
+                    ChemECount2021 = [73, 8, 2, 4, 10, 3]
+                    ChemEEthnicity2021 = ["White", "Asian", "Black/African American", "Hispanic/Latine", "International", "Two or More Races"]
+                    data_ethnicity(ChemECount2021, ChemEEthnicity2021)
+                with tab3:
+                    ChemEGender2021 = [66, 34]
+                    data_gender(ChemEGender2021)
+            with t2:
+                st.image("2021 (4).jpg")
+            with t3:
+                st.header("INSERT MAPS")         
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
-                c_key_stats(0, '86%', '93%', '90%', 0, '100%', '92%', '96%', 0, '70,333', '91,357', '80,845', 0, '75,000', '95,000', '85,000', "Two") 
+                c_key_stats('83%', '82%', '95%', '87%', '94%', '97%', '98%', '96%','69,604', '71,561', '77,315', '72,827', '70,000', '72,500', '76,000', '72,833')
             with t2:
-                st.header('INSERT GRAPHIC')
+                st.header("INSERT EMPLOYER GRAPHIC")
             with t3:
                 tab1, tab2 = st.tabs(["By State", "By City"])
                 with tab1:
-                    CDSFig = choropleth_state_map("DestinationCumulativeDataset(Computational Data Science).csv")
-                    st.header('College of Engineering Spring 21-23 Destination Locations - By State: CDS Major')
-                    st.plotly_chart(CDSFig) 
-                    top_5_employer_states("LATLONGDestinationCumulativeDataset(Computational Data Science).csv")
+                    ChemEFig = choropleth_state_map("DestinationCumulativeDataset(Chemical Engineering).csv")
+                    st.header('College of Engineering Spring 21-23 Destination Locations - By State: ChemE Major')
+                    st.plotly_chart(ChemEFig)
+                    top_5_employer_states("LATLONGDestinationCumulativeDataset(Chemical Engineering).csv")
                 with tab2:
-                    st.header('College of Engineering Spring 21-23 Destination Locations - By City: BE Major')
-                    display_city_visualization("LATLONGDestinationCumulativeDataset(Computational Data Science).csv")
-    
+                    st.header('College of Engineering Spring 21-23 Destination Locations - By City: ChemE Major')
+                    display_city_visualization("LATLONGDestinationCumulativeDataset(Chemical Engineering).csv")
+                 
     elif ["Civil Engineering"] == ms:
         if ["2023"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
@@ -815,10 +832,9 @@ def main():
                     CEGender2021 = [37, 7]
                     data_gender(CEGender2021)
             with t2:
-                st.header("INSERT EMPLOYER GRAPHIC")
+                st.image("2021 (5).jpg")
             with t3:
                 st.header("INSERT MAP")
-
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -835,86 +851,65 @@ def main():
                 with tab2:
                     st.header('College of Engineering Spring 21-23 Destination Locations - By City: CE Major')
                     display_city_visualization("LATLONGDestinationCumulativeDataset(Civil Engineering).csv")
-                
-    elif ["Chemical Engineering"] == ms:
 
+    elif ["Computational Data Science"] == ms:
         if ["2023"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
-                key_stats(year= "2023", kr = "95%", krinfo = "90/95", pr = "98%", prinfo = "88/90", avgsal = "$77,315", medsal = "$76,000", employ = "83%", grad = "15%")
-                st.header("Spring 2023 Graduating Class Composition: ChemE Major")
+                key_stats(year= "2023", kr = "93%", krinfo = "13/14", pr = "92%", prinfo = "12/13", avgsal = "$91,357", medsal = "$95,000", employ = "84%", grad = "8%")
+                st.header("Spring 2023 Graduating Class Composition: CDS Major")
                 tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
                 with tab1:
-                    ChemEColors = ['#CECECE', '#CECECE','#18453B','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE']
-                    data_major(ChemEColors)
+                    CDSColors = ['#CECECE', '#CECECE', '#CECECE','#CECECE',
+                    '#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE', '#18453B']  
+                    data_major(CDSColors)                              
                 with tab2:
-                    ChemEEthnicity2023 = ['White', 'Asian', 'International', 'Hispanic/Latine', 'Two or More Races', 'Not Specified', "Black/African American"]
-                    ChemECount2023 = [74, 6, 4, 3, 2, 2, 4]
-                    data_ethnicity(ChemECount2023, ChemEEthnicity2023)
+                    CDSEthnicity2023 = ['White', 'Asian', 'Hispanic/Latine', 'Two or More Races']
+                    CDSCount2023 = [8, 3, 1, 2]
+                    data_ethnicity(CDSCount2023, CDSEthnicity2023)
                 with tab3:
-                    ChemEGender2023 = [54, 41]
-                    data_gender(ChemEGender2023)
+                    CDSGender2023 = [9, 5]
+                    data_gender(CDSGender2023)
             with t2:
-                st.header("INSERT EMPLOYER GRAPHIC")
+                st.header("INSERT GRAPHIC")
             with t3:
                 st.header("INSERT MAPS")
         elif ["2022"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
-                key_stats(year= "2022", kr = "82%", krinfo = "75/91", pr = "97%", prinfo = "73/75", avgsal = "$71,561", medsal = "$72,500", employ = "87%", grad = "10%")
-                st.header("Spring 2022 Graduating Class Composition: ChemE Major")
+                key_stats(year= "2022", kr = "86%", krinfo = "6/7", pr = "100%", prinfo = "6/6", avgsal = "$70,333", medsal = "$75,000", employ = "83%", grad = "17%")
+                st.header("Spring 2022 Graduating Class Composition: CDS Major")
                 tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
                 with tab1:
-                    ChemEColors = ['#CECECE', '#CECECE','#18453B','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE']
-                    data_major(ChemEColors, Major2022)
+                    CDSColors = ['#CECECE', '#CECECE', '#CECECE','#CECECE','#CECECE','#CECECE', '#CECECE','#CECECE','#CECECE','#CECECE', '#18453B']
+                    data_major(CDSColors, Major2022)
                 with tab2:
-                    ChemEEthnicity2022 = ['White', 'Asian', 'International', 'Two or More Races', 'Not Specified', "Black/African American"]
-                    ChemECount2022 = [75, 6, 5, 3, 1 , 1]
-                    data_ethnicity(ChemECount2022, ChemEEthnicity2022)
+                    CDSEthnicity2022 = ['White', 'Asian', 'International', 'Not Reported']
+                    CDSCount2022 = [4, 1, 1, 1]
+                    data_ethnicity(CDSCount2022, CDSEthnicity2022)
                 with tab3:
-                    ChemEGender2022 = [53, 38]
-                    data_gender(ChemEGender2022)
-            with t2:
-                st.header("INSERT EMPLOYER GRAPHICS")
-            with t3:
-                st.header("INSERT MAPS")
-        elif ["2021"] == ms1:
-            t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
-            with t1:
-                key_stats(year= "2021", kr = "83%", krinfo = "83/100", pr = "94%", prinfo = "78/83", avgsal = "$69,604", medsal = "$70,000", employ = "86%", grad = "8%")
-                st.header("Spring 2021 Graduating Class Composition: ChemE Major")
-                tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
-                with tab1:
-                    ChemEColors = ['#CECECE', '#CECECE','#18453B','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE']
-                    data_major(ChemEColors, Major2021, MajorList2021)
-                with tab2:
-                    ChemECount2021 = [73, 8, 2, 4, 10, 3]
-                    ChemEEthnicity2021 = ["White", "Asian", "Black/African American", "Hispanic/Latine", "International", "Two or More Races"]
-                    data_ethnicity(ChemECount2021, ChemEEthnicity2021)
-                with tab3:
-                    ChemEGender2021 = [66, 34]
-                    data_gender(ChemEGender2021)
+                    data_gender([4, 3])
             with t2:
                 st.header("INSERT EMPLOYER GRAPHIC")
             with t3:
-                st.header("INSERT MAPS")         
+                st.header("INSERT MAPS")
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
-                c_key_stats('83%', '82%', '95%', '87%', '94%', '97%', '98%', '96%','69,604', '71,561', '77,315', '72,827', '70,000', '72,500', '76,000', '72,833')
+                c_key_stats(0, '86%', '93%', '90%', 0, '100%', '92%', '96%', 0, '70,333', '91,357', '80,845', 0, '75,000', '95,000', '85,000', "Two") 
             with t2:
-                st.header("INSERT EMPLOYER GRAPHIC")
+                st.header('INSERT GRAPHIC')
             with t3:
                 tab1, tab2 = st.tabs(["By State", "By City"])
                 with tab1:
-                    ChemEFig = choropleth_state_map("DestinationCumulativeDataset(Chemical Engineering).csv")
-                    st.header('College of Engineering Spring 21-23 Destination Locations - By State: ChemE Major')
-                    st.plotly_chart(ChemEFig)
-                    top_5_employer_states("LATLONGDestinationCumulativeDataset(Chemical Engineering).csv")
+                    CDSFig = choropleth_state_map("DestinationCumulativeDataset(Computational Data Science).csv")
+                    st.header('College of Engineering Spring 21-23 Destination Locations - By State: CDS Major')
+                    st.plotly_chart(CDSFig) 
+                    top_5_employer_states("LATLONGDestinationCumulativeDataset(Computational Data Science).csv")
                 with tab2:
-                    st.header('College of Engineering Spring 21-23 Destination Locations - By City: ChemE Major')
-                    display_city_visualization("LATLONGDestinationCumulativeDataset(Chemical Engineering).csv")
-               
+                    st.header('College of Engineering Spring 21-23 Destination Locations - By City: BE Major')
+                    display_city_visualization("LATLONGDestinationCumulativeDataset(Computational Data Science).csv")
+
     elif ["Computer Engineering"] == ms:
         if ["2023"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
@@ -973,7 +968,7 @@ def main():
                     CpEGender2021 = [37, 5]
                     data_gender(CpEGender2021)
             with t2:
-                st.header("INSERT GRAPHIC")
+                st.image("2021 (7).jpg")
             with t3:
                 st.header("INSERT MAPS")
 
@@ -1051,10 +1046,9 @@ def main():
                     CSEGender2021 = [139, 34]
                     data_gender(CSEGender2021)
             with t2:
-                st.header("INSERT GRAPHIC")
+                st.image("2021 (8).jpg")
             with t3:
                 st.header("INSERT MAPS")  
-
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1128,7 +1122,7 @@ def main():
                     EEGender2021 = [56, 11]
                     data_gender(EEGender2021)
             with t2:
-                st.header("INSERT GRAPHIC")
+                st.image("2021 (9).jpg")
             with t3:
                 st.header("INSERT MAPS")  
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
@@ -1169,7 +1163,6 @@ def main():
                 st.header("INSERT GRAPHIC")
             with t3:
                 st.header("INSERT MAP")
-
         elif ["2022"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1207,7 +1200,7 @@ def main():
                     ENEGender2021 = [11, 13]
                     data_gender(ENEGender2021, InverseGender)
             with t2:
-                st.header("INSERT GRAPHIC")
+                st.image("2021 (10).jpg")
             with t3:
                 st.header("INSERT MAPS")
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
@@ -1226,83 +1219,6 @@ def main():
                 with tab2:
                     st.header('College of Engineering Spring 21-23 Destination Locations - By City: ENE Major')
                     display_city_visualization("LATLONGDestinationCumulativeDataset(Environmental Engineering).csv")
-            
-    elif ["Mechanical Engineering"] == ms:
-        if ["2023"] == ms1:
-            t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
-            with t1:
-                key_stats(year= "2023", kr = "92%", krinfo = "157/171", pr = "95%", prinfo = "149/157", avgsal = "$75,069", medsal = "$74,500", employ = "79%", grad = "15%", other = "1%")
-                st.header("Spring 2023 Graduating Class Composition: ME Major")
-                tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
-                with tab1:
-                    MEColors = ['#CECECE', '#18453B', '#CECECE', '#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE']
-                    data_major(MEColors)
-                with tab2:
-                    MEEthnicity2023 = ['White', 'Asian', 'International', 'Hispanic/Latine', 'Black/African American', 'Two or More Races', 'Not Specified', 'American Indian/Alaskan Native']
-                    MECount2023 = [117, 15, 20, 9, 5, 1, 3, 1]
-                    data_ethnicity(MECount2023, MEEthnicity2023)
-                with tab3:
-                    MEGender2023 = [146, 25]
-                    data_gender(MEGender2023)
-            with t2:
-                st.header("INSERT GRAPHIC")
-            with t3:
-                st.header("INSERT MAPS")
-        if ["2022"] == ms1:
-            t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
-            with t1:
-                key_stats(year= "2022", kr = "84%", krinfo = "137/164", pr = "98%", prinfo = "134/137", avgsal = "$70,685", medsal = "$72,000", employ = "84%", grad = "14%")
-                st.header("Spring 2022 Graduating Class Composition: ME Major")
-                tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
-                with tab1:
-                    MEColors = ['#CECECE', '#18453B', '#CECECE', '#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE']
-                    data_major(MEColors, Major2022)
-                with tab2:
-                    MECount2022 = [128, 11, 10, 5, 1, 6, 3]
-                    data_ethnicity(MECount2022, AllEthnicity[:7])
-                with tab3:
-                    MEGender2022 = [127, 37]
-                    data_gender(MEGender2022)
-            with t2:
-                st.header("INSERT GRAPHICS")
-            with t3:
-                st.header("INSERT MAPS")
-        elif ["2021"] == ms1:
-            t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
-            with t1:
-                key_stats(year= "2021", kr = "85%", krinfo = "131/155", pr = "97%", prinfo = "127/131", avgsal = "$69,674", medsal = "$71,000", employ = "79%", grad = "18%")
-                st.header("Spring 2021 Graduating Class Composition: ME Major")
-                tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
-                with tab1:
-                    MEColors = ['#CECECE', '#18453B', '#CECECE', '#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE']
-                    data_major(MEColors, Major2021, MajorList2021)
-                with tab2:
-                    MECount2021 = [120, 13, 2, 3, 12, 5]
-                    MEEthnicity2021 = ["White", "Asian", "Black/African American", "Hispanic/Latine", "International", "Two or More Races"]
-                    data_ethnicity(MECount2021, MEEthnicity2021)
-                with tab3:
-                    MEGender2021 = [120, 35]
-                    data_gender(MEGender2021) 
-            with t2:
-                st.header("INSERT GRAPHICS")
-            with t3:
-                st.header("INSERT MAPS")       
-        elif ["Cumulative Data 21-23: Key Stats"] == ms1:
-            t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
-            with t1:
-                c_key_stats('85%', '84%', '92%', '87%', '97%', '98%', '95%', '97%','69,674', '70,685', '75,069', '71,809', '71,000', '72,000', '74,500', '72,500')
-            with t2:
-                st.header("INSERT GRAPHIC")
-            with t3:
-                tab1, tab2 = st.tabs(["By State", "By City"])
-                with tab1:
-                    MEFig = choropleth_state_map("DestinationCumulativeDataset(Mechanical Engineering).csv")
-                    st.header('College of Engineering Spring 21-23 Destination Locations - By State: ME Major')
-                    st.plotly_chart(MEFig)
-                    top_5_employer_states("LATLONGDestinationCumulativeDataset(Mechanical Engineering).csv")
-                with tab2:
-                    st.header('College of Engineering Spring 21-23 Destination Locations - By City: ME Major')
-                    display_city_visualization("LATLONGDestinationCumulativeDataset(Mechanical Engineering).csv")    
     
     elif ["Materials Science & Engineering"] == ms:
         if ["2023"] == ms1:
@@ -1362,7 +1278,7 @@ def main():
                     MSGender2021 = [17, 5]
                     data_gender(MSGender2021) 
             with t2:
-                st.header("INSERT GRAPHIC")
+                st.image("2021 (11).jpg")
             with t3:
                 st.header("INSERT MAPS")   
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
@@ -1381,7 +1297,84 @@ def main():
                 with tab2:
                     st.header('College of Engineering Spring 21-23 Destination Locations - By City: MS Major')
                     display_city_visualization("LATLONGDestinationCumulativeDataset(Materials Science and Eng).csv")
-        
+    
+    elif ["Mechanical Engineering"] == ms:
+        if ["2023"] == ms1:
+            t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
+            with t1:
+                key_stats(year= "2023", kr = "92%", krinfo = "157/171", pr = "95%", prinfo = "149/157", avgsal = "$75,069", medsal = "$74,500", employ = "79%", grad = "15%", other = "1%")
+                st.header("Spring 2023 Graduating Class Composition: ME Major")
+                tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
+                with tab1:
+                    MEColors = ['#CECECE', '#18453B', '#CECECE', '#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE']
+                    data_major(MEColors)
+                with tab2:
+                    MEEthnicity2023 = ['White', 'Asian', 'International', 'Hispanic/Latine', 'Black/African American', 'Two or More Races', 'Not Specified', 'American Indian/Alaskan Native']
+                    MECount2023 = [117, 15, 20, 9, 5, 1, 3, 1]
+                    data_ethnicity(MECount2023, MEEthnicity2023)
+                with tab3:
+                    MEGender2023 = [146, 25]
+                    data_gender(MEGender2023)
+            with t2:
+                st.header("INSERT GRAPHIC")
+            with t3:
+                st.header("INSERT MAPS")
+        if ["2022"] == ms1:
+            t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
+            with t1:
+                key_stats(year= "2022", kr = "84%", krinfo = "137/164", pr = "98%", prinfo = "134/137", avgsal = "$70,685", medsal = "$72,000", employ = "84%", grad = "14%")
+                st.header("Spring 2022 Graduating Class Composition: ME Major")
+                tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
+                with tab1:
+                    MEColors = ['#CECECE', '#18453B', '#CECECE', '#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE']
+                    data_major(MEColors, Major2022)
+                with tab2:
+                    MECount2022 = [128, 11, 10, 5, 1, 6, 3]
+                    data_ethnicity(MECount2022, AllEthnicity[:7])
+                with tab3:
+                    MEGender2022 = [127, 37]
+                    data_gender(MEGender2022)
+            with t2:
+                st.header("INSERT GRAPHICS")
+            with t3:
+                st.header("INSERT MAPS")
+        elif ["2021"] == ms1:
+            t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
+            with t1:
+                key_stats(year= "2021", kr = "85%", krinfo = "131/155", pr = "97%", prinfo = "127/131", avgsal = "$69,674", medsal = "$71,000", employ = "79%", grad = "18%")
+                st.header("Spring 2021 Graduating Class Composition: ME Major")
+                tab1, tab2, tab3 = st.tabs(["Major", "Ethnicity", "Gender"])
+                with tab1:
+                    MEColors = ['#CECECE', '#18453B', '#CECECE', '#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE']
+                    data_major(MEColors, Major2021, MajorList2021)
+                with tab2:
+                    MECount2021 = [120, 13, 2, 3, 12, 5]
+                    MEEthnicity2021 = ["White", "Asian", "Black/African American", "Hispanic/Latine", "International", "Two or More Races"]
+                    data_ethnicity(MECount2021, MEEthnicity2021)
+                with tab3:
+                    MEGender2021 = [120, 35]
+                    data_gender(MEGender2021) 
+            with t2:
+                st.image("2021 (12).jpg")
+            with t3:
+                st.header("INSERT MAPS")       
+        elif ["Cumulative Data 21-23: Key Stats"] == ms1:
+            t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
+            with t1:
+                c_key_stats('85%', '84%', '92%', '87%', '97%', '98%', '95%', '97%','69,674', '70,685', '75,069', '71,809', '71,000', '72,000', '74,500', '72,500')
+            with t2:
+                st.header("INSERT GRAPHIC")
+            with t3:
+                tab1, tab2 = st.tabs(["By State", "By City"])
+                with tab1:
+                    MEFig = choropleth_state_map("DestinationCumulativeDataset(Mechanical Engineering).csv")
+                    st.header('College of Engineering Spring 21-23 Destination Locations - By State: ME Major')
+                    st.plotly_chart(MEFig)
+                    top_5_employer_states("LATLONGDestinationCumulativeDataset(Mechanical Engineering).csv")
+                with tab2:
+                    st.header('College of Engineering Spring 21-23 Destination Locations - By City: ME Major')
+                    display_city_visualization("LATLONGDestinationCumulativeDataset(Mechanical Engineering).csv")    
+    
     # Enrollment Data Section
     st.divider()
     st.subheader("ENROLLMENT DATA")
