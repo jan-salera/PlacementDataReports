@@ -474,10 +474,8 @@ def main():
                 with t3:
                     AllGender2023 = [625, 195]
                     data_gender(AllGender2023)
-                
             with tab2:
-                st.header("PLACEHOLDER UNTIL ACTUAL DATA IS CREATED")
-                st.image("1.png") 
+                st.image("2023 (1).jpg")
             with tab3:
                 fig = choropleth_state_map("CSV_Spring 2023_3-7-24.csv")
                 st.header('Interactive Map for Destination Data: Spring 2023 College of Engineering Graduating Class')
@@ -558,7 +556,7 @@ def main():
                     AESGender2023 = [51, 27]
                     data_gender(AESGender2023)
             with t2:
-                st.header("INSERT WITH EMPLOYER DATA")
+                st.image("2023 (2).jpg")
             with t3:
                 st.header("INSERT MAPS HERE")
         elif ["2022"] == ms1:
@@ -636,7 +634,7 @@ def main():
                     BEGender2023 = [22, 22]
                     data_gender(BEGender2023)
             with t2:
-                st.header("INSERT EMPLOYER GRAPHIC")
+                st.image("2023 (3).jpg")
             with t3:
                 st.header("INSERT MAPS")
         elif ["2022"] == ms1:
@@ -714,7 +712,7 @@ def main():
                     ChemEGender2023 = [54, 41]
                     data_gender(ChemEGender2023)
             with t2:
-                st.header("INSERT EMPLOYER GRAPHIC")
+                st.image("2023 (4).jpg")
             with t3:
                 st.header("INSERT MAPS")
         elif ["2022"] == ms1:
@@ -792,7 +790,7 @@ def main():
                     CDSGender2023 = [46, 12]
                     data_gender(CDSGender2023)
             with t2:
-                st.header("INSERT EMPLOYER GRAPHIC")
+                st.image("2023 (5).jpg")
             with t3:
                 st.header("INSERT MAPS")
         elif ["2022"] == ms1:
@@ -871,7 +869,7 @@ def main():
                     CDSGender2023 = [9, 5]
                     data_gender(CDSGender2023)
             with t2:
-                st.header("INSERT GRAPHIC")
+                st.image("2023 (6).jpg")
             with t3:
                 st.header("INSERT MAPS")
         elif ["2022"] == ms1:
@@ -928,7 +926,7 @@ def main():
                     CpEGender2023 = [21, 3]
                     data_gender(CpEGender2023)
             with t2:
-                st.header("INSERT EMPLOYER GRAPHIC")
+                st.image("2023 (7).jpg")
             with t3:
                 st.header("INSERT MAPS")
         elif ["2022"] == ms1:
@@ -1007,7 +1005,7 @@ def main():
                     CSEGender2023 = [189, 38]
                     data_gender(CSEGender2023)
             with t2:
-                st.header("INSERT GRAPHIC")
+                st.image("2023 (8).jpg")
             with t3:
                 st.header("INSERT MAPS")
         elif ["2022"] == ms1:
@@ -1083,7 +1081,7 @@ def main():
                     EEGender2023 = [69, 7]
                     data_gender(EEGender2023)
             with t2:
-                st.header("INSERT GRAPHICS")
+                st.image("2023 (9).jpg")
             with t3:
                 st.header("INSERT MAPS")
         elif ["2022"] == ms1:
@@ -1160,7 +1158,7 @@ def main():
                     ENEGender2023 = [8, 9]
                     data_gender(ENEGender2023, InverseGender)
             with t2:
-                st.header("INSERT GRAPHIC")
+                st.image("2023 (10).jpg")
             with t3:
                 st.header("INSERT MAP")
         elif ["2022"] == ms1:
@@ -1238,7 +1236,7 @@ def main():
                     MEGender2023 = [10, 6]
                     data_gender(MEGender2023)
             with t2:
-                st.header("INSERT GRAPHIC")
+                st.image("2023 (11).jpg")
             with t3:
                 st.header("INSERT MAPS")
         elif ["2022"] == ms1:
@@ -1316,7 +1314,7 @@ def main():
                     MEGender2023 = [146, 25]
                     data_gender(MEGender2023)
             with t2:
-                st.header("INSERT GRAPHIC")
+                st.image("2023 (12).jpg")
             with t3:
                 st.header("INSERT MAPS")
         if ["2022"] == ms1:
