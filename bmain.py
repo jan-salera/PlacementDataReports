@@ -477,9 +477,13 @@ def main():
             with tab2:
                 st.image("2023 (1).jpg")
             with tab3:
-                fig = choropleth_state_map("CSV_Spring 2023_3-7-24.csv")
-                st.header('Interactive Map for Destination Data: Spring 2023 College of Engineering Graduating Class')
-                st.plotly_chart(fig)         
+                t1, t2= st.tabs(["By State", "By City"])
+                with t1:
+                    fig = choropleth_state_map("CSV_Spring 2023_3-7-24.csv")
+                    st.header('Interactive Map for Destination Data: Spring 2023 College of Engineering Graduating Class')
+                    st.plotly_chart(fig) 
+                with t2:
+                    st.write("BY CITY")
         elif ["2022"] == ms1:
             tab1, tab2, tab3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with tab1:
@@ -498,9 +502,13 @@ def main():
             with tab2:
                 st.image("2022 (1).jpg")
             with tab3:
-                fig = choropleth_state_map("CSV_Spring 2022_2-21-24.csv")
-                st.header('Interactive Map for Destination Data: Spring 2022 College of Engineering Graduating Class')
-                st.plotly_chart(fig)
+                t1, t2= st.tabs(["By State", "By City"])
+                with t1:
+                    fig = choropleth_state_map("CSV_Spring 2022_2-21-24.csv")
+                    st.header('Interactive Map for Destination Data: Spring 2022 College of Engineering Graduating Class')
+                    st.plotly_chart(fig)
+                with t2:
+                    st.write("BY CITY")
         elif ["2021"] == ms1:
             tab1, tab2, tab3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with tab1:
@@ -519,9 +527,13 @@ def main():
             with tab2:
                 st.image("2021 (1).jpg")
             with tab3:
-                fig = choropleth_state_map("CSV_Spring 2021_2-21-24.csv")
-                st.header('Interactive Map for Destination Data: Spring 2021 College of Engineering Graduating Class')
-                st.plotly_chart(fig)    
+                t1, t2= st.tabs(["By State", "By City"])
+                with t1:
+                    fig = choropleth_state_map("CSV_Spring 2021_2-21-24.csv")
+                    st.header('Interactive Map for Destination Data: Spring 2021 College of Engineering Graduating Class')
+                    st.plotly_chart(fig)    
+                with t2:
+                    st.write("BY CITY")
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -558,7 +570,11 @@ def main():
             with t2:
                 st.image("2023 (2).jpg")
             with t3:
-                st.header("INSERT MAPS HERE")
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")
         elif ["2022"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -578,7 +594,11 @@ def main():
             with t2:
                 st.image("2022 (2).jpg")
             with t3:
-                st.header("INSERT MAPS")
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")
         elif ["2021"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -598,7 +618,11 @@ def main():
             with t2:
                 st.image("2021 (2).jpg")
             with t3:
-                st.header("INSERT MAPS HERE") 
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -636,7 +660,11 @@ def main():
             with t2:
                 st.image("2023 (3).jpg")
             with t3:
-                st.header("INSERT MAPS")
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")
         elif ["2022"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -655,7 +683,11 @@ def main():
             with t2:
                 st.image("2022 (3).jpg")
             with t3:
-                st.header("INSERT MAPS")
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")
         elif ["2021"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -675,7 +707,11 @@ def main():
             with t2:
                 st.image("2021 (3).jpg")
             with t3:
-                st.header("INSERT MAPS")      
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")      
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -714,7 +750,11 @@ def main():
             with t2:
                 st.image("2023 (4).jpg")
             with t3:
-                st.header("INSERT MAPS")
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")
         elif ["2022"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -734,7 +774,11 @@ def main():
             with t2:
                 st.image("2022 (4).jpg")
             with t3:
-                st.header("INSERT MAPS")
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")
         elif ["2021"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -754,7 +798,11 @@ def main():
             with t2:
                 st.image("2021 (4).jpg")
             with t3:
-                st.header("INSERT MAPS")         
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")        
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -792,7 +840,11 @@ def main():
             with t2:
                 st.image("2023 (5).jpg")
             with t3:
-                st.header("INSERT MAPS")
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")
         elif ["2022"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -812,7 +864,11 @@ def main():
             with t2:
                 st.image("2022 (5).jpg")
             with t3:
-                st.header("INSERT MAPS")
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")
         elif ["2021"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -832,7 +888,11 @@ def main():
             with t2:
                 st.image("2021 (5).jpg")
             with t3:
-                st.header("INSERT MAP")
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -871,7 +931,11 @@ def main():
             with t2:
                 st.image("2023 (6).jpg")
             with t3:
-                st.header("INSERT MAPS")
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")
         elif ["2022"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -890,7 +954,11 @@ def main():
             with t2:
                 st.image("2022 (6).jpg")
             with t3:
-                st.header("INSERT MAPS")
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -928,7 +996,11 @@ def main():
             with t2:
                 st.image("2023 (7).jpg")
             with t3:
-                st.header("INSERT MAPS")
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")
         elif ["2022"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -948,7 +1020,11 @@ def main():
             with t2:
                 st.image("2022 (7).jpg")
             with t3:
-                st.header("INSERT MAPS")
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")
         elif ["2021"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -968,8 +1044,11 @@ def main():
             with t2:
                 st.image("2021 (7).jpg")
             with t3:
-                st.header("INSERT MAPS")
-
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1007,7 +1086,11 @@ def main():
             with t2:
                 st.image("2023 (8).jpg")
             with t3:
-                st.header("INSERT MAPS")
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")
         elif ["2022"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1026,7 +1109,11 @@ def main():
             with t2:
                 st.image("2022 (8).jpg")
             with t3:
-                st.header("INSERT MAP")   
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")   
         elif ["2021"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1046,7 +1133,11 @@ def main():
             with t2:
                 st.image("2021 (8).jpg")
             with t3:
-                st.header("INSERT MAPS")  
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")  
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1083,7 +1174,11 @@ def main():
             with t2:
                 st.image("2023 (9).jpg")
             with t3:
-                st.header("INSERT MAPS")
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")
         elif ["2022"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1102,7 +1197,11 @@ def main():
             with t2:
                 st.image("2022 (9).jpg")
             with t3:
-                st.header("INSERT MAPS")
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")
         elif ["2021"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1122,7 +1221,11 @@ def main():
             with t2:
                 st.image("2021 (9).jpg")
             with t3:
-                st.header("INSERT MAPS")  
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1160,7 +1263,11 @@ def main():
             with t2:
                 st.image("2023 (10).jpg")
             with t3:
-                st.header("INSERT MAP")
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")
         elif ["2022"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1180,7 +1287,11 @@ def main():
             with t2:
                 st.image("2022 (10).jpg")
             with t3:
-                st.header("INSERT MAPS")
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")
         elif ["2021"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1200,7 +1311,11 @@ def main():
             with t2:
                 st.image("2021 (10).jpg")
             with t3:
-                st.header("INSERT MAPS")
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1238,7 +1353,11 @@ def main():
             with t2:
                 st.image("2023 (11).jpg")
             with t3:
-                st.header("INSERT MAPS")
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")
         elif ["2022"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1258,7 +1377,11 @@ def main():
             with t2:
                 st.image("2022 (11).jpg")
             with t3:
-                st.header("INSERT MAPS")
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")
         elif ["2021"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1278,7 +1401,11 @@ def main():
             with t2:
                 st.image("2021 (11).jpg")
             with t3:
-                st.header("INSERT MAPS")   
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")   
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1316,7 +1443,11 @@ def main():
             with t2:
                 st.image("2023 (12).jpg")
             with t3:
-                st.header("INSERT MAPS")
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")
         if ["2022"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1335,7 +1466,11 @@ def main():
             with t2:
                 st.image("2022 (12).jpg")
             with t3:
-                st.header("INSERT MAPS")
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")
         elif ["2021"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1355,7 +1490,11 @@ def main():
             with t2:
                 st.image("2021 (12).jpg")
             with t3:
-                st.header("INSERT MAPS")       
+                tab1, tab2= st.tabs(["By State", "By City"])
+                with tab1:
+                    st.header("INSERT MAPS HERE")
+                with tab2:
+                    st.header("INSERT MAPS HERE")    
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
