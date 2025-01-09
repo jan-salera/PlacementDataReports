@@ -539,7 +539,7 @@ def main():
             with t1:
                 c_key_stats('80.3%', '82.5%', '90.5%', '84.4%', '96.0%', '98.0%','94.3%', '96.1%', '69,838', '73,922', '76,806', '73,522', '70,000','72,500', '75,000', '72,500')
             with t2:
-                st.header("INSERT EMPLOYER GRAPHIC HERE")
+                st.image("FT (1).jpg")
             with t3:
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
@@ -628,7 +628,7 @@ def main():
             with t1:
                 c_key_stats('88%', '81%', '100%', '90%', '100%', '100%', '92%','97%', '66,697', '67,579', '72,233', '68,836', '65,000', '70,000','70,000', '68,333')
             with t2:
-                st.header("INSERT EMPLOYER GRAPHIC HERE")
+                st.image("FT (2).jpg")
             with t3:
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
@@ -718,7 +718,7 @@ def main():
                 c_key_stats('87%', '100%', '93%', '93%', '87%', '94%', '93%', '91%',
                             '58,792', '64,547', '68,768', '64,036', '56,160', '64,500', '72,500', '64,387')
             with t2:
-                st.header("INSERT EMPLOYER MAP")
+                st.image("FT (3).jpg")
             with t3:
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
@@ -808,7 +808,7 @@ def main():
             with t1:
                 c_key_stats('83%', '82%', '95%', '87%', '94%', '97%', '98%', '96%','69,604', '71,561', '77,315', '72,827', '70,000', '72,500', '76,000', '72,833')
             with t2:
-                st.header("INSERT EMPLOYER GRAPHIC")
+                st.image("FT (4).jpg")
             with t3:
                 tab1, tab2 = st.tabs(["By State", "By City"])
                 with tab1:
@@ -898,7 +898,7 @@ def main():
             with t1:
                 c_key_stats('75%', '76%', '95%', '82%', '97%', '95%', '96%', '96%','58,612', '66,729', '65,895', '63,745', '55,640', '67,800', '65,000', '62,813')
             with t2:
-                st.header("INSERT EMPLOYER GRAPHIC")
+                st.image("FT (5).jpg")
             with t3:
                 tab1, tab2 = st.tabs(["By State", "By City"])
                 with tab1:
@@ -964,7 +964,7 @@ def main():
             with t1:
                 c_key_stats(0, '86%', '93%', '90%', 0, '100%', '92%', '96%', 0, '70,333', '91,357', '80,845', 0, '75,000', '95,000', '85,000', "Two") 
             with t2:
-                st.header('INSERT GRAPHIC')
+                st.image("FT (6).jpg")
             with t3:
                 tab1, tab2 = st.tabs(["By State", "By City"])
                 with tab1:
@@ -1054,7 +1054,7 @@ def main():
             with t1:
                 c_key_stats('79%', '76%', '92%', '82%', '97%', '97%', '100%',	'98%', '81,500', '83,698', '80,112', '81,770','77,500',	'80,500',	'79,040', '79,013')      
             with t2:
-                st.header("INSERT GRAPHIC")
+                st.image("FT (7).jpg")
             with t3:
                 tab1, tab2 = st.tabs(["By State", "By City"])
                 with tab1:
@@ -1143,7 +1143,7 @@ def main():
             with t1:
                 c_key_stats('71%', '79%', '81%', '77%', '98%', '98%', '92%', '96%','76,365', '85,220', '89,826', '83,804', '75,000', '80,000', '85,000', '80,000') 
             with t2:
-                st.header("INSERT GRAPHIC")
+                st.image("FT (8).jpg")
             with t3:
                 tab1, tab2 = st.tabs(["By State", "By City"])
                 with tab1:
@@ -1231,7 +1231,7 @@ def main():
             with t1:
                 c_key_stats('85%', '83%', '93%', '87%', '95%', '100%', '96%', '97%', '73,322', '79,650', '76,512', '76,495', '75,000', '77,500', '79,500', '77,333')
             with t2:
-                st.header("INSERT GRAPHIC")
+                st.image("FT (9).jpg")
             with t3:
                 tab1, tab2 = st.tabs(["By State", "By City"])
                 with tab1:
@@ -1321,7 +1321,7 @@ def main():
             with t1:
                 c_key_stats('71%', '90%', '94%', '85%', '94%', '100%', '94%', '96%','60,560', '63,697', '58,102', '60,786 ', '60,000', '62,400', '61,950', '61,450')
             with t2:
-                st.header("INSERT GRAPHIC")
+                st.image("FT (10).jpg")
             with t3:
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
@@ -1411,7 +1411,7 @@ def main():
             with t1:
                 c_key_stats('82%', '87%', '94%', '88%', '94%', '95%', '93%', '94%', '63,581', '72,147', '70,447', '68,725', '60,320', '75,000', '72,500', '69,273')
             with t2:
-                st.header("INSERT GRAPHIC")
+                st.image("FT (11).jpg")
             with t3:
                 tab1, tab2 = st.tabs(["By State", "By City"])
                 with tab1:
@@ -1500,7 +1500,7 @@ def main():
             with t1:
                 c_key_stats('85%', '84%', '92%', '87%', '97%', '98%', '95%', '97%','69,674', '70,685', '75,069', '71,809', '71,000', '72,000', '74,500', '72,500')
             with t2:
-                st.header("INSERT GRAPHIC")
+                st.image("FT (12).jpg")
             with t3:
                 tab1, tab2 = st.tabs(["By State", "By City"])
                 with tab1:
