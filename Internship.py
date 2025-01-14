@@ -387,7 +387,7 @@ def main():
         file_path = "LATLONG(Applied Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv" 
         T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
         with T1:
-           st.write("whoops")  
+           st.image("FT (2).jpg") 
             
         with T2:
             tab1, tab2 = st.tabs(["By State", "By City"])
@@ -407,7 +407,7 @@ def main():
     elif ms_intern == ["Biosystems Engineering"]:
         T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
         with T1:
-            st.write("whoops")  
+            st.image("FT (3).jpg") 
             
         with T2:
             tab1, tab2 = st.tabs(["By State", "By City"])
@@ -428,7 +428,7 @@ def main():
     elif ms_intern == ["Chemical Engineering"]:
         T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
         with T1:
-           st.write("whoops")  
+            st.image("FT (4).jpg") 
         
         with T2:
             tab1, tab2 = st.tabs(["By State", "By City"])
@@ -449,7 +449,7 @@ def main():
     elif ms_intern == ["Civil Engineering"]:
         T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
         with T1:
-            st.write("whoops")  
+            st.image("FT (5).jpg") 
         with T2:
             tab1, tab2 = st.tabs(["By State", "By City"])
             with tab1:
@@ -470,7 +470,7 @@ def main():
     elif ms_intern == ["Computational Data Science"]:
         T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
         with T1:
-            st.write("whoops")                        
+            st.image("FT (6).jpg")                        
             
         with T2:
             tab1, tab2 = st.tabs(["By State", "By City"])
@@ -493,7 +493,7 @@ def main():
       
         T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
         with T1:
-            st.write("whoops")                  
+            st.image("FT (7).jpg")                  
             
         with T2:
             tab1, tab2 = st.tabs(["By State", "By City"])
@@ -516,7 +516,7 @@ def main():
 
         T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
         with T1:
-            st.write("whoops")  
+            st.image("FT (8).jpg")  
            
         with T2:
             tab1, tab2 = st.tabs(["By State", "By City"])
@@ -539,7 +539,7 @@ def main():
 
         T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
         with T1:
-            st.write("whoops")  
+            st.image("FT (9).jpg")  
             
         with T2:
             tab1, tab2 = st.tabs(["By State", "By City"])
@@ -562,7 +562,7 @@ def main():
 
         T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
         with T1:
-           st.write("whoops")  
+           st.image("FT (10).jpg") 
         with T2:
             tab1, tab2 = st.tabs(["By State", "By City"])
             with tab1:
@@ -583,7 +583,7 @@ def main():
        
         T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
         with T1:
-            st.write("whoops")                   
+            st.image("FT (11).jpg")                   
 
         with T2:
             tab1, tab2 = st.tabs(["By State", "By City"])
@@ -605,7 +605,7 @@ def main():
 
         T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
         with T1:
-            st.write("whoops")  
+            st.image("FT (12).jpg")   
         with T2:
             tab1, tab2 = st.tabs(["By State", "By City"])
             with tab1:
