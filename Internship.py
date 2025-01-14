@@ -306,21 +306,55 @@ def display_top_5_states(file_path):
     for index, row in top_5_states.iterrows():
         st.write(f"**{row['State']}:** {row['Count']} internships")
 
-def display_top_5_cities(file_path):
-    data = pd.read_csv(file_path, encoding='latin1')
-    if 'State' not in data.columns:
-        st.error("'State' column not found in the data.")
-        return
-    mi_cities = data[data['State'] == 'Michigan']
-    non_mi_cities = data[data['State'] != 'Michigan']
-    top_5_mi_cities = mi_cities['City'].value_counts().head(5)
-    top_5_non_mi_cities = non_mi_cities['City'].value_counts().head(5)
-    st.subheader("Top 5 Michigan Cities by Internship Count")
-    for city, count in top_5_mi_cities.items():
-        st.write(f"**{city}:** {count} internships")    
-    st.subheader("Top 5 Non-Michigan Cities by Internship Count")
-    for city, count in top_5_non_mi_cities.items():
-        st.write(f"**{city}:** {count} internships")
+def display_top_5_cities(selected_major):
+    if selected_major == "All Engineering Majors":
+        michigan_cities = ["Detroit", "Lansing", "Grand Rapids", "Ann Arbor", "Jackson"]
+        non_michigan_cities = ["San Francisco, CA", "Toledo, OH", "Findlay, OH", "La Crosse, WI", "Los Angeles, CA"]
+    elif selected_major == "Applied Engineering Sciences":
+        michigan_cities = ["Detroit", "Lansing", "Grand Rapids", "Ann Arbor", "Jackson"]
+        non_michigan_cities = ["Chicago, IL", "Minneapolis, MN", "Phoenix, AZ", "Cincinnati, OH", "Fond Du Lac, WI"]
+    elif selected_major == "Biosystems Engineering":
+        michigan_cities = ["Lansing", "Detroit", "Grand Rapids", "Ann Arbor", "Jackson"]
+        non_michigan_cities = ["Preston, MN", "Boston, MA", "Chicago, IL", "Fremont, CA", "Minneapolis, MN"]
+    elif selected_major == "Chemical Engineering":
+        michigan_cities = ["Detroit", "Lansing", "Jackson", "Midland", "Grand Rapids"]
+        non_michigan_cities = ["Chicago, IL", "Boston, MA", "Neenah, WI", "Atlanta, GA", "Cincinnati, OH"]
+    elif selected_major == "Civil Engineering":
+        michigan_cities = ["Lansing", "Detroit", "Grand Rapids", "Flint", "Jackson"]
+        non_michigan_cities = ["Dallas, TX", "Los Angeles, CA", "Chicago, IL", "Dayton, OH", "Kansas City, MO"]
+    elif selected_major == "Computational Data Science":
+        michigan_cities = ["Detroit", "Lansing"]
+        non_michigan_cities = ["Dallas, TX", "San Francisco, CA"]
+    elif selected_major == "Computer Engineering":
+        michigan_cities = ["Detroit", "Lansing", "Saginaw", "Ann Arbor", "Grand Rapids"]
+        non_michigan_cities = ["San Francisco, CA", "Chicago, IL", "Dallas, TX", "Seattle, WA"]
+    elif selected_major == "Computer Science":
+        michigan_cities = ["Detroit", "Lansing", "Grand Rapids", "Ann Arbor", "Midland"]
+        non_michigan_cities = ["San Francisco, CA", "Seattle, WA", "Chicago, IL", "Louisville, KY", "Minneapolis, MN"]
+    elif selected_major == "Electrical Engineering":
+        michigan_cities = ["Detroit", "Lansing", "Grand Rapids", "Jackson", "Saginaw"]
+        non_michigan_cities = ["Dallas, TX", "San Francisco, CA", "Baltimore, MD", "Des Moines, IA", "Minneapolis, MN"]
+    elif selected_major == "Environmental Engineering":
+        michigan_cities = ["Lansing", "Detroit", "Grand Rapids", "Saginaw"]
+        non_michigan_cities = ["Chicago, IL"]
+    elif selected_major == "Materials Science & Engineering":
+        michigan_cities = ["Detroit", "Lansing", "Saginaw"]
+        non_michigan_cities = ["San Francisco, CA"]
+    elif selected_major == "Mechanical Engineering":
+        michigan_cities = ["Detroit", "Lansing", "Grand Rapids", "Ann Arbor", "Jackson"]
+        non_michigan_cities = ["San Francisco, CA", "Toledo, OH", "Los Angeles, CA", "Milwaukee, WI", "Oshkosh, WI"]
+    else:
+        michigan_cities = []
+        non_michigan_cities = []
+
+    st.subheader("Top 5 Michigan Cities")
+    for i, city in enumerate(michigan_cities, start=1):
+        st.write(f"{i}. {city}")
+
+    st.subheader("Top 5 Non-Michigan Cities")
+    for i, city in enumerate(non_michigan_cities, start=1):
+        st.write(f"{i}. {city}")
+
 
 def main():
     options = ("All Engineering Majors", "Applied Engineering Sciences", "Biosystems Engineering", "Chemical Engineering", "Civil Engineering", "Computational Data Science", "Computer Engineering", "Computer Science", "Electrical Engineering", "Environmental Engineering", "Materials Science & Engineering", "Mechanical Engineering")
@@ -344,7 +378,7 @@ def main():
                 st.title("Interactive City Visualization")
                 file_path = "LATLONGHS EGRX-1220 Merge Combo_2021-2023.csv"
                 display_city_visualization(file_path)
-                display_top_5_cities(file_path)
+                display_top_5_cities(ms_intern[0])
 
         with T3:
             report_salary(avgsal21 = "$20.86", avgsal22 = "$22.69", avgsal23 = "$24.42", avgsal2123 = "$22.66", medsal21 = "$20.00", medsal22 = "$21.00", medsal23 = "$23.00", medsal2123 = "$21.33", count21 = "278", count22 = "506", count23 = "477", count2123 = "1261")
@@ -366,7 +400,7 @@ def main():
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Applied Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 display_city_visualization(file_path)
-                display_top_5_cities(file_path)
+                display_top_5_cities(ms_intern[1])
         with T3:
             report_salary(avgsal21 = "$20.73", avgsal22 = "$22.14", avgsal23 = "$24.48", avgsal2123 = "$22.45", medsal21 = "$20.13", medsal22 = "$21.00", medsal23 = "$25.00", medsal2123 = "$22.04", count21 = "22", count22 = "55", count23 = "41", count2123 = "118")
 
@@ -387,7 +421,7 @@ def main():
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Biosystems Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 display_city_visualization(file_path)
-                display_top_5_cities(file_path)
+                display_top_5_cities(ms_intern[2])
         with T3:
             report_salary(avgsal21 = "$18.30", avgsal22 = "$19.04", avgsal23 = "$20.49", avgsal2123 = "$19.28", medsal21 = "$18.25", medsal22 = "$17.00", medsal23 = "$20.00", medsal2123 = "$18.42", count21 = "10", count22 = "21", count23 = "19", count2123 = "50")
 
@@ -408,7 +442,7 @@ def main():
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Chemical Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 display_city_visualization(file_path)
-                display_top_5_cities(file_path)
+                display_top_5_cities(ms_intern[3])
         with T3:
             report_salary(avgsal21 = "$22.46", avgsal22 = "$24.39", avgsal23 = "$22.85", avgsal2123 = "$23.23", medsal21 = "$22.50", medsal22 = "$24.00", medsal23 = "$22.50", medsal2123 = "$23.00", count21 = "39", count22 = "61", count23 = "54", count2123 = "154")
     
@@ -429,7 +463,7 @@ def main():
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Civil Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 display_city_visualization(file_path)
-                display_top_5_cities(file_path)
+                display_top_5_cities(ms_intern[4])
         with T3:
             report_salary(avgsal21 = "$17.86", avgsal22 = "$19.75", avgsal23 = "$22.22", avgsal2123 = "$19.94", medsal21 = "$18.00", medsal22 = "$18.00", medsal23 = "$21.00", medsal2123 = "$19.00", count21 = "14", count22 = "39", count23 = "50", count2123 = "103")
 
@@ -451,7 +485,7 @@ def main():
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Computational Data Science) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 display_city_visualization(file_path)
-                display_top_5_cities(file_path)
+                display_top_5_cities(ms_intern[5])
         with T3:
             report_salary(avgsal21 = "$16.75", avgsal22 = "$24.37", avgsal23 = "$26.83", avgsal2123 = "$22.65", medsal21 = "$16.75", medsal22 = "$20.50", medsal23 = "$23.50", medsal2123 = "$20.25", count21 = "2", count22 = "12", count23 = "6", count2123 = "20")
     
@@ -474,7 +508,7 @@ def main():
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Computer Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 display_city_visualization(file_path)
-                display_top_5_cities(file_path)
+                display_top_5_cities(ms_intern[6])
         with T3:
             report_salary(avgsal21 = "$19.99", avgsal22 = "$20.33", avgsal23 = "$25.48", avgsal2123 = "$21.93", medsal21 = "$20.00", medsal22 = "$20.00", medsal23 = "$23.00", medsal2123 = "$21.00", count21 = "18", count22 = "18", count23 = "22", count2123 = "58")
     
@@ -497,7 +531,7 @@ def main():
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Computer Science) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 display_city_visualization(file_path)
-                display_top_5_cities(file_path)
+                display_top_5_cities(ms_intern[7])
         with T3:
             report_salary(avgsal21 = "$23.03", avgsal22 = "$26.84", avgsal23 = "$29.96", avgsal2123 = "$26.61", medsal21 = "$25.00", medsal22 = "$25.00", medsal23 = "$25.00", medsal2123 = "$23.67", count21 = "36", count22 = "92", count23 = "97", count2123 = "225")
     
@@ -520,7 +554,7 @@ def main():
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Electrical Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 display_city_visualization(file_path)
-                display_top_5_cities(file_path)
+                display_top_5_cities(ms_intern[8])
         with T3:
             report_salary(avgsal21 = "$19.86", avgsal22 = "$22.00", avgsal23 = "$23.13", avgsal2123 = "$21.66", medsal21 = "$19.75", medsal22 = "$22.00", medsal23 = "$22.25", medsal2123 = "$21.33", count21 = "48", count22 = "63", count23 = "58", count2123 = "169")
     
@@ -541,7 +575,7 @@ def main():
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Environmental Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 display_city_visualization(file_path)
-                display_top_5_cities(file_path)
+                display_top_5_cities(ms_intern[9])
         with T3:
             report_salary(avgsal21 = "$15.00", avgsal22 = "$17.53", avgsal23 = "$21.66", avgsal2123 = "$18.06", medsal21 = "$15.00", medsal22 = "$17.00", medsal23 = "$20.50", medsal2123 = "$17.50", count21 = "5", count22 = "15", count23 = "20", count2123 = "40")
 
@@ -563,7 +597,7 @@ def main():
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Materials Science and Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 display_city_visualization(file_path)
-                display_top_5_cities(file_path)
+                display_top_5_cities(ms_intern[10])
         with T3:
             report_salary(avgsal21 = "$26.66", avgsal22 = "$25.61", avgsal23 = "$21.06", avgsal2123 = "$24.44", medsal21 = "$24.25", medsal22 = "$21.88", medsal23 = "$19.00", medsal2123 = "$21.71", count21 = "8", count22 = "11", count23 = "10", count2123 = "29")
     
@@ -584,7 +618,7 @@ def main():
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Mechanical Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 display_city_visualization(file_path)
-                display_top_5_cities(file_path)
+                display_top_5_cities(ms_intern[11])
         with T3:
             report_salary(avgsal21 = "$20.68", avgsal22 = "$21.40", avgsal23 = "$22.96", avgsal2123 = "$21.68", medsal21 = "$20.00", medsal22 = "$20.30", medsal23 = "$22.00", medsal2123 = "$20.77", count21 = "76", count22 = "119", count23 = "100", count2123 = "295")
 
