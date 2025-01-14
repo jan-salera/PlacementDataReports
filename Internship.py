@@ -378,7 +378,7 @@ def main():
                 st.title("Interactive City Visualization")
                 file_path = "LATLONGHS EGRX-1220 Merge Combo_2021-2023.csv"
                 display_city_visualization(file_path)
-                display_top_5_cities(ms_intern[0])
+                display_top_5_cities(["All Engineering Majors"])
 
         with T3:
             report_salary(avgsal21 = "$20.86", avgsal22 = "$22.69", avgsal23 = "$24.42", avgsal2123 = "$22.66", medsal21 = "$20.00", medsal22 = "$21.00", medsal23 = "$23.00", medsal2123 = "$21.33", count21 = "278", count22 = "506", count23 = "477", count2123 = "1261")
@@ -400,7 +400,7 @@ def main():
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Applied Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 display_city_visualization(file_path)
-                display_top_5_cities(ms_intern[1])
+                display_top_5_cities(["All Engineering Majors"])
         with T3:
             report_salary(avgsal21 = "$20.73", avgsal22 = "$22.14", avgsal23 = "$24.48", avgsal2123 = "$22.45", medsal21 = "$20.13", medsal22 = "$21.00", medsal23 = "$25.00", medsal2123 = "$22.04", count21 = "22", count22 = "55", count23 = "41", count2123 = "118")
 
@@ -421,7 +421,7 @@ def main():
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Biosystems Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 display_city_visualization(file_path)
-                display_top_5_cities(ms_intern[2])
+                display_top_5_cities(["All Engineering Majors"])
         with T3:
             report_salary(avgsal21 = "$18.30", avgsal22 = "$19.04", avgsal23 = "$20.49", avgsal2123 = "$19.28", medsal21 = "$18.25", medsal22 = "$17.00", medsal23 = "$20.00", medsal2123 = "$18.42", count21 = "10", count22 = "21", count23 = "19", count2123 = "50")
 
@@ -442,7 +442,7 @@ def main():
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Chemical Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 display_city_visualization(file_path)
-                display_top_5_cities(ms_intern[3])
+                display_top_5_cities(["All Engineering Majors"])
         with T3:
             report_salary(avgsal21 = "$22.46", avgsal22 = "$24.39", avgsal23 = "$22.85", avgsal2123 = "$23.23", medsal21 = "$22.50", medsal22 = "$24.00", medsal23 = "$22.50", medsal2123 = "$23.00", count21 = "39", count22 = "61", count23 = "54", count2123 = "154")
     
@@ -463,7 +463,7 @@ def main():
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Civil Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 display_city_visualization(file_path)
-                display_top_5_cities(ms_intern[4])
+                display_top_5_cities(["All Engineering Majors"])
         with T3:
             report_salary(avgsal21 = "$17.86", avgsal22 = "$19.75", avgsal23 = "$22.22", avgsal2123 = "$19.94", medsal21 = "$18.00", medsal22 = "$18.00", medsal23 = "$21.00", medsal2123 = "$19.00", count21 = "14", count22 = "39", count23 = "50", count2123 = "103")
 
@@ -485,7 +485,7 @@ def main():
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Computational Data Science) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 display_city_visualization(file_path)
-                display_top_5_cities(ms_intern[5])
+                display_top_5_cities(["All Engineering Majors"])
         with T3:
             report_salary(avgsal21 = "$16.75", avgsal22 = "$24.37", avgsal23 = "$26.83", avgsal2123 = "$22.65", medsal21 = "$16.75", medsal22 = "$20.50", medsal23 = "$23.50", medsal2123 = "$20.25", count21 = "2", count22 = "12", count23 = "6", count2123 = "20")
     
@@ -508,7 +508,7 @@ def main():
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Computer Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 display_city_visualization(file_path)
-                display_top_5_cities(ms_intern[6])
+                display_top_5_cities(["All Engineering Majors"])
         with T3:
             report_salary(avgsal21 = "$19.99", avgsal22 = "$20.33", avgsal23 = "$25.48", avgsal2123 = "$21.93", medsal21 = "$20.00", medsal22 = "$20.00", medsal23 = "$23.00", medsal2123 = "$21.00", count21 = "18", count22 = "18", count23 = "22", count2123 = "58")
     
@@ -531,7 +531,7 @@ def main():
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Computer Science) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 display_city_visualization(file_path)
-                display_top_5_cities(ms_intern[7])
+                display_top_5_cities(["All Engineering Majors"])
         with T3:
             report_salary(avgsal21 = "$23.03", avgsal22 = "$26.84", avgsal23 = "$29.96", avgsal2123 = "$26.61", medsal21 = "$25.00", medsal22 = "$25.00", medsal23 = "$25.00", medsal2123 = "$23.67", count21 = "36", count22 = "92", count23 = "97", count2123 = "225")
     
@@ -554,7 +554,7 @@ def main():
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Electrical Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 display_city_visualization(file_path)
-                display_top_5_cities(ms_intern[8])
+                display_top_5_cities(["All Engineering Majors"])
         with T3:
             report_salary(avgsal21 = "$19.86", avgsal22 = "$22.00", avgsal23 = "$23.13", avgsal2123 = "$21.66", medsal21 = "$19.75", medsal22 = "$22.00", medsal23 = "$22.25", medsal2123 = "$21.33", count21 = "48", count22 = "63", count23 = "58", count2123 = "169")
     
@@ -575,7 +575,7 @@ def main():
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Environmental Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 display_city_visualization(file_path)
-                display_top_5_cities(ms_intern[9])
+                display_top_5_cities(["All Engineering Majors"])
         with T3:
             report_salary(avgsal21 = "$15.00", avgsal22 = "$17.53", avgsal23 = "$21.66", avgsal2123 = "$18.06", medsal21 = "$15.00", medsal22 = "$17.00", medsal23 = "$20.50", medsal2123 = "$17.50", count21 = "5", count22 = "15", count23 = "20", count2123 = "40")
 
@@ -597,7 +597,7 @@ def main():
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Materials Science and Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 display_city_visualization(file_path)
-                display_top_5_cities(ms_intern[10])
+                display_top_5_cities(["All Engineering Majors"])
         with T3:
             report_salary(avgsal21 = "$26.66", avgsal22 = "$25.61", avgsal23 = "$21.06", avgsal2123 = "$24.44", medsal21 = "$24.25", medsal22 = "$21.88", medsal23 = "$19.00", medsal2123 = "$21.71", count21 = "8", count22 = "11", count23 = "10", count2123 = "29")
     
@@ -618,7 +618,7 @@ def main():
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Mechanical Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 display_city_visualization(file_path)
-                display_top_5_cities(ms_intern[11])
+                display_top_5_cities(["All Engineering Majors"])
         with T3:
             report_salary(avgsal21 = "$20.68", avgsal22 = "$21.40", avgsal23 = "$22.96", avgsal2123 = "$21.68", medsal21 = "$20.00", medsal22 = "$20.30", medsal23 = "$22.00", medsal2123 = "$20.77", count21 = "76", count22 = "119", count23 = "100", count2123 = "295")
 
