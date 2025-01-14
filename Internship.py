@@ -364,7 +364,7 @@ def main():
         file_path = "LATLONG(All Majors) HS EGRX-1220 Merge Combo_2021-2023.csv"
         T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
         with T1:
-            st.write("whoops")  
+            st.image("FT (1).jpg") 
             
         with T2:
             tab1, tab2 = st.tabs(["By State", "By City"])
