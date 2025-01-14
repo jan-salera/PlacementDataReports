@@ -362,7 +362,7 @@ def main():
 
     if ms_intern == ["All Engineering Majors"]:
         file_path = "LATLONG(All Majors) HS EGRX-1220 Merge Combo_2021-2023.csv"
-        T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
+        T3, T1, T2 = st.tabs(["By Salary","By Employer", "By Geography"])
         with T1:
             st.image("FT (1).jpg") 
             
@@ -385,7 +385,7 @@ def main():
     
     elif ms_intern == ["Applied Engineering Sciences"]:
         file_path = "LATLONG(Applied Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv" 
-        T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
+        T3, T1, T2 = st.tabs(["By Salary","By Employer", "By Geography"])
         with T1:
            st.image("FT (2).jpg") 
             
@@ -405,7 +405,7 @@ def main():
             report_salary(avgsal21 = "$20.73", avgsal22 = "$22.14", avgsal23 = "$24.48", avgsal2123 = "$22.45", medsal21 = "$20.13", medsal22 = "$21.00", medsal23 = "$25.00", medsal2123 = "$22.04", count21 = "22", count22 = "55", count23 = "41", count2123 = "118")
 
     elif ms_intern == ["Biosystems Engineering"]:
-        T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
+        T3, T1, T2 = st.tabs(["By Salary","By Employer", "By Geography"])
         with T1:
             st.image("FT (3).jpg") 
             
@@ -426,7 +426,7 @@ def main():
             report_salary(avgsal21 = "$18.30", avgsal22 = "$19.04", avgsal23 = "$20.49", avgsal2123 = "$19.28", medsal21 = "$18.25", medsal22 = "$17.00", medsal23 = "$20.00", medsal2123 = "$18.42", count21 = "10", count22 = "21", count23 = "19", count2123 = "50")
 
     elif ms_intern == ["Chemical Engineering"]:
-        T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
+        T3, T1, T2 = st.tabs(["By Salary","By Employer", "By Geography"])
         with T1:
             st.image("FT (4).jpg") 
         
@@ -447,7 +447,7 @@ def main():
             report_salary(avgsal21 = "$22.46", avgsal22 = "$24.39", avgsal23 = "$22.85", avgsal2123 = "$23.23", medsal21 = "$22.50", medsal22 = "$24.00", medsal23 = "$22.50", medsal2123 = "$23.00", count21 = "39", count22 = "61", count23 = "54", count2123 = "154")
     
     elif ms_intern == ["Civil Engineering"]:
-        T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
+        T3, T1, T2 = st.tabs(["By Salary","By Employer", "By Geography"])
         with T1:
             st.image("FT (5).jpg") 
         with T2:
@@ -468,7 +468,7 @@ def main():
             report_salary(avgsal21 = "$17.86", avgsal22 = "$19.75", avgsal23 = "$22.22", avgsal2123 = "$19.94", medsal21 = "$18.00", medsal22 = "$18.00", medsal23 = "$21.00", medsal2123 = "$19.00", count21 = "14", count22 = "39", count23 = "50", count2123 = "103")
 
     elif ms_intern == ["Computational Data Science"]:
-        T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
+        T3, T1, T2 = st.tabs(["By Salary","By Employer", "By Geography"])
         with T1:
             st.image("FT (6).jpg")                        
             
@@ -490,8 +490,7 @@ def main():
             report_salary(avgsal21 = "$16.75", avgsal22 = "$24.37", avgsal23 = "$26.83", avgsal2123 = "$22.65", medsal21 = "$16.75", medsal22 = "$20.50", medsal23 = "$23.50", medsal2123 = "$20.25", count21 = "2", count22 = "12", count23 = "6", count2123 = "20")
     
     elif ms_intern == ["Computer Engineering"]:
-      
-        T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
+        T3, T1, T2 = st.tabs(["By Salary","By Employer", "By Geography"])
         with T1:
             st.image("FT (7).jpg")                  
             
@@ -514,7 +513,7 @@ def main():
     
     elif ms_intern == ["Computer Science"]:
 
-        T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
+        T3, T1, T2 = st.tabs(["By Salary","By Employer", "By Geography"])
         with T1:
             st.image("FT (8).jpg")  
            
@@ -537,7 +536,7 @@ def main():
     
     elif ms_intern == ["Electrical Engineering"]:
 
-        T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
+        T3, T1, T2 = st.tabs(["By Salary","By Employer", "By Geography"])
         with T1:
             st.image("FT (9).jpg")  
             
@@ -560,7 +559,7 @@ def main():
     
     elif ms_intern == ["Environmental Engineering"]:
 
-        T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
+        T3, T1, T2 = st.tabs(["By Salary","By Employer", "By Geography"])
         with T1:
            st.image("FT (10).jpg") 
         with T2:
@@ -581,7 +580,7 @@ def main():
 
     elif ms_intern == ["Materials Science & Engineering"]:
        
-        T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
+        T3, T1, T2 = st.tabs(["By Salary","By Employer", "By Geography"])
         with T1:
             st.image("FT (11).jpg")                   
 
@@ -603,7 +602,7 @@ def main():
     
     elif ms_intern == ["Mechanical Engineering"]:
 
-        T1, T2, T3 = st.tabs(["By Employer", "By Geography", "By Salary"])
+        T3, T1, T2 = st.tabs(["By Salary","By Employer", "By Geography"])
         with T1:
             st.image("FT (12).jpg")   
         with T2:
