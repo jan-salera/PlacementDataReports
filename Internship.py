@@ -234,115 +234,74 @@ def display_city_visualization(file_path):
     return fig
 
 def display_top_5_states(file_path):
-    data = pd.read_csv(file_path, encoding='latin1')
+    if selected_major == "All Engineering Majors":
+        states = ["Michigan: 1098 positions", "California: 74 positions", "Illinois: 50 positions", "Wisconsin: 45 positions", "Ohio: 43 positions"]
+    elif selected_major == "Applied Engineering Sciences":
+        states = ["Michigan: 76 positions", "Illinois: 9 positions", "Minnesota: 7 positions", "North Carolina: 5 positions", "Arizona: 4 positions"]
+    elif selected_major == "Biosystems Engineering":
+        states = ["Michigan: 38 positions", "Minnesota: 5 positions", "Wisconsin: 3 positions", "Illinois: 2 positions", "Indiana: 2 positions"]
+    elif selected_major == "Chemical Engineering":
+        states = ["Michigan: 107 positions", "Wisconsin: 10 positions", "California: 9 positions", "Illinois: 7 positions", "Iowa: 6 positions"]
+    elif selected_major == "Civil Engineering":
+        states = ["Michigan: 89 positions", "Texas: 9 positions", "New York: 4 positions", "Ohio: 4 positions", "California: 3 positions"]
+    elif selected_major == "Computational Data Science":
+        states = ["Michigan: 19 positions", "California: 2 positions", "Texas: 2 positions"]
+    elif selected_major == "Computer Engineering":
+        states = ["Michigan: 65 positions", "California: 8 positions", "Illinois: 2 positions", "Texas: 2 positions", "Washington: 2 positions"]
+    elif selected_major == "Computer Science":
+        states = ["Michigan: 194 positions", "California: 25 positions", "Washington: 15 positions", "Illinois: 13 positions", "Kentucky: 8 positions"]
+    elif selected_major == "Electrical Engineering":
+        states = ["Michigan: 174 positions", "Texas: 8 positions", "Ohio: 7 positions", "California: 6 positions", "Minnesota: 6 positions"]
+    elif selected_major == "Environmental Engineering":
+        states = ["Michigan: 41 positions", "Illinois: 3 positions", "Indiana: 2 positions"]
+    elif selected_major == "Materials Science & Engineering":
+        states = ["Michigan: 18 positions", "California: 5 positions", "Wisconsin: 2 positions"]
+    elif selected_major == "Mechanical Engineering":
+        states = ["Michigan: 277 positions", "Wisconsin: 24 positions", "Ohio: 16 positions", "California: 11 positions", "Texas: 8 positions"]
+    else:
+        states = []
 
-    city_to_state = {
-        'Seattle': 'WA', 'San Francisco': 'CA', 'McLean': 'VA', 'Arlington': 'VA', 'Detroit': 'MI',
-        'New York': 'NY', 'Boston': 'MA', 'Phoenix': 'AZ', 'San Diego': 'CA', 'Dallas': 'TX',
-        'Charlotte': 'NC', 'Chicago': 'IL', 'Los Angeles': 'CA', 'Tampa': 'FL', 'Reno': 'NV',
-        'Syracuse': 'NY', 'Portland': 'OR', 'Kenai': 'AK', 'Indianapolis': 'IN', 'Philadelphia': 'PA',
-        'Findlay': 'OH', 'Ann Arbor': 'MI', 'Cincinnati': 'OH', 'Hoboken': 'NJ', 'Normal': 'IL',
-        'Mandan': 'ND', 'Pittsburgh': 'PA', 'Corpus Christi': 'TX', 'Minneapolis': 'MN', 'Houston': 'TX',
-        'Robinson': 'IL', 'Midland': 'MI', 'Dayton': 'OH', 'Salt Lake City': 'UT', 'Ames': 'IA',
-        'Austin': 'TX', 'Lansing': 'MI', 'Hartford': 'CT', 'Exton': 'PA', 'Bohemia': 'NY',
-        'Jacksonville': 'FL', 'Atlanta': 'GA', 'Washington DC': 'DC', 'St. Louis': 'MO', 'Kohler': 'WI',
-        'Raleigh': 'NC', 'Saginaw': 'MI', 'Kalamazoo': 'MI', 'Milwaukee': 'WI', 'Benton Harbor': 'MI',
-        'Hannibal': 'MO', 'San Antonio': 'TX', 'Durham': 'NC', 'Albany': 'NY', 'Piscataway': 'NJ',
-        'Kansas City': 'MO', 'Traverse City': 'MI', 'Greenville': 'SC', 'Stamford': 'CT', 'Des Moines': 'IA',
-        'Denver': 'CO', 'Baltimore': 'MD', 'East Chicago': 'IN', 'Au Gres': 'MI', 'Modesto': 'CA',
-        'Fort Wayne': 'IN', 'Camden': 'NJ', 'Columbus': 'OH', 'Essex Junction': 'VT', 'La Crosse': 'WI',
-        'Louisville': 'KY', 'Franklin': 'TN', 'Johnston': 'RI', 'Norway': 'MI', 'Quinnesec': 'MI',
-        'Burns Harbor': 'IN', 'Pittsfield': 'MA', 'West Palm Beach': 'FL', 'Freeport': 'IL', 'Jackson': 'MI',
-        'Manistee': 'MI', 'Columbia': 'SC', 'Preston': 'MD', 'Providence': 'RI', 'Fond Du Lac': 'WI',
-        'Fort Worth': 'TX', 'Savannah': 'GA', 'West Greenwich': 'RI', 'Lynn': 'MA', 'Andover': 'MA',
-        'Clark': 'NJ', 'Peoria': 'IL', 'Davidson': 'NC', 'Clarksville': 'TN', 'Warsaw': 'IN',
-        'Skillman': 'NJ', 'Hastings': 'MI', 'Stafford Springs': 'CT', 'Battle Creek': 'MI', 'Crane': 'IN',
-        'Oswego': 'NY', 'Livingston': 'TX', 'Fremont': 'CA', 'Somerset': 'NJ', 'Omaha': 'NE',
-        'O\'Fallon': 'MO', 'Neenah': 'WI', 'Litchfield': 'IL', 'Flint': 'MI', 'Sidney': 'OH',
-        'Oshkosh': 'WI', 'Harbor Beach': 'MI', 'Wichita': 'KS', 'Jefferson': 'WI', 'Shelby': 'NC',
-        'Trumbull': 'CT', 'Hudson': 'OH', 'Novice': 'TX', 'Lexington': 'KY', 'Bloomington': 'IN',
-        'Buffalo': 'NY', 'Toledo': 'OH', 'Gaylord': 'MI', 'Waupun': 'WI', 'Hoffman Estates': 'IL',
-        'Fort Collins': 'CO', 'Spartanburg': 'SC', 'Port Huron': 'MI', 'Sault Sainte Marie': 'MI',
-        'Tell City': 'IN', 'Charlevoix': 'MI', 'Cedar Rapids': 'IA', 'Cleveland': 'OH', 'Elk Rapids': 'MI',
-        'Evansville': 'IN', 'Stratham': 'NH', 'Charleston': 'SC', 'Dothan': 'AL', 'Midland City': 'AL',
-        'Killian': 'AL', 'Sewickley': 'PA', 'Appleton': 'WI', 'Elyria': 'OH', 'Adrian': 'MI',
-        'Kewadin': 'MI', 'Muscatine': 'IA', 'Iron Mountain': 'MI', 'Accokeek': 'MD', 'Jamaica Plain': 'MA',
-        'Newport News': 'VA', 'Nashville': 'TN', 'Rochester': 'NY', 'Mount Pleasant': 'MI', 'Tuscaloosa': 'AL',
-        'New London': 'CT', 'Mason City': 'IA', 'Washington': 'WA', 'Titusville': 'FL', 'Greeley': 'CO',
-        'West Lafayette': 'IN', 'Chantilly': 'VA', 'Petoskey': 'MI', 'Altoona': 'PA', 'Saint Petersburg': 'FL',
-        'Des Plaines': 'IL', 'Pittston Township': 'PA', 'Ludington': 'MI', 'Middletown': 'OH',
-        'Greenbay': 'WI', 'Plano': 'TX', 'Palmyra': 'NJ', 'Melbourne': 'FL', 'Tucson': 'AZ',
-        'Middle River': 'MD', 'Riverton': 'NJ', 'Carlstadt': 'NJ', 'Hahnville': 'LA', 'Huntsville': 'AL',
-        'California City': 'CA', 'Anchorage': 'AK', 'Verona': 'NJ', 'Sarasota': 'FL', 'Merrimack': 'NH',
-        'Boulder': 'CO', 'Gainesville': 'FL', 'Thief River Falls': 'MN', 'Hammond': 'IN', 'Iowa City': 'IA',
-        'Greenbelt': 'MD', 'Coraopolis': 'PA', 'Tinker AFB': 'OK', 'Lima': 'OH', 'Wallingford': 'CT',
-        'Oregon': 'WI', 'Clifton': 'NJ'
-    }
-
-    data['Employer State'] = data['City'].map(lambda city: city_to_state.get(city, 'Unknown'))
-
-    state_abbreviation_to_name = {
-        'AL': 'Alabama', 'AK': 'Alaska', 'AZ': 'Arizona', 'AR': 'Arkansas', 'CA': 'California',
-        'CO': 'Colorado', 'CT': 'Connecticut', 'DE': 'Delaware', 'FL': 'Florida', 'GA': 'Georgia',
-        'HI': 'Hawaii', 'ID': 'Idaho', 'IL': 'Illinois', 'IN': 'Indiana', 'IA': 'Iowa',
-        'KS': 'Kansas', 'KY': 'Kentucky', 'LA': 'Louisiana', 'ME': 'Maine', 'MD': 'Maryland',
-        'MA': 'Massachusetts', 'MI': 'Michigan', 'MN': 'Minnesota', 'MS': 'Mississippi', 'MO': 'Missouri',
-        'MT': 'Montana', 'NE': 'Nebraska', 'NV': 'Nevada', 'NH': 'New Hampshire', 'NJ': 'New Jersey',
-        'NM': 'New Mexico', 'NY': 'New York', 'NC': 'North Carolina', 'ND': 'North Dakota', 'OH': 'Ohio',
-        'OK': 'Oklahoma', 'OR': 'Oregon', 'PA': 'Pennsylvania', 'RI': 'Rhode Island', 'SC': 'South Carolina',
-        'SD': 'South Dakota', 'TN': 'Tennessee', 'TX': 'Texas', 'UT': 'Utah', 'VT': 'Vermont',
-        'VA': 'Virginia', 'WA': 'Washington', 'WV': 'West Virginia', 'WI': 'Wisconsin', 'WY': 'Wyoming'
-    }
-
-    data['Employer State'] = data['Employer State'].map(lambda x: state_abbreviation_to_name.get(x, None))
-    state_counts = data['Employer State'].value_counts().reset_index()
-    state_counts.columns = ['State', 'Count']
-
-    state_counts = state_counts[state_counts['State'].notna()]
-
-    top_5_states = state_counts.nlargest(5, 'Count')
-
-    st.subheader("Top 5 States by Internship Count")
-    for index, row in top_5_states.iterrows():
-        st.write(f"**{row['State']}:** {row['Count']} internships")
+    st.subheader("Top 5 States")
+    for i, state in enumerate(states, start=1):
+        st.write(f"{i}. {state}")
 
 def display_top_5_cities(selected_major):
     if selected_major == "All Engineering Majors":
-        michigan_cities = ["Detroit", "Lansing", "Grand Rapids", "Ann Arbor", "Jackson"]
-        non_michigan_cities = ["San Francisco, CA", "Toledo, OH", "Findlay, OH", "La Crosse, WI", "Los Angeles, CA"]
+        michigan_cities = ["Detroit: 463 positions", "Lansing: 344 positions", "Grand Rapids: 101 positions", "Jackson: 46 positions", "Ann Arbor: 35 positions"]
+        non_michigan_cities = ["San Francisco, CA: 46 positions", "Chicago, Il: 39 positions", "Dallas, TX: 22 positions", "Seattle, WA: 20 positions", "Minneapolis, MN: 19 positions"]
     elif selected_major == "Applied Engineering Sciences":
-        michigan_cities = ["Detroit", "Lansing", "Grand Rapids", "Ann Arbor", "Jackson"]
-        non_michigan_cities = ["Chicago, IL", "Minneapolis, MN", "Phoenix, AZ", "Cincinnati, OH", "Fond Du Lac, WI"]
+        michigan_cities = ["Detroit: 35 positions", "Lansing: 14 positions", "Grand Rapids: 7 positions", "Ann Arbor: 5 positions", "Jackson: 4 positions"]
+        non_michigan_cities = ["Chicago, IL: 6 positions", "Minneapolis, MN: 5 positions", "Phoenix, AZ: 4 positions", "Cincinnati, OH: 3 positions", "Fond Du Lac, WI: 3 positions"]
     elif selected_major == "Biosystems Engineering":
-        michigan_cities = ["Lansing", "Detroit", "Grand Rapids", "Ann Arbor", "Jackson"]
-        non_michigan_cities = ["Preston, MN", "Boston, MA", "Chicago, IL", "Fremont, CA", "Minneapolis, MN"]
+        michigan_cities = ["Lansing: 463 positions", "Detroit: 463 positions", "Grand Rapids: 463 positions", "Ann Arbor: 463 positions", "Jackson: 463 positions"]
+        non_michigan_cities = ["Preston, MN: 463 positions", "Boston, MA: 463 positions", "Chicago, IL: 463 positions", "Fremont, CA: 463 positions", "Minneapolis, MN: 463 positions"]
     elif selected_major == "Chemical Engineering":
-        michigan_cities = ["Detroit", "Lansing", "Jackson", "Midland", "Grand Rapids"]
-        non_michigan_cities = ["Chicago, IL", "Boston, MA", "Neenah, WI", "Atlanta, GA", "Cincinnati, OH"]
+        michigan_cities = ["Detroit: 463 positions", "Lansing: 463 positions", "Jackson: 463 positions", "Midland: 463 positions", "Grand Rapids: 463 positions"]
+        non_michigan_cities = ["Chicago, IL: 463 positions", "Boston, MA: 463 positions", "Neenah, WI: 463 positions", "Atlanta, GA: 463 positions", "Cincinnati, OH: 463 positions"]
     elif selected_major == "Civil Engineering":
-        michigan_cities = ["Lansing", "Detroit", "Grand Rapids", "Flint", "Jackson"]
-        non_michigan_cities = ["Dallas, TX", "Los Angeles, CA", "Chicago, IL", "Dayton, OH", "Kansas City, MO"]
+        michigan_cities = ["Lansing: 463 positions", "Detroit: 463 positions", "Grand Rapids: 463 positions", "Flint: 463 positions", "Jackson: 463 positions"]
+        non_michigan_cities = ["Dallas, TX: 463 positions", "Los Angeles, CA: 463 positions", "Chicago, IL: 463 positions", "Dayton, OH: 463 positions", "Kansas City, MO: 463 positions"]
     elif selected_major == "Computational Data Science":
-        michigan_cities = ["Detroit", "Lansing"]
-        non_michigan_cities = ["Dallas, TX", "San Francisco, CA"]
+        michigan_cities = ["Detroit: 463 positions", "Lansing: 463 positions"]
+        non_michigan_cities = ["Dallas, TX: 463 positions", "San Francisco, CA: 463 positions"]
     elif selected_major == "Computer Engineering":
-        michigan_cities = ["Detroit", "Lansing", "Saginaw", "Ann Arbor", "Grand Rapids"]
-        non_michigan_cities = ["San Francisco, CA", "Chicago, IL", "Dallas, TX", "Seattle, WA"]
+        michigan_cities = ["Detroit: 463 positions", "Lansing: 463 positions", "Saginaw: 463 positions", "Ann Arbor: 463 positions", "Grand Rapids: 463 positions"]
+        non_michigan_cities = ["San Francisco, CA: 463 positions", "Chicago, IL: 463 positions", "Dallas, TX: 463 positions", "Seattle, WA: 463 positions"]
     elif selected_major == "Computer Science":
-        michigan_cities = ["Detroit", "Lansing", "Grand Rapids", "Ann Arbor", "Midland"]
-        non_michigan_cities = ["San Francisco, CA", "Seattle, WA", "Chicago, IL", "Louisville, KY", "Minneapolis, MN"]
+        michigan_cities = ["Detroit: 463 positions", "Lansing: 463 positions", "Grand Rapids: 463 positions", "Ann Arbor: 463 positions", "Midland: 463 positions"]
+        non_michigan_cities = ["San Francisco, CA: 463 positions", "Seattle, WA: 463 positions", "Chicago, IL: 463 positions", "Louisville, KY: 463 positions", "Minneapolis, MN: 463 positions"]
     elif selected_major == "Electrical Engineering":
-        michigan_cities = ["Detroit", "Lansing", "Grand Rapids", "Jackson", "Saginaw"]
-        non_michigan_cities = ["Dallas, TX", "San Francisco, CA", "Baltimore, MD", "Des Moines, IA", "Minneapolis, MN"]
+        michigan_cities = ["Detroit: 463 positions", "Lansing: 463 positions", "Grand Rapids: 463 positions", "Jackson: 463 positions", "Saginaw: 463 positions"]
+        non_michigan_cities = ["Dallas, TX: 463 positions", "San Francisco, CA: 463 positions", "Baltimore, MD: 463 positions", "Des Moines, IA: 463 positions", "Minneapolis, MN: 463 positions"]
     elif selected_major == "Environmental Engineering":
-        michigan_cities = ["Lansing", "Detroit", "Grand Rapids", "Saginaw"]
-        non_michigan_cities = ["Chicago, IL"]
+        michigan_cities = ["Lansing: 463 positions", "Detroit: 463 positions", "Grand Rapids: 463 positions", "Saginaw: 463 positions"]
+        non_michigan_cities = ["Chicago, IL: 463 positions"]
     elif selected_major == "Materials Science & Engineering":
-        michigan_cities = ["Detroit", "Lansing", "Saginaw"]
-        non_michigan_cities = ["San Francisco, CA"]
+        michigan_cities = ["Detroit: 463 positions", "Lansing: 463 positions", "Saginaw: 463 positions"]
+        non_michigan_cities = ["San Francisco, CA: 463 positions"]
     elif selected_major == "Mechanical Engineering":
-        michigan_cities = ["Detroit", "Lansing", "Grand Rapids", "Ann Arbor", "Jackson"]
-        non_michigan_cities = ["San Francisco, CA", "Toledo, OH", "Los Angeles, CA", "Milwaukee, WI", "Oshkosh, WI"]
+        michigan_cities = ["Detroit: 463 positions", "Lansing: 463 positions", "Grand Rapids: 463 positions", "Ann Arbor: 463 positions", "Jackson: 463 positions"]
+        non_michigan_cities = ["San Francisco, CA: 463 positions", "Toledo, OH: 463 positions", "Los Angeles, CA: 463 positions", "Milwaukee, WI: 463 positions", "Oshkosh, WI: 463 positions"]
     else:
         michigan_cities = []
         non_michigan_cities = []
