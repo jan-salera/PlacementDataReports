@@ -233,7 +233,7 @@ def display_city_visualization(file_path):
     
     return fig
 
-def display_top_5_states(file_path):
+def display_top_5_states(selected_major):
     if selected_major == "All Engineering Majors":
         states = ["Michigan: 1098 positions", "California: 74 positions", "Illinois: 50 positions", "Wisconsin: 45 positions", "Ohio: 43 positions"]
     elif selected_major == "Applied Engineering Sciences":
