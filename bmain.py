@@ -266,15 +266,260 @@ def display_city_visualization(file_path):
     else:
         st.error("Failed to create Latitude and Longitude columns. Please check your CSV file.")
 
-def top_5_employer_states(file_path):
-    all_majors_data = pd.read_csv(file_path)
-    state_counts = all_majors_data['Employer State'].value_counts().reset_index()
-    state_counts.columns = ['State', 'Count']
-    top_5_states = state_counts.head(5)
+def top_5_employer_states(year, selected_major):
+    states = []
+    if year == "2023":
+        if selected_major == "All Engineering Majors":
+            states = ["Michigan: 370 positions", "Illinois: 44 positions", "Ohio: 22 positions", "Texas: 19 positions", "California: 16 positions"]
+        elif selected_major == "Applied Engineering Sciences":
+            states = ["Michigan: 30 positions", "Illinois: 13 positions", "Ohio: 5 positions", "Arizona: 2 positions", "California: 2 positions"]
+        elif selected_major == "Biosystems Engineering":
+            states = ["Michigan: 19 positions", "Iowa: 3 positions", "Arizona: 2 positions", "California: 2 positions", "Illinois: 2 positions"]
+        elif selected_major == "Chemical Engineering":
+            states = ["Michigan: 37 positions", "Illinois: 9 positions", "Ohio: 6 positions", "Georgia: 3 positions", "Indiana: 3 positions"]
+        elif selected_major == "Civil Engineering":
+            states = ["Michigan: 34 positions", "Texas: 3 positions", "Colorado: 2 positions", "New York: 2 positions"]
+        elif selected_major == "Computational Data Science":
+            states = ["Michigan: 6 positions"]
+        elif selected_major == "Computer Engineering":
+            states = ["Michigan: 13 positions"]
+        elif selected_major == "Computer Science":
+            states = ["Michigan: 80 positions", "Illinois: 9 positions", "Washington: 6 positions", "Texas: 5 positions", "California: 4 positions"]
+        elif selected_major == "Electrical Engineering":
+            states = ["Michigan: 40 positions", "Illinois: 3 positions", "Texas: 3 positions", "Georgia: 2 positions", "New York: 2 positions"]
+        elif selected_major == "Environmental Engineering":
+            states = ["Michigan: 10 positions"]
+        elif selected_major == "Materials Science & Engineering":
+            states = ["Michigan: 4 positions", "Ohio: 2 positions", "Pennsylvania: 2 positions"]
+        elif selected_major == "Mechanical Engineering":
+            states = ["Michigan: 97 positions", "Illinois: 6 positions", "California: 4 positions", "Florida: 4 positions", "Indiana: 4 positions"]
+        else:
+            states = []
+    if year == "2022":
+        if selected_major == "All Engineering Majors":
+            states = ["Michigan: 347 positions", "Illinois: 37 positions", "Texas: 33 positions", "California: 25 positions", "Wisconsin: 19 positions"]
+        elif selected_major == "Applied Engineering Sciences":
+            states = ["Michigan: 19 positions", "Illinois: 6 positions", "Texas: 6 positions", "California: 3 positions", "Arizona: 2 positions"]
+        elif selected_major == "Biosystems Engineering":
+            states = ["Michigan: 28 positions", "Colorado: 3 positions", "California: 2 positions", "Massachusetts: 2 positions", "Washington: 2 positions"]
+        elif selected_major == "Chemical Engineering":
+            states = ["Michigan: 40 positions", "Wisconsin: 4 positions", "California: 4 positions", "Illinois: 3 positions", "Iowa: 3 positions"]
+        elif selected_major == "Civil Engineering":
+            states = ["Michigan: 21 positions", "Illinois: 6 positions", "California: 3 positions", "Maryland: 2 positions", "Texas: 2 positions"]
+        elif selected_major == "Computational Data Science":
+            states = ["Michigan: 3 positions"]
+        elif selected_major == "Computer Engineering":
+            states = ["Michigan: 14 positions", "Texas: 3 positions", "Wisconsin: 3 positions", "Florida: 2 positions", "Washington: 2 positions"]
+        elif selected_major == "Computer Science":
+            states = ["Michigan: 85 positions", "California: 9 positions", "Minnesota: 7 positions", "Texas: 7 positions", "Illinois: 6 positions"]
+        elif selected_major == "Electrical Engineering":
+            states = ["Michigan: 33 positions", "Illinois: 5 positions", "Indiana: 3 positions", "Texas: 3 positions", "Wisconsin: 3 positions"]
+        elif selected_major == "Environmental Engineering":
+            states = ["Michigan: 9 positions", "California: 2 positions"]
+        elif selected_major == "Materials Science & Engineering":
+            states = ["Michigan: 11 positions", "Ohio: 2 positions"]
+        elif selected_major == "Mechanical Engineering":
+            states = ["Michigan: 84 positions", "Illinois: 10 positions", "Texas: 7 positions", "Ohio: 4 positions", "Indiana: 3 positions"]
+        else:
+            states = []
+    if year == "2021":
+        if selected_major == "All Engineering Majors":
+            states = ["Michigan: 293 positions", "Illinois: 37 positions", "Wisconsin: 21 positions", "Indiana: 17 positions", "California: 14 positions"]
+        elif selected_major == "Applied Engineering Sciences":
+            states = ["Michigan: 19 positions", "Illinois: 12 positions", "New York: 3 positions", "Ohio: 3 positions", "California: 2 positions"]
+        elif selected_major == "Biosystems Engineering":
+            states = ["Michigan: 19 positions", "Wisconsin: 4 positions", "Oregon: 2 positions", "Pennsylvania: 2 positions"]
+        elif selected_major == "Chemical Engineering":
+            states = ["Michigan: 31 positions", "Wisconsin: 9 positions", "Indiana: 5 positions", "Illinois: 3 positions", "California: 2 positions"]
+        elif selected_major == "Civil Engineering":
+            states = ["Michigan: 25 positions"]
+        elif selected_major == "Computer Engineering":
+            states = ["Michigan: 16 positions", "California: 2 positions"]
+        elif selected_major == "Computer Science":
+            states = ["Michigan: 63 positions", "Illinois: 15 positions", "Washington: 7 positions", "Minnesota: 3 positions", "Texas: 3 positions"]
+        elif selected_major == "Electrical Engineering":
+            states = ["Michigan: 28 positions", "Ohio: 3 positions", "California: 2 positions", "Illinois: 2 positions", "Indiana: 2 positions"]
+        elif selected_major == "Environmental Engineering":
+            states = ["Michigan: 13 positions"]
+        elif selected_major == "Materials Science & Engineering":
+            states = ["Michigan: 8 positions"]
+        elif selected_major == "Mechanical Engineering":
+            states = ["Michigan: 71 positions", "Indiana: 5 positions", "Wisconsin: 5 positions", "California: 3 positions", "Alabama: 2 positions"]
+        else:
+            states = []
 
-    # Display top 5 employer states ranked
-    for index, row in top_5_states.iterrows():
-        st.write(f"{index + 1}. **{row['State']}**")
+    if not states:
+        states = ["No data available for the selected year and major."]
+    
+    st.subheader("Top 5 States")
+    for i, state in enumerate(states, start=1):
+        st.write(f"{i}. {state}")
+
+def display_top_5_cities(year, selected_major):
+    if year == "2023":
+        if selected_major == "All Engineering Majors":
+            michigan_cities = ["Detroit: 57 positions", "Lansing: 13 positions", "Ann Arbor: 10 positions", "Grand Rapids: 8 positions", "Jackson: 2 positions"]
+            non_michigan_cities = ["Chicago, IL: 6 positions", "Indianapolis, IN: 4 positions", "Boston, MA: 3 positions", "Orlando, FL: 3 positions", "Berkeley, CA: 2 positions"]
+        elif selected_major == "Applied Engineering Sciences":
+            michigan_cities = ["Detroit: 18 positions", "Grand Rapids: 5 positions", "Lansing: 4 positions", "Ann Arbor: 2 positions"]
+            non_michigan_cities = ["Chicago, IL: 13 positions", "Phoenix, AZ: 2 positions", "Toledo, OH: 2 positions"]
+        elif selected_major == "Biosystems Engineering":
+            michigan_cities = ["Detroit: 9 positions", "Grand Rapids: 4 positions", "Lansing: 4 positions"]
+            non_michigan_cities = ["Madison, WI: 2 positions", "Minneapolis, MN: 2 positions", "Modesto, CA: 2 positions"]
+        elif selected_major == "Chemical Engineering":
+            michigan_cities = ["Detroit: 15 positions", "Ann Arbor: 7 positions", "Lansing: 7 positions", "Grand Rapids: 4 positions", "Saginaw: 2 positions"]
+            non_michigan_cities = ["Chicago, IL: 8 positions", "Atlanta, GA: 2 positions", "Boston, MA: 2 positions", "Cleveland, OH: 2 positions", "Indianapolis, IN: 2 positions"]
+        elif selected_major == "Civil Engineering":
+            michigan_cities = ["Detroit: 14 positions", "Lansing: 12 positions", "Grand Rapids: 6 positions"]
+            non_michigan_cities = ["Dallas, TX: 3 positions", "Denver, CO: 2 positions", "New York, NY: 2 positions"]
+        elif selected_major == "Computational Data Science":
+            michigan_cities = ["Detroit: 4 positions", "Lansing: 2 positions"]
+            non_michigan_cities = []
+        elif selected_major == "Computer Engineering":
+            michigan_cities = ["Detroit: 9 positions", "Lansing: 3 positions"]
+            non_michigan_cities = []
+        elif selected_major == "Computer Science":
+            michigan_cities = ["Lansing: 42 positions", "Detroit: 33 positions", "Ann Arbor: 2 positions", "Grand Rapids: 2 positions"]
+            non_michigan_cities = ["Chicago, IL: 8 positions", "Seattle, WA: 6 positions", "New York, NY: 4 positions", "Washington, DC: 4 positions", "Madison, WI: 3 positions"]
+        elif selected_major == "Electrical Engineering":
+            michigan_cities = ["Detroit: 16 positions", "Lansing: 8 positions", "Grand Rapids: 6 positions", "Jackson: 2 positions", "Saginaw: 2 positions"]
+            non_michigan_cities = ["Chicago, IL: 3 positions", "Atlanta, GA: 2 positions", "Austin, TX: 2 positions"]
+        elif selected_major == "Environmental Engineering":
+            michigan_cities = ["Detroit: 4 positions", "Lansing: 4 positions"]
+            non_michigan_cities = []
+        elif selected_major == "Materials Science & Engineering":
+            michigan_cities = ["Detroit: 3 positions"]
+            non_michigan_cities = []
+        elif selected_major == "Mechanical Engineering":
+            michigan_cities = ["Detroit: 57 positions", "Lansing: 13 positions", "Ann Arbor: 10 positions", "Grand Rapids: 8 positions", "Jackson: 2 positions"]
+            non_michigan_cities = ["Chicago, IL: 6 positions", "Indianapolis, IN: 4 positions", "Boston, MA: 3 positions", "Orlando, FL: 3 positions", "Berkeley, CA: 2 positions"]
+        else:
+            michigan_cities = []
+            non_michigan_cities = []
+    if year == "2022":
+        if selected_major == "All Engineering Majors":
+            michigan_cities = ["Detroit: 164 positions", "Lansing: 75 positions", "Grand Rapids: 36 positions", "Ann Arbor: 31 positions", "Kalamazoo: 18 positions"]
+            non_michigan_cities = ["Chicago, IL: 29 positions", "Dallas, TX: 12 positions", "Madison, WI: 10 positions", "Minneapolis, MN: 10 positions", "Austin, TX: 8 positions"]
+        elif selected_major == "Applied Engineering Sciences":
+            michigan_cities = ["Detroit: 13 positions", "Lansing: 3 positions"]
+            non_michigan_cities = ["Chicago, IL: 5 positions", "Dallas, TX: 3 positions", "Fort Worth, TX: 2 positions", "Nashville, TX: 2 positions", "Phoenix, AZ: 2 positions"]
+        elif selected_major == "Biosystems Engineering":
+            michigan_cities = ["Lansing: 8 positions", "Detroit: 7 positions", "Kalamazoo: 5 positions", "Grand Rapids: 3 positions", "Benton Harbor: 2 positions"]
+            non_michigan_cities = ["Denver, CO: 3 positions", "Boston, MA: 2 positions"]
+        elif selected_major == "Chemical Engineering":
+            michigan_cities = ["Detroit: 12 positions", "Kalamazoo: 8 positions", "Lansing: 7 positions", "Midland: 4 positions", "Jackson: 3 positions"]
+            non_michigan_cities = ["Cleveland, OH: 2 positions", "Indianapolis, IN: 2 positions", "Madison, WI: 2 positions"]
+        elif selected_major == "Civil Engineering":
+            michigan_cities = ["Detroit: 8 positions", "Lansing: 7 positions", "Grand Rapids: 3 positions", "Ann Arbor: 2 positions"]
+            non_michigan_cities = ["Chicago, IL: 5 positions"]
+        elif selected_major == "Computational Data Science":
+            michigan_cities = ["Detroit: 3 positions"]
+            non_michigan_cities = []
+        elif selected_major == "Computer Engineering":
+            michigan_cities = ["Detroit: 6 positions", "Lansing: 5 positions", "Grand Rapids: 2 positions"]
+            non_michigan_cities = ["Austin, TX: 2 positions", "Madison, WI: 2 positions", "Seattle, WA: 2 positions"]
+        elif selected_major == "Computer Science":
+            michigan_cities = ["Detroit: 40 positions", "Lansing: 21 positions", "Grand Rapids: 12 positions", "Ann Arbor: 9 positions"]
+            non_michigan_cities = ["Minneapolis, MN: 7 positions", "New York, NY: 6 positions", "Chicago, IL: 5 positions", "San Francisco, CA: 4 positions", "Seattle, WA: 4 positions"]
+        elif selected_major == "Electrical Engineering":
+            michigan_cities = ["Detroit: 15 positions", "Ann Arbor: 7 positions", "Lansing: 5 positions", "Kalamazoo: 3 positions", "Grand Rapids: 2 positions"]
+            non_michigan_cities = ["Chicago, IL: 4 positions", "Indianapolis, IN: 3 positions", "Dallas, TX: 2 positions", "Milwaukee, WI: 2 positions"]
+        elif selected_major == "Environmental Engineering":
+            michigan_cities = ["Detroit: 4 positions", "Lansing: 3 positions", "Grand Rapids: 2 positions"]
+            non_michigan_cities = []
+        elif selected_major == "Materials Science & Engineering":
+            michigan_cities = ["Detroit: 4 positions", "Lansing: 3 positions", "Grand Rapids: 2 positions"]
+            non_michigan_cities = []
+        elif selected_major == "Mechanical Engineering":
+            michigan_cities = ["Detroit: 52 positions", "Lansing: 13 positions", "Ann Arbor: 9 positions", "Grand Rapids: 7 positions"]
+            non_michigan_cities = ["Chicago, IL: 7 positions", "Cincinnati, OH: 3 positions", "Peoria, IL: 3 positions", "Atlanta, GA: 2 positions", "Indianapolis, IN: 2 positions"]
+        else:
+            michigan_cities = []
+            non_michigan_cities = []
+    if year == "2021":
+        if selected_major == "All Engineering Majors":
+            michigan_cities = ["Detroit: 143 positions", "Lansing: 75 positions", "Grand Rapids: 25 positions", "Ann Arbor: 14 positions", "Kalamazoo: 11 positions"]
+            non_michigan_cities = ["Chicago, CA: 36 positions", "Madison, WI: 16 positions", "Minneapolis, MN: 8 positions", "Portland, OR: 8 positions", "Seattle, WA: 7 positions"]
+        elif selected_major == "Applied Engineering Sciences":
+            michigan_cities = ["Detroit: 9 positions", "Grand Rapids: 4 positions", "Lansing: 2 positions"]
+            non_michigan_cities = ["Chicago, IL: 12 positions", "Charlotte, NC: 2 positions", "Columbus, OH: 2 positions", "Portland, OR: 2 positions"]
+        elif selected_major == "Biosystems Engineering":
+            michigan_cities = ["Lansing: 10 positions", "Detroit: 3 positions", "Kalamazoo: 3 positions", "Grand Rapids: 2 positions"]
+            non_michigan_cities = ["Madison, WI: 3 positions", "Philadelphia, PA: 2 positions"]
+        elif selected_major == "Chemical Engineering":
+            michigan_cities = ["Detroit: 13 positions", "Ann Arbor: 4 positions", "Grand Rapids: 4 positions", "Kalamazoo: 3 positions", "Lansing: 2 positions"]
+            non_michigan_cities = ["Madison, WI: 8 positions", "Indianapolis, IN: 3 positions", "Chicago, IL: 2 positions"]
+        elif selected_major == "Civil Engineering":
+            michigan_cities = ["Detroit: 12 positions", "Lansing: 8 positions", "Jackson: 2 positions"]
+        elif selected_major == "Computer Engineering":
+            michigan_cities = ["Lansing: 8 positions", "Detroit: 7 positions"]
+            non_michigan_cities = ["San Francisco, CA: 2 positions"]
+        elif selected_major == "Computer Science":
+            michigan_cities = ["Detroit: 37 positions", "Lansing: 17 positions", "Grand Rapids: 6 positions", "Ann Arbor: 2 positions"]
+            non_michigan_cities = ["Chicago, IL: 14 positions", "Seattle, WA: 6 positions", "Austin, TX: 3 positions", "Minneapolis, MN: 3 positions", "Los Angeles, CA: 2 positions"]
+        elif selected_major == "Electrical Engineering":
+            michigan_cities = ["Detroit: 14 positions", "Lansing: 9 positions", "Jackson: 3 positions"]
+            non_michigan_cities = ["Chicago, IL: 3 positions", "Alexandria, VA: 2 positions"]
+        elif selected_major == "Environmental Engineering":
+            michigan_cities = ["Detroit: 6 positions", "Lansing: 3 positions", "Grand Rapids: 2 positions"]
+            non_michigan_cities = []
+        elif selected_major == "Materials Science & Engineering":
+            michigan_cities = ["Detroit: 5 positions"]
+            non_michigan_cities = []
+        elif selected_major == "Mechanical Engineering":
+            michigan_cities = ["Detroit: 37 positions", "Lansing: 15 positions", "Grand Rapids: 5 positions", "Ann Arbor: 4 positions", "Kalamazoo: 3 positions"]
+            non_michigan_cities = ["Chicago, IL: 3 positions", "Madison, WI: 3 positions", "Indianapolis, IN: 2 positions", "Minneapolis, MN: 2 positions"]
+        else:
+            michigan_cities = []
+            non_michigan_cities = []
+    if year == "Cumulative Data 21-23: Key Stats":
+        if selected_major == "All Engineering Majors":
+            michigan_cities = ["Detroit: 463 positions", "Lansing: 344 positions", "Grand Rapids: 101 positions", "Jackson: 46 positions", "Ann Arbor: 35 positions"]
+            non_michigan_cities = ["San Francisco, CA: 46 positions", "Chicago, Il: 39 positions", "Dallas, TX: 22 positions", "Seattle, WA: 20 positions", "Minneapolis, MN: 19 positions"]
+        elif selected_major == "Applied Engineering Sciences":
+            michigan_cities = ["Detroit: 35 positions", "Lansing: 14 positions", "Grand Rapids: 7 positions", "Ann Arbor: 5 positions", "Jackson: 4 positions"]
+            non_michigan_cities = ["Chicago, IL: 6 positions", "Minneapolis, MN: 5 positions", "Phoenix, AZ: 4 positions", "Cincinnati, OH: 3 positions", "Fond Du Lac, WI: 3 positions"]
+        elif selected_major == "Biosystems Engineering":
+            michigan_cities = ["Lansing: 463 positions", "Detroit: 463 positions", "Grand Rapids: 463 positions", "Ann Arbor: 463 positions", "Jackson: 463 positions"]
+            non_michigan_cities = ["Preston, MN: 463 positions", "Boston, MA: 463 positions", "Chicago, IL: 463 positions", "Fremont, CA: 463 positions", "Minneapolis, MN: 463 positions"]
+        elif selected_major == "Chemical Engineering":
+            michigan_cities = ["Detroit: 463 positions", "Lansing: 463 positions", "Jackson: 463 positions", "Midland: 463 positions", "Grand Rapids: 463 positions"]
+            non_michigan_cities = ["Chicago, IL: 463 positions", "Boston, MA: 463 positions", "Neenah, WI: 463 positions", "Atlanta, GA: 463 positions", "Cincinnati, OH: 463 positions"]
+        elif selected_major == "Civil Engineering":
+            michigan_cities = ["Lansing: 463 positions", "Detroit: 463 positions", "Grand Rapids: 463 positions", "Flint: 463 positions", "Jackson: 463 positions"]
+            non_michigan_cities = ["Dallas, TX: 463 positions", "Los Angeles, CA: 463 positions", "Chicago, IL: 463 positions", "Dayton, OH: 463 positions", "Kansas City, MO: 463 positions"]
+        elif selected_major == "Computational Data Science":
+            michigan_cities = ["Detroit: 463 positions", "Lansing: 463 positions"]
+            non_michigan_cities = ["Dallas, TX: 463 positions", "San Francisco, CA: 463 positions"]
+        elif selected_major == "Computer Engineering":
+            michigan_cities = ["Detroit: 463 positions", "Lansing: 463 positions", "Saginaw: 463 positions", "Ann Arbor: 463 positions", "Grand Rapids: 463 positions"]
+            non_michigan_cities = ["San Francisco, CA: 463 positions", "Chicago, IL: 463 positions", "Dallas, TX: 463 positions", "Seattle, WA: 463 positions"]
+        elif selected_major == "Computer Science":
+            michigan_cities = ["Detroit: 463 positions", "Lansing: 463 positions", "Grand Rapids: 463 positions", "Ann Arbor: 463 positions", "Midland: 463 positions"]
+            non_michigan_cities = ["San Francisco, CA: 463 positions", "Seattle, WA: 463 positions", "Chicago, IL: 463 positions", "Louisville, KY: 463 positions", "Minneapolis, MN: 463 positions"]
+        elif selected_major == "Electrical Engineering":
+            michigan_cities = ["Detroit: 463 positions", "Lansing: 463 positions", "Grand Rapids: 463 positions", "Jackson: 463 positions", "Saginaw: 463 positions"]
+            non_michigan_cities = ["Dallas, TX: 463 positions", "San Francisco, CA: 463 positions", "Baltimore, MD: 463 positions", "Des Moines, IA: 463 positions", "Minneapolis, MN: 463 positions"]
+        elif selected_major == "Environmental Engineering":
+            michigan_cities = ["Lansing: 463 positions", "Detroit: 463 positions", "Grand Rapids: 463 positions", "Saginaw: 463 positions"]
+            non_michigan_cities = ["Chicago, IL: 463 positions"]
+        elif selected_major == "Materials Science & Engineering":
+            michigan_cities = ["Detroit: 463 positions", "Lansing: 463 positions", "Saginaw: 463 positions"]
+            non_michigan_cities = ["San Francisco, CA: 463 positions"]
+        elif selected_major == "Mechanical Engineering":
+            michigan_cities = ["Detroit: 463 positions", "Lansing: 463 positions", "Grand Rapids: 463 positions", "Ann Arbor: 463 positions", "Jackson: 463 positions"]
+            non_michigan_cities = ["San Francisco, CA: 463 positions", "Toledo, OH: 463 positions", "Los Angeles, CA: 463 positions", "Milwaukee, WI: 463 positions", "Oshkosh, WI: 463 positions"]
+        else:
+            michigan_cities = []
+            non_michigan_cities = []
+
+    st.subheader("Top 5 Michigan Cities")
+    for i, city in enumerate(michigan_cities, start=1):
+        st.write(f"{i}. {city}")
+
+    st.subheader("Top 5 Non-Michigan Cities")
+    for i, city in enumerate(non_michigan_cities, start=1):
+        st.write(f"{i}. {city}")
 
 def report_salary(avgsal21 = "$10,000", avgsal22 = "$10,000", avgsal23 = "$10,000", avgsal2123 = "$10,000", medsal21 = "$10,000", medsal22 = "$10,000", medsal23 = "$10,000", medsal2123 = "$10,000", count21 = "5000", count22 = "5000", count23 = "5000", count2123 = "5000"):
     """
@@ -345,94 +590,6 @@ def create_pie_chart(file_path):
     
     return fig
 
-def display_top_5_states(file_path):
-    data = pd.read_csv(file_path, encoding='latin1')
-
-    city_to_state = {
-        'Seattle': 'WA', 'San Francisco': 'CA', 'McLean': 'VA', 'Arlington': 'VA', 'Detroit': 'MI',
-        'New York': 'NY', 'Boston': 'MA', 'Phoenix': 'AZ', 'San Diego': 'CA', 'Dallas': 'TX',
-        'Charlotte': 'NC', 'Chicago': 'IL', 'Los Angeles': 'CA', 'Tampa': 'FL', 'Reno': 'NV',
-        'Syracuse': 'NY', 'Portland': 'OR', 'Kenai': 'AK', 'Indianapolis': 'IN', 'Philadelphia': 'PA',
-        'Findlay': 'OH', 'Ann Arbor': 'MI', 'Cincinnati': 'OH', 'Hoboken': 'NJ', 'Normal': 'IL',
-        'Mandan': 'ND', 'Pittsburgh': 'PA', 'Corpus Christi': 'TX', 'Minneapolis': 'MN', 'Houston': 'TX',
-        'Robinson': 'IL', 'Midland': 'MI', 'Dayton': 'OH', 'Salt Lake City': 'UT', 'Ames': 'IA',
-        'Austin': 'TX', 'Lansing': 'MI', 'Hartford': 'CT', 'Exton': 'PA', 'Bohemia': 'NY',
-        'Jacksonville': 'FL', 'Atlanta': 'GA', 'Washington DC': 'DC', 'St. Louis': 'MO', 'Kohler': 'WI',
-        'Raleigh': 'NC', 'Saginaw': 'MI', 'Kalamazoo': 'MI', 'Milwaukee': 'WI', 'Benton Harbor': 'MI',
-        'Hannibal': 'MO', 'San Antonio': 'TX', 'Durham': 'NC', 'Albany': 'NY', 'Piscataway': 'NJ',
-        'Kansas City': 'MO', 'Traverse City': 'MI', 'Greenville': 'SC', 'Stamford': 'CT', 'Des Moines': 'IA',
-        'Denver': 'CO', 'Baltimore': 'MD', 'East Chicago': 'IN', 'Au Gres': 'MI', 'Modesto': 'CA',
-        'Fort Wayne': 'IN', 'Camden': 'NJ', 'Columbus': 'OH', 'Essex Junction': 'VT', 'La Crosse': 'WI',
-        'Louisville': 'KY', 'Franklin': 'TN', 'Johnston': 'RI', 'Norway': 'MI', 'Quinnesec': 'MI',
-        'Burns Harbor': 'IN', 'Pittsfield': 'MA', 'West Palm Beach': 'FL', 'Freeport': 'IL', 'Jackson': 'MI',
-        'Manistee': 'MI', 'Columbia': 'SC', 'Preston': 'MD', 'Providence': 'RI', 'Fond Du Lac': 'WI',
-        'Fort Worth': 'TX', 'Savannah': 'GA', 'West Greenwich': 'RI', 'Lynn': 'MA', 'Andover': 'MA',
-        'Clark': 'NJ', 'Peoria': 'IL', 'Davidson': 'NC', 'Clarksville': 'TN', 'Warsaw': 'IN',
-        'Skillman': 'NJ', 'Hastings': 'MI', 'Stafford Springs': 'CT', 'Battle Creek': 'MI', 'Crane': 'IN',
-        'Oswego': 'NY', 'Livingston': 'TX', 'Fremont': 'CA', 'Somerset': 'NJ', 'Omaha': 'NE',
-        'O\'Fallon': 'MO', 'Neenah': 'WI', 'Litchfield': 'IL', 'Flint': 'MI', 'Sidney': 'OH',
-        'Oshkosh': 'WI', 'Harbor Beach': 'MI', 'Wichita': 'KS', 'Jefferson': 'WI', 'Shelby': 'NC',
-        'Trumbull': 'CT', 'Hudson': 'OH', 'Novice': 'TX', 'Lexington': 'KY', 'Bloomington': 'IN',
-        'Buffalo': 'NY', 'Toledo': 'OH', 'Gaylord': 'MI', 'Waupun': 'WI', 'Hoffman Estates': 'IL',
-        'Fort Collins': 'CO', 'Spartanburg': 'SC', 'Port Huron': 'MI', 'Sault Sainte Marie': 'MI',
-        'Tell City': 'IN', 'Charlevoix': 'MI', 'Cedar Rapids': 'IA', 'Cleveland': 'OH', 'Elk Rapids': 'MI',
-        'Evansville': 'IN', 'Stratham': 'NH', 'Charleston': 'SC', 'Dothan': 'AL', 'Midland City': 'AL',
-        'Killian': 'AL', 'Sewickley': 'PA', 'Appleton': 'WI', 'Elyria': 'OH', 'Adrian': 'MI',
-        'Kewadin': 'MI', 'Muscatine': 'IA', 'Iron Mountain': 'MI', 'Accokeek': 'MD', 'Jamaica Plain': 'MA',
-        'Newport News': 'VA', 'Nashville': 'TN', 'Rochester': 'NY', 'Mount Pleasant': 'MI', 'Tuscaloosa': 'AL',
-        'New London': 'CT', 'Mason City': 'IA', 'Washington': 'WA', 'Titusville': 'FL', 'Greeley': 'CO',
-        'West Lafayette': 'IN', 'Chantilly': 'VA', 'Petoskey': 'MI', 'Altoona': 'PA', 'Saint Petersburg': 'FL',
-        'Des Plaines': 'IL', 'Pittston Township': 'PA', 'Ludington': 'MI', 'Middletown': 'OH',
-        'Greenbay': 'WI', 'Plano': 'TX', 'Palmyra': 'NJ', 'Melbourne': 'FL', 'Tucson': 'AZ',
-        'Middle River': 'MD', 'Riverton': 'NJ', 'Carlstadt': 'NJ', 'Hahnville': 'LA', 'Huntsville': 'AL',
-        'California City': 'CA', 'Anchorage': 'AK', 'Verona': 'NJ', 'Sarasota': 'FL', 'Merrimack': 'NH',
-        'Boulder': 'CO', 'Gainesville': 'FL', 'Thief River Falls': 'MN', 'Hammond': 'IN', 'Iowa City': 'IA',
-        'Greenbelt': 'MD', 'Coraopolis': 'PA', 'Tinker AFB': 'OK', 'Lima': 'OH', 'Wallingford': 'CT',
-        'Oregon': 'WI', 'Clifton': 'NJ'
-    }
-
-    data['Employer State'] = data['City'].map(lambda city: city_to_state.get(city, 'Unknown'))
-
-    state_abbreviation_to_name = {
-        'AL': 'Alabama', 'AK': 'Alaska', 'AZ': 'Arizona', 'AR': 'Arkansas', 'CA': 'California',
-        'CO': 'Colorado', 'CT': 'Connecticut', 'DE': 'Delaware', 'FL': 'Florida', 'GA': 'Georgia',
-        'HI': 'Hawaii', 'ID': 'Idaho', 'IL': 'Illinois', 'IN': 'Indiana', 'IA': 'Iowa',
-        'KS': 'Kansas', 'KY': 'Kentucky', 'LA': 'Louisiana', 'ME': 'Maine', 'MD': 'Maryland',
-        'MA': 'Massachusetts', 'MI': 'Michigan', 'MN': 'Minnesota', 'MS': 'Mississippi', 'MO': 'Missouri',
-        'MT': 'Montana', 'NE': 'Nebraska', 'NV': 'Nevada', 'NH': 'New Hampshire', 'NJ': 'New Jersey',
-        'NM': 'New Mexico', 'NY': 'New York', 'NC': 'North Carolina', 'ND': 'North Dakota', 'OH': 'Ohio',
-        'OK': 'Oklahoma', 'OR': 'Oregon', 'PA': 'Pennsylvania', 'RI': 'Rhode Island', 'SC': 'South Carolina',
-        'SD': 'South Dakota', 'TN': 'Tennessee', 'TX': 'Texas', 'UT': 'Utah', 'VT': 'Vermont',
-        'VA': 'Virginia', 'WA': 'Washington', 'WV': 'West Virginia', 'WI': 'Wisconsin', 'WY': 'Wyoming'
-    }
-
-    data['Employer State'] = data['Employer State'].map(lambda x: state_abbreviation_to_name.get(x, None))
-    state_counts = data['Employer State'].value_counts().reset_index()
-    state_counts.columns = ['State', 'Count']
-
-    state_counts = state_counts[state_counts['State'].notna()]
-
-    top_5_states = state_counts.nlargest(5, 'Count')
-
-    st.subheader("Top 5 States by Internship Count")
-    for index, row in top_5_states.iterrows():
-        st.write(f"**{row['State']}:** {row['Count']} internships")
-
-def display_top_5_cities(file_path):
-    data = pd.read_csv(file_path, encoding='latin1')
-    if 'State' not in data.columns:
-        st.error("'State' column not found in the data.")
-        return
-    mi_cities = data[data['State'] == 'Michigan']
-    non_mi_cities = data[data['State'] != 'Michigan']
-    top_5_mi_cities = mi_cities['City'].value_counts().head(5)
-    top_5_non_mi_cities = non_mi_cities['City'].value_counts().head(5)
-    st.subheader("Top 5 Michigan Cities by Internship Count")
-    for city, count in top_5_mi_cities.items():
-        st.write(f"**{city}:** {count} internships")    
-    st.subheader("Top 5 Non-Michigan Cities by Internship Count")
-    for city, count in top_5_non_mi_cities.items():
-        st.write(f"**{city}:** {count} internships")
 
 AllEthnicity = ['White', 'Asian', 'International', 'Hispanic/Latine', 'Black/African American', 'Two or More Races', 'Not Specified', 'Not Reported','American Indian/Alaskan Native']
 Major2022 = [57, 50, 7, 51, 91, 42, 193, 60, 20, 164, 23]
@@ -482,8 +639,10 @@ def main():
                     fig = choropleth_state_map("CSV_Spring 2023_3-7-24.csv")
                     st.header('Interactive Map for Destination Data: Spring 2023 College of Engineering Graduating Class')
                     st.plotly_chart(fig) 
+                    top_5_employer_states("2023", "All Engineering Majors")
                 with t2:
                     st.write("BY CITY")
+                    display_top_5_cities("2023", "All Engineering Majors")
         elif ["2022"] == ms1:
             tab1, tab2, tab3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with tab1:
@@ -507,8 +666,10 @@ def main():
                     fig = choropleth_state_map("CSV_Spring 2022_2-21-24.csv")
                     st.header('Interactive Map for Destination Data: Spring 2022 College of Engineering Graduating Class')
                     st.plotly_chart(fig)
+                    top_5_employer_states("2022", "All Engineering Majors")
                 with t2:
                     st.write("BY CITY")
+                    display_top_5_cities("2022", "All Engineering Majors")
         elif ["2021"] == ms1:
             tab1, tab2, tab3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with tab1:
@@ -531,9 +692,11 @@ def main():
                 with t1:
                     fig = choropleth_state_map("CSV_Spring 2021_2-21-24.csv")
                     st.header('Interactive Map for Destination Data: Spring 2021 College of Engineering Graduating Class')
-                    st.plotly_chart(fig)    
+                    st.plotly_chart(fig) 
+                    top_5_employer_states("2021", "All Engineering Majors")   
                 with t2:
                     st.write("BY CITY")
+                    display_top_5_cities("2021", "All Engineering Majors")
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -573,8 +736,10 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2023", "Applied Engineering Sciences")
                 with tab2:
                     st.header("INSERT MAPS HERE")
+                    display_top_5_cities("2023", "Applied Engineering Sciences")
         elif ["2022"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -597,8 +762,10 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2022", "Applied Engineering Sciences")
                 with tab2:
                     st.header("INSERT MAPS HERE")
+                    display_top_5_cities("2022", "Applied Engineering Sciences")
         elif ["2021"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -621,8 +788,10 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2021", "Applied Engineering Sciences")
                 with tab2:
                     st.header("INSERT MAPS HERE")
+                    display_top_5_cities("2021", "Applied Engineering Sciences")
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -663,8 +832,10 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2023", "Biosystems Engineering")
                 with tab2:
                     st.header("INSERT MAPS HERE")
+                    display_top_5_cities("2023", "Biosystems Engineering")
         elif ["2022"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -686,8 +857,10 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2022", "Biosystems Engineering")
                 with tab2:
                     st.header("INSERT MAPS HERE")
+                    display_top_5_cities("2022", "Biosystems Engineering")
         elif ["2021"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -710,8 +883,10 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2021", "Biosystems Engineering")
                 with tab2:
-                    st.header("INSERT MAPS HERE")      
+                    st.header("INSERT MAPS HERE")  
+                    display_top_5_cities("2021", "Biosystems Engineering")    
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -753,8 +928,10 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2021", "Chemical Engineering")
                 with tab2:
                     st.header("INSERT MAPS HERE")
+                    display_top_5_cities("2021", "Chemical Engineering")
         elif ["2022"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -777,8 +954,10 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2022", "Chemical Engineering")
                 with tab2:
                     st.header("INSERT MAPS HERE")
+                    display_top_5_cities("2022", "Chemical Engineering")
         elif ["2021"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -801,8 +980,10 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2021", "Chemical Engineering")
                 with tab2:
-                    st.header("INSERT MAPS HERE")        
+                    st.header("INSERT MAPS HERE")   
+                    display_top_5_cities("2021", "Chemical Engineering")     
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -843,8 +1024,10 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2023", "Civil Engineering")
                 with tab2:
                     st.header("INSERT MAPS HERE")
+                    display_top_5_cities("2023", "Civil Engineering")
         elif ["2022"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -867,8 +1050,10 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2022", "Civil Engineering")
                 with tab2:
                     st.header("INSERT MAPS HERE")
+                    display_top_5_cities("2022", "Civil Engineering")
         elif ["2021"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -891,8 +1076,10 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2021", "Civil Engineering")
                 with tab2:
                     st.header("INSERT MAPS HERE")
+                    display_top_5_cities("2021", "Civil Engineering")
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -934,8 +1121,10 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2023", "Computational Data Science")
                 with tab2:
                     st.header("INSERT MAPS HERE")
+                    display_top_5_cities("2023", "Computational Data Science")
         elif ["2022"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -957,8 +1146,10 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2022", "Computational Data Science")
                 with tab2:
                     st.header("INSERT MAPS HERE")
+                    display_top_5_cities("2022", "Computational Data Science")
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -999,8 +1190,10 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2023", "Computer Engineering")
                 with tab2:
                     st.header("INSERT MAPS HERE")
+                    display_top_5_cities("2023", "Computer Engineering")
         elif ["2022"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1023,8 +1216,10 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2022", "Computer Engineering")
                 with tab2:
                     st.header("INSERT MAPS HERE")
+                    display_top_5_cities("2022", "Computer Engineering")
         elif ["2021"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1047,8 +1242,10 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2021", "Computer Engineering")
                 with tab2:
                     st.header("INSERT MAPS HERE")
+                    display_top_5_cities("2021", "Computer Engineering")
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1089,8 +1286,10 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2023", "Computer Science")
                 with tab2:
                     st.header("INSERT MAPS HERE")
+                    display_top_5_cities("2023", "Computer Science")
         elif ["2022"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1112,8 +1311,10 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2022", "Computer Science")
                 with tab2:
                     st.header("INSERT MAPS HERE")   
+                    display_top_5_cities("2022", "Computer Science")
         elif ["2021"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1136,8 +1337,10 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2021", "Computer Engineering")
                 with tab2:
                     st.header("INSERT MAPS HERE")  
+                    display_top_5_cities("2021", "Computer Engineering")
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1177,8 +1380,10 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2023", "Electrical Engineering")
                 with tab2:
                     st.header("INSERT MAPS HERE")
+                    display_top_5_cities("2023", "Electrical Engineering")
         elif ["2022"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1200,8 +1405,10 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2022", "Electrical Engineering")
                 with tab2:
                     st.header("INSERT MAPS HERE")
+                    display_top_5_cities("2022", "Electrical Engineering")
         elif ["2021"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1224,6 +1431,7 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2021", "Computer Engineering")
                 with tab2:
                     st.header("INSERT MAPS HERE")
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
@@ -1266,6 +1474,7 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2023", "Environmental Engineering")
                 with tab2:
                     st.header("INSERT MAPS HERE")
         elif ["2022"] == ms1:
@@ -1290,6 +1499,7 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2022", "Environmental Engineering")
                 with tab2:
                     st.header("INSERT MAPS HERE")
         elif ["2021"] == ms1:
@@ -1314,6 +1524,7 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2021", "Environmental Engineering")
                 with tab2:
                     st.header("INSERT MAPS HERE")
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
@@ -1356,6 +1567,7 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2023", "Materials Science & Engineering")
                 with tab2:
                     st.header("INSERT MAPS HERE")
         elif ["2022"] == ms1:
@@ -1380,6 +1592,7 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2022", "Materials Science & Engineering")
                 with tab2:
                     st.header("INSERT MAPS HERE")
         elif ["2021"] == ms1:
@@ -1404,6 +1617,7 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2021", "Materials Science & Engineering")
                 with tab2:
                     st.header("INSERT MAPS HERE")   
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
@@ -1446,6 +1660,7 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2023", "Mechanical Engineering")
                 with tab2:
                     st.header("INSERT MAPS HERE")
         if ["2022"] == ms1:
@@ -1469,6 +1684,7 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2022", "Mechanical Engineering")
                 with tab2:
                     st.header("INSERT MAPS HERE")
         elif ["2021"] == ms1:
@@ -1493,6 +1709,7 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
+                    top_5_employer_states("2021", "Mechanical Engineering")
                 with tab2:
                     st.header("INSERT MAPS HERE")    
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:

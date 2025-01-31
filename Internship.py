@@ -233,116 +233,147 @@ def display_city_visualization(file_path):
     
     return fig
 
-def display_top_5_states(file_path):
-    data = pd.read_csv(file_path, encoding='latin1')
+def display_top_5_states(selected_major):
+    if selected_major == "All Engineering Majors":
+        states = ["Michigan: 1098 positions", "California: 74 positions", "Illinois: 50 positions", "Wisconsin: 45 positions", "Ohio: 43 positions"]
+    elif selected_major == "Applied Engineering Sciences":
+        states = ["Michigan: 76 positions", "Illinois: 9 positions", "Minnesota: 7 positions", "North Carolina: 5 positions", "Arizona: 4 positions"]
+    elif selected_major == "Biosystems Engineering":
+        states = ["Michigan: 38 positions", "Minnesota: 5 positions", "Wisconsin: 3 positions", "Illinois: 2 positions", "Indiana: 2 positions"]
+    elif selected_major == "Chemical Engineering":
+        states = ["Michigan: 107 positions", "Wisconsin: 10 positions", "California: 9 positions", "Illinois: 7 positions", "Iowa: 6 positions"]
+    elif selected_major == "Civil Engineering":
+        states = ["Michigan: 89 positions", "Texas: 9 positions", "New York: 4 positions", "Ohio: 4 positions", "California: 3 positions"]
+    elif selected_major == "Computational Data Science":
+        states = ["Michigan: 19 positions", "California: 2 positions", "Texas: 2 positions"]
+    elif selected_major == "Computer Engineering":
+        states = ["Michigan: 65 positions", "California: 8 positions", "Illinois: 2 positions", "Texas: 2 positions", "Washington: 2 positions"]
+    elif selected_major == "Computer Science":
+        states = ["Michigan: 194 positions", "California: 25 positions", "Washington: 15 positions", "Illinois: 13 positions", "Kentucky: 8 positions"]
+    elif selected_major == "Electrical Engineering":
+        states = ["Michigan: 174 positions", "Texas: 8 positions", "Ohio: 7 positions", "California: 6 positions", "Minnesota: 6 positions"]
+    elif selected_major == "Environmental Engineering":
+        states = ["Michigan: 41 positions", "Illinois: 3 positions", "Indiana: 2 positions"]
+    elif selected_major == "Materials Science & Engineering":
+        states = ["Michigan: 18 positions", "California: 5 positions", "Wisconsin: 2 positions"]
+    elif selected_major == "Mechanical Engineering":
+        states = ["Michigan: 277 positions", "Wisconsin: 24 positions", "Ohio: 16 positions", "California: 11 positions", "Texas: 8 positions"]
+    else:
+        states = []
 
-    city_to_state = {
-        'Seattle': 'WA', 'San Francisco': 'CA', 'McLean': 'VA', 'Arlington': 'VA', 'Detroit': 'MI',
-        'New York': 'NY', 'Boston': 'MA', 'Phoenix': 'AZ', 'San Diego': 'CA', 'Dallas': 'TX',
-        'Charlotte': 'NC', 'Chicago': 'IL', 'Los Angeles': 'CA', 'Tampa': 'FL', 'Reno': 'NV',
-        'Syracuse': 'NY', 'Portland': 'OR', 'Kenai': 'AK', 'Indianapolis': 'IN', 'Philadelphia': 'PA',
-        'Findlay': 'OH', 'Ann Arbor': 'MI', 'Cincinnati': 'OH', 'Hoboken': 'NJ', 'Normal': 'IL',
-        'Mandan': 'ND', 'Pittsburgh': 'PA', 'Corpus Christi': 'TX', 'Minneapolis': 'MN', 'Houston': 'TX',
-        'Robinson': 'IL', 'Midland': 'MI', 'Dayton': 'OH', 'Salt Lake City': 'UT', 'Ames': 'IA',
-        'Austin': 'TX', 'Lansing': 'MI', 'Hartford': 'CT', 'Exton': 'PA', 'Bohemia': 'NY',
-        'Jacksonville': 'FL', 'Atlanta': 'GA', 'Washington DC': 'DC', 'St. Louis': 'MO', 'Kohler': 'WI',
-        'Raleigh': 'NC', 'Saginaw': 'MI', 'Kalamazoo': 'MI', 'Milwaukee': 'WI', 'Benton Harbor': 'MI',
-        'Hannibal': 'MO', 'San Antonio': 'TX', 'Durham': 'NC', 'Albany': 'NY', 'Piscataway': 'NJ',
-        'Kansas City': 'MO', 'Traverse City': 'MI', 'Greenville': 'SC', 'Stamford': 'CT', 'Des Moines': 'IA',
-        'Denver': 'CO', 'Baltimore': 'MD', 'East Chicago': 'IN', 'Au Gres': 'MI', 'Modesto': 'CA',
-        'Fort Wayne': 'IN', 'Camden': 'NJ', 'Columbus': 'OH', 'Essex Junction': 'VT', 'La Crosse': 'WI',
-        'Louisville': 'KY', 'Franklin': 'TN', 'Johnston': 'RI', 'Norway': 'MI', 'Quinnesec': 'MI',
-        'Burns Harbor': 'IN', 'Pittsfield': 'MA', 'West Palm Beach': 'FL', 'Freeport': 'IL', 'Jackson': 'MI',
-        'Manistee': 'MI', 'Columbia': 'SC', 'Preston': 'MD', 'Providence': 'RI', 'Fond Du Lac': 'WI',
-        'Fort Worth': 'TX', 'Savannah': 'GA', 'West Greenwich': 'RI', 'Lynn': 'MA', 'Andover': 'MA',
-        'Clark': 'NJ', 'Peoria': 'IL', 'Davidson': 'NC', 'Clarksville': 'TN', 'Warsaw': 'IN',
-        'Skillman': 'NJ', 'Hastings': 'MI', 'Stafford Springs': 'CT', 'Battle Creek': 'MI', 'Crane': 'IN',
-        'Oswego': 'NY', 'Livingston': 'TX', 'Fremont': 'CA', 'Somerset': 'NJ', 'Omaha': 'NE',
-        'O\'Fallon': 'MO', 'Neenah': 'WI', 'Litchfield': 'IL', 'Flint': 'MI', 'Sidney': 'OH',
-        'Oshkosh': 'WI', 'Harbor Beach': 'MI', 'Wichita': 'KS', 'Jefferson': 'WI', 'Shelby': 'NC',
-        'Trumbull': 'CT', 'Hudson': 'OH', 'Novice': 'TX', 'Lexington': 'KY', 'Bloomington': 'IN',
-        'Buffalo': 'NY', 'Toledo': 'OH', 'Gaylord': 'MI', 'Waupun': 'WI', 'Hoffman Estates': 'IL',
-        'Fort Collins': 'CO', 'Spartanburg': 'SC', 'Port Huron': 'MI', 'Sault Sainte Marie': 'MI',
-        'Tell City': 'IN', 'Charlevoix': 'MI', 'Cedar Rapids': 'IA', 'Cleveland': 'OH', 'Elk Rapids': 'MI',
-        'Evansville': 'IN', 'Stratham': 'NH', 'Charleston': 'SC', 'Dothan': 'AL', 'Midland City': 'AL',
-        'Killian': 'AL', 'Sewickley': 'PA', 'Appleton': 'WI', 'Elyria': 'OH', 'Adrian': 'MI',
-        'Kewadin': 'MI', 'Muscatine': 'IA', 'Iron Mountain': 'MI', 'Accokeek': 'MD', 'Jamaica Plain': 'MA',
-        'Newport News': 'VA', 'Nashville': 'TN', 'Rochester': 'NY', 'Mount Pleasant': 'MI', 'Tuscaloosa': 'AL',
-        'New London': 'CT', 'Mason City': 'IA', 'Washington': 'WA', 'Titusville': 'FL', 'Greeley': 'CO',
-        'West Lafayette': 'IN', 'Chantilly': 'VA', 'Petoskey': 'MI', 'Altoona': 'PA', 'Saint Petersburg': 'FL',
-        'Des Plaines': 'IL', 'Pittston Township': 'PA', 'Ludington': 'MI', 'Middletown': 'OH',
-        'Greenbay': 'WI', 'Plano': 'TX', 'Palmyra': 'NJ', 'Melbourne': 'FL', 'Tucson': 'AZ',
-        'Middle River': 'MD', 'Riverton': 'NJ', 'Carlstadt': 'NJ', 'Hahnville': 'LA', 'Huntsville': 'AL',
-        'California City': 'CA', 'Anchorage': 'AK', 'Verona': 'NJ', 'Sarasota': 'FL', 'Merrimack': 'NH',
-        'Boulder': 'CO', 'Gainesville': 'FL', 'Thief River Falls': 'MN', 'Hammond': 'IN', 'Iowa City': 'IA',
-        'Greenbelt': 'MD', 'Coraopolis': 'PA', 'Tinker AFB': 'OK', 'Lima': 'OH', 'Wallingford': 'CT',
-        'Oregon': 'WI', 'Clifton': 'NJ'
-    }
+    st.subheader("Top 5 States")
+    for i, state in enumerate(states, start=1):
+        st.write(f"{i}. {state}")
 
-    data['Employer State'] = data['City'].map(lambda city: city_to_state.get(city, 'Unknown'))
+    #data = pd.read_csv(file_path, encoding='latin1')
 
-    state_abbreviation_to_name = {
-        'AL': 'Alabama', 'AK': 'Alaska', 'AZ': 'Arizona', 'AR': 'Arkansas', 'CA': 'California',
-        'CO': 'Colorado', 'CT': 'Connecticut', 'DE': 'Delaware', 'FL': 'Florida', 'GA': 'Georgia',
-        'HI': 'Hawaii', 'ID': 'Idaho', 'IL': 'Illinois', 'IN': 'Indiana', 'IA': 'Iowa',
-        'KS': 'Kansas', 'KY': 'Kentucky', 'LA': 'Louisiana', 'ME': 'Maine', 'MD': 'Maryland',
-        'MA': 'Massachusetts', 'MI': 'Michigan', 'MN': 'Minnesota', 'MS': 'Mississippi', 'MO': 'Missouri',
-        'MT': 'Montana', 'NE': 'Nebraska', 'NV': 'Nevada', 'NH': 'New Hampshire', 'NJ': 'New Jersey',
-        'NM': 'New Mexico', 'NY': 'New York', 'NC': 'North Carolina', 'ND': 'North Dakota', 'OH': 'Ohio',
-        'OK': 'Oklahoma', 'OR': 'Oregon', 'PA': 'Pennsylvania', 'RI': 'Rhode Island', 'SC': 'South Carolina',
-        'SD': 'South Dakota', 'TN': 'Tennessee', 'TX': 'Texas', 'UT': 'Utah', 'VT': 'Vermont',
-        'VA': 'Virginia', 'WA': 'Washington', 'WV': 'West Virginia', 'WI': 'Wisconsin', 'WY': 'Wyoming'
-    }
+    #city_to_state = {
+    #    'Seattle': 'WA', 'San Francisco': 'CA', 'McLean': 'VA', 'Arlington': 'VA', 'Detroit': 'MI',
+    #    'New York': 'NY', 'Boston': 'MA', 'Phoenix': 'AZ', 'San Diego': 'CA', 'Dallas': 'TX',
+    #    'Charlotte': 'NC', 'Chicago': 'IL', 'Los Angeles': 'CA', 'Tampa': 'FL', 'Reno': 'NV',
+    #    'Syracuse': 'NY', 'Portland': 'OR', 'Kenai': 'AK', 'Indianapolis': 'IN', 'Philadelphia': 'PA',
+    #    'Findlay': 'OH', 'Ann Arbor': 'MI', 'Cincinnati': 'OH', 'Hoboken': 'NJ', 'Normal': 'IL',
+    #    'Mandan': 'ND', 'Pittsburgh': 'PA', 'Corpus Christi': 'TX', 'Minneapolis': 'MN', 'Houston': 'TX',
+    #    'Robinson': 'IL', 'Midland': 'MI', 'Dayton': 'OH', 'Salt Lake City': 'UT', 'Ames': 'IA',
+    #    'Austin': 'TX', 'Lansing': 'MI', 'Hartford': 'CT', 'Exton': 'PA', 'Bohemia': 'NY',
+    #    'Jacksonville': 'FL', 'Atlanta': 'GA', 'Washington DC': 'DC', 'St. Louis': 'MO', 'Kohler': 'WI',
+    #    'Raleigh': 'NC', 'Saginaw': 'MI', 'Kalamazoo': 'MI', 'Milwaukee': 'WI', 'Benton Harbor': 'MI',
+    #    'Hannibal': 'MO', 'San Antonio': 'TX', 'Durham': 'NC', 'Albany': 'NY', 'Piscataway': 'NJ',
+    #    'Kansas City': 'MO', 'Traverse City': 'MI', 'Greenville': 'SC', 'Stamford': 'CT', 'Des Moines': 'IA',
+    #    'Denver': 'CO', 'Baltimore': 'MD', 'East Chicago': 'IN', 'Au Gres': 'MI', 'Modesto': 'CA',
+    #    'Fort Wayne': 'IN', 'Camden': 'NJ', 'Columbus': 'OH', 'Essex Junction': 'VT', 'La Crosse': 'WI',
+    #    'Louisville': 'KY', 'Franklin': 'TN', 'Johnston': 'RI', 'Norway': 'MI', 'Quinnesec': 'MI',
+    #    'Burns Harbor': 'IN', 'Pittsfield': 'MA', 'West Palm Beach': 'FL', 'Freeport': 'IL', 'Jackson': 'MI',
+    #    'Manistee': 'MI', 'Columbia': 'SC', 'Preston': 'MD', 'Providence': 'RI', 'Fond Du Lac': 'WI',
+    #    'Fort Worth': 'TX', 'Savannah': 'GA', 'West Greenwich': 'RI', 'Lynn': 'MA', 'Andover': 'MA',
+    #    'Clark': 'NJ', 'Peoria': 'IL', 'Davidson': 'NC', 'Clarksville': 'TN', 'Warsaw': 'IN',
+    #    'Skillman': 'NJ', 'Hastings': 'MI', 'Stafford Springs': 'CT', 'Battle Creek': 'MI', 'Crane': 'IN',
+    #    'Oswego': 'NY', 'Livingston': 'TX', 'Fremont': 'CA', 'Somerset': 'NJ', 'Omaha': 'NE',
+    #    'O\'Fallon': 'MO', 'Neenah': 'WI', 'Litchfield': 'IL', 'Flint': 'MI', 'Sidney': 'OH',
+    #    'Oshkosh': 'WI', 'Harbor Beach': 'MI', 'Wichita': 'KS', 'Jefferson': 'WI', 'Shelby': 'NC',
+    ##    'Trumbull': 'CT', 'Hudson': 'OH', 'Novice': 'TX', 'Lexington': 'KY', 'Bloomington': 'IN',
+     #   'Buffalo': 'NY', 'Toledo': 'OH', 'Gaylord': 'MI', 'Waupun': 'WI', 'Hoffman Estates': 'IL',
+     #   'Fort Collins': 'CO', 'Spartanburg': 'SC', 'Port Huron': 'MI', 'Sault Sainte Marie': 'MI',
+     #   'Tell City': 'IN', 'Charlevoix': 'MI', 'Cedar Rapids': 'IA', 'Cleveland': 'OH', 'Elk Rapids': 'MI',
+     #   'Evansville': 'IN', 'Stratham': 'NH', 'Charleston': 'SC', 'Dothan': 'AL', 'Midland City': 'AL',
+     #   'Killian': 'AL', 'Sewickley': 'PA', 'Appleton': 'WI', 'Elyria': 'OH', 'Adrian': 'MI',
+     #   'Kewadin': 'MI', 'Muscatine': 'IA', 'Iron Mountain': 'MI', 'Accokeek': 'MD', 'Jamaica Plain': 'MA',
+     #   'Newport News': 'VA', 'Nashville': 'TN', 'Rochester': 'NY', 'Mount Pleasant': 'MI', 'Tuscaloosa': 'AL',
+     #   'New London': 'CT', 'Mason City': 'IA', 'Washington': 'WA', 'Titusville': 'FL', 'Greeley': 'CO',
+     #   'West Lafayette': 'IN', 'Chantilly': 'VA', 'Petoskey': 'MI', 'Altoona': 'PA', 'Saint Petersburg': 'FL',
+     #   'Des Plaines': 'IL', 'Pittston Township': 'PA', 'Ludington': 'MI', 'Middletown': 'OH',
+     #   'Greenbay': 'WI', 'Plano': 'TX', 'Palmyra': 'NJ', 'Melbourne': 'FL', 'Tucson': 'AZ',
+     #   'Middle River': 'MD', 'Riverton': 'NJ', 'Carlstadt': 'NJ', 'Hahnville': 'LA', 'Huntsville': 'AL',
+     #   'California City': 'CA', 'Anchorage': 'AK', 'Verona': 'NJ', 'Sarasota': 'FL', 'Merrimack': 'NH',
+     #   'Boulder': 'CO', 'Gainesville': 'FL', 'Thief River Falls': 'MN', 'Hammond': 'IN', 'Iowa City': 'IA',
+     #   'Greenbelt': 'MD', 'Coraopolis': 'PA', 'Tinker AFB': 'OK', 'Lima': 'OH', 'Wallingford': 'CT',
+     #   'Oregon': 'WI', 'Clifton': 'NJ'
+   # }
 
-    data['Employer State'] = data['Employer State'].map(lambda x: state_abbreviation_to_name.get(x, None))
-    state_counts = data['Employer State'].value_counts().reset_index()
-    state_counts.columns = ['State', 'Count']
+    #data['Employer State'] = data['City'].map(lambda city: city_to_state.get(city, 'Unknown'))
 
-    state_counts = state_counts[state_counts['State'].notna()]
+    #state_abbreviation_to_name = {
+    #    'AL': 'Alabama', 'AK': 'Alaska', 'AZ': 'Arizona', 'AR': 'Arkansas', 'CA': 'California',
+    #    'CO': 'Colorado', 'CT': 'Connecticut', 'DE': 'Delaware', 'FL': 'Florida', 'GA': 'Georgia',
+    #    'HI': 'Hawaii', 'ID': 'Idaho', 'IL': 'Illinois', 'IN': 'Indiana', 'IA': 'Iowa',
+    #    'KS': 'Kansas', 'KY': 'Kentucky', 'LA': 'Louisiana', 'ME': 'Maine', 'MD': 'Maryland',
+    #    'MA': 'Massachusetts', 'MI': 'Michigan', 'MN': 'Minnesota', 'MS': 'Mississippi', 'MO': 'Missouri',
+    #    'MT': 'Montana', 'NE': 'Nebraska', 'NV': 'Nevada', 'NH': 'New Hampshire', 'NJ': 'New Jersey',
+    #    'NM': 'New Mexico', 'NY': 'New York', 'NC': 'North Carolina', 'ND': 'North Dakota', 'OH': 'Ohio',
+    #    'OK': 'Oklahoma', 'OR': 'Oregon', 'PA': 'Pennsylvania', 'RI': 'Rhode Island', 'SC': 'South Carolina',
+    #    'SD': 'South Dakota', 'TN': 'Tennessee', 'TX': 'Texas', 'UT': 'Utah', 'VT': 'Vermont',
+    #    'VA': 'Virginia', 'WA': 'Washington', 'WV': 'West Virginia', 'WI': 'Wisconsin', 'WY': 'Wyoming'
+    #}
 
-    top_5_states = state_counts.nlargest(5, 'Count')
+    #data['Employer State'] = data['Employer State'].map(lambda x: state_abbreviation_to_name.get(x, None))
+    #state_counts = data['Employer State'].value_counts().reset_index()
+    #state_counts.columns = ['State', 'Count']
 
-    st.subheader("Top 5 States by Internship Count")
-    for index, row in top_5_states.iterrows():
-        st.write(f"**{row['State']}:** {row['Count']} internships")
+    #state_counts = state_counts[state_counts['State'].notna()]
+
+    #top_5_states = state_counts.nlargest(5, 'Count')
+
+    #st.subheader("Top 5 States by Internship Count")
+    #for index, row in top_5_states.iterrows():
+    #   st.write(f"**{row['State']}:** {row['Count']} internships")
 
 def display_top_5_cities(selected_major):
     if selected_major == "All Engineering Majors":
-        michigan_cities = ["Detroit", "Lansing", "Grand Rapids", "Ann Arbor", "Jackson"]
-        non_michigan_cities = ["San Francisco, CA", "Toledo, OH", "Findlay, OH", "La Crosse, WI", "Los Angeles, CA"]
+        michigan_cities = ["Detroit: 134 positions", "Lansing: 59 positions", "Grand Rapids: 38 positions", "Ann Arbor: 11 positions", "Jackson: 9 positions"]
+        non_michigan_cities = ["San Francisco, CA: 7 positions", "Toledo, OH: 5 positions", "Findlay, OH: 4 positions", "La Crosse, WI: 3 positions", "Los Angeles, CA: 3 positions"]
     elif selected_major == "Applied Engineering Sciences":
-        michigan_cities = ["Detroit", "Lansing", "Grand Rapids", "Ann Arbor", "Jackson"]
-        non_michigan_cities = ["Chicago, IL", "Minneapolis, MN", "Phoenix, AZ", "Cincinnati, OH", "Fond Du Lac, WI"]
+        michigan_cities = ["Detroit: 35 positions", "Lansing: 14 positions", "Grand Rapids: 7 positions", "Ann Arbor: 5 positions", "Jackson: 4 positions"]
+        non_michigan_cities = ["Chicago, IL: 6 positions", "Minneapolis, MN: 5 positions", "Phoenix, AZ: 4 positions", "Cincinnati, OH: 3 positions", "Fond Du Lac, WI: 3 positions"]
     elif selected_major == "Biosystems Engineering":
-        michigan_cities = ["Lansing", "Detroit", "Grand Rapids", "Ann Arbor", "Jackson"]
-        non_michigan_cities = ["Preston, MN", "Boston, MA", "Chicago, IL", "Fremont, CA", "Minneapolis, MN"]
+        michigan_cities = ["Lansing: 23 positions", "Detroit: 4 positions", "Grand Rapids: 4 positions"]
+        non_michigan_cities = ["Preston, MN: 3 positions", "Boston, MA: 2 positions", "Chicago, IL: 2 positions", "Fremont, CA: 2 positions", "Minneapolis, MN: 2 positions"]
     elif selected_major == "Chemical Engineering":
-        michigan_cities = ["Detroit", "Lansing", "Jackson", "Midland", "Grand Rapids"]
-        non_michigan_cities = ["Chicago, IL", "Boston, MA", "Neenah, WI", "Atlanta, GA", "Cincinnati, OH"]
+        michigan_cities = ["Detroit: 32 positions", "Lansing: 28 positions", "Jackson: 13 positions", "Midland: 12 positions", "Grand Rapids: 8 positions"]
+        non_michigan_cities = ["Chicago, IL: 6 positions", "Boston, MA: 4 positions", "Neenah, WI: 4 positions", "Atlanta, GA: 3 positions", "Cincinnati, OH: 3 positions"]
     elif selected_major == "Civil Engineering":
-        michigan_cities = ["Lansing", "Detroit", "Grand Rapids", "Flint", "Jackson"]
-        non_michigan_cities = ["Dallas, TX", "Los Angeles, CA", "Chicago, IL", "Dayton, OH", "Kansas City, MO"]
+        michigan_cities = ["Lansing: 39 positions", "Detroit: 28 positions", "Grand Rapids: 7 positions", "Flint: 4 positions", "Jackson: 3 positions"]
+        non_michigan_cities = ["Dallas, TX: 9 positions", "Los Angeles, CA: 3 positions", "Chicago, IL: 2 positions", "Dayton, OH: 2 positions", "Kansas City, MO: 2 positions"]
     elif selected_major == "Computational Data Science":
-        michigan_cities = ["Detroit", "Lansing"]
-        non_michigan_cities = ["Dallas, TX", "San Francisco, CA"]
+        michigan_cities = ["Detroit: 10 positions", "Lansing: 9 positions"]
+        non_michigan_cities = ["Dallas, TX: 2 positions", "San Francisco, CA: 2 positions"]
     elif selected_major == "Computer Engineering":
-        michigan_cities = ["Detroit", "Lansing", "Saginaw", "Ann Arbor", "Grand Rapids"]
-        non_michigan_cities = ["San Francisco, CA", "Chicago, IL", "Dallas, TX", "Seattle, WA"]
+        michigan_cities = ["Detroit: 29 positions", "Lansing: 21 positions", "Saginaw: 6 positions", "Ann Arbor: 3 positions", "Grand Rapids: 3 positions"]
+        non_michigan_cities = ["San Francisco, CA: 6 positions", "Chicago, IL: 2 positions", "Dallas, TX: 2 positions", "Seattle, WA: 2 positions"]
     elif selected_major == "Computer Science":
-        michigan_cities = ["Detroit", "Lansing", "Grand Rapids", "Ann Arbor", "Midland"]
-        non_michigan_cities = ["San Francisco, CA", "Seattle, WA", "Chicago, IL", "Louisville, KY", "Minneapolis, MN"]
+        michigan_cities = ["Detroit: 87 positions", "Lansing: 86 positions", "Grand Rapids: 11 positions", "Ann Arbor: 7 positions", "Midland: 2 positions"]
+        non_michigan_cities = ["San Francisco, CA: 17 positions", "Seattle, WA: 15 positions", "Chicago, IL: 12 positions", "Louisville, KY: 8 positions", "Minneapolis, MN: 7 positions"]
     elif selected_major == "Electrical Engineering":
-        michigan_cities = ["Detroit", "Lansing", "Grand Rapids", "Jackson", "Saginaw"]
-        non_michigan_cities = ["Dallas, TX", "San Francisco, CA", "Baltimore, MD", "Des Moines, IA", "Minneapolis, MN"]
+        michigan_cities = ["Detroit: 84 positions", "Lansing: 42 positions", "Grand Rapids: 17 positions", "Jackson: 15 positions", "Saginaw: 5 positions"]
+        non_michigan_cities = ["Dallas, TX: 5 positions", "San Francisco, CA: 5 positions", "Baltimore, MD: 4 positions", "Des Moines, IA: 4 positions", "Minneapolis, MN: 4 positions"]
     elif selected_major == "Environmental Engineering":
-        michigan_cities = ["Lansing", "Detroit", "Grand Rapids", "Saginaw"]
-        non_michigan_cities = ["Chicago, IL"]
+        michigan_cities = ["Lansing: 18 positions", "Detroit: 11 positions", "Grand Rapids: 5 positions", "Saginaw: 2 positions"]
+        non_michigan_cities = ["Chicago, IL: 3 positions"]
     elif selected_major == "Materials Science & Engineering":
-        michigan_cities = ["Detroit", "Lansing", "Saginaw"]
-        non_michigan_cities = ["San Francisco, CA"]
+        michigan_cities = ["Detroit: 9 positions", "Lansing: 5 positions", "Saginaw: 2 positions"]
+        non_michigan_cities = ["San Francisco, CA: 3 positions"]
     elif selected_major == "Mechanical Engineering":
-        michigan_cities = ["Detroit", "Lansing", "Grand Rapids", "Ann Arbor", "Jackson"]
-        non_michigan_cities = ["San Francisco, CA", "Toledo, OH", "Los Angeles, CA", "Milwaukee, WI", "Oshkosh, WI"]
+        michigan_cities = ["Detroit: 134 positions", "Lansing: 59 positions", "Grand Rapids: 38 positions", "Ann Arbor: 11 positions", "Jackson: 9 positions"]
+        non_michigan_cities = ["San Francisco, CA: 7 positions", "Toledo, OH: 5 positions", "Los Angeles, CA: 3 positions", "Milwaukee, WI: 3 positions", "Oshkosh, WI: 3 positions"]
     else:
         michigan_cities = []
         non_michigan_cities = []
@@ -373,7 +404,7 @@ def main():
                 choropleth_file_path = "HS EGRX-1220 Merge Combo_2021-2023.csv"
                 fig = choropleth_state_map(choropleth_file_path)
                 st.plotly_chart(fig)
-                display_top_5_states(choropleth_file_path)
+                display_top_5_states("All Engineering Majors")
             with tab2:
                 st.title("Interactive City Visualization")
                 file_path = "LATLONGHS EGRX-1220 Merge Combo_2021-2023.csv"
@@ -395,7 +426,7 @@ def main():
                 st.title("Interactive Map for Internship/Co-op Location Data: 2021 - 2023 College of Engineering")
                 fig = choropleth_state_map(file_path)
                 st.plotly_chart(fig)
-                display_top_5_states(file_path)
+                display_top_5_states("Applied Engineering Sciences")
             with tab2:
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Applied Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
@@ -416,7 +447,7 @@ def main():
                 choropleth_file_path = "LATLONG(Biosystems Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 fig = choropleth_state_map(choropleth_file_path)
                 st.plotly_chart(fig)
-                display_top_5_states(choropleth_file_path)
+                display_top_5_states("Biosystems Engineering")
             with tab2:
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Biosystems Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
@@ -437,7 +468,7 @@ def main():
                 choropleth_file_path = "LATLONG(Chemical Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 fig = choropleth_state_map(choropleth_file_path)
                 st.plotly_chart(fig)
-                display_top_5_states(choropleth_file_path)
+                display_top_5_states("Chemical Engineering")
             with tab2:                
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Chemical Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
@@ -457,7 +488,7 @@ def main():
                 choropleth_file_path = "LATLONG(Civil Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 fig = choropleth_state_map(choropleth_file_path)
                 st.plotly_chart(fig)
-                display_top_5_states(choropleth_file_path)
+                display_top_5_states("Civil Engineering")
             with tab2:
                 
                 st.title("Interactive City Visualization")
@@ -479,7 +510,7 @@ def main():
                 choropleth_file_path = "LATLONG(Computational Data Science) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 fig = choropleth_state_map(choropleth_file_path)
                 st.plotly_chart(fig)
-                display_top_5_states(choropleth_file_path)
+                display_top_5_states("Computational Data Science")
             with tab2:
                 
                 st.title("Interactive City Visualization")
@@ -501,7 +532,7 @@ def main():
                 choropleth_file_path = "LATLONG(Computer Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 fig = choropleth_state_map(choropleth_file_path)
                 st.plotly_chart(fig)
-                display_top_5_states(choropleth_file_path)
+                display_top_5_states("Computer Engineering")
             with tab2:
                 
                 st.title("Interactive City Visualization")
@@ -524,7 +555,7 @@ def main():
                 choropleth_file_path = "LATLONG(Computer Science) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 fig = choropleth_state_map(choropleth_file_path)
                 st.plotly_chart(fig)
-                display_top_5_states(choropleth_file_path)
+                display_top_5_states("Computer Science")
             with tab2:
               
                 st.title("Interactive City Visualization")
@@ -547,7 +578,7 @@ def main():
                 choropleth_file_path = "LATLONG(Electrical Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 fig = choropleth_state_map(choropleth_file_path)
                 st.plotly_chart(fig)
-                display_top_5_states(choropleth_file_path)
+                display_top_5_states("Electrical Engineering")
             with tab2:
                 
                 st.title("Interactive City Visualization")
@@ -569,7 +600,7 @@ def main():
                 choropleth_file_path = "LATLONG(Environmental Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 fig = choropleth_state_map(choropleth_file_path)
                 st.plotly_chart(fig)
-                display_top_5_states(choropleth_file_path)
+                display_top_5_states("Environmental Engineering")
             with tab2:
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Environmental Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
@@ -591,7 +622,7 @@ def main():
                 choropleth_file_path = "LATLONG(Materials Science and Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 fig = choropleth_state_map(choropleth_file_path)
                 st.plotly_chart(fig)
-                display_top_5_states(choropleth_file_path)
+                display_top_5_states("Materials Science & Engineering")
             with tab2:
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Materials Science and Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
@@ -612,7 +643,7 @@ def main():
                 choropleth_file_path = "LATLONG(Mechanical Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
                 fig = choropleth_state_map(choropleth_file_path)
                 st.plotly_chart(fig)
-                display_top_5_states(choropleth_file_path)
+                display_top_5_states("Mechanical Engineering")
             with tab2:   
                 st.title("Interactive City Visualization")
                 file_path = "LATLONG(Mechanical Engineering) HS EGRX-1220 Merge Combo_2021-2023.csv"
