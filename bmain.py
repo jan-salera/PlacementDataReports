@@ -347,6 +347,33 @@ def top_5_employer_states(year, selected_major):
             states = ["Michigan: 71 positions", "Indiana: 5 positions", "Wisconsin: 5 positions", "California: 3 positions", "Alabama: 2 positions"]
         else:
             states = []
+    if year == "Cumulative Data 21-23: Key Stats":
+        if selected_major == "All Engineering Majors":
+            states = ["Michigan: 838 positions", "Illinois: 106 positions", "Texas: 62 positions", "Wisconsin: 51 positions", "Ohio: 47 positions"]
+        elif selected_major == "Applied Engineering Sciences":
+            states = ["Michigan: 64 positions", "Illinois: 30 positions", "Texas: 10 positions", "Ohio: 8 positions", "California: 7 positions"]
+        elif selected_major == "Biosystems Engineering":
+            states = ["Michigan: 47 positions", "Wisconsin: 7 positions", "California: 5 positions", "Illinois: 4 positions", "Arizona: 2 positions"]
+        elif selected_major == "Chemical Engineering":
+            states = ["Michigan: 97 positions", "Wisconsin: 16 positions", "Indiana: 11 positions", "Ohio: 11 positions", "Illinois: 10 positions"]
+        elif selected_major == "Civil Engineering":
+            states = ["Michigan: 69 positions", "Illinois: 8 positions", "Texas: 6 positions", "California: 3 positions", "Colorado: 2 positions"]
+        elif selected_major == "Computational Data Science":
+            states = ["Michigan: 8 positions", "Ohio: 2 positions"]
+        elif selected_major == "Computer Engineering":
+            states = ["Michigan: 31 positions", "Texas: 4 positions", "Arizona: 3 positions", "California: 3 positions", "Ohio: 3 positions"]
+        elif selected_major == "Computer Science":
+            states = ["Michigan: 186 positions", "Illinois: 26 positions", "Washington: 17 positions", "Texas: 15 positions", "Minnesota: 13 positions"]
+        elif selected_major == "Electrical Engineering":
+            states = ["Michigan: 77 positions", "Illinois: 8 positions", "Texas: 6 positions", "Indiana: 5 positions", "Wisconsin: 5 positions"]
+        elif selected_major == "Environmental Engineering":
+            states = ["Michigan: 28 positions", "California: 2 positions", "Ohio: 2 positions", "Texas: 2 positions"]
+        elif selected_major == "Materials Science & Engineering":
+            states = ["Michigan: 19 positions", "Ohio: 4 positions", "Pennsylvania: 2 positions", "Texas: 2 positions"]
+        elif selected_major == "Mechanical Engineering":
+            states = ["Michigan: 212 positions", "Illinois: 16 positions", "Indiana: 11 positions", "Wisconsin: 11 positions", "Texas: 10 positions"]
+        else:
+            states = []
 
     if not states:
         states = ["No data available for the selected year and major."]
@@ -474,41 +501,41 @@ def display_top_5_cities(year, selected_major):
             non_michigan_cities = []
     if year == "Cumulative Data 21-23: Key Stats":
         if selected_major == "All Engineering Majors":
-            michigan_cities = ["Detroit: 463 positions", "Lansing: 344 positions", "Grand Rapids: 101 positions", "Jackson: 46 positions", "Ann Arbor: 35 positions"]
-            non_michigan_cities = ["San Francisco, CA: 46 positions", "Chicago, Il: 39 positions", "Dallas, TX: 22 positions", "Seattle, WA: 20 positions", "Minneapolis, MN: 19 positions"]
+            michigan_cities = ["Detroit: 478 positions", "Lansing: 119 positions", "Grand Rapids: 92 positions", "Ann Arbor: 51 positions", "Kalamazoo: 30 positions"]
+            non_michigan_cities = ["Chicago, IL: 98 positions", "Madison, WI: 34 positions", "Minneapolis, MN: 23 positions", "Seattle, WA: 22 positions", "Dallas, TX: 20 positions"]
         elif selected_major == "Applied Engineering Sciences":
-            michigan_cities = ["Detroit: 35 positions", "Lansing: 14 positions", "Grand Rapids: 7 positions", "Ann Arbor: 5 positions", "Jackson: 4 positions"]
-            non_michigan_cities = ["Chicago, IL: 6 positions", "Minneapolis, MN: 5 positions", "Phoenix, AZ: 4 positions", "Cincinnati, OH: 3 positions", "Fond Du Lac, WI: 3 positions"]
+            michigan_cities = ["Detroit: 39 positions", "Grand Rapids: 10 positions", "Lansing: 6 positions", "Ann Arbor: 4 positions"]
+            non_michigan_cities = ["Chicago, IL: 29 positions", "Dallas, TX: 4 positions", "Phoenix, AZ: 4 positions", "Los Angeles, CA: 3 positions", "Minneapolis, MN: 3 positions"]
         elif selected_major == "Biosystems Engineering":
-            michigan_cities = ["Lansing: 463 positions", "Detroit: 463 positions", "Grand Rapids: 463 positions", "Ann Arbor: 463 positions", "Jackson: 463 positions"]
-            non_michigan_cities = ["Preston, MN: 463 positions", "Boston, MA: 463 positions", "Chicago, IL: 463 positions", "Fremont, CA: 463 positions", "Minneapolis, MN: 463 positions"]
+            michigan_cities = ["Detroit: 19 positions", "Grand Rapids: 8 positions", "Kalamazoo: 7 positions", "Lansing: 6 positions", "Ann Arbor: 2 positions"]
+            non_michigan_cities = ["Madison, WI: 6 positions", "Chicago, IL: 3 positions", "Boston, MA: 2 positions", "Denver, CO: 2 positions", "Minneapolis, MN: 2 positions"]
         elif selected_major == "Chemical Engineering":
-            michigan_cities = ["Detroit: 463 positions", "Lansing: 463 positions", "Jackson: 463 positions", "Midland: 463 positions", "Grand Rapids: 463 positions"]
-            non_michigan_cities = ["Chicago, IL: 463 positions", "Boston, MA: 463 positions", "Neenah, WI: 463 positions", "Atlanta, GA: 463 positions", "Cincinnati, OH: 463 positions"]
+            michigan_cities = ["Detroit: 38 positions", "Kalamazoo: 11 positions", "Lansing: 10 positions", "Ann Arbor: 9 positions", "Midland: 6 positions"]
+            non_michigan_cities = ["Madison, WI: 12 positions", "Chicago, IL: 9 positions", "Indianapolis, IN: 7 positions", "Cleveland, OH: 4 positions", "San Francisco, CA: 3 positions"]
         elif selected_major == "Civil Engineering":
-            michigan_cities = ["Lansing: 463 positions", "Detroit: 463 positions", "Grand Rapids: 463 positions", "Flint: 463 positions", "Jackson: 463 positions"]
-            non_michigan_cities = ["Dallas, TX: 463 positions", "Los Angeles, CA: 463 positions", "Chicago, IL: 463 positions", "Dayton, OH: 463 positions", "Kansas City, MO: 463 positions"]
+            michigan_cities = ["Detroit: 33 positions", "Lansing: 17 positions", "Grand Rapids: 9 positions", "Ann Arbor: 3 positions", "Jackson: 3 positions"]
+            non_michigan_cities = ["Chicago, IL: 7 positions", "Dallas, TX: 4 positions", "Denver, CO: 2 positions"]
         elif selected_major == "Computational Data Science":
-            michigan_cities = ["Detroit: 463 positions", "Lansing: 463 positions"]
-            non_michigan_cities = ["Dallas, TX: 463 positions", "San Francisco, CA: 463 positions"]
+            michigan_cities = ["Detroit: 6 positions", "Lansing: 2 positions"]
+            non_michigan_cities = ["Columbus, OH: 2 positions"]
         elif selected_major == "Computer Engineering":
-            michigan_cities = ["Detroit: 463 positions", "Lansing: 463 positions", "Saginaw: 463 positions", "Ann Arbor: 463 positions", "Grand Rapids: 463 positions"]
-            non_michigan_cities = ["San Francisco, CA: 463 positions", "Chicago, IL: 463 positions", "Dallas, TX: 463 positions", "Seattle, WA: 463 positions"]
+            michigan_cities = ["Detroit: 21 positions", "Lansing: 7 positions", "Grand Rapids: 3 positions"]
+            non_michigan_cities = ["San Francisco, CA: 3 positions", "Austin, TX: 2 positions", "Minneapolis, MN: 2 positions", "Seattle, WA: 2 positions"]
         elif selected_major == "Computer Science":
-            michigan_cities = ["Detroit: 463 positions", "Lansing: 463 positions", "Grand Rapids: 463 positions", "Ann Arbor: 463 positions", "Midland: 463 positions"]
-            non_michigan_cities = ["San Francisco, CA: 463 positions", "Seattle, WA: 463 positions", "Chicago, IL: 463 positions", "Louisville, KY: 463 positions", "Minneapolis, MN: 463 positions"]
+            michigan_cities = ["Detroit: 109 positions", "Lansing: 43 positions", "Grand Rapids: 19 positions", "Ann Arbor: 10 positions", "Kalamazoo: 2 positions"]
+            non_michigan_cities = ["Chicago, IL: 26 positions", "Seattle, WA: 16 positions", "Minneapolis, MN: 12 positions", "New York, NY: 9 positions", "Austin, TX: 7 positions"]
         elif selected_major == "Electrical Engineering":
-            michigan_cities = ["Detroit: 463 positions", "Lansing: 463 positions", "Grand Rapids: 463 positions", "Jackson: 463 positions", "Saginaw: 463 positions"]
-            non_michigan_cities = ["Dallas, TX: 463 positions", "San Francisco, CA: 463 positions", "Baltimore, MD: 463 positions", "Des Moines, IA: 463 positions", "Minneapolis, MN: 463 positions"]
+            michigan_cities = ["Detroit: 43 positions", "Ann Arbor: 9 positions", "Lansing: 7 positions", "Grand Rapids: 6 positions", "Jackson: 5 positions"]
+            non_michigan_cities = ["Chicago, IL: 8 positions", "Dallas, TX: 4 positions", "Indianapolis, IN: 3 positions", "Milwaukee, WI: 3 positions", "Alexandria, VA: 2 positions"]
         elif selected_major == "Environmental Engineering":
-            michigan_cities = ["Lansing: 463 positions", "Detroit: 463 positions", "Grand Rapids: 463 positions", "Saginaw: 463 positions"]
-            non_michigan_cities = ["Chicago, IL: 463 positions"]
+            michigan_cities = ["Detroit: 14 positions", "Lansing: 6 positions", "Grand Rapids: 5 positions"]
+            non_michigan_cities = []
         elif selected_major == "Materials Science & Engineering":
-            michigan_cities = ["Detroit: 463 positions", "Lansing: 463 positions", "Saginaw: 463 positions"]
-            non_michigan_cities = ["San Francisco, CA: 463 positions"]
+            michigan_cities = ["Detroit: 12 positions", "Grand Rapids: 3 positions"]
+            non_michigan_cities = []
         elif selected_major == "Mechanical Engineering":
-            michigan_cities = ["Detroit: 463 positions", "Lansing: 463 positions", "Grand Rapids: 463 positions", "Ann Arbor: 463 positions", "Jackson: 463 positions"]
-            non_michigan_cities = ["San Francisco, CA: 463 positions", "Toledo, OH: 463 positions", "Los Angeles, CA: 463 positions", "Milwaukee, WI: 463 positions", "Oshkosh, WI: 463 positions"]
+            michigan_cities = ["Detroit: 144 positions", "Grand Rapids: 19 positions", "Lansing: 15 positions", "Ann Arbor: 12 positions", "Kalamazoo: 5 positions"]
+            non_michigan_cities = ["Chicago, IL: 14 positions", "Indianapolis, IN: 8 positions", "Madison, WI: 6 positions", "Cincinnati, OH: 5 positions", "Boston, MA: 4 positions"]
         else:
             michigan_cities = []
             non_michigan_cities = []
@@ -709,10 +736,11 @@ def main():
                     AllFig = choropleth_state_map("DestinationCumulativeDataset(All Majors).csv")
                     st.header('College of Engineering Spring 21-23 Destination Locations - By State')
                     st.plotly_chart(AllFig)
-                    top_5_employer_states("LATLONGDestinationCumulativeDataset(All Majors).csv")
+                    top_5_employer_states("Cumulative Data 21-23: Key Stats", "All Engineering Majors")
                 with tab2:
                     st.header('College of Engineering Spring 21-23 Destination Locations - By City')
                     display_city_visualization("LATLONGDestinationCumulativeDataset(All Majors).csv")
+                    display_top_5_cities("Cumulative Data 21-23: Key Stats", "All Engineering Majors")
 
     elif ["Applied Engineering Sciences"] == ms:
         if ["2023"] == ms1:
@@ -804,10 +832,11 @@ def main():
                     AESFig = choropleth_state_map("DestinationCumulativeDataset(Applied Engineering Sciences).csv")
                     st.header('College of Engineering Spring 21-23 Destination Locations - By State: AES Major')
                     st.plotly_chart(AESFig) 
-                    top_5_employer_states("LATLONGDestinationCumulativeDataset(Applied Engineering Sciences).csv")
+                    top_5_employer_states("Cumulative Data 21-23: Key Stats", "Applied Engineering Sciences")
                 with tab2:
                     st.header('College of Engineering Spring 21-23 Destination Locations - By City: AES Major')
                     display_city_visualization("LATLONGDestinationCumulativeDataset(Applied Engineering Sciences).csv")
+                    display_top_5_cities("Cumulative Data 21-23: Key Stats", "Applied Engineering Sciences")
     
     elif ["Biosystems Engineering"] == ms:
         if ["2023"] == ms1:
@@ -900,10 +929,11 @@ def main():
                     BEFig = choropleth_state_map("DestinationCumulativeDataset(Biosystems Engineering).csv")
                     st.header('College of Engineering Spring 21-23 Destination Locations - By State: BE Major')
                     st.plotly_chart(BEFig) 
-                    top_5_employer_states("LATLONGDestinationCumulativeDataset(Biosystems Engineering).csv")
+                    top_5_employer_states("Cumulative Data 21-23: Key Stats", "Biosystems Engineering")
                 with tab2:
                     st.header('College of Engineering Spring 21-23 Destination Locations - By City: BE Major')
                     display_city_visualization("LATLONGDestinationCumulativeDataset(Biosystems Engineering).csv")
+                    display_top_5_cities("Cumulative Data 21-23: Key Stats", "Biosystems Engineering")
 
     elif ["Chemical Engineering"] == ms:
         if ["2023"] == ms1:
@@ -996,10 +1026,11 @@ def main():
                     ChemEFig = choropleth_state_map("DestinationCumulativeDataset(Chemical Engineering).csv")
                     st.header('College of Engineering Spring 21-23 Destination Locations - By State: ChemE Major')
                     st.plotly_chart(ChemEFig)
-                    top_5_employer_states("LATLONGDestinationCumulativeDataset(Chemical Engineering).csv")
+                    top_5_employer_states("Cumulative Data 21-23: Key Stats", "Chemical Engineering")
                 with tab2:
                     st.header('College of Engineering Spring 21-23 Destination Locations - By City: ChemE Major')
                     display_city_visualization("LATLONGDestinationCumulativeDataset(Chemical Engineering).csv")
+                    display_top_5_cities("Cumulative Data 21-23: Key Stats", "Chemical Engineering")
                  
     elif ["Civil Engineering"] == ms:
         if ["2023"] == ms1:
@@ -1092,10 +1123,11 @@ def main():
                     CEFig = choropleth_state_map("DestinationCumulativeDataset(Civil Engineering).csv")
                     st.header('College of Engineering Spring 21-23 Destination Locations - By State: CE Major')
                     st.plotly_chart(CEFig)
-                    top_5_employer_states("LATLONGDestinationCumulativeDataset(Civil Engineering).csv")
+                    top_5_employer_states("Cumulative Data 21-23: Key Stats", "Civil Engineering")
                 with tab2:
                     st.header('College of Engineering Spring 21-23 Destination Locations - By City: CE Major')
                     display_city_visualization("LATLONGDestinationCumulativeDataset(Civil Engineering).csv")
+                    display_top_5_cities("Cumulative Data 21-23: Key Stats", "Civil Engineering")
 
     elif ["Computational Data Science"] == ms:
         if ["2023"] == ms1:
@@ -1162,10 +1194,11 @@ def main():
                     CDSFig = choropleth_state_map("DestinationCumulativeDataset(Computational Data Science).csv")
                     st.header('College of Engineering Spring 21-23 Destination Locations - By State: CDS Major')
                     st.plotly_chart(CDSFig) 
-                    top_5_employer_states("LATLONGDestinationCumulativeDataset(Computational Data Science).csv")
+                    top_5_employer_states("Cumulative Data 21-23: Key Stats", "Computational Data Science")
                 with tab2:
-                    st.header('College of Engineering Spring 21-23 Destination Locations - By City: BE Major')
+                    st.header('College of Engineering Spring 21-23 Destination Locations - By City: CDS Major')
                     display_city_visualization("LATLONGDestinationCumulativeDataset(Computational Data Science).csv")
+                    display_top_5_cities("Cumulative Data 21-23: Key Stats", "Computational Data Science")
 
     elif ["Computer Engineering"] == ms:
         if ["2023"] == ms1:
@@ -1258,10 +1291,11 @@ def main():
                     CpEFig = choropleth_state_map("DestinationCumulativeDataset(Computer Engineering).csv")
                     st.header('College of Engineering Spring 21-23 Destination Locations - By State: CpE Major')
                     st.plotly_chart(CpEFig)  
-                    top_5_employer_states("LATLONGDestinationCumulativeDataset(Computer Engineering).csv")
+                    top_5_employer_states("Cumulative Data 21-23: Key Stats", "Computer Engineering")
                 with tab2:
                     st.header('College of Engineering Spring 21-23 Destination Locations - By City: CpE Major')
-                    display_city_visualization("LATLONGDestinationCumulativeDataset(Computer Engineering).csv")            
+                    display_city_visualization("LATLONGDestinationCumulativeDataset(Computer Engineering).csv")       
+                    display_top_5_cities("Cumulative Data 21-23: Key Stats", "Computer Engineering")     
 
     elif ["Computer Science"] == ms:
         if ["2023"] == ms1:
@@ -1353,10 +1387,11 @@ def main():
                     CSEFig = choropleth_state_map("DestinationCumulativeDataset(Computer Science).csv")
                     st.header('College of Engineering Spring 21-23 Destination Locations - By State: CSE Major')
                     st.plotly_chart(CSEFig) 
-                    top_5_employer_states("LATLONGDestinationCumulativeDataset(Computer Science).csv")
+                    top_5_employer_states("Cumulative Data 21-23: Key Stats", "Computer Science")
                 with tab2:
                     st.header('College of Engineering Spring 21-23 Destination Locations - By City: CSE Major')
                     display_city_visualization("LATLONGDestinationCumulativeDataset(Computer Science).csv")
+                    display_top_5_cities("Cumulative Data 21-23: Key Stats", "Computer Science")
     
     elif ["Electrical Engineering"] == ms:
         if ["2023"] == ms1:
@@ -1431,7 +1466,7 @@ def main():
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
                     st.header("INSERT MAPS HERE")
-                    top_5_employer_states("2021", "Computer Engineering")
+                    top_5_employer_states("2021", "Electrical Engineering")
                 with tab2:
                     st.header("INSERT MAPS HERE")
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
@@ -1446,10 +1481,11 @@ def main():
                     EEFig = choropleth_state_map("DestinationCumulativeDataset(Electrical Engineering).csv")
                     st.header('College of Engineering Spring 21-23 Destination Locations - By State: EE Major')
                     st.plotly_chart(EEFig)
-                    top_5_employer_states("LATLONGDestinationCumulativeDataset(Electrical Engineering).csv")
+                    top_5_employer_states("Cumulative Data 21-23: Key Stats", "Electrical Engineering")
                 with tab2:
                     st.header('College of Engineering Spring 21-23 Destination Locations - By City: EE Major')
                     display_city_visualization("LATLONGDestinationCumulativeDataset(Electrical Engineering).csv")
+                    display_top_5_cities("Cumulative Data 21-23: Key Stats", "Electrical Engineering")
        
     elif ["Environmental Engineering"] == ms:
         if ["2023"] == ms1:
@@ -1539,10 +1575,11 @@ def main():
                     ENEFig = choropleth_state_map("DestinationCumulativeDataset(Environmental Engineering).csv")
                     st.header('College of Engineering Spring 21-23 Destination Locations - By State: ENE Major')
                     st.plotly_chart(ENEFig)
-                    top_5_employer_states("LATLONGDestinationCumulativeDataset(Environmental Engineering).csv")
+                    top_5_employer_states("Cumulative Data 21-23: Key Stats", "Environmental Engineering")
                 with tab2:
                     st.header('College of Engineering Spring 21-23 Destination Locations - By City: ENE Major')
                     display_city_visualization("LATLONGDestinationCumulativeDataset(Environmental Engineering).csv")
+                    display_top_5_cities("Cumulative Data 21-23: Key Stats", "Environmental Engineering")
     
     elif ["Materials Science & Engineering"] == ms:
         if ["2023"] == ms1:
@@ -1632,10 +1669,11 @@ def main():
                     MSFig = choropleth_state_map("DestinationCumulativeDataset(Materials Science and Eng).csv")
                     st.header('College of Engineering Spring 21-23 Destination Locations - By State: MS Major')
                     st.plotly_chart(MSFig)
-                    top_5_employer_states("LATLONGDestinationCumulativeDataset(Materials Science and Eng).csv")
+                    top_5_employer_states("Cumulative Data 21-23: Key Stats", "Materials Science & Engineering")
                 with tab2:
                     st.header('College of Engineering Spring 21-23 Destination Locations - By City: MS Major')
                     display_city_visualization("LATLONGDestinationCumulativeDataset(Materials Science and Eng).csv")
+                    display_top_5_cities("Cumulative Data 21-23: Key Stats", "Materials Science & Engineering")
     
     elif ["Mechanical Engineering"] == ms:
         if ["2023"] == ms1:
@@ -1724,10 +1762,11 @@ def main():
                     MEFig = choropleth_state_map("DestinationCumulativeDataset(Mechanical Engineering).csv")
                     st.header('College of Engineering Spring 21-23 Destination Locations - By State: ME Major')
                     st.plotly_chart(MEFig)
-                    top_5_employer_states("LATLONGDestinationCumulativeDataset(Mechanical Engineering).csv")
+                    top_5_employer_states("Cumulative Data 21-23: Key Stats", "Mechanical Engineering")
                 with tab2:
                     st.header('College of Engineering Spring 21-23 Destination Locations - By City: ME Major')
                     display_city_visualization("LATLONGDestinationCumulativeDataset(Mechanical Engineering).csv")    
+                    display_top_5_cities("Cumulative Data 21-23: Key Stats", "Mechanical Engineering")
     
     # Enrollment Data Section
     st.divider()
