@@ -246,15 +246,121 @@ def display_city_visualization(file_path):
     else:
         st.error("Failed to create Latitude and Longitude columns. Please check your CSV file.")
 
-def top_5_employer_states(file_path):
-    all_majors_data = pd.read_csv(file_path)
-    state_counts = all_majors_data['Employer State'].value_counts().reset_index()
-    state_counts.columns = ['State', 'Count']
-    top_5_states = state_counts.head(5)
+def top_5_employer_states(year, selected_major):
+    states = []
+    if year == "2023":
+        if selected_major == "All Engineering Majors":
+            states = ["Michigan: 370 positions", "Illinois: 44 positions", "Ohio: 22 positions", "Texas: 19 positions", "California: 16 positions"]
+        elif selected_major == "Applied Engineering Sciences":
+            states = ["Michigan: 30 positions", "Illinois: 13 positions", "Ohio: 5 positions", "Arizona: 2 positions", "California: 2 positions"]
+        elif selected_major == "Biosystems Engineering":
+            states = ["Michigan: 19 positions", "Iowa: 3 positions", "Arizona: 2 positions", "California: 2 positions", "Illinois: 2 positions"]
+        elif selected_major == "Chemical Engineering":
+            states = ["Michigan: 37 positions", "Illinois: 9 positions", "Ohio: 6 positions", "Georgia: 3 positions", "Indiana: 3 positions"]
+        elif selected_major == "Civil Engineering":
+            states = ["Michigan: 34 positions", "Texas: 3 positions", "Colorado: 2 positions", "New York: 2 positions"]
+        elif selected_major == "Computational Data Science":
+            states = ["Michigan: 6 positions"]
+        elif selected_major == "Computer Engineering":
+            states = ["Michigan: 13 positions"]
+        elif selected_major == "Computer Science":
+            states = ["Michigan: 80 positions", "Illinois: 9 positions", "Washington: 6 positions", "Texas: 5 positions", "California: 4 positions"]
+        elif selected_major == "Electrical Engineering":
+            states = ["Michigan: 40 positions", "Illinois: 3 positions", "Texas: 3 positions", "Georgia: 2 positions", "New York: 2 positions"]
+        elif selected_major == "Environmental Engineering":
+            states = ["Michigan: 10 positions"]
+        elif selected_major == "Materials Science & Engineering":
+            states = ["Michigan: 4 positions", "Ohio: 2 positions", "Pennsylvania: 2 positions"]
+        elif selected_major == "Mechanical Engineering":
+            states = ["Michigan: 97 positions", "Illinois: 6 positions", "California: 4 positions", "Florida: 4 positions", "Indiana: 4 positions"]
+        else:
+            states = []
+    if year == "2022":
+        if selected_major == "All Engineering Majors":
+            states = ["Michigan: 347 positions", "Illinois: 37 positions", "Texas: 33 positions", "California: 25 positions", "Wisconsin: 19 positions"]
+        elif selected_major == "Applied Engineering Sciences":
+            states = ["Michigan: 19 positions", "Illinois: 6 positions", "Texas: 6 positions", "California: 3 positions", "Arizona: 2 positions"]
+        elif selected_major == "Biosystems Engineering":
+            states = ["Michigan: 28 positions", "Colorado: 3 positions", "California: 2 positions", "Massachusetts: 2 positions", "Washington: 2 positions"]
+        elif selected_major == "Chemical Engineering":
+            states = ["Michigan: 40 positions", "Wisconsin: 4 positions", "California: 4 positions", "Illinois: 3 positions", "Iowa: 3 positions"]
+        elif selected_major == "Civil Engineering":
+            states = ["Michigan: 21 positions", "Illinois: 6 positions", "California: 3 positions", "Maryland: 2 positions", "Texas: 2 positions"]
+        elif selected_major == "Computational Data Science":
+            states = ["Michigan: 3 positions"]
+        elif selected_major == "Computer Engineering":
+            states = ["Michigan: 14 positions", "Texas: 3 positions", "Wisconsin: 3 positions", "Florida: 2 positions", "Washington: 2 positions"]
+        elif selected_major == "Computer Science":
+            states = ["Michigan: 85 positions", "California: 9 positions", "Minnesota: 7 positions", "Texas: 7 positions", "Illinois: 6 positions"]
+        elif selected_major == "Electrical Engineering":
+            states = ["Michigan: 33 positions", "Illinois: 5 positions", "Indiana: 3 positions", "Texas: 3 positions", "Wisconsin: 3 positions"]
+        elif selected_major == "Environmental Engineering":
+            states = ["Michigan: 9 positions", "California: 2 positions"]
+        elif selected_major == "Materials Science & Engineering":
+            states = ["Michigan: 11 positions", "Ohio: 2 positions"]
+        elif selected_major == "Mechanical Engineering":
+            states = ["Michigan: 84 positions", "Illinois: 10 positions", "Texas: 7 positions", "Ohio: 4 positions", "Indiana: 3 positions"]
+        else:
+            states = []
+    if year == "2021":
+        if selected_major == "All Engineering Majors":
+            states = ["Michigan: 293 positions", "Illinois: 37 positions", "Wisconsin: 21 positions", "Indiana: 17 positions", "California: 14 positions"]
+        elif selected_major == "Applied Engineering Sciences":
+            states = ["Michigan: 19 positions", "Illinois: 12 positions", "New York: 3 positions", "Ohio: 3 positions", "California: 2 positions"]
+        elif selected_major == "Biosystems Engineering":
+            states = ["Michigan: 19 positions", "Wisconsin: 4 positions", "Oregon: 2 positions", "Pennsylvania: 2 positions"]
+        elif selected_major == "Chemical Engineering":
+            states = ["Michigan: 31 positions", "Wisconsin: 9 positions", "Indiana: 5 positions", "Illinois: 3 positions", "California: 2 positions"]
+        elif selected_major == "Civil Engineering":
+            states = ["Michigan: 25 positions"]
+        elif selected_major == "Computer Engineering":
+            states = ["Michigan: 16 positions", "California: 2 positions"]
+        elif selected_major == "Computer Science":
+            states = ["Michigan: 63 positions", "Illinois: 15 positions", "Washington: 7 positions", "Minnesota: 3 positions", "Texas: 3 positions"]
+        elif selected_major == "Electrical Engineering":
+            states = ["Michigan: 28 positions", "Ohio: 3 positions", "California: 2 positions", "Illinois: 2 positions", "Indiana: 2 positions"]
+        elif selected_major == "Environmental Engineering":
+            states = ["Michigan: 13 positions"]
+        elif selected_major == "Materials Science & Engineering":
+            states = ["Michigan: 8 positions"]
+        elif selected_major == "Mechanical Engineering":
+            states = ["Michigan: 71 positions", "Indiana: 5 positions", "Wisconsin: 5 positions", "California: 3 positions", "Alabama: 2 positions"]
+        else:
+            states = []
+    if year == "Cumulative Data 21-23: Key Stats":
+        if selected_major == "All Engineering Majors":
+            states = ["Michigan: 838 positions", "Illinois: 106 positions", "Texas: 62 positions", "Wisconsin: 51 positions", "Ohio: 47 positions"]
+        elif selected_major == "Applied Engineering Sciences":
+            states = ["Michigan: 64 positions", "Illinois: 30 positions", "Texas: 10 positions", "Ohio: 8 positions", "California: 7 positions"]
+        elif selected_major == "Biosystems Engineering":
+            states = ["Michigan: 47 positions", "Wisconsin: 7 positions", "California: 5 positions", "Illinois: 4 positions", "Arizona: 2 positions"]
+        elif selected_major == "Chemical Engineering":
+            states = ["Michigan: 97 positions", "Wisconsin: 16 positions", "Indiana: 11 positions", "Ohio: 11 positions", "Illinois: 10 positions"]
+        elif selected_major == "Civil Engineering":
+            states = ["Michigan: 69 positions", "Illinois: 8 positions", "Texas: 6 positions", "California: 3 positions", "Colorado: 2 positions"]
+        elif selected_major == "Computational Data Science":
+            states = ["Michigan: 8 positions", "Ohio: 2 positions"]
+        elif selected_major == "Computer Engineering":
+            states = ["Michigan: 31 positions", "Texas: 4 positions", "Arizona: 3 positions", "California: 3 positions", "Ohio: 3 positions"]
+        elif selected_major == "Computer Science":
+            states = ["Michigan: 186 positions", "Illinois: 26 positions", "Washington: 17 positions", "Texas: 15 positions", "Minnesota: 13 positions"]
+        elif selected_major == "Electrical Engineering":
+            states = ["Michigan: 77 positions", "Illinois: 8 positions", "Texas: 6 positions", "Indiana: 5 positions", "Wisconsin: 5 positions"]
+        elif selected_major == "Environmental Engineering":
+            states = ["Michigan: 28 positions", "California: 2 positions", "Ohio: 2 positions", "Texas: 2 positions"]
+        elif selected_major == "Materials Science & Engineering":
+            states = ["Michigan: 19 positions", "Ohio: 4 positions", "Pennsylvania: 2 positions", "Texas: 2 positions"]
+        elif selected_major == "Mechanical Engineering":
+            states = ["Michigan: 212 positions", "Illinois: 16 positions", "Indiana: 11 positions", "Wisconsin: 11 positions", "Texas: 10 positions"]
+        else:
+            states = []
 
-    # Display top 5 employer states ranked
-    for index, row in top_5_states.iterrows():
-        st.write(f"{index + 1}. **{row['State']}**")
+    if not states:
+        states = ["No data available for the selected year and major."]
+    
+    st.subheader("Top 5 States")
+    for i, state in enumerate(states, start=1):
+        st.write(f"{i}. {state}")
 
 AllEthnicity = ['White', 'Asian', 'International', 'Hispanic/Latine', 'Black/African American', 'Two or More Races', 'Not Specified', 'Not Reported','American Indian/Alaskan Native']
 Major2022 = [57, 50, 7, 51, 91, 42, 193, 60, 20, 164, 23]
