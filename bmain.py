@@ -145,7 +145,7 @@ def research_readings(size = [3,3,3], pagelink= "https://www.google.com/", custo
             st.write("")
 
 def choropleth_state_map(file_path, selected_major):
-    all_majors_data = pd.read_csv(file_path, encoding="utf-8")
+    all_majors_data = pd.read_csv(file_path)
     
     if selected_major != "All Engineering Majors":
         filtered_data = all_majors_data[all_majors_data['Major'] == selected_major]
