@@ -124,9 +124,14 @@ def c_key_stats(kr21, kr22, kr23, ya_kr, pr21, pr22, pr23, ya_pr, as21, as22, as
                 st.header("$" + ms21)
                 st.write("2021 Median Salary")
 
-def choropleth_state_map(file_path):
-    all_majors_data = pd.read_csv(file_path)
-    state_counts = all_majors_data['Employer State'].value_counts().reset_index()
+def choropleth_state_map(file_path, selected_major):
+    all_majors_data = pd.read_csv(file_path, encoding="utf-8")
+    if selected_major != "All Engineering Majors":
+        filtered_data = all_majors_data[all_majors_data['Major'] == selected_major]
+    else:
+        filtered_data = all_majors_data
+
+    state_counts = filtered_data['Employer State'].value_counts().reset_index()
     state_counts.columns = ['State', 'Count']
     state_abbrev = {
         'Alabama': 'AL', 'Alaska': 'AK', 'Arizona': 'AZ', 'Arkansas': 'AR', 'California': 'CA', 'Colorado': 'CO',
@@ -146,12 +151,12 @@ def choropleth_state_map(file_path):
         state_counts,
         locations='StateAbbrev',
         locationmode='USA-states',
-        color='LogCount',  # Use the log-transformed count
+        color='LogCount', 
         color_continuous_scale='Greens',
         labels={'LogCount': 'Log Count'},
         scope='usa',
-        range_color=(state_counts['LogCount'].min(), state_counts['LogCount'].max()),  # Set the color scale range
-        hover_data={'State': True, 'Count': True, 'StateAbbrev': False, 'LogCount': False}
+        range_color=(state_counts['LogCount'].min(), state_counts['LogCount'].max()), 
+        hover_data={'State': True, 'Count': False, 'StateAbbrev': False, 'LogCount': False}
     )
     fig.update_layout(coloraxis_showscale=False)
     return fig
@@ -186,9 +191,32 @@ def add_lat_long_to_dataframe(data):
     else:
         st.error("The uploaded CSV file does not contain the 'Employer City' column.")
 
-def display_city_visualization(file_path):
+def display_city_visualization(file_path, selected_year):
     data = pd.read_csv(file_path)
     
+    if 'Start Date' not in data.columns:
+        st.error("Start Date column not found.")
+        return
+
+    # Convert 'Start Date' to datetime format and extract the year
+    data['Year'] = pd.to_datetime(data['Start Date'], errors='coerce').dt.year
+
+    # Filter data based on the selected year
+
+    if selected_year in ["2021", "2022", "2023"]:
+        data = data[data['Year'] == int(selected_year)]
+
+    elif selected_year == "Cumulative Data 21-23: Key Stats":
+        data = data[data['Year'].isin([2021, 2022, 2023])]
+
+    else:
+        st.error("Invalid year selection.")
+        return
+
+    if data.empty:
+        st.warning("No data available for the selected year.")
+        return
+
     if 'Employer Latitude' not in data.columns or 'Employer Longitude' not in data.columns:
         st.warning("Latitude and Longitude columns not found. Creating columns... This may take a moment.")
 
@@ -204,21 +232,21 @@ def display_city_visualization(file_path):
         data_merged = pd.merge(data, city_counts, on='Employer City', how='left')
 
         fig = px.scatter_geo(
-                data_merged,
-                lat='Employer Latitude',
-                lon='Employer Longitude',
-                hover_name='Employer City',
-                hover_data={
-                    'Employer City': True,
-                    'Graduate Count': True,
-                    'Employer Latitude': False,
-                    'Employer Longitude': False,
-                    'Employer City': False
-                },
-                size='Graduate Count',
-                size_max=25,
-                color_discrete_sequence=px.colors.sequential.Greens
-                )
+            data_merged,
+            lat='Employer Latitude',
+            lon='Employer Longitude',
+            hover_name='Employer City',
+            hover_data={
+                'Employer City': True,
+                'Graduate Count': False,
+                'Employer Latitude': False,
+                'Employer Longitude': False,
+                'Employer City': False
+            },
+            size='Graduate Count',
+            size_max=25,
+            color_discrete_sequence=px.colors.sequential.Greens
+            )
 
         fig.update_traces(marker=dict(line=dict(width=2, color='#577b59')))
 
@@ -230,7 +258,7 @@ def display_city_visualization(file_path):
         )
 
         fig.update_layout(
-            title="City Visualization",
+            title=f"City Visualization ({selected_year})",
             geo=dict(
                 scope='usa',
                 projection=dict(type='albers usa'),
@@ -239,7 +267,7 @@ def display_city_visualization(file_path):
                 showocean=True,  # Show ocean
                 oceancolor='#9ec1cf'  # Color of ocean water (same as lake water color)
             ),
-            margin={"r":0,"t":0,"l":0,"b":0}
+            margin={"r": 0, "t": 0, "l": 0, "b": 0}
         )
 
         st.plotly_chart(fig)
