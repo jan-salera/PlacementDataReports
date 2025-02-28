@@ -125,7 +125,7 @@ def c_key_stats(kr21, kr22, kr23, ya_kr, pr21, pr22, pr23, ya_pr, as21, as22, as
                 st.write("2021 Median Salary")
 
 def choropleth_state_map(file_path, selected_major):
-    all_majors_data = pd.read_csv(file_path, encoding="utf-8")
+    all_majors_data = pd.read_csv(file_path) #removed encoding="utf-8"
     if selected_major != "All Engineering Majors":
         filtered_data = all_majors_data[all_majors_data['Major'] == selected_major]
     else:
