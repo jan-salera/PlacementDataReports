@@ -599,11 +599,13 @@ def main():
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
-                    fig = choropleth_state_map("CSV_Spring 2023_3-7-24.csv")
+                    fig = choropleth_state_map("CSV_Spring 2023_3-7-24.csv", "All Engineering Majors")
                     st.header('Interactive Map for Destination Data: Spring 2023 College of Engineering Graduating Class')
                     st.plotly_chart(fig) 
+                    top_5_employer_states("2023", "All Engineering Majors")
                 with t2:
-                    st.write("BY CITY")
+                    display_city_visualization("LATLONGDestinationCumulativeDataset(All Majors).csv", "2023")
+                    display_top_5_cities("2023", "All Engineering Majors")
         elif ["2022"] == ms1:
             tab1, tab2, tab3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with tab1:
@@ -624,11 +626,13 @@ def main():
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
-                    fig = choropleth_state_map("CSV_Spring 2022_2-21-24.csv")
+                    fig = choropleth_state_map("CSV_Spring 2022_2-21-24.csv", "All Engineering Majors")
                     st.header('Interactive Map for Destination Data: Spring 2022 College of Engineering Graduating Class')
                     st.plotly_chart(fig)
+                    top_5_employer_states("2022", "All Engineering Majors")
                 with t2:
-                    st.write("BY CITY")
+                    display_city_visualization("LATLONGDestinationCumulativeDataset(All Majors).csv", "2022")
+                    display_top_5_cities("2022", "All Engineering Majors")
         elif ["2021"] == ms1:
             tab1, tab2, tab3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with tab1:
@@ -649,11 +653,13 @@ def main():
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
-                    fig = choropleth_state_map("CSV_Spring 2021_2-21-24.csv")
+                    fig = choropleth_state_map("CSV_Spring 2021_2-21-24.csv","All Engineering Majors")
                     st.header('Interactive Map for Destination Data: Spring 2021 College of Engineering Graduating Class')
-                    st.plotly_chart(fig)    
+                    st.plotly_chart(fig)   
+                    top_5_employer_states("2021", "All Engineering Majors")
                 with t2:
-                    st.write("BY CITY")
+                    display_city_visualization("LATLONGDestinationCumulativeDataset(All Majors).csv", "2021")
+                    display_top_5_cities("2021", "All Engineering Majors")
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -663,13 +669,15 @@ def main():
             with t3:
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
-                    AllFig = choropleth_state_map("DestinationCumulativeDataset(All Majors).csv")
+                    AllFig = choropleth_state_map("DestinationCumulativeDataset(All Majors).csv", "All Engineering Majors")
                     st.header('College of Engineering Spring 21-23 Destination Locations - By State')
                     st.plotly_chart(AllFig)
-                    top_5_employer_states("LATLONGDestinationCumulativeDataset(All Majors).csv")
+                    top_5_employer_states("Cumulative Data 21-23: Key Stats", "All Engineering Majors")
+
                 with tab2:
                     st.header('College of Engineering Spring 21-23 Destination Locations - By City')
-                    display_city_visualization("LATLONGDestinationCumulativeDataset(All Majors).csv")
+                    display_city_visualization("LATLONGDestinationCumulativeDataset(All Majors).csv", "Cumulative Data 21-23: Key Stats")
+                    display_top_5_cities("Cumulative Data 21-23: Key Stats", "All Engineering Majors")
 
     elif ["Applied Engineering Sciences"] == ms:
         if ["2023"] == ms1:
