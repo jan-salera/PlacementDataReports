@@ -1492,9 +1492,13 @@ def main():
             with t3:
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
-                    st.header("INSERT MAPS HERE")
+                    fig = choropleth_state_map("CSV_Spring 2023_3-7-24.csv", "Environmental Engineering")
+                    st.header('Interactive Map for Destination Data: Spring 2023 College of Engineering Graduating Class')
+                    st.plotly_chart(fig)
+                    top_5_employer_states("2023", "Environmental Engineering")
                 with tab2:
-                    st.header("INSERT MAPS HERE")
+                    display_city_visualization("LATLONGDestinationCumulativeDataset(Environmental Engineering).csv", "2023")
+                    display_top_5_cities("2023", "Environmental Engineering")
         elif ["2022"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1516,9 +1520,13 @@ def main():
             with t3:
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
-                    st.header("INSERT MAPS HERE")
+                    fig = choropleth_state_map("CSV_Spring 2022_2-21-24.csv", "Environmental Engineering")
+                    st.header('Interactive Map for Destination Data: Spring 2022 College of Engineering Graduating Class')
+                    st.plotly_chart(fig)
+                    top_5_employer_states("2022", "Environmental Engineering")
                 with tab2:
-                    st.header("INSERT MAPS HERE")
+                    display_city_visualization("LATLONGDestinationCumulativeDataset(Environmental Engineering).csv", "2022")
+                    display_top_5_cities("2022", "Environmental Engineering")
         elif ["2021"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1540,9 +1548,13 @@ def main():
             with t3:
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
-                    st.header("INSERT MAPS HERE")
+                    fig = choropleth_state_map("CSV_Spring 2021_2-21-24.csv", "Electrical Engineering")
+                    st.header('Interactive Map for Destination Data: Spring 2021 College of Engineering Graduating Class')
+                    st.plotly_chart(fig)
+                    top_5_employer_states("2021", "Environmental Engineering")
                 with tab2:
-                    st.header("INSERT MAPS HERE")
+                    display_city_visualization("LATLONGDestinationCumulativeDataset(Environmental Engineering).csv", "2021")
+                    display_top_5_cities("2021", "Environmental Engineering")
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1552,13 +1564,14 @@ def main():
             with t3:
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
-                    ENEFig = choropleth_state_map("DestinationCumulativeDataset(Environmental Engineering).csv")
-                    st.header('College of Engineering Spring 21-23 Destination Locations - By State: ENE Major')
-                    st.plotly_chart(ENEFig)
-                    top_5_employer_states("LATLONGDestinationCumulativeDataset(Environmental Engineering).csv")
+                    AllFig = choropleth_state_map("DestinationCumulativeDataset(All Majors).csv", "Environmental Engineering")
+                    st.header('College of Engineering Spring 21-23 Destination Locations - By State')
+                    st.plotly_chart(AllFig)
+                    top_5_employer_states("Cumulative Data 21-23: Key Stats", "Environmental Engineering")
                 with tab2:
                     st.header('College of Engineering Spring 21-23 Destination Locations - By City: ENE Major')
-                    display_city_visualization("LATLONGDestinationCumulativeDataset(Environmental Engineering).csv")
+                    display_city_visualization("LATLONGDestinationCumulativeDataset(Environmental Engineering).csv", "Cumulative Data 21-23: Key Stats")
+                    display_top_5_cities("Cumulative Data 21-23: Key Stats", "Environmental Engineering")
     
     elif ["Materials Science & Engineering"] == ms:
         if ["2023"] == ms1:
