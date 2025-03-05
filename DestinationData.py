@@ -1422,7 +1422,7 @@ def main():
                     st.plotly_chart(fig)
                     top_5_employer_states("2022", "Electrical Engineering")
                 with tab2:
-                    display_city_visualization("LATLONGDestinationCumulativeDataset(ELectrical Engineering).csv", "2022")
+                    display_city_visualization("LATLONGDestinationCumulativeDataset(Electrical Engineering).csv", "2022")
                     display_top_5_cities("2022", "Electrical Engineering")
         elif ["2021"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
