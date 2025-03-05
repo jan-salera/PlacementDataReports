@@ -1776,7 +1776,7 @@ def main():
                 with tab2:
                     st.header('College of Engineering Spring 21-23 Destination Locations - By City: ME Major')
                     display_city_visualization("LATLONGDestinationCumulativeDataset(Mechanical Engineering).csv", "Cumulative Data 21-23: Key Stats")    
-                    display_top_5_cities("Cumulative Data 21-23: Key Stats", "Mechanical Engineering")    
+                    display_top_5_cities("Cumulative Data 21-23: Key Stats", "Mechanical Engineering")  
     
 
 
