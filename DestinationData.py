@@ -1161,7 +1161,7 @@ def main():
                     st.plotly_chart(AllFig) 
                     top_5_employer_states("Cumulative Data 21-23: Key Stats", "Computational Data Science")
                 with tab2:
-                    st.header('College of Engineering Spring 21-23 Destination Locations - By City: BE Major')
+                    st.header('College of Engineering Spring 21-23 Destination Locations - By City: CDS Major')
                     display_city_visualization("LATLONGDestinationCumulativeDataset(Computational Data Science).csv", "Computational Data Science")
 
     elif ["Computer Engineering"] == ms:
