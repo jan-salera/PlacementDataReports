@@ -557,6 +557,7 @@ def display_top_5_cities(year, selected_major):
         st.write(f"{i}. {city}")
         
 AllEthnicity = ['White', 'Asian', 'International', 'Hispanic/Latine', 'Black/African American', 'Two or More Races', 'Not Specified', 'Not Reported','American Indian/Alaskan Native']
+Major2024 = [52,32,8,46,58,27,207,48,28,158,14]
 Major2022 = [57, 50, 7, 51, 91, 42, 193, 60, 20, 164, 23]
 InverseGender = ['#C70F0F', '#0B1799']
 Major2021 = [72, 47, 44, 100, 42, 173, 67, 24, 155, 22]
@@ -566,7 +567,7 @@ Major2123 = [207, 141, 21, 153, 286, 108, 593, 203, 61, 490, 61]
 def main():  
     col1, col2 = st.columns([2,3]) 
     with col1:
-        options = ("Cumulative Data 21-23: Key Stats", "2023", "2022", "2021")
+        options = ("Cumulative Data 21-23: Key Stats", "2024", "2023", "2022", "2021")
         ms1 = st.multiselect("Note: Only select one option per filter.", options=options, placeholder = "Filter By Year", default=["2023"], label_visibility="visible")
 
     with col2:
@@ -577,12 +578,37 @@ def main():
         ms = st.multiselect("Note: Only select one option per filter.", options=options, placeholder = "Filter By Major",  default=["All Engineering Majors"], label_visibility="hidden")
 
     if ["All Engineering Majors"] == ms:
-        if ["2023"] == ms1:
+        if ["2024"] == ms1:
+            tab1, tab2, tab3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
+            with tab1:
+                key_stats(year= "2024", kr = "86.9%", krinfo = "589/678", pr = "77.1%", prinfo = "454/589", avgsal = "$78,032", medsal = "$75,500", employ = "77.1%", grad = "13%", vol = "Less than 1%", other = 0)
+                st.caption("Note: 0.1% of graduates indicate “other intentions” - placed and not seeking")
+                st.header("Spring 2024 Graduating Class Composition: All Engineering Majors")
+                t1, t2, t3 = st.tabs(["Major", "Ethnicity", "Gender"])
+                with t1:
+                    data_major([],Major2024)
+                with t2:
+                    AllEthnicity2024 = ['White', 'Asian', 'International', 'Not Specified', 'Black/African American','Hispanic/Latine', 'Two or More Races']
+                    AllCount2024 = [455, 73, 51, 30, 25, 22, 22]
+                    data_ethnicity(AllCount2024, AllEthnicity2024)
+                with t3:
+                    AllGender2024 = [493, 185]
+                    data_gender(AllGender2024)
+            with tab2:
+                st.write("insert visualization")
+            with tab3:
+                t1, t2= st.tabs(["By State", "By City"])
+                with t1:
+                    st.write("insert maps")
+                    st.header('Interactive Map for Destination Data: Spring 2024 College of Engineering Graduating Class')
+                with t2:
+                    st.write("insert map")
+
+        elif ["2023"] == ms1:
             tab1, tab2, tab3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with tab1:
                 key_stats()
                 st.caption("Note: 0.8% of graduates indicate “other intentions” - placed and not seeking")
-                st.write("Insert Class Composition")
                 st.header("Spring 2023 Graduating Class Composition: All Engineering Majors")
                 t1, t2, t3 = st.tabs(["Major", "Ethnicity", "Gender"])
                 with t1:
@@ -680,7 +706,33 @@ def main():
                     display_top_5_cities("Cumulative Data 21-23: Key Stats", "All Engineering Majors")
 
     elif ["Applied Engineering Sciences"] == ms:
-        if ["2023"] == ms1:
+        if ["2024"] == ms1:
+            tab1, tab2, tab3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
+            with tab1:
+                key_stats(year= "2024", kr = "81%", krinfo = "42/52", pr = "81%", prinfo = "34/42", avgsal = "$75,042", medsal = "$78,750", employ = "81%", grad = "10%", vol = 0, other = 0)
+                st.caption("Note: 2.4% of graduates indicate “other intentions” - placed and not seeking")
+                st.header("Spring 2024 Graduating Class Composition: AES Major")
+                t1, t2, t3 = st.tabs(["Major", "Ethnicity", "Gender"])
+                with t1:
+                    AESColors = ['#CECECE', '#CECECE', '#CECECE','#18453B','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE','#CECECE']
+                    data_major(AESColors,Major2024)
+                with t2:
+                    AESEthnicity2024 = ['White', 'Asian', 'Black/African American', 'Two or More Races']
+                    AESCount2024 = [42,5,3,2]
+                    data_ethnicity(AESCount2024, AESEthnicity2024)
+                with t3:
+                    AllGender2024 = [36, 16]
+                    data_gender(AllGender2024)
+            with tab2:
+                st.write("insert visualization")
+            with tab3:
+                t1, t2= st.tabs(["By State", "By City"])
+                with t1:
+                    st.write("insert maps")
+                    st.header('Interactive Map for Destination Data: Spring 2024 College of Engineering Graduating Class')
+                with t2:
+                    st.write("insert map")
+        elif ["2023"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
                 key_stats(year= "2023", kr = "100%", krinfo = "78/78", pr = "92%", prinfo = "72/78", avgsal = "$72,233", medsal = "$70,000", employ = "87%", grad = "5%")
@@ -782,7 +834,32 @@ def main():
                     display_top_5_cities("Cumulative Data 21-23: Key Stats", "Applied Engineering Sciences")
     
     elif ["Biosystems Engineering"] == ms:
-        if ["2023"] == ms1:
+        if ["2024"] == ms1:
+            tab1, tab2, tab3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
+            with tab1:
+                key_stats(year= "2024", kr = "86.9%", krinfo = "29/32", pr = "83%", prinfo = "24/29", avgsal = "$72,545", medsal = "$70,000", employ = "51.7%", grad = "28%", vol = "3.5%", other = 0)
+                st.header("Spring 2024 Graduating Class Composition: BE Major")
+                t1, t2, t3 = st.tabs(["Major", "Ethnicity", "Gender"])
+                with t1:
+                    BEColors = ['#CECECE', '#CECECE', '#CECECE','#CECECE','#CECECE','#CECECE','#18453B', '#CECECE','#CECECE','#CECECE','#CECECE']
+                    data_major(BEColors,Major2024)
+                with t2:
+                    BEEthnicity2024 = ['White','Two or More Races','Asian', 'Not Specified','Black/African American','Hispanic/Latine']
+                    BEECount2024 = [26,2,1,1,1,1]
+                    data_ethnicity(BEECount2024,BEEthnicity2024)
+                with t3:
+                    BEGender2024 = [12,20]
+                    data_gender(BEGender2024, InverseGender)
+            with tab2:
+                st.write("insert visualization")
+            with tab3:
+                t1, t2= st.tabs(["By State", "By City"])
+                with t1:
+                    st.write("insert maps")
+                    st.header('Interactive Map for Destination Data: Spring 2024 College of Engineering Graduating Class')
+                with t2:
+                    st.write("insert map")
+        elif ["2023"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
                 key_stats(year= "2023", kr = "93%", krinfo = "41/44", pr = "93%", prinfo = "38/41", avgsal = "$68,768", medsal = "$72,500", employ = "78%", grad = "15%")
