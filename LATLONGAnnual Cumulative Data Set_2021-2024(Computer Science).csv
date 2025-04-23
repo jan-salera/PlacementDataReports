@@ -1,0 +1,503 @@
+First Name,Last Name,School Email,Major,Graduation Term,Gender,Ethnicity,First Gen,Outcome,Employer Name,Employer Industry,Job Title,City,State,Country,Annual Salary,Continuing Ed School,Continuing Ed Level,Continuing Ed Major,Employer Latitude,Employer Longitude
+Paul,Schulte,schul667@msu.edu,Computer Science,December 2023 - UG,Male,White,,Working,Stellar Broadband,,Full Stack Software Developer,Lansing,Michigan,United States,"$75,000.00",,,,42.7338254,-84.5546295
+Shreesha,Maddur,maddurs1@msu.edu,Computer Science,December 2023 - UG,Male,Asian,,Working,Cubic Telecom,,Application Engineer,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+David,Cirenese,cirenese@msu.edu,Computer Science,December 2023 - UG,Male,White,Yes,Working,Ford Motor Company,,Software Engineer,Detroit,Michigan,United States,"$110,000.00",,,,42.3315509,-83.0466403
+Matt,Kight,kightmat@msu.edu,Computer Science,December 2023 - UG,Male,White,,Working,IBM,,Cloud Engineer,Raleigh,North Carolina,United States,"$110,000.00",,,,35.7803977,-78.6390989
+Elio,Zoto,zotoelio@msu.edu,Computer Science,December 2023 - UG,Male,White,Yes,Continuing Education,,,,Urbana,Illinois,United States,,University of Illinois - Urbana Champaign,Masters,Computer Science,40.1117174,-88.207301
+Yones,Mussa,mussayon@msu.edu,Computer Science,December 2023 - UG,Male,White,Yes,Working,Jackson,Financial Services,Software Developer,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Flora,Pieters,pietersf@msu.edu,Computer Science,August 2024 - UG,Female,White,Yes,Continuing Education,,,,Ann Arbor,Michigan,United States,,University of Michigan,Masters,Quantitative Finance & Risk Management,42.2813722,-83.7484616
+Gabe,Misajlovski,misajlo2@msu.edu,Computer Science,December 2023 - UG,Male,White,,Working,konnech.Inc,Internet & Software,Tech Assistant,Lansing,Michigan,United States,"$40,000.00",,,,42.7338254,-84.5546295
+Sungyu,Kwon,kwonsun7@msu.edu,Computer Science,December 2023 - UG,Male,Asian,,Working,GEICO,Insurance,Software Engineer,Ann Arbor,Michigan,United States,,,,,42.2813722,-83.7484616
+Senan,Haque,haquesen@msu.edu,Computer Science,December 2023 - UG,Male,Asian,,Working,Levata,,Software Developer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Abhinay,Devapatla,devapatl@msu.edu,Computer Science,December 2023 - UG,Male,Asian,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Gaya,Kanagaraj,kanagara@msu.edu,Computer Science,December 2023 - UG,Female,Asian,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Bachelors,Computer Science,42.7338254,-84.5546295
+Kurt,Lablanc,lablanc5@msu.edu,Computer Science,December 2023 - UG,Male,White,Yes,Working,Accenture Federal Services,Management Consulting,Software Engineer,St. Louis,Missouri,United States,,,,,38.6280278,-90.1910154
+Andrew,Vandercar,vanderc9@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Catholic Cemeteries Chicago,,Computer Programmer,Chicago,Illinois,United States,,,,,41.8755616,-87.6244212
+Monika,Kanphade,kanphade@msu.edu,Computer Science,December 2023 - UG,Female,Asian,,Working,General Motors,Automotive,Software Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Srikar,Kante,kantesri@msu.edu,Computer Science,December 2023 - UG,Male,Asian,,Working,Auto-Owners Insurance Company,Insurance,SAP Advanced Business Application Programming Developer,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Nathan,Srivastava,srivas57@msu.edu,Computer Science,December 2023 - UG,Male,Asian,,Working,General Mills,,Digital & Technology Rotational Program,Minneapolis,Minnesota,United States,"$87,000.00",,,,44.9772995,-93.2654692
+Suhan,Park,parksuha@msu.edu,Computer Science,December 2023 - UG,Male,Asian,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Emily,Rose,roseemi5@msu.edu,Computer Science,May 2024 - UG,Female,White,,Working,ADAC,Accounting,,Grand Rapids,Michigan,United States,,,,,42.9632425,-85.6678639
+Charles,Talaga,talagac2@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Stryker,Medical Devices,Data Analyst,Seattle,Washington,United States,,,,,47.6038321,-122.330062
+Brandon,Hwang,hwangkun@msu.edu,Computer Science,December 2023 - UG,Male,International,,Working,Ultium Cells,Automotive,Information Security Intern,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Satvik,Ravipati,ravipat3@msu.edu,Computer Science,December 2023 - UG,Male,Asian,,Working,Apposite,,Software Analyst,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Angela,Majestic,majest10@msu.edu,Computer Science,December 2023 - UG,Female,White,,Working,Moody's Corporation,,Software Engineer,New York,New York,United States,"$105,000.00",,,,40.7127281,-74.0060152
+Isabella,Engelman,engelm22@msu.edu,Computer Science,May 2024 - UG,Female,Black/African American,,Working,Humana,,Software Engineer,Louisville,Kentucky,United States,,,,,38.2542376,-85.759407
+Ravi,Grewal,grewalr4@msu.edu,Computer Science,December 2023 - UG,Male,Two or More Races,,Working,Total Security Solutions,Manufacturing,Principal Solutions Architect,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Nicole,Schneider,schne542@msu.edu,Computer Science,December 2023 - UG,Female,White,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Evan,Orvis,orviseva@msu.edu,Computer Science,December 2023 - UG,Male,White,,Working,AvaSure,Medical Devices,Tier One Customer Care Agent,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Richard,Budny,budnyric@msu.edu,Computer Science,May 2024 - UG,Male,Not Specified,,Working,Caesar Creek Software,Internet & Software,Software Developer,Miamisburg,Ohio,United States,,,,,39.6428362,-84.2866083
+Marshal,DiGiovanni,digiov26@msu.edu,Computer Science,May 2024 - UG,Male,White,Yes,Working,"Knowmadics, Inc",Internet & Software,Full Stack Software Engineer,Wichita,Kansas,United States,,,,,37.6922361,-97.3375448
+Cole,Tackett,tacket17@msu.edu,Computer Science,May 2024 - UG,Male,White,Yes,Working,"BAE Systems, Inc.",Defense,Software Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Edie,Haase,haaseede@msu.edu,Computer Science,December 2023 - UG,Female,White,,Working,Ford Motor Company,,Software engineer,Detroit,Michigan,United States,"$90,000.00",,,,42.3315509,-83.0466403
+Moriah,Casas Ponce,casaspon@msu.edu,Computer Science,December 2023 - UG,Female,Hispanic/Latine,,Working,Bosch,Manufacturing,Project Manager,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Cameron,Schwartz,schwa490@msu.edu,Computer Science,December 2023 - UG,Male,White,,Working,MSU,Higher Education,Professsional Aide,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Rikito,Takai,takairik@msu.edu,Computer Science,December 2023 - UG,Male,Asian,Yes,Working,DIT America,,Validation Test Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Rian,Gidwani,gidwanir@msu.edu,Computer Science,December 2023 - UG,Male,Asian,,Working,Appen,,Independent Consultant,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Eli,McArdle,mcardle9@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Late Stage Games,,Gameplay Programmer,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Alex,Grundy,grundyal@msu.edu,Computer Science,December 2023 - UG,Male,White,,Working,365 Retail Markets,Internet & Software,Software Development Intern,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Nahom,Ghebredngl,ghebredn@msu.edu,Computer Science,December 2023 - UG,Male,Black/African American,,Continuing Education,,,,Providence,Rhode Island,United States,,Rhode Island School of Design,Masters,,41.8239891,-71.4128343
+Luke,Montgomery,montg286@msu.edu,Computer Science,December 2023 - UG,Male,White,,Working,Auto-Owners Insurance Company,Insurance,Associate Software Developer,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Nolan,Langer,langerno@msu.edu,Computer Science,December 2023 - UG,Male,White,,Working,Jackson,,Cloud Solutions Engineer,Lansing,Michigan,United States,"$82,000.00",,,,42.7338254,-84.5546295
+Trevor,Davis,davist34@msu.edu,Computer Science,December 2023 - UG,Male,White,,Working,"Stroz Friedberg, an Aon company",Computer Networking,Cyber Associate,New York,New York,United States,,,,,40.7127281,-74.0060152
+Andrew,Gardner,gardn373@msu.edu,Computer Science,December 2023 - UG,Male,White,,Working,Barton Malow,Construction,Project Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Harrison,McComb,mccombha@msu.edu,Computer Science,December 2023 - UG,Male,White,,Working,Ally Financial Inc,Financial Services,Associate Software Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Nathan,Gu,gunathan@msu.edu,Computer Science,December 2023 - UG,Male,Asian,,Working,MeteoAI,,Software Engineer,Nashville,Tennessee,United States,,,,,36.1622767,-86.7742984
+Haoyun,Wu,wuhaoyu1@msu.edu,Computer Science,December 2023 - UG,Male,International,,Continuing Education,,,,Philadelphia,Pennsylvania,United States,,University of Pennsylvania,Masters,Computer & Information Sciences,39.9527237,-75.1635262
+Annika,Karlstrom,karlstr1@msu.edu,Computer Science,December 2023 - UG,Female,White,,Working,Amazon,,Cloud Support Associate,Seattle,Washington,United States,"$78,300.00",,,,47.6038321,-122.330062
+Jacob,Rutkowski,rutkow72@msu.edu,Computer Science,December 2023 - UG,Male,White,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Jayson,Van Dam,vandamj3@msu.edu,Computer Science,December 2023 - UG,Male,White,,Working,DataAnnotation,,AI Trainer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Joshua,Austin,austi121@msu.edu,Computer Science,May 2024 - UG,Male,White,Yes,Working,CACI,Aerospace,Artemis Gateway Flight Software Developer,Houston,Texas,United States,"$85,000.00",,,,29.7589382,-95.3676974
+Shengyang,Du,dushengy@msu.edu,Computer Science,December 2023 - UG,Male,International,Yes,Continuing Education,,,,New York,New York,United States,,New York University,Masters,Applied Urban Science & Informatics,40.7127281,-74.0060152
+Makayla,Allen,allenm71@msu.edu,Computer Science,December 2023 - UG,Female,Black/African American,,Working,Cigna Group,Healthcare,Software Engineer,Philadelphia,Pennsylvania,United States,,,,,39.9527237,-75.1635262
+Lucas,Nogueira Pires,nogueir5@msu.edu,Computer Science,May 2024 - UG,Male,Hispanic/Latine,,Working,Dunham's Sports,Retail Stores,Key Team Leader,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+John,Foss,fossjoh1@msu.edu,Computer Science,December 2023 - UG,Male,White,Yes,Working,"Agate Software, Inc.",Internet & Software,Configuration Specialist,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Marla,Whitfield,whitfi64@msu.edu,Computer Science,May 2024 - UG,Female,Black/African American,Yes,Working,Pearson,Other Education,Tools Development Analyst ,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Alan,Fierro,fierroa1@msu.edu,Computer Science,May 2024 - UG,Male,Hispanic/Latine,,Working,Amazon,,Software Development Engineer,Seattle,Washington,United States,"$129,000.00",,,,47.6038321,-122.330062
+Tatiana,Voegerl,voegerlt@msu.edu,Computer Science,May 2024 - UG,Female,White,,Working,Bank of America,,Software Engineer,New York,New York,United States,"$105,000.00",,,,40.7127281,-74.0060152
+Abel,Diaz-Valdez,diazvald@msu.edu,Computer Science,May 2024 - UG,Male,Hispanic/Latine,Yes,Working,Microsoft,Internet & Software,Support Engineer ,Dallas,Texas,United States,"$90,000.00",,,,32.7762719,-96.7968559
+Colin,Davidson,david272@msu.edu,Computer Science,May 2024 - UG,Male,White,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Brendan,Bushbaker,bushbak2@msu.edu,Computer Science,May 2024 - UG,Male,White,Yes,Working,Tyler Technologies,,Software Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Emmett,Barrett,barre277@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Nutshell,Internet & Software,Junior Software Developer,Ann Arbor,Michigan,United States,,,,,42.2813722,-83.7484616
+Nafisa,Ahmed,ahmedna8@msu.edu,Computer Science,May 2024 - UG,Female,Asian,,Working,Auto-Owners Insurance Company,Insurance,Software Developer,Lansing,Michigan,United States,"$65,000.00",,,,42.7338254,-84.5546295
+Elio,Moussa,moussael@msu.edu,Computer Science,May 2024 - UG,Male,International,Yes,Working,MSU,Higher Education,Professional Aide,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Danny,Buglak,buglakda@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Ally Financial Inc,Financial Services,Junior Software Developer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Cale,Linabury,linabur3@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Lansing Community College,Higher Education,Tutor,Lansing,Michigan,United States,"$37,440.00",,,,42.7338254,-84.5546295
+Jacob,Meier,meierjac@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,MSU,Higher Education,Information Technology Systems Director,Lansing,Michigan,United States,"$40,000.00",,,,42.7338254,-84.5546295
+Christina,Tagay,tagaychr@msu.edu,Computer Science,May 2024 - UG,Female,Asian,,Working,Humana,Healthcare,Cloud Solutions Engineer,Chicago,Illinois,United States,,,,,41.8755616,-87.6244212
+Gabriel,Sotelo Justo,soteloju@msu.edu,Computer Science,May 2024 - UG,Male,International,,Working,Microsoft,,Software Engineer,Seattle,Washington,United States,"$130,000.00",,,,47.6038321,-122.330062
+Katelyn,Hurst,hurstka2@msu.edu,Computer Science,May 2024 - UG,Female,White,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Ryan,Conley,conley24@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Abbott Laboratories,,IT Professional Development Program,Chicago,Illinois,United States,"$78,000.00",,,,41.8755616,-87.6244212
+Thomas,Sheehy,sheehyth@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Amazon,Internet & Software,Software Development Engineer,Seattle,Washington,United States,"$129,000.00",,,,47.6038321,-122.330062
+David,Rackerby,rackerb1@msu.edu,Computer Science,May 2024 - UG,Male,Two or More Races,,Working,Amazon,Internet & Software,Software Engineer,Seattle,Washington,United States,,,,,47.6038321,-122.330062
+Sarah,Clay,claysar2@msu.edu,Computer Science,May 2024 - UG,Female,White,,Working,CTI Global,,Sr. System Administrator,Alpena,Michigan,United States,"$90,000.00",,,,45.0176181,-83.6670019
+Jasmine,Richardson,rich1104@msu.edu,Computer Science,May 2024 - UG,Female,Asian,Yes,Working,Bank of America,,Software Engineer,New York,New York,United States,"$105,000.00",,,,40.7127281,-74.0060152
+Eunhye,Park,parkeu24@msu.edu,Computer Science,May 2024 - UG,Female,Not Specified,,Working,Bank of America,,Technology Analyst,Jersey City,New Jersey,United States,"$105,000.00",,,,40.7215682,-74.047455
+Zachary,Gage,gagezac1@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,SimVentions,Defense,Jr. Software Developer,Dahlgren,Virginia,United States,"$72,000.00",,,,38.1982172,-88.6848404
+Hailey,Cohen,cohenhai@msu.edu,Computer Science,May 2024 - UG,Female,White,,Working,Deloitte,Management Consulting,Advisory Analyst,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Simon,Situ,situsimo@msu.edu,Computer Science,May 2024 - UG,Male,Asian,Yes,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Arman,Newaz,newazahm@msu.edu,Computer Science,May 2024 - UG,Male,International,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer science ms,42.7338254,-84.5546295
+Ishwari,Kapale,kapaleis@msu.edu,Computer Science,May 2024 - UG,Female,International,,Working,FANUC America,,Research & Development Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Viktor,Filipovich,filipov6@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,"Planet Bingo, LLC",Internet & Software,Junior Application Developer,Lansing,Michigan,United States,"$60,000.00",,,,42.7338254,-84.5546295
+Joey,Morrison,morri806@msu.edu,Computer Science,August 2024 - UG,Male,White,,Working,"Electro-Matic Ventures, Inc",Manufacturing,Outside Sales Representative,Detroit,Michigan,United States,"$73,500.00",,,,42.3315509,-83.0466403
+Brendan,Cleland,clelandb@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Dominos,Food & Beverage,Associate Tech Rotation,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Leo,Hoerdemann,hoerdema@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Brava Games,,Technical Audio Designer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Neil,Khedekar,khedekar@msu.edu,Computer Science,August 2024 - UG,Male,Asian,,Working,Jackson,Financial Services,Software Developer,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Ajuisiwon,Azantilow,azantilo@msu.edu,Computer Science,May 2024 - UG,Male,International,Yes,Working,DoorDash,Internet & Software,Software Engineer,Seattle,Washington,United States,,,,,47.6038321,-122.330062
+Aparna,Anand,anandapa@msu.edu,Computer Science,May 2024 - UG,Female,Asian,,Working,C3 AI,Internet & Software,Site Reliability Engineer,San Francisco,California,United States,,,,,37.7792588,-122.4193286
+Vetri,Vijay,vijayvet@msu.edu,Computer Science,May 2024 - UG,Male,Asian,,Working,US - Department of Defense,"Government - Local, State & Federal",Software Engineer,Rock Island,Illinois,United States,,,,,41.4411786,-90.5766144
+Dominick,Radcliffe,radcli31@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Williams International,Aerospace,Operations and Development Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Ben,Gibbons,gibbon94@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,GRG America,Manufacturing,Junior Control Engineer,Detroit,Michigan,United States,"$70,720.00",,,,42.3315509,-83.0466403
+Carter,Salna,salnacar@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Waterfront Petroleum Terminal,,IT Marketing Specialist,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Blake,Morris,morri812@msu.edu,Computer Science,May 2024 - UG,Male,Two or More Races,Yes,Working,AUTOKINITON,Automotive,Controls Engineer,Ann Arbor,Michigan,United States,,,,,42.2813722,-83.7484616
+George,Hunt,huntgeo2@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,ServiceNow,Internet & Software,Associate Software Engineer,San Francisco,California,United States,"$130,000.00",,,,37.7792588,-122.4193286
+Juanqui,Faure,faurejua@msu.edu,Computer Science,May 2024 - UG,Male,Hispanic/Latine,,Working,"Armor Technology Solutions, LLC.",Computer Networking,Software Engineer,San Juan,,Puerto Rico,,,,,18.38423905,-66.05343997364733
+Albert,Cho,chokwony@msu.edu,Computer Science,May 2024 - UG,Male,International,,Working,SK battery America,Manufacturing,IT analysis System Specialist,Elizabethtown,Kentucky,United States,,,,,37.693952,-85.8591285
+Joe,Potila,potilajo@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Miners Pasties,,,Munising,Michigan,United States,,,,,46.4100035,-86.6494698
+Joey,Vesche,veschejo@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Tinker Air Force Base Civilian Employment,"Government - Local, State & Federal",Computer Scientist,Oklahoma City,Oklahoma,United States,"$66,966.00",,,,35.4729886,-97.5170536
+Tejas,Singhal,singhalt@msu.edu,Computer Science,May 2024 - UG,Male,International,,Continuing Education,,,,College Station,Texas,United States,,Texas A&M University - College Station,Masters,Computer Science,30.6183939,-96.3455991
+Timothy,Moran,moranti1@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Jackson,Financial Services,Software Developer,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Ayeza,Imtiaz,imtiazay@msu.edu,Computer Science,May 2024 - UG,Female,Asian,Yes,Working,Wells Fargo,Commercial Banking & Credit,Information Security Associate,Charlotte,North Carolina,United States,,,,,35.2272086,-80.8430827
+Brandon,Dutton,duttonb2@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,SIG,,Software Engineer,Philadelphia,Pennsylvania,United States,"$165,000.00",,,,39.9527237,-75.1635262
+Trey,Cosnowski,cosnows4@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Menlo Innovations,Internet & Software,Software Developer,Ann Arbor,Michigan,United States,,,,,42.2813722,-83.7484616
+Vishal,Chava,chavavis@msu.edu,Computer Science,May 2024 - UG,Male,Asian,,Working,Ascent,Transportation & Logistics,Intern,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Kanden,Cho,chokande@msu.edu,Computer Science,May 2024 - UG,Male,Two or More Races,,Working,United Wholesale Mortgage,Financial Services,Software Developer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Alex,Bocchi,bocchial@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Dominos,Food & Beverage,Information Technology Rotational ,Ann Arbor,Michigan,United States,"$75,000.00",,,,42.2813722,-83.7484616
+Courtney,Thang,thangcou@msu.edu,Computer Science,May 2024 - UG,Female,Asian,Yes,Working,Auto-Owners Insurance Company,Insurance,Associate Software Developer,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Luke,McInnes,mcinnesl@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,UPS,Transportation & Logistics,Sales Associate,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Satya,Byreddy,byreddy1@msu.edu,Computer Science,May 2024 - UG,Male,Asian,,Continuing Education,,,,Ann Arbor,Michigan,United States,,University of Michigan,Masters,Master of Business Analytics,42.2813722,-83.7484616
+Yufan,Ai,aiyufan@msu.edu,Computer Science,May 2024 - UG,Male,International,Yes,Continuing Education,,,,Durham,North Carolina,United States,,Duke University,Masters,Computer Science,54.666667,-1.75
+Chirag,Rudrangi,rudrangi@msu.edu,Computer Science,May 2024 - UG,Male,Asian,,Working,Siemens,Internet & Software,Presales Consultant,Milford,Ohio,United States,,,,,41.2222218,-73.0570603
+Jake,Rhodes,rhodes22@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Flex-N-Gate Corporation,Manufacturing,Program Manager,Detroit,Michigan,United States,"$88,000.00",,,,42.3315509,-83.0466403
+Joanna,Zhan,zhanjoan@msu.edu,Computer Science,May 2024 - UG,Female,Asian,,Working,"Agate Software, Inc.",Internet & Software,Software Developer,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Matt,Wright,wrigh808@msu.edu,Computer Science,May 2024 - UG,Male,White,Yes,Working,GE,Aerospace,Software Systems Engineer,Grand Rapids,Michigan,United States,,,,,42.9632425,-85.6678639
+Aman,Todi,todiaman@msu.edu,Computer Science,May 2024 - UG,Male,International,,Working,Eaton,,Software Engineer,Milwaukee,Wisconsin,United States,"$90,000.00",,,,43.0386475,-87.9090751
+Emily,Feuer,feueremi@msu.edu,Computer Science,May 2024 - UG,Female,White,Yes,Working,TechSmith Corporation,Internet & Software,Software Engineer,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Evan,Stanislaw,stanis19@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Cleveland Browns,Sports & Leisure,Junior Software Developer,Cleveland,Ohio,United States,,,,,41.4996574,-81.6936772
+Selena,Vidojevski,vidojevs@msu.edu,Computer Science,May 2024 - UG,Female,Not Specified,,Working,Ford Motor Company,Automotive,Process Engineer,Ann Arbor,Michigan,United States,,,,,42.2813722,-83.7484616
+Ben,Zuke,zukebenj@msu.edu,Computer Science,May 2024 - UG,Male,White,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Jack,Patton,patton27@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Ally Financial Inc,,Software Engineer,Detroit,Michigan,United States,"$80,000.00",,,,42.3315509,-83.0466403
+Drew,Peterson,pete1388@msu.edu,Computer Science,May 2024 - UG,Male,White,,Continuing Education,,,,Detroit,Michigan,United States,,Wayne State University,Masters,Computer Science,42.3315509,-83.0466403
+Zane,O'Dell,odellzan@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Auto-Owners Insurance Company,Insurance,Associate Software Developer II,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Shawn,Mondol,mondolsh@msu.edu,Computer Science,May 2024 - UG,Male,Asian,Yes,Working,MSU Federal Credit Union,Financial Services,Software Developer,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Jacob,Hughes,hughe352@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Bosch,Automotive,Software Developer Intern,Detroit,Michigan,United States,"$55,120.00",,,,42.3315509,-83.0466403
+Bryce,Cooperkawa,coope445@msu.edu,Computer Science,May 2024 - UG,Male,Two or More Races,,Working,National Currency Technologies,,Software Engineer Researcher,Chicago,Illinois,United States,,,,,41.8755616,-87.6244212
+Andrew,Dagostino,dagost37@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Ford Motor Company,,IT Ford College Graduate,Detroit,Michigan,United States,"$90,600.00",,,,42.3315509,-83.0466403
+Rithwik,Pulicherla,pulicher@msu.edu,Computer Science,May 2024 - UG,Male,Not Specified,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Will,Skaggs,skaggswi@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Troy Design & Manufacturing,Automotive,Manufacturing Engineering Intern,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Ethan,Rylko,rylkoeth@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Deloitte,Management Consulting,Cyber Analyst,Detroit,Michigan,United States,"$85,000.00",,,,42.3315509,-83.0466403
+Hemanth,Yalamanchili,yalama12@msu.edu,Computer Science,May 2024 - UG,Male,Asian,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Swathi,Thippireddy,thippire@msu.edu,Computer Science,May 2024 - UG,Female,Asian,,Working,Ford Motor Company,Automotive,Ford College Graduate,San Francisco,California,United States,,,,,37.7792588,-122.4193286
+Landen,Piper,piperlan@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Crowe LLP,,Functional Consultant,Chicago,Illinois,United States,"$79,000.00",,,,41.8755616,-87.6244212
+Nick,Noga,noganico@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Automotive Credit Corporation,Financial Services,IT Project Coordinator,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Evan,Marks,marksev1@msu.edu,Computer Science,May 2024 - UG,Male,Two or More Races,,Working,City of Lansing,"Government - Local, State & Federal",Data Analyst Intern,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Ryan,Le,leryan@msu.edu,Computer Science,May 2024 - UG,Male,Asian,Yes,Working,United Wholesale Mortgage,Financial Services,Associate Salesforce Developer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Ammar,Elkafrawy,elkafra1@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,CODiT Technologies,,Software Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Jack,Sleeman,sleeman5@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,General Motors,,TRACK Software Engineer,Detroit,Michigan,United States,"$87,500.00",,,,42.3315509,-83.0466403
+Juan,Sabogal Olarte,sabogalo@msu.edu,Computer Science,May 2024 - UG,Male,International,,Working,Amazon,,Software Development Engineer,Austin,Texas,United States,"$129,000.00",,,,30.2711286,-97.7436995
+Nash,Longmire,longmir8@msu.edu,Computer Science,May 2024 - UG,Male,Black/African American,Yes,Working,ServiceNow,,Software Developer,San Diego,California,United States,"$120,000.00",,,,32.7174202,-117.162772
+Ashley,Tran,tranash3@msu.edu,Computer Science,May 2024 - UG,Female,Asian,Yes,Working,MSU College of Engineering,Higher Education,Web Content Administrator,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Joe,Davis,davis320@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Auto-Owners Insurance Company,Information Technology,Associate Software Developer,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Paulina,Bies,biespaul@msu.edu,Computer Science,May 2024 - UG,Female,White,Yes,Working,US Signal Company,Telecommunications,,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Joe,Baran,baranjo1@msu.edu,Computer Science,May 2024 - UG,Male,White,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Will,Wilson,wils1655@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,PDX Slots,Internet & Software,Lead Game Designer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Jacob,Yax,yaxjacob@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Magna International,Automotive,Support Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Matt,Crandall,cranda89@msu.edu,Computer Science,May 2024 - UG,Male,Two or More Races,Yes,Working,MSU,Higher Education,On-Call Service/Maintenance,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Joel,Marshall,marsh513@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Firefly Drone Shows,Electronic & Computer Hardware,Drone Tech,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Baran,Manti,mantibar@msu.edu,Computer Science,May 2024 - UG,Male,International,Yes,Working,i3 verticals,Other Industries,,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Jacob,Louden,loudenja@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Ford Motor Company,Automotive,IT Quality Intern,Detroit,Michigan,United States,"$44,553.60",,,,42.3315509,-83.0466403
+Paul,Williams,will3730@msu.edu,Computer Science,May 2024 - UG,Male,Not Specified,,Working,Corza Medical,Medical Devices,Data analyst ,Grand Rapids,Michigan,United States,"$60,000.00",,,,42.9632425,-85.6678639
+Malachi,Hollins,hollin74@msu.edu,Computer Science,May 2024 - UG,Male,Two or More Races,,Working,Warner Bros. Discovery,"Journalism, Media & Publishing",Associate Software Engineer ,Boston,Massachusetts,United States,,,,,42.3554334,-71.060511
+Chase,Lichtman,lichtm14@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,ZenaComp Inc.,,Junior Software Developer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Het,Patel,patelh21@msu.edu,Computer Science,May 2024 - UG,Male,Asian,,Working,Delta Dental,Healthcare,Application Developer intern,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Arjun,Gupta,guptaar4@msu.edu,Computer Science,May 2024 - UG,Male,International,,Working,Nutshell,,Software Engineer,Ann Arbor,Michigan,United States,,,,,42.2813722,-83.7484616
+Jacob,Stacy,stacyjac@msu.edu,Computer Science,May 2024 - UG,Male,White,Yes,Working,MSU,Higher Education,Professional Aide,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Caleb,Story,storycal@msu.edu,Computer Science,May 2024 - UG,Male,White,Yes,Working,Gentex Corporation,Automotive,Cloud development ,Zeeland,Michigan,United States,,,,,51.4162975,3.7028061
+Sifatul,Anindho,anindhos@msu.edu,Computer Science,August 2024 - UG,Male,International,,Continuing Education,,,,Fort Collins,Colorado,United States,,Colorado State University,Masters,Computer Science,40.5871782,-105.0770113
+Misha,Lemper,lempermi@msu.edu,Computer Science,December 2023 - UG,Male,International,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Timmy,Wu,wutimmy@msu.edu,Computer Science,May 2024 - UG,Male,Asian,Yes,Working,Hayward Quartz Technology Inc,Manufacturing,Software Developer,San Francisco,California,United States,,,,,37.7792588,-122.4193286
+Aditya,Venkata Krishna,venkatak@msu.edu,Computer Science,August 2024 - UG,Male,Asian,,Working,Ford Motor Company,Automotive,Fcg,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Emily,Goldwater,goldwat2@msu.edu,Computer Science,December 2023 - UG,Female,White,Yes,Working,Bank of America,,Software Engineer,New York,New York,United States,"$105,000.00",,,,40.7127281,-74.0060152
+Jared,Singh Sekhon,singhsek@msu.edu,Computer Science,May 2024 - UG,Male,International,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Doctorate,Computer Science,42.7338254,-84.5546295
+Jared,Bloch,blochjar@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Brooksource,Scientific and Technical Consulting,Openshift Administrator,Lansing,Michigan,United States,"$62,400.00",,,,42.7338254,-84.5546295
+Campbell,Robertson,robe1149@msu.edu,Computer Science,August 2024 - UG,Female,White,,Working,Humana,Healthcare,Third party cyber risk management ,Traverse City,Michigan,United States,,,,,44.7606481,-85.6165976
+Khushi,Vora,vorakhus@msu.edu,Computer Science,December 2023 - UG,Female,International,,Working,PwC,Scientific and Technical Consulting,Cybersecurity Consultant,San Francisco,California,United States,,,,,37.7792588,-122.4193286
+Justin,Masters,maste100@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Electric Power Research Institute,Utilities and Renewable Energy,Contracted software developer ,Detroit,Michigan,United States,"$83,200.00",,,,42.3315509,-83.0466403
+Felix,Liang,liangfel@msu.edu,Computer Science,May 2024 - UG,Male,Asian,,Working,GEICO,Insurance,Software Engineer,Chevy Chase,Maryland,United States,,,,,38.9813699,-77.0849245
+Zach,Morris,morrisz1@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,MSU Facility for Rare Isotope Beams,Research,Software Developer,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Brendan,Murphy,murph700@msu.edu,Computer Science,December 2023 - UG,Male,White,,Working,TalentEi,Human Resources,Software Developer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Roshan,Atluri,atluriro@msu.edu,Computer Science,December 2023 - UG,Male,Asian,,Working,CODiT Technologies,,Software Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Max,Resch,reschmax@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Rocket Companies,Commercial Banking & Credit,Software Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Logan,Kania,kanialog@msu.edu,Computer Science,August 2024 - UG,Male,White,,Working,Humana,Healthcare,Software Engineer,Louisville,Kentucky,United States,,,,,38.2542376,-85.759407
+Jack,Hammond,hammo206@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Dominos,Food & Beverage,Technological Rotation Role,Ann Arbor,Michigan,United States,,,,,42.2813722,-83.7484616
+Ben,Hayes,hayesben@msu.edu,Computer Science,May 2024 - UG,Male,Two or More Races,,Working,"Fast Enterprises, LLC",Internet & Software,Implementation Consultant,Denver,Colorado,United States,,,,,39.7392364,-104.984862
+Alisha,Brenholt,brenholt@msu.edu,Computer Science,May 2024 - UG,Female,White,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Cody,Girard,girardc4@msu.edu,Computer Science,May 2024 - UG,Male,White,,Working,Jackson,Financial Services,Application Security Analyst,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Brendan,Wieferich,wiefer20@msu.edu,Computer Science,May 2024 - UG,Male,White,Yes,Working,Jackson,Financial Services,Software Developer,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Advait,Paliwal,paliwal1@msu.edu,Computer Science,May 2024 - UG,Male,International,,Continuing Education,,,,Providence,Rhode Island,United States,,Brown University,Masters,CS,41.8239891,-71.4128343
+Lily,Hami,hamilily@msu.edu,Computer Science,December 2023 - UG,Female,White,,Working,Expedia Group,,Product Manager,Austin,Texas,United States,"$108,000.00",,,,30.2711286,-97.7436995
+Abigail,Murray,murra328@msu.edu,Computer Science,December 2023 - UG,Female,White,,Continuing Education,,,,Detroit,Michigan,United States,,Michigan State University,Masters,Computer Science,42.3315509,-83.0466403
+Ashu,Acharya,achary16@msu.edu,Computer Science,May 2023 - UG,Male,Asian,,Working,GE,,Digital Technology Leadership Program,Cincinnati,Ohio,United States,"$84,000.00",,,,39.1014537,-84.5124602
+Hemkesh,Agrawal,agrawalh@msu.edu,Computer Science,May 2023 - UG,Male,International,,Working,UniServices Inc,,CTO/Co-Founder,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Evan,Alexander,alexa506@msu.edu,Computer Science,December 2022 - UG,Male,White,,Working,Crowe LLP,,Product Engineer,Grand Rapids,Michigan,United States,"$73,000.00",,,,42.9632425,-85.6678639
+Adam,Anderson,ande2118@msu.edu,Computer Science,May 2023 - UG,Male,Hispanic/Latine,,Working,Amazon,,Software Development Engineer,Seattle,Washington,United States,,,,,47.6038321,-122.330062
+Matt,Anikiej,anikiejm@msu.edu,Computer Science,May 2023 - UG,Male,White,,Continuing Education,,,,Chicago,Illinois,United States,,Northwestern University,Masters,Artificial Intelligence,41.8755616,-87.6244212
+Chandan,Aralikatti,aralikat@msu.edu,Computer Science,December 2022 - UG,Male,Asian,,Working,Google,,Software Engineer II,Boston,Massachusetts,United States,"$176,000.00",,,,42.3554334,-71.060511
+Zane,Aridi,aridizan@msu.edu,Computer Science,May 2023 - UG,Male,White,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Aditya,Ashok,ashokadi@msu.edu,Computer Science,December 2022 - UG,Male,International,,Working,Asset Mark,,Software Engineer,San Francisco,California,United States,,,,,37.7792588,-122.4193286
+Hargun,Atwal,atwalhar@msu.edu,Computer Science,May 2023 - UG,Male,Asian,Yes,Working,NBCUniversal,,Data Engineering Media Tech Associate,Detroit,Michigan,United States,"$90,000.00",,,,42.3315509,-83.0466403
+Jonathan,Ayoub,ayoubjon@msu.edu,Computer Science,May 2023 - UG,Male,White,Yes,Working,U.S. Postal Service,,Computer Analyst /Programmer Associate,Detroit,Michigan,United States,"$84,000.00",,,,42.3315509,-83.0466403
+Rajaditya,Bajaj,bajajraj@msu.edu,Computer Science,August 2023 - UG,Male,International,,Working,MSU,,Professional Aide,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Savvy,Barnes,barne329@msu.edu,Computer Science,May 2023 - UG,Female,White,Yes,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Engineering,42.7338254,-84.5546295
+Carlo,Barths,barthsca@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,Epic Systems,,Software Engineer,Verona,Wisconsin,United States,"$125,000.00",,,,45.4424977,10.985737689444765
+Noah,Behm,behmnoah@msu.edu,Computer Science,December 2022 - UG,Male,White,,Working,Essig PLM,,Junior Software Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Chris,Belack,belackch@msu.edu,Computer Science,December 2022 - UG,Male,White,,Working,DataDock Solutions,,Software Engineer,Pittsburgh,Pennsylvania,United States,,,,,40.4416941,-79.9900861
+Aj,Bensman,bensmana@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,Capital One,,Associate Software Engineer,McLean,Virginia,United States,"$127,000.00",,,,40.4631789,-88.8196613
+Ian,Berriel,berrieli@msu.edu,Computer Science,August 2023 - UG,Male,Hispanic/Latine,,Working,FAAC,,Associate Engineer,Detroit,Michigan,United States,"$72,000.00",,,,42.3315509,-83.0466403
+Shashwat,Bhatia,bhatias6@msu.edu,Computer Science,December 2022 - UG,Male,Asian,,Working,General Motors,,Entry Level Software Engineer,Detroit,Michigan,United States,"$90,000.00",,,,42.3315509,-83.0466403
+Vishnu,Bhupathiraju,bhupathi@msu.edu,Computer Science,May 2023 - UG,Male,Asian,,Working,UnitedHealth Group,,Cyber Security,Detroit,Michigan,United States,"$90,000.00",,,,42.3315509,-83.0466403
+Sadeem,Boji,bojisade@msu.edu,Computer Science,December 2022 - UG,Male,White,,Working,Google,,Code Next Coach,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Nate,Bollman,bollma10@msu.edu,Computer Science,May 2023 - UG,Male,White,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Gram,Boyle,boylegra@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,General Motors,,Manufacturing IT Software Developer,Austin,Texas,United States,,,,,30.2711286,-97.7436995
+Max,Brombach,brombac1@msu.edu,Computer Science,May 2023 - UG,Male,White,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Ettore,Campriani,camprian@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,Amazon,,Software Developer Engineer,Seattle,Washington,United States,,,,,47.6038321,-122.330062
+Chris,Cardimen,cardime2@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,Jackson,,software developer 1,Lansing,Michigan,United States,"$75,000.00",,,,42.7338254,-84.5546295
+Randy,Carnahan,carnah13@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,Humana,,Data Engineer,Detroit,Michigan,United States,"$90,000.00",,,,42.3315509,-83.0466403
+Lexi,Case,caseale4@msu.edu,Computer Science,May 2023 - UG,Female,White,,Working,IBM,,HCT developer,"Washington, D.C.",,United States,"$87,000.00",,,,38.8950368,-77.0365427
+Neha,Challa,challane@msu.edu,Computer Science,December 2022 - UG,Female,Asian,,Working,Johnson Controls,,IT Business Analyst,Milwaukee,Wisconsin,United States,,,,,43.0386475,-87.9090751
+Chris,Chen,chenzh52@msu.edu,Computer Science,December 2022 - UG,Male,International,Yes,Continuing Education,,,,Chicago,Illinois,United States,,Northwestern University,Masters,,41.8755616,-87.6244212
+Tom,Choi,choijo14@msu.edu,Computer Science,May 2023 - UG,Male,International,,Working,Ansys,,R&D Engineer,Lansing,Michigan,United States,"$90,000.00",,,,42.7338254,-84.5546295
+Shoimya,Chowdhury,chowdh83@msu.edu,Computer Science,May 2023 - UG,Male,International,,Working,Raymond James Financial,,Technical specialist,Detroit,Michigan,United States,"$70,000.00",,,,42.3315509,-83.0466403
+Cole,Coughlin,coughl52@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,Auto-Owners Insurance Company,,Associate Software Developer,Grand Rapids,Michigan,United States,"$69,000.00",,,,42.9632425,-85.6678639
+Albert,Crooks,crooksa1@msu.edu,Computer Science,May 2023 - UG,Male,White,Yes,Working,All American Clothespins,,Co-Owner,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Jack,Cruz,cruzjack@msu.edu,Computer Science,August 2023 - UG,Male,White,,Working,Trinity Health MI,,Intern of the CIO,Grand Rapids,Michigan,United States,,,,,42.9632425,-85.6678639
+Daniyal,Dar,dardaniy@msu.edu,Computer Science,December 2022 - UG,Male,International,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Gigi,Dauphinee,dauphin2@msu.edu,Computer Science,May 2023 - UG,Female,White,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Chase,Devries,devri157@msu.edu,Computer Science,December 2022 - UG,Male,White,,Working,Rapid Development Group,,Junior Software Developer,Grand Rapids,Michigan,United States,"$60,000.00",,,,42.9632425,-85.6678639
+Alhassan,Diallo,dialloal@msu.edu,Computer Science,May 2023 - UG,Male,Black/African American,Yes,Working,Comerica,,Technology Cyber Development Program,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Matt,Dirisio,dirisiom@msu.edu,Computer Science,May 2023 - UG,Male,White,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Eshan,Dixit,dixitesh@msu.edu,Computer Science,May 2023 - UG,Male,Asian,,Working,General Motors,,Software Engineer 1,Detroit,Michigan,United States,"$87,000.00",,,,42.3315509,-83.0466403
+Stanley,Duru,durustan@msu.edu,Computer Science,May 2023 - UG,Male,Black/African American,,Working,Citi,,Software Development Analyst,Tampa,Florida,United States,"$80,000.00",,,,27.9477595,-82.458444
+Dean,Eggenberger,eggenbe6@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,Amazon,,Software Development Engineer,Seattle,Washington,United States,,,,,47.6038321,-122.330062
+Jannik,Eisenlohr,eisenl10@msu.edu,Computer Science,May 2023 - UG,Male,White,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Doctorate,Computer Science,42.7338254,-84.5546295
+Aidan,Erickson,erick278@msu.edu,Computer Science,May 2023 - UG,Male,White,,Continuing Education,,,,Pittsburgh,Pennsylvania,United States,,Carnegie Mellon University,Masters,Computer Engineering,40.4416941,-79.9900861
+Josh,Erno,ernojosh@msu.edu,Computer Science,May 2023 - UG,Male,White,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Owen,Evey,eveyowen@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,Humana,,Software Engineer 2,Dallas,Texas,United States,"$104,000.00",,,,32.7762719,-96.7968559
+Carson,Farrell,farre148@msu.edu,Computer Science,December 2022 - UG,Male,White,Yes,Working,Ford Motor Company,,Pega Developer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Nate,Ferry,ferrynat@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,Raytheon,,Cyber Engineer,"Washington, D.C.",,United States,"$125,000.00",,,,38.8950368,-77.0365427
+Nick,Filerman,filerman@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,Ford Motor Company,,ET FCG,Detroit,Michigan,United States,"$88,000.00",,,,42.3315509,-83.0466403
+Darien,Ford,forddar2@msu.edu,Computer Science,December 2022 - UG,Male,White,,Working,Kawasaki Robotics Inc.,,Field service engineer,Detroit,Michigan,United States,"$72,800.00",,,,42.3315509,-83.0466403
+Keerthi,Gogineni,goginen8@msu.edu,Computer Science,May 2023 - UG,Female,International,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Caroline,Gormely,gormelyc@msu.edu,Computer Science,May 2023 - UG,Female,White,,Working,Google,,Software Engineer,San Francisco,California,United States,"$140,000.00",,,,37.7792588,-122.4193286
+Brian,Greifenberg,greifen1@msu.edu,Computer Science,December 2022 - UG,Male,White,,Working,DTE Energy Corporation,,Data Analyst,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Thad,Greiner,greine30@msu.edu,Computer Science,May 2023 - UG,Male,White,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Kirsten,Gross,grosskir@msu.edu,Computer Science,May 2023 - UG,Female,White,,Working,Infineon Technologies,,Engineering Rotational Develepment Program (ERDP),Detroit,Michigan,United States,"$91,000.00",,,,42.3315509,-83.0466403
+Simon,Harmata,harmatas@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,Lockheed Martin,,Software Engineer,Denver,Colorado,United States,"$84,800.00",,,,39.7392364,-104.984862
+Jackson,Haugen,haugenj1@msu.edu,Computer Science,May 2023 - UG,Male,White,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Ian,Hay,hayian@msu.edu,Computer Science,December 2022 - UG,Male,White,,Working,IBM,,Associate Application Developer,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Jay,Ho,hophuc@msu.edu,Computer Science,May 2023 - UG,Female,Asian,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Matt,Hofmann,hofman30@msu.edu,Computer Science,December 2022 - UG,Male,White,,Working,Jackson,,Software Developer,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Gage,Hohwart,hohwartg@msu.edu,Computer Science,May 2023 - UG,Male,White,Yes,Working,Ascent Cloud,,Software Developer,Detroit,Michigan,United States,"$82,300.00",,,,42.3315509,-83.0466403
+Jiahui,Hu,hujiahui@msu.edu,Computer Science,May 2023 - UG,Female,International,,Working,MSU,,Professional Aide,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Drew,Hubble,hubbledr@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,MSU,,Operations Coordinator,Lansing,Michigan,United States,"$45,760.00",,,,42.7338254,-84.5546295
+Cameron,Hurley,hurleyc6@msu.edu,Computer Science,December 2022 - UG,Male,White,,Working,Ford Motor Company,,Security Service - IAM Azure B2C Cloud Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Sam,Hus,hussamue@msu.edu,Computer Science,May 2023 - UG,Male,White,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Muhammad,Huwio,huwiomuh@msu.edu,Computer Science,May 2023 - UG,Male,Black/African American,,Working,JPMorgan Chase & Co.,,Software Engineer,New York,New York,United States,,,,,40.7127281,-74.0060152
+Josh,Ilkka,ilkkajos@msu.edu,Computer Science,May 2023 - UG,Male,Two or More Races,,Working,Textron,,Software Engineer,Tampa,Florida,United States,"$78,500.00",,,,27.9477595,-82.458444
+Quinn,James,jamesqui@msu.edu,Computer Science,December 2022 - UG,Male,White,,Working,Red Hat,,Software Engineer,Columbus,Ohio,United States,"$105,000.00",,,,39.9622601,-83.0007065
+Mounika,Jetti,jettimou@msu.edu,Computer Science,December 2022 - UG,Female,International,,Working,IP Heights,,Analyst,Edison,New Jersey,United States,,,,,40.518157,-74.4113926
+Shrey,Jindal,jindalsh@msu.edu,Computer Science,December 2022 - UG,Male,International,,Working,Amazon,,Software Development Engineer,Seattle,Washington,United States,"$129,000.00",,,,47.6038321,-122.330062
+Zack,Joyce,joycezac@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,Rapp,,Software Engineer in Test,Chicago,Illinois,United States,"$70,000.00",,,,41.8755616,-87.6244212
+Averi,Justice,justic35@msu.edu,Computer Science,December 2022 - UG,Female,White,,Working,TechSmith Corporation,,Software Engineer I,Lansing,Michigan,United States,"$85,000.00",,,,42.7338254,-84.5546295
+Suraj,Karthikeyan,karthik3@msu.edu,Computer Science,May 2023 - UG,Male,International,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Adam,Kasumovic,kasumovi@msu.edu,Computer Science,May 2023 - UG,Male,Two or More Races,,Working,Ghamut,,Data Scientist,Lansing,Michigan,United States,"$86,000.00",,,,42.7338254,-84.5546295
+Joseph,Kasza,kaszajos@msu.edu,Computer Science,December 2022 - UG,Male,White,,Working,Principal Financial Group,,Software Engineer,Des Moines,Iowa,United States,,,,,41.5868654,-93.6249494
+Charles,Kellogg,kellog62@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,MSU,,Professional Aide,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Sean,Kelly,kellys28@msu.edu,Computer Science,May 2023 - UG,Male,White,Yes,Working,NETSCOUT,,Software Engineer,Detroit,Michigan,United States,"$95,000.00",,,,42.3315509,-83.0466403
+Will,Kelly,kellywi4@msu.edu,Computer Science,May 2023 - UG,Male,Black/African American,,Working,General Motors,,Sotware Developer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+David,Khankin,khankind@msu.edu,Computer Science,May 2023 - UG,Male,White,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Ashu,Kher,kherashu@msu.edu,Computer Science,December 2022 - UG,Male,Asian,,Working,The Vanguard Group,,Associate Software Engineer,Philadelphia,Pennsylvania,United States,"$90,000.00",,,,39.9527237,-75.1635262
+Doyeon,Kim,kimdoye3@msu.edu,Computer Science,December 2022 - UG,Female,Asian,,Working,Ultium Cells,,IT Specialist,Warren,Ohio,United States,,,,,41.8119602,-79.2654452
+Samantha,Kissel,kisselsa@msu.edu,Computer Science,May 2023 - UG,Female,White,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Nicholas,Klein,kleinn10@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,Green Zone Environmental,,Full Stack Software Developer,Bradenton,Florida,United States,"$57,200.00",,,,27.4989278,-82.5748194
+Joseph,Klynstra,klynstr8@msu.edu,Computer Science,December 2022 - UG,Male,White,,Working,GreenStone Farm Credit Services,,Application Developer,Lansing,Michigan,United States,"$70,000.00",,,,42.7338254,-84.5546295
+Tommy,Kocab,kocabtho@msu.edu,Computer Science,December 2022 - UG,Male,White,,Working,"Kunz, Leigh and Associates",,Software Developer Apprentice,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Varun,Kodandapuram,kodanda1@msu.edu,Computer Science,May 2023 - UG,Male,International,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Anurag,Kompalli,kompalli@msu.edu,Computer Science,May 2023 - UG,Male,Asian,,Working,IBM,,Software Engineer,Austin,Texas,United States,"$114,000.00",,,,30.2711286,-97.7436995
+Trenton,Lach,lachtren@msu.edu,Computer Science,December 2022 - UG,Male,White,,Working,Auto-Owners Insurance Company,,Software Developer,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Brandon,Lam,lambrand@msu.edu,Computer Science,May 2023 - UG,Male,Asian,Yes,Working,BS&A Software,,Software Developer,Lansing,Michigan,United States,"$78,500.00",,,,42.7338254,-84.5546295
+Kaezar,Leonard,leona245@msu.edu,Computer Science,May 2023 - UG,Male,Black/African American,Yes,Working,Professional Metal Works,,Press Brake Operator,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Zongyuan,Li,lizongy1@msu.edu,Computer Science,May 2023 - UG,Male,International,,Working,Amazon,,Software Development Engineer,Seattle,Washington,United States,"$129,000.00",,,,47.6038321,-122.330062
+Nick,Lim,limnicho@msu.edu,Computer Science,December 2022 - UG,Male,Two or More Races,,Working,Georgia Institute of Technology,,Software Engineer 1,Huntsville,Alabama,United States,"$82,000.00",,,,34.729847,-86.5859011
+John,Lin,linjohn3@msu.edu,Computer Science,December 2022 - UG,Male,Asian,,Working,United Wholesale Mortgage,,Dev-X Trainee,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Lemmy,Lin,linbingz@msu.edu,Computer Science,May 2023 - UG,Male,International,Yes,Working,Stoneridge,,Embedded Software Engineer,Detroit,Michigan,United States,"$80,000.00",,,,42.3315509,-83.0466403
+Jeffrey,Lo,lojeffre@msu.edu,Computer Science,December 2022 - UG,Male,Asian,,Working,Sandia National Laboratories,,Software Engineer,San Francisco,California,United States,"$124,400.00",,,,37.7792588,-122.4193286
+Avi,Lochab,lochabav@msu.edu,Computer Science,May 2023 - UG,Male,International,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+William,Long,longwil7@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,AF Group,,Data Engineer,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Christian,Lulaj,lulajchr@msu.edu,Computer Science,December 2022 - UG,Male,White,,Working,Medical Database,,Software Developer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Muhan,Luo,luomuhan@msu.edu,Computer Science,May 2023 - UG,Male,Asian,,Working,Security Innovation,,Cybersecurity Engineer,Seattle,Washington,United States,"$108,000.00",,,,47.6038321,-122.330062
+Nicholas,Ly,lynichol@msu.edu,Computer Science,May 2023 - UG,Male,Asian,Yes,Working,Open Systems Technologies,,Web Developer,Grand Rapids,Michigan,United States,,,,,42.9632425,-85.6678639
+Ben,Lynch,lynchbe1@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,Accenture,,Technology Development Analyst,Houston,Arkansas,United States,"$83,400.00",,,,29.7589382,-95.3676974
+Mary,Maclachlan,maclac13@msu.edu,Computer Science,December 2022 - UG,Female,White,,Working,Ford Motor Company,,ET FCG,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Daniel,Magaway,magawayd@msu.edu,Computer Science,August 2023 - UG,Male,Two or More Races,,Working,Roosevelt Innovations,,Associate Knowledge Engineer,Lansing,Michigan,United States,"$64,000.00",,,,42.7338254,-84.5546295
+Drew,Markel,markeldr@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,Auto-Owners Insurance Company,,Associate Software Developer II,Lansing,Michigan,United States,"$70,000.00",,,,42.7338254,-84.5546295
+Emmanuel,Marudo,marudoem@msu.edu,Computer Science,May 2023 - UG,Male,Asian,,Working,SkillStorm,,Business Analyst,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Dom,Mazza,mazzadom@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,Lockheed Martin,,Embedded Software Engineer,Denver,Colorado,United States,"$90,000.00",,,,39.7392364,-104.984862
+Joey,Meng,mengjoey@msu.edu,Computer Science,May 2023 - UG,Male,International,,Working,MSU,,Professional Aide,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Jason,Mih,mihjason@msu.edu,Computer Science,May 2023 - UG,Male,Two or More Races,,Working,Stryker,,RISE Software Engineer,Kalamazoo,Michigan,United States,,,,,42.291707,-85.5872286
+Michael,Montgomery,montg281@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,PCE Systems,,System Developer,Detroit,Michigan,United States,"$65,000.00",,,,42.3315509,-83.0466403
+Michael,Monticciolo,monticc4@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,"Elonic, Inc.",,Founder,New York,New York,United States,,,,,40.7127281,-74.0060152
+Tate,Moorhouse,moorhou4@msu.edu,Computer Science,August 2023 - UG,Male,White,,Working,GE,,Systems engineer intern,Grand Rapids,Michigan,United States,,,,,42.9632425,-85.6678639
+Sonia,Moozhayil,moozhayi@msu.edu,Computer Science,May 2023 - UG,Female,Asian,,Working,General Motors,,Software Engineer Rotational Program,Detroit,Michigan,United States,"$85,000.00",,,,42.3315509,-83.0466403
+Clarence,Nanamori,nanamori@msu.edu,Computer Science,May 2023 - UG,Male,Asian,,Working,The David J. Joseph Company,,Software Engineer,Cincinnati,Ohio,United States,"$82,000.00",,,,39.1014537,-84.5124602
+Daniel,Nguyen,nguye894@msu.edu,Computer Science,May 2023 - UG,Male,Asian,Yes,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Thinh,Nguyen,nguye685@msu.edu,Computer Science,May 2023 - UG,Male,Asian,Yes,Continuing Education,,,,Madison,Wisconsin,United States,,University of Wisconsin,Doctorate,Computer Science,43.074761,-89.3837613
+Tyler,Nichols,nicho551@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,United Wholesale Mortgage,,Associate Salesforce Developer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Naffy,Nihal,nihalnaf@msu.edu,Computer Science,May 2023 - UG,Male,Asian,Yes,Working,General Mills,,Data Engineer,Detroit,Michigan,United States,"$87,000.00",,,,42.3315509,-83.0466403
+Tim,Nwanze,nwanzec2@msu.edu,Computer Science,May 2023 - UG,Male,Black/African American,,Working,Amazon,,Software Development Engineer,"Washington, D.C.",,United States,"$129,000.00",,,,38.8950368,-77.0365427
+Frank,Nylander,nylande6@msu.edu,Computer Science,December 2022 - UG,Male,White,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Noah,O'Bryan,obryanno@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,Stellantis,,Software Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Treasure,Ogundiran,ogundir2@msu.edu,Computer Science,May 2023 - UG,Male,International,,Working,LinkedIn Corporation,,Software Engineer,"Washington, D.C.",,United States,"$131,000.00",,,,38.8950368,-77.0365427
+Aidan,O'Rourke,orourk68@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,General Motors,,Software Developer,Detroit,Michigan,United States,"$87,000.00",,,,42.3315509,-83.0466403
+Samuel,Oviasu,oviasusa@msu.edu,Computer Science,December 2022 - UG,Male,Black/African American,,Working,Delta Dental,,Associate Security Administrator,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Joseph,Pallipadan,pallipad@msu.edu,Computer Science,May 2023 - UG,Male,International,,Working,Palantir Technologies,,Forward deployed engineer,New York,New York,United States,"$145,000.00",,,,40.7127281,-74.0060152
+Sarah,Palmer,palme177@msu.edu,Computer Science,May 2023 - UG,Female,White,,Working,General Mills,,Digital and Technology Rotational Program,Minneapolis,Minnesota,United States,"$85,000.00",,,,44.9772995,-93.2654692
+Connor,Pangle,pangleco@msu.edu,Computer Science,December 2022 - UG,Male,White,,Working,"Fast Enterprises, LLC",,Implementation Consultant,Minneapolis,Minnesota,United States,"$95,000.00",,,,44.9772995,-93.2654692
+Nikit,Parakh,parakhni@msu.edu,Computer Science,December 2022 - UG,Male,International,,Continuing Education,,,,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Jacob,Pavlawk,pavlawk1@msu.edu,Computer Science,December 2022 - UG,Male,White,Yes,Working,Dematic,,Associate Software Engineer,Bay City,Michigan,United States,"$76,000.00",,,,43.5962107,-83.8881711
+Brylee,Pavlik,pavlikbr@msu.edu,Computer Science,May 2023 - UG,Female,White,,Working,General Mills,,Associate Machine Learning Engineer,Lansing,Michigan,United States,"$87,000.00",,,,42.7338254,-84.5546295
+Ricardo,Paz,pazricar@msu.edu,Computer Science,May 2023 - UG,Male,Hispanic/Latine,Yes,Working,Jackson,,Cloud Solution Engineer,Lansing,Michigan,United States,"$80,000.00",,,,42.7338254,-84.5546295
+Ricky,Pennepalli,pennepal@msu.edu,Computer Science,May 2023 - UG,Male,Asian,,Working,General Mills,,ML Operations Analyst,Minneapolis,Minnesota,United States,,,,,44.9772995,-93.2654692
+Rashon,Poole,pooleras@msu.edu,Computer Science,December 2022 - UG,Male,Black/African American,,Continuing Education,,,,San Francisco,California,United States,,Stanford University,Masters,Computer Science,37.7792588,-122.4193286
+Tanawan,Premsri,premsrit@msu.edu,Computer Science,May 2023 - UG,Male,International,Yes,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Doctorate,Computer Science,42.7338254,-84.5546295
+Olivia,Qiu,qiuolivi@msu.edu,Computer Science,May 2023 - UG,Female,Asian,,Working,Expedia Group,,Software Development Engineer,Seattle,Washington,United States,"$120,000.00",,,,47.6038321,-122.330062
+Eric,Raines,raineser@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,Boeing,,Entry Level Software Engineer,St. Louis,Missouri,United States,"$90,000.00",,,,38.6280278,-90.1910154
+Veeresh,Rajendran,rajend23@msu.edu,Computer Science,May 2023 - UG,Male,Asian,,Working,Physicians Health Plan,,Associate Applications Developer,Lansing,Michigan,United States,"$70,000.00",,,,42.7338254,-84.5546295
+Katherine,Rochon,rochonk2@msu.edu,Computer Science,December 2022 - UG,Female,Not Specified,,Working,"Alchemie Solutions, Inc.",,Software Engineer,Detroit,Michigan,United States,"$60,000.00",,,,42.3315509,-83.0466403
+Santiago,Rodriguez-Papa,rodsan@msu.edu,Computer Science,May 2023 - UG,Male,International,,Working,Apple,,Software Engineer ICT3,San Francisco,California,United States,"$210,000.00",,,,37.7792588,-122.4193286
+Joe,Romain,romainj2@msu.edu,Computer Science,May 2023 - UG,Male,White,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Kate,Roney,roneyka1@msu.edu,Computer Science,December 2022 - UG,Female,White,,Working,Bosch,,Associate Software Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+John,Rumler,rumlerjo@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,Auto-Owners Insurance Company,,Associate Software Developer II,Lansing,Michigan,United States,"$65,000.00",,,,42.7338254,-84.5546295
+Blake,Sabbagh,sabbagh9@msu.edu,Computer Science,December 2022 - UG,Male,Two or More Races,,Working,Cisco Systems,,Software Engineer,San Francisco,California,United States,,,,,37.7792588,-122.4193286
+Thalia,Sakowicz,sakowic1@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,MoiiAi Inc.,,ML Software Engineer,Lansing,Michigan,United States,"$84,000.00",,,,42.7338254,-84.5546295
+Anthony,Salem,saleman1@msu.edu,Computer Science,December 2022 - UG,Male,White,Yes,Working,BGM Engineering Inc,,Software Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Michael,Schester,scheste3@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,General Motors,,Software Developer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Samantha,Sebestyen,sebesty1@msu.edu,Computer Science,May 2023 - UG,Female,White,,Working,Cigna Group,,Senior Analyst,Bloomfield,Connecticut,United States,"$81,000.00",,,,40.7510398,-92.4143872
+Ayaan,Shaik,shaikaya@msu.edu,Computer Science,May 2023 - UG,Male,International,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Jonathan,Shomali,shomali1@msu.edu,Computer Science,December 2022 - UG,Male,White,,Working,GE,,Software Engineer,Grand Rapids,Michigan,United States,,,,,42.9632425,-85.6678639
+Michael,Sobieski,sobiesk4@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,Comcast,,Software Developer,Philadelphia,Pennsylvania,United States,,,,,39.9527237,-75.1635262
+Kartik,Soni,sonikart@msu.edu,Computer Science,December 2022 - UG,Male,Asian,,Working,Leggett and Platt Automotive,,Embedded Software Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Michael,Stanley,stanl145@msu.edu,Computer Science,May 2023 - UG,Male,White,Yes,Working,ITW Food Technology Group,,Embedded Software Engineering,Dayton,Ohio,United States,"$72,000.00",,,,39.7589478,-84.1916069
+David,Sugai,sugaidav@msu.edu,Computer Science,December 2022 - UG,Male,Asian,,Working,Auto-Owners Insurance Company,,Software Developer,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Marco,Suriano,surianom@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,General Motors,,TRACK Engineer,Detroit,Michigan,United States,"$87,000.00",,,,42.3315509,-83.0466403
+Akhil,Tatineni,tatinen6@msu.edu,Computer Science,May 2023 - UG,Male,Asian,,Working,General Motors,,Software Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Nandini,Tengli,tenglina@msu.edu,Computer Science,May 2023 - UG,Female,International,,Working,Textron,,Software Engineer 2,Williamsport,Pennsylvania,United States,"$62,400.00",,,,41.2411556,-77.0011096
+Jotham,Teshome,teshomej@msu.edu,Computer Science,December 2022 - UG,Male,Black/African American,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Alexis,Tochiki,tochikia@msu.edu,Computer Science,May 2023 - UG,Female,Asian,,Working,USAA,,Software Engineer,San Antonio,Texas,United States,"$70,000.00",,,,29.4246002,-98.4951405
+Michael,Umanskiy,umanskiy@msu.edu,Computer Science,December 2022 - UG,Male,White,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Srijith,Venkateshwaran,venkat34@msu.edu,Computer Science,May 2023 - UG,Male,Asian,,Working,Ford Motor Company,,Software Engineer 1,Detroit,Michigan,United States,"$88,800.00",,,,42.3315509,-83.0466403
+Aryan,Verma,vermaary@msu.edu,Computer Science,May 2023 - UG,Male,Asian,,Working,Humana,,Software Engineer 2,Detroit,Michigan,United States,"$85,000.00",,,,42.3315509,-83.0466403
+Gatesana,Vongphachanh,vongpha3@msu.edu,Computer Science,December 2022 - UG,Female,Asian,Yes,Working,AF Group,,Data Engineer,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Samuel,Ward,wardsam5@msu.edu,Computer Science,December 2022 - UG,Male,White,Yes,Working,Calvin College,,Full-stack Web Developer,Grand Rapids,Michigan,United States,"$56,160.00",,,,42.9632425,-85.6678639
+Drew,White,whitedr1@msu.edu,Computer Science,May 2023 - UG,Male,Black/African American,,Working,Nutshell CRM,,Software Developer,Detroit,Michigan,United States,"$75,000.00",,,,42.3315509,-83.0466403
+Katherine,White,whitek49@msu.edu,Computer Science,May 2023 - UG,Female,White,,Working,IBM,,Software Development Engineer,Rochester,Minnesota,United States,"$102,000.00",,,,43.157285,-77.615214
+Lucas,Wilkerson,wilker56@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,Ascent Cloud,,Software Developer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+William,Wyrick,wyrickwi@msu.edu,Computer Science,August 2023 - UG,Male,Hispanic/Latine,Yes,Working,General Motors,,Software Developer,Detroit,Michigan,United States,"$87,500.00",,,,42.3315509,-83.0466403
+Jon,Yamashita,yamash13@msu.edu,Computer Science,May 2023 - UG,Male,Two or More Races,,Working,Northrop Grumman Corporation,,Associate Software Engineer,Colorado Springs,Colorado,United States,"$81,300.00",,,,38.8339578,-104.825348
+Hithesh,Yedlapati,yedlapat@msu.edu,Computer Science,December 2022 - UG,Male,Asian,,Working,Brembo,,Data analyst,Homer,Michigan,United States,"$83,000.00",,,,59.6454064,-151.5445643
+Aref,Zeitoun,zeitouna@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,General Mills,,Data Engineer,Detroit,Michigan,United States,"$87,000.00",,,,42.3315509,-83.0466403
+Shaojie,Zhang,zhan1527@msu.edu,Computer Science,May 2023 - UG,Male,International,,Continuing Education,,,,Boston,Massachusetts,United States,,Northeastern University,Masters,Computer Science,42.3554334,-71.060511
+Zhenhao,Zhao,zhaozhe9@msu.edu,Computer Science,May 2023 - UG,Male,International,,Continuing Education,,,,Champaign,Illinois,United States,,University of Illinois - Urbana Champaign,Masters,Computer Science,40.1164841,-88.2430932
+Junchi,Zhu,zhujunch@msu.edu,Computer Science,December 2022 - UG,Male,International,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Yanjia,Zhu,zhuyanji@msu.edu,Computer Science,May 2023 - UG,Male,International,,Continuing Education,,,,New York,New York,United States,,New York University,Masters,Other - select if not in list,40.7127281,-74.0060152
+Jake,Zolkosky,zolkosky@msu.edu,Computer Science,May 2023 - UG,Male,White,Yes,Working,Auto-Owners Insurance Company,,Software Developer,Lansing,Michigan,United States,"$67,000.00",,,,42.7338254,-84.5546295
+Han,Zuo,zuohanwe@msu.edu,Computer Science,May 2023 - UG,Male,Asian,,Working,Deloitte,,Cyber security analyst,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Marv,Zurek,zurekmar@msu.edu,Computer Science,May 2023 - UG,Male,White,,Working,TEKsystems,,Modern Tech Developer,Lansing,Michigan,United States,"$72,800.00",,,,42.7338254,-84.5546295
+Moez,Abbes,abbesmoe@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,TATA Consultancy Services,,,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Adeboye,Adegbenro,adegben1@msu.edu,Computer Science,December 2021 - UG,Male,Black/African American,,Working,General Motors,,Global Product Development - Software Engineering,Detroit,Michigan,United States,"$84,000.00",,,,42.3315509,-83.0466403
+Daniel,Adu-Djan,adudjand@msu.edu,Computer Science,May 2022 - UG,Male,International,,Working,Google,,Software Engineer,San Francisco,California,United States,"$142,000.00",,,,37.7792588,-122.4193286
+Justin,Armstrong,armst369@msu.edu,Computer Science,May 2022 - UG,Male,White,Yes,Working,Hexagon,,Aftermarket Parts Representative,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Zach,Arnold,arnoldza@msu.edu,Computer Science,December 2021 - UG,Male,White,,Working,Amazon,,Software Development Engineer,Detroit,Michigan,United States,"$129,000.00",,,,42.3315509,-83.0466403
+Akhil,Arora,aroraakh@msu.edu,Computer Science,May 2022 - UG,Male,Asian,,Working,Microsoft,,Software Engineer,Seattle,Washington,United States,,,,,47.6038321,-122.330062
+Jackson,Baldwin,baldw226@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,Epic Systems,,Software Developer,Madison,Wisconsin,United States,"$115,000.00",,,,43.074761,-89.3837613
+Ian,Barber,barberi4@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,Ford Motor Company,,Entry Level Software Engineer,Detroit,Michigan,United States,"$78,000.00",,,,42.3315509,-83.0466403
+Dylan,Boyd,boyddyla@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,"Sensors, Inc.",,Software Engineer,Ann Arbor,Michigan,United States,,,,,42.2813722,-83.7484616
+Tyler,Brush,brushty1@msu.edu,Computer Science,May 2022 - UG,Male,White,Yes,Working,Dynatrace,,Ace Consultant,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Kaela,Burger,burgerka@msu.edu,Computer Science,May 2022 - UG,Female,Two or More Races,,Working,Amazon,,Software Development Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Chad,Burnham,burnha42@msu.edu,Computer Science,May 2022 - UG,Male,White,Yes,Working,Merkle,,Developer,Detroit,Michigan,United States,"$60,000.00",,,,42.3315509,-83.0466403
+Brandon,Byiringiro,byiring2@msu.edu,Computer Science,May 2022 - UG,Male,Black/African American,,Working,Atlassian,,Entry Level Software Engineer,New York,New York,United States,"$117,900.00",,,,40.7127281,-74.0060152
+Victoria,Cao,caovicto@msu.edu,Computer Science,December 2021 - UG,Female,Asian,,Working,Microsoft,,Software Developer,Seattle,Washington,United States,"$121,000.00",,,,47.6038321,-122.330062
+Everett,Case,caseever@msu.edu,Computer Science,December 2021 - UG,Male,White,,Working,MSU,,Web Developer/Information Technologist I,Lansing,Michigan,United States,"$63,000.00",,,,42.7338254,-84.5546295
+Jacob,Caurdy,caurdyja@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,Mars Inc,,Data Analyst,Chicago,Illinois,United States,"$84,000.00",,,,41.8755616,-87.6244212
+Jerry,Chang,changc91@msu.edu,Computer Science,May 2022 - UG,Male,International,,Continuing Education,,,,Ottawa,Ontario,Canada,,Algonquin College,Certificate,Aviation Flight Technology,45.4208777,-75.6901106
+Samuel,Chen,chensam2@msu.edu,Computer Science,December 2021 - UG,Male,Two Or More Races,,Working,Amazon,,Software Development Engineer,Seattle,Washington,United States,"$129,000.00",,,,47.6038321,-122.330062
+Claire,Cherng,cherngcl@msu.edu,Computer Science,May 2022 - UG,Female,Asian,,Working,Optum,,TDP Associate,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Ethan,Colbert,colber31@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,Continental AG,,Associate Software Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Andrew,Decrem,decreman@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,KBRA,,Data Analyst,New York,New York,United States,,,,,40.7127281,-74.0060152
+Aidan,Delfuoco,delfuoc1@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,JPMorgan Chase & Co.,,Software Engineer,Columbus,Ohio,United States,"$80,000.00",,,,39.9622601,-83.0007065
+Yichen,Ding,dingyic1@msu.edu,Computer Science,May 2022 - UG,Male,International,,Continuing Education,,,,Pittsburgh,Pennsylvania,United States,,University of Pennsylvania,Masters,Data Science,40.4416941,-79.9900861
+Valentino,Dore,dorevale@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,The Local Universe,,CEO & Founder,San Francisco,California,United States,,,,,37.7792588,-122.4193286
+Patrick,Doyle,doylepa9@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,GreenStone Farm Credit Services,,Data Engineer,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Amanuel,Engeda,engedaam@msu.edu,Computer Science,December 2021 - UG,Male,Black/African American,,Working,Amazon,,Associate Software Developer I,Lansing,Michigan,United States,"$129,000.00",,,,42.7338254,-84.5546295
+Quinton,Farrar,farrarqu@msu.edu,Computer Science,May 2022 - UG,Male,Two or More Races,,Working,GE,,Embedded Software Engineer,Grand Rapids,Michigan,United States,"$85,000.00",,,,42.9632425,-85.6678639
+Hannah,Francisco,franc240@msu.edu,Computer Science,May 2022 - UG,Female,White,,Working,General Mills,,Digital and Technology Engineer,Minneapolis,Minnesota,United States,,,,,44.9772995,-93.2654692
+Jacob,Frank,frankja2@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,Bosch,,Associate Software Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Sarah,Funk,funksar1@msu.edu,Computer Science,August 2022 - UG,Female,White,,Working,Target,,Entry Level Software Engineer,Minneapolis,Minnesota,United States,"$80,000.00",,,,44.9772995,-93.2654692
+Kory,Gabrielson,gabrie76@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,General Motors,,Good track software engineer,Detroit,Michigan,United States,"$84,000.00",,,,42.3315509,-83.0466403
+Andrew,Haakenson,haakens1@msu.edu,Computer Science,May 2022 - UG,Male,Two or More Races,,Working,Epic Systems,,Software Developer,Madison,Wisconsin,United States,"$120,000.00",,,,43.074761,-89.3837613
+Andrew,Haas,haasandr@msu.edu,Computer Science,May 2022 - UG,Male,White,Yes,Continuing Education,,,,Lafayette,Indiana,United States,,Purdue University,Masters,Computer Science,30.2262187,-92.0178202
+Steven,Hagopian,hagopi10@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,AmRock Financial LLC,,Associate Software Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Jonathon,Harkness,harkne25@msu.edu,Computer Science,May 2022 - UG,Male,Two or More Races,,Working,Ally Financial Inc,,Software Developer,Detroit,Michigan,United States,"$80,000.00",,,,42.3315509,-83.0466403
+Matthew,Harper,harper62@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,Atomic Object,,Software Developer,Grand Rapids,Michigan,United States,,,,,42.9632425,-85.6678639
+Shaheer,Hasan,hasansh3@msu.edu,Computer Science,December 2021 - UG,Male,Asian,,Working,Boeing,,Entry Level Digital Acceleration Mission Systems Software Engineer,St. Louis,Missouri,United States,"$74,000.00",,,,38.6280278,-90.1910154
+Ankit,Hegde,hegdeank@msu.edu,Computer Science,May 2022 - UG,Male,Asian,,Working,General Motors,,Software Developer,Austin,Texas,United States,,,,,30.2711286,-97.7436995
+Matt,Heilman,heilma10@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,GE,,Engineer,Grand Rapids,Michigan,United States,"$84,000.00",,,,42.9632425,-85.6678639
+Tommy,Hojnicki,hojnick1@msu.edu,Computer Science,May 2022 - UG,Male,White,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Jake,Hood,hoodjac2@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,TechSmith Corporation,,Software Engineer 1,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Jintao,Hu,hujintao@msu.edu,Computer Science,May 2022 - UG,Male,International,Yes,Working,Tencent,,Game Designer,San Francisco,California,United States,,,,,37.7792588,-122.4193286
+Carolus,Huang,huangm18@msu.edu,Computer Science,May 2022 - UG,Male,International,,Working,Auctioneer Software,,Software Developer,Grand Rapids,Michigan,United States,,,,,42.9632425,-85.6678639
+Maria,Irimie,irimiema@msu.edu,Computer Science,May 2022 - UG,Female,White,,Working,Atomic Object,,Software Developer and Consultant,Ann Arbor,Michigan,United States,"$70,000.00",,,,42.2813722,-83.7484616
+Scott,Isaacson,isaacs37@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,Microsoft,,Support Engineer,Charlotte,North Carolina,United States,"$85,200.00",,,,35.2272086,-80.8430827
+Jason,Israilov,israilo1@msu.edu,Computer Science,May 2022 - UG,Male,Not Specified,,Working,empyre webs,,Co-Founder,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Jason,Israilov,israilo1@msu.edu,Computer Science,May 2022 - UG,Male,Not Specified,,Working,Bosch,,Software Engineer 1,Detroit,Michigan,United States,"$90,000.00",,,,42.3315509,-83.0466403
+Paul,Johnecheck,johnech4@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,Crowe LLP,,Associate Software Engineer,Grand Rapids,Michigan,United States,,,,,42.9632425,-85.6678639
+Karn,Jongnarangsin,jongnara@msu.edu,Computer Science,August 2022 - UG,Male,Asian,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Tyler,Kabaker,kabakert@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,Raytheon,,Entry Level Software Engineer,Denver,Colorado,United States,"$80,017.00",,,,39.7392364,-104.984862
+Samgar,Kali,kalisamg@msu.edu,Computer Science,May 2022 - UG,Male,International,,Working,Dynatrace,,Dynatrace One - Technical Support,Denver,Colorado,United States,"$65,000.00",,,,39.7392364,-104.984862
+Peizeng,Kang,kangpeiz@msu.edu,Computer Science,May 2022 - UG,Male,International,,Continuing Education,,,,Urbana,Illinois,United States,,University of Illinois - Urbana Champaign,Masters,Computer Science,40.1117174,-88.207301
+Nicole,Keller,kelle190@msu.edu,Computer Science,December 2021 - UG,Female,White,,Working,Blue Cross Blue Shield,,System Analyst Associate,Detroit,Michigan,United States,"$58,000.00",,,,42.3315509,-83.0466403
+Moeez,Khan,khanmoee@msu.edu,Computer Science,December 2021 - UG,Male,Asian,,Working,X by 2,,Consultant,Detroit,Michigan,United States,"$90,000.00",,,,42.3315509,-83.0466403
+Mike,Kilmurray,kilmurr1@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,General Motors,,Software Engineer TRACK program,Detroit,Michigan,United States,"$88,000.00",,,,42.3315509,-83.0466403
+Iris,Kim,kimiris@msu.edu,Computer Science,May 2022 - UG,Female,Asian,,Working,Target,,Entry Level Software Engineer,Minneapolis,Minnesota,United States,"$80,000.00",,,,44.9772995,-93.2654692
+Griffin,Klevering,kleveri2@msu.edu,Computer Science,May 2022 - UG,Male,White,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Doctorate,Computer & Information Sciences,42.7338254,-84.5546295
+Tim,Kowalski,kowal182@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,X by 2,,Software Consultant,Detroit,Michigan,United States,"$93,000.00",,,,42.3315509,-83.0466403
+Danielle,Lamoureux,lamoure6@msu.edu,Computer Science,May 2022 - UG,Female,Hispanic/Latine,,Working,Ford Motor Company,,IT FCG Product Designer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Cameron,Lang,langcam1@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,Ford Motor Company,,Ford College Graduate Rotational Program,Detroit,Michigan,United States,"$78,000.00",,,,42.3315509,-83.0466403
+Jake,Lankfer,lankfer1@msu.edu,Computer Science,May 2022 - UG,Male,White,Yes,Working,Dematic,,Entry Level Software Engineer,Grand Rapids,Michigan,United States,"$72,500.00",,,,42.9632425,-85.6678639
+Daniel,Lee,leemyou1@msu.edu,Computer Science,May 2022 - UG,Male,Asian,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Jonathan,Lee,leejon50@msu.edu,Computer Science,May 2022 - UG,Male,Two or More Races,,Working,FreightVerify Inc.,,DevOps Engineer,Ann Arbor,Michigan,United States,,,,,42.2813722,-83.7484616
+Noel,Lefevre,lefevren@msu.edu,Computer Science,May 2022 - UG,Female,White,,Continuing Education,,,,Corvallis,Oregon,United States,,Oregon State University ,,Bioengineering,44.5645659,-123.2620435
+Nafisa,Lenseni,lensenin@msu.edu,Computer Science,May 2022 - UG,Female,International,,Working,Figma,,Software Engineer,San Francisco,California,United States,"$135,000.00",,,,37.7792588,-122.4193286
+Lisa,Lipin,lipineli@msu.edu,Computer Science,May 2022 - UG,Female,White,,Continuing Education,,,,Ann Arbor,Michigan,United States,,University of Michigan,Masters,Computer Science,42.2813722,-83.7484616
+Noah,Little,littlen3@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,Urban Science,,Associate Software Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Ziyu,Liu,liuziyu6@msu.edu,Computer Science,May 2022 - UG,Male,International,,Working,"Digiliant, LLC",,Full-stack Web Developer,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Cody,Lowen,lowencod@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,"Par-Tech, Inc.",,Software Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Sirena,Ly,lysirena@msu.edu,Computer Science,May 2022 - UG,Female,Asian,Yes,Working,"Poultry Management Systems, Inc.",,Computer Engineer 1,Grand Rapids,Michigan,United States,"$59,000.00",,,,42.9632425,-85.6678639
+Avery,Lyu,lyuruife@msu.edu,Computer Science,May 2022 - UG,Male,International,,Continuing Education,,,,Boston,Massachusetts,United States,,Boston University,Masters,Computer Science,42.3554334,-71.060511
+Jacob,Mackay,mackayj4@msu.edu,Computer Science,May 2022 - UG,Male,Asian,Yes,Working,Kohl's,,Associate platform engineer,Detroit,Michigan,United States,"$85,000.00",,,,42.3315509,-83.0466403
+Cody,Maier,maiercod@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,Ford Motor Company,,Software Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Sophie,Martin,mart2035@msu.edu,Computer Science,May 2022 - UG,Female,White,,Working,Cigna Group,,Application Developer,Bloomfield,Connecticut,United States,"$78,000.00",,,,40.7510398,-92.4143872
+Diego,Marzejon,marzejo1@msu.edu,Computer Science,May 2022 - UG,Male,Hispanic/Latine,Yes,Working,Maxar Technologies,,Entry Level Software Engineer,Ann Arbor,Michigan,United States,"$80,000.00",,,,42.2813722,-83.7484616
+Ian,Masterson,master94@msu.edu,Computer Science,May 2022 - UG,Male,White,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Zachary,Matson,matsonza@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,Amazon,,Software Development Engineer,Seattle,Washington,United States,,,,,47.6038321,-122.330062
+Andrew,Mcdonald,mcdon499@msu.edu,Computer Science,May 2022 - UG,Male,White,,Continuing Education,,,,Cambridge,,United Kingdom,,University of Cambridge,Doctorate,Computer Science,52.2055314,0.1186637
+Ryan,McLean,mcleanr3@msu.edu,Computer Science,December 2021 - UG,Male,White,,Continuing Education,,,,Detroit,Michigan,United States,,University of Michigan,"Health Professional (MD, DVM, PA, etc.)",Dentistry,42.3315509,-83.0466403
+Connor,Mears,mearscon@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,Auto-Owners Insurance Company,,Software Developer,Lansing,Michigan,United States,"$62,000.00",,,,42.7338254,-84.5546295
+Freddy,Merlin,merlinfr@msu.edu,Computer Science,May 2022 - UG,Male,International,,Working,Dynatrace,,Software Consultant,Detroit,Michigan,United States,"$85,000.00",,,,42.3315509,-83.0466403
+Ken,Michalak,micha189@msu.edu,Computer Science,May 2022 - UG,Male,Hispanic/Latine,,Working,Ford Motor Company,,"Constraints Analyst/ Materials, Planning, and Logistics Ford College Graduate",Detroit,Michigan,United States,"$80,000.00",,,,42.3315509,-83.0466403
+Ben,Miller,mill2994@msu.edu,Computer Science,May 2022 - UG,Male,Two or More Races,,Continuing Education,,,,Ann Arbor,Michigan,United States,,University of Michigan,Masters,,42.2813722,-83.7484616
+Blake,Miller,mill3231@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,A.S.K. Services,,Software Engineer I,Detroit,Michigan,United States,"$72,051.00",,,,42.3315509,-83.0466403
+Morgan,Mundell,mundell3@msu.edu,Computer Science,May 2022 - UG,Female,White,,Working,Block Harbor Cybersecurity,,Vehicle Cybersecurity Software Developer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Lindsey,Murrell,murrell8@msu.edu,Computer Science,May 2022 - UG,Female,White,,Working,METECS,,Unity Developer,Houston,Texas,United States,"$70,000.00",,,,29.7589382,-95.3676974
+Andrew,Nader,naderand@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,WorkForce Software,,Software Engineer,Jackson,Michigan,United States,,,,,32.2998686,-90.1830408
+Joseph,Nagy,nagyjos2@msu.edu,Computer Science,August 2022 - UG,Male,White,Yes,Working,Auto-Owners Insurance Company,,Associate Software Developer,Lansing,Michigan,United States,"$57,000.00",,,,42.7338254,-84.5546295
+Meghna,Nair,nairmegh@msu.edu,Computer Science,May 2022 - UG,Female,Asian,,Working,IBM,,RPA Developer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Stefan,Najor,najorst1@msu.edu,Computer Science,May 2022 - UG,Male,White,Yes,Working,Amazon,,Software Development Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Varsha,Narmat,vinodvar@msu.edu,Computer Science,May 2022 - UG,Female,Asian,,Working,Amazon,,Solutions Architect,Detroit,Michigan,United States,"$105,000.00",,,,42.3315509,-83.0466403
+Ky,Nguyen,nguye643@msu.edu,Computer Science,May 2022 - UG,Male,Asian,Yes,Working,Michigan Software Labs,,Software Developer,Grand Rapids,Michigan,United States,,,,,42.9632425,-85.6678639
+Heather,Noonan,noonanhe@msu.edu,Computer Science,May 2022 - UG,Female,White,,Working,Goldman Sachs,,Entry Level Software Engineer,New York,New York,United States,"$110,000.00",,,,40.7127281,-74.0060152
+Gigi,Padalec,padalecg@msu.edu,Computer Science,May 2022 - UG,Female,Hispanic/Latine,,Working,Microsoft,,Program Manager/ SWE,Seattle,Washington,United States,"$120,000.00",,,,47.6038321,-122.330062
+Justin,Park,parkjus2@msu.edu,Computer Science,May 2022 - UG,Male,Asian,,Working,Tech Mahindra,,Software Engineer,Dallas,Texas,United States,"$65,000.00",,,,32.7762719,-96.7968559
+Anika,Patel,patela60@msu.edu,Computer Science,May 2022 - UG,Female,Asian,,Working,Target,,TLP Software Engineer,Minneapolis,Minnesota,United States,,,,,44.9772995,-93.2654692
+Neil,Potdukhe,potdukhe@msu.edu,Computer Science,May 2022 - UG,Male,Asian,,Working,Amazon,,Software Engineer,Seattle,Washington,United States,,,,,47.6038321,-122.330062
+Sonali,Reddy,reddyson@msu.edu,Computer Science,May 2022 - UG,Female,Asian,,Working,Goldman Sachs,,Engineering Analyst,New York,New York,United States,,,,,40.7127281,-74.0060152
+John,Reichenbach,reiche29@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,General Motors,,Software Developer,Shelby,Michigan,United States,"$84,000.00",,,,31.7716364,-94.1301652
+Kyle,Reinhart,reinh112@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,Nartron,,Associate Software Engineer,Reed City,Michigan,United States,"$60,000.00",,,,43.875017,-85.51005
+Alex,Richards,rich1049@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,bp,,Information security specialist,Houston,Texas,United States,"$82,000.00",,,,29.7589382,-95.3676974
+Lukas,Richters,richte87@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,KLA,,Associate Software Engineer,Ann Arbor,Michigan,United States,"$75,000.00",,,,42.2813722,-83.7484616
+Jacob,Riggs,riggsjac@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,Auto-Owners Insurance Company,,Personal Property Systems Software Developer,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Peter,Ro,ropeter@msu.edu,Computer Science,December 2021 - UG,Male,Asian,,Working,"Applied Research Associates, Inc.",,Junior Software Developer,Champaign,Illinois,United States,"$68,000.00",,,,40.1164841,-88.2430932
+Ben,Robbins,robbi155@msu.edu,Computer Science,December 2021 - UG,Male,White,,Working,Capital One,,Data Analyst,Richmond,Virginia,United States,"$87,000.00",,,,37.5385087,-77.43428
+Anthony,Rodeman,rodeman2@msu.edu,Computer Science,May 2022 - UG,Male,Not Specified,,Working,Auto-Owners Insurance Company,,Associate Software Developer,Lansing,Michigan,United States,"$62,000.00",,,,42.7338254,-84.5546295
+Jordyn,Rosario,rosari13@msu.edu,Computer Science,December 2021 - UG,Female,Two or More Races,,Continuing Education,,,,New York,New York,United States,,New York University,Masters,Cybersecurity Risk Management,40.7127281,-74.0060152
+Jennifer,Sageman,sageman3@msu.edu,Computer Science,May 2022 - UG,Female,White,,Working,IBM,,Associate Application Developer,Lansing,Michigan,United States,"$50,000.00",,,,42.7338254,-84.5546295
+Md,Samad,samadmd@msu.edu,Computer Science,May 2022 - UG,Male,International,,Working,The Vanguard Group,,Cloud Engineer,Philadelphia,Pennsylvania,United States,"$88,000.00",,,,39.9527237,-75.1635262
+John,Samsell,samsellj@msu.edu,Computer Science,May 2022 - UG,Male,Two or More Races,,Continuing Education,,,,Grand Rapids,Michigan,United States,,Michigan State University,Masters,Computer Science,42.9632425,-85.6678639
+Morgan,Sandler,sandle20@msu.edu,Computer Science,December 2021 - UG,Male,White,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Lucas,Sariol,sariollu@msu.edu,Computer Science,May 2022 - UG,Male,Hispanic/Latine,Yes,Working,TATA Consultancy Services,,Full Stack Software Engineer,Tampa,Florida,United States,"$70,500.00",,,,27.9477595,-82.458444
+Angelo,Savich,savicha1@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,Little Caesars,,Software Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Eden,Seo,seojihye@msu.edu,Computer Science,May 2022 - UG,Male,Not Specified,,Working,General Motors,,Jr. Software Developer,Austin,Texas,United States,"$84,000.00",,,,30.2711286,-97.7436995
+Qinghao,Shen,shenqin1@msu.edu,Computer Science,May 2022 - UG,Male,International,,Working,Fever,,IOS Developer,New York,New York,United States,,,,,40.7127281,-74.0060152
+Johannes,Shin,shinjoha@msu.edu,Computer Science,May 2022 - UG,Male,Asian,Yes,Working,"Agate Software, Inc.",,Backend Web Developer,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Ryan,Shore,shorery1@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,Targeted,,TLP Software Engineer,Minneapolis,Minnesota,United States,,,,,44.9772995,-93.2654692
+Emma,Sickelsteel,sickels4@msu.edu,Computer Science,May 2022 - UG,Female,White,,Working,GE,,Embedded Software Engineer,Grand Rapids,Michigan,United States,,,,,42.9632425,-85.6678639
+Matthew,Sitto,sittomat@msu.edu,Computer Science,May 2022 - UG,Male,Hispanic/Latine,,Working,General Motors,,Global Product Development - Software Engineering,Detroit,Michigan,United States,"$84,000.00",,,,42.3315509,-83.0466403
+Tyler,Smith,smit2660@msu.edu,Computer Science,May 2022 - UG,Male,White,Yes,Working,ADT,,Automation Engineer,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Meigan,Starr,starrmei@msu.edu,Computer Science,May 2022 - UG,Female,Asian,,Working,General Mills,,Analyst,Minneapolis,Minnesota,United States,,,,,44.9772995,-93.2654692
+Jesse,Stroster,stroste3@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,"Michigan Department of Technology, Management and Budget",,.NET Developer,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Jared,Surato,suratoja@msu.edu,Computer Science,May 2022 - UG,Male,White,Yes,Working,Atomic Object,,Atomic Accelerator,Ann Arbor,Michigan,United States,"$66,350.00",,,,42.2813722,-83.7484616
+Justin,Swinehart,swineh18@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,BDO Digital,,Entry Level Software Engineer,Grand Rapids,Michigan,United States,"$70,000.00",,,,42.9632425,-85.6678639
+Greg,Szczerba,szczerb7@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,FANUC America,,R&D Control System Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Jason,Taft,taftjas1@msu.edu,Computer Science,May 2022 - UG,Male,White,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Brian,Tang,tangzi@msu.edu,Computer Science,May 2022 - UG,Male,Asian,Yes,Working,Auto-Owners Insurance Company,,IT Performance Tester,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Jakob,Therkelsen,therkels@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,General Mills,,Data Engineer,Minneapolis,Minnesota,United States,,,,,44.9772995,-93.2654692
+Riley,Thompson,thom1668@msu.edu,Computer Science,May 2022 - UG,Female,White,,Working,Target,,Embedded Software Engineering Intern,Minneapolis,Minnesota,United States,,,,,44.9772995,-93.2654692
+Cynthia,Trocinski,trocinsk@msu.edu,Computer Science,May 2022 - UG,Female,White,,Working,GE,,Edison Engineering Development Program,Grand Rapids,Michigan,United States,"$84,000.00",,,,42.9632425,-85.6678639
+Jeff,Valentic,valen136@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,General Motors,,Software Engineer 1,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Vijay,Vatti,vattivij@msu.edu,Computer Science,May 2022 - UG,Male,Asian,,Working,Ally Financial Inc,,Mobile App Developer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Justin,Vesche,vescheju@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,Auto-Owners Insurance Company,,Software Developer,Lansing,Michigan,United States,,,,,42.7338254,-84.5546295
+Dhiloj,Vigneswaran,vigneswa@msu.edu,Computer Science,May 2022 - UG,Male,International,,Working,Betz Machine,,Robotics Programmer,Kalamazoo,Michigan,United States,,,,,42.291707,-85.5872286
+Sam,Walls,wallssam@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,Rocket Companies,,Associate software engineer,Detroit,Michigan,United States,"$65,000.00",,,,42.3315509,-83.0466403
+Travis,Walton,waltont6@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,Epic Systems,,Software Developer,Verona,Wisconsin,United States,"$110,000.00",,,,45.4424977,10.985737689444765
+James,Warner,warne108@msu.edu,Computer Science,May 2022 - UG,Male,White,Yes,Working,General Motors,,Software Developer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Xochitl,Weiss,weissxoc@msu.edu,Computer Science,December 2021 - UG,Female,Hispanic/Latine,,Working,TechSmith Corporation,,Software Engineer I,Lansing,Michigan,United States,"$80,000.00",,,,42.7338254,-84.5546295
+Nic,Weller,wellern1@msu.edu,Computer Science,December 2021 - UG,Male,White,,Working,Amazon,,Cybersecurity Engineer,Minneapolis,Minnesota,United States,"$125,000.00",,,,44.9772995,-93.2654692
+Nate,Wood,woodnat3@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,Vectorform,,Solutions Engineer,Detroit,Michigan,United States,,,,,42.3315509,-83.0466403
+Jingxin,Wu,wujingx3@msu.edu,Computer Science,May 2022 - UG,Male,International,Yes,Working,SmartAsset,,Data analyst,New York,New York,United States,,,,,40.7127281,-74.0060152
+Henry,Xu,xuhenry1@msu.edu,Computer Science,May 2022 - UG,Male,Asian,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Evan,Yokie,yokieeva@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,Cognizant,,Associate Healthcare Software Architect,Denver,Colorado,United States,"$73,000.00",,,,39.7392364,-104.984862
+Dave,Yonkers,yonkers4@msu.edu,Computer Science,May 2022 - UG,Male,White,,Continuing Education,,,,Ann Arbor,Michigan,United States,,University of Michigan,Masters,Computer Science,42.2813722,-83.7484616
+Christian,Zawisza,zawiszac@msu.edu,Computer Science,May 2022 - UG,Male,White,,Working,Bosch,,Associate software engineer,Detroit,Michigan,United States,"$78,000.00",,,,42.3315509,-83.0466403
+Jinxuan,Zhang,zhan1135@msu.edu,Computer Science,May 2022 - UG,Male,International,Yes,Continuing Education,,,,Lansing,Michigan,United States,,Northeastern University,Masters,Computer Science,42.7338254,-84.5546295
+Erika,Zheng,zhengyil@msu.edu,Computer Science,May 2022 - UG,Female,International,,Continuing Education,,,,Lansing,Michigan,United States,,Michigan State University,Masters,Computer Science,42.7338254,-84.5546295
+Tianli,Zhou,zhouti17@msu.edu,Computer Science,May 2022 - UG,Male,International,,Working,Amazon,,Software Development Engineer,Detroit,Michigan,United States,"$130,000.00",,,,42.3315509,-83.0466403
