@@ -657,7 +657,7 @@ def main():
                     st.plotly_chart(fig)
                     top_5_employer_states("2022", "All Engineering Majors")
                 with t2:
-                    display_city_visualization("LATLONGDestinationCumulativeDataset(All Majors).csv", "2022")
+                    display_city_visualization("LATLONGAnnual Cumulative Data Set_2021-2024.csv", "2022")
                     display_top_5_cities("2022", "All Engineering Majors")
         elif ["2021"] == ms1:
             tab1, tab2, tab3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
@@ -684,7 +684,7 @@ def main():
                     st.plotly_chart(fig)   
                     top_5_employer_states("2021", "All Engineering Majors")
                 with t2:
-                    display_city_visualization("LATLONGDestinationCumulativeDataset(All Majors).csv", "2021")
+                    display_city_visualization("LATLONGAnnual Cumulative Data Set_2021-2024.csv", "2021")
                     display_top_5_cities("2021", "All Engineering Majors")
         elif ["Cumulative Data 21-23: Key Stats"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
@@ -702,7 +702,7 @@ def main():
 
                 with tab2:
                     st.header('College of Engineering Spring 21-23 Destination Locations - By City')
-                    display_city_visualization("LATLONGDestinationCumulativeDataset(All Majors).csv", "Cumulative Data 21-23: Key Stats")
+                    display_city_visualization("LATLONGAnnual Cumulative Data Set_2021-2024.csv", "Cumulative Data 21-23: Key Stats")
                     display_top_5_cities("Cumulative Data 21-23: Key Stats", "All Engineering Majors")
 
     elif ["Applied Engineering Sciences"] == ms:
@@ -728,7 +728,7 @@ def main():
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
-                    st.write("insert maps")
+                    display_city_visualization("LATLONGDestinationCumulativeDataset(Applied Engineering Sciences).csv", "2024")
                     st.header('Interactive Map for Destination Data: Spring 2024 College of Engineering Graduating Class')
                 with t2:
                     st.write("insert map")
@@ -855,7 +855,7 @@ def main():
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
-                    st.write("insert maps")
+                    display_city_visualization("LATLONGDestinationCumulativeDataset(Biosystems Engineering).csv", "2024")
                     st.header('Interactive Map for Destination Data: Spring 2024 College of Engineering Graduating Class')
                 with t2:
                     st.write("insert map")
@@ -983,7 +983,7 @@ def main():
             with t3:
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
-                    st.write("insert map")
+                    display_city_visualization("LATLONGDestinationCumulativeDataset(Chemical Engineering).csv", "2024")
                 with tab2:
                     st.write("insert map")
         elif ["2023"] == ms1:
@@ -1110,7 +1110,7 @@ def main():
             with t3:
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
-                    st.write("insert map")
+                    display_city_visualization("LATLONGDestinationCumulativeDataset(Civil Engineering).csv", "2024")
                 with tab2:
                     st.write("insert map")
         elif ["2023"] == ms1:
@@ -1238,7 +1238,7 @@ def main():
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
-                    st.write("insert maps")
+                    display_city_visualization("LATLONGDestinationCumulativeDataset(Computational Data Science).csv", "2024")
                 with t2:
                     st.write("insert map")
         elif ["2023"] == ms1:
@@ -1336,7 +1336,7 @@ def main():
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
-                    st.write("insert maps")
+                    display_city_visualization("LATLONGDestinationCumulativeDataset(Computer Engineering).csv", "2024")
                 with t2:
                     st.write("insert map")
         elif ["2023"] == ms1:
@@ -1463,7 +1463,7 @@ def main():
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
-                    st.write("insert maps")
+                    display_city_visualization("LATLONGDestinationCumulativeDataset(Computer Science).csv", "2024")
                 with t2:
                     st.write("insert map")
         elif ["2023"] == ms1:
@@ -1589,7 +1589,7 @@ def main():
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
-                    st.write("insert maps")
+                    display_city_visualization("LATLONGDestinationCumulativeDataset(Electrical Engineering).csv", "2024")
                 with t2:
                     st.write("insert map")
         elif ["2023"] == ms1:
@@ -1714,7 +1714,7 @@ def main():
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
-                    st.write("insert maps")
+                    display_city_visualization("LATLONGDestinationCumulativeDataset(Environmental Engineering).csv", "2024")
                 with t2:
                     st.write("insert map")
         elif ["2023"] == ms1:
@@ -1841,7 +1841,7 @@ def main():
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
-                    st.write("insert maps")
+                    display_city_visualization("LATLONGDestinationCumulativeDataset(Materials Science and Eng).csv", "2024")
                 with t2:
                     st.write("insert map")
         elif ["2023"] == ms1:
@@ -1969,7 +1969,7 @@ def main():
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
-                    st.write("insert maps")
+                    display_city_visualization("LATLONGDestinationCumulativeDataset(Mechanical Engineering).csv", "2024")
                 with t2:
                     st.write("insert map")
         elif ["2023"] == ms1:
