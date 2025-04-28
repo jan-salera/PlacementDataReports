@@ -194,21 +194,23 @@ def add_lat_long_to_dataframe(data):
 def display_city_visualization(file_path, selected_year):
     data = pd.read_csv(file_path)
     
-    if 'Start Date' not in data.columns:
-        st.error("Start Date column not found.")
+    # Determine Year column
+    if 'Start Date' in data.columns:
+        # Old data format
+        data['Year'] = pd.to_datetime(data['Start Date'], errors='coerce').dt.year
+    elif 'Graduation Term' in data.columns:
+        # New data format
+        # Extract year from 'Graduation Term', e.g., "December 2023 - UG" -> 2023
+        data['Year'] = data['Graduation Term'].str.extract(r'(\d{4})').astype(float)
+    else:
+        st.error("Neither 'Start Date' nor 'Graduation Term' column found.")
         return
 
-    # Convert 'Start Date' to datetime format and extract the year
-    data['Year'] = pd.to_datetime(data['Start Date'], errors='coerce').dt.year
-
     # Filter data based on the selected year
-
     if selected_year in ["2021", "2022", "2023"]:
         data = data[data['Year'] == int(selected_year)]
-
     elif selected_year == "Cumulative Data 21-23: Key Stats":
         data = data[data['Year'].isin([2021, 2022, 2023])]
-
     else:
         st.error("Invalid year selection.")
         return
@@ -219,60 +221,64 @@ def display_city_visualization(file_path, selected_year):
 
     if 'Employer Latitude' not in data.columns or 'Employer Longitude' not in data.columns:
         st.warning("Latitude and Longitude columns not found. Creating columns... This may take a moment.")
-
-        add_lat_long_to_dataframe(data)
+        add_lat_long_to_dataframe(data)  # Make sure you have this function
         data.to_csv(file_path, index=False)
         st.info("Updated CSV file with Latitude and Longitude columns. Please reload the app to visualize.")
+        return
 
-    if 'Employer Latitude' in data.columns and 'Employer Longitude' in data.columns:
-        # Calculate count of graduates per city
-        city_counts = data.groupby('Employer City').size().reset_index(name='Graduate Count')
+    if 'Employer City' not in data.columns:
+        if 'City' in data.columns:
+            data['Employer City'] = data['City']
+        else:
+            st.error("Employer City or City column not found.")
+            return
 
-        # Merge with original data to get latitude and longitude
-        data_merged = pd.merge(data, city_counts, on='Employer City', how='left')
+    # Calculate count of graduates per city
+    city_counts = data.groupby('Employer City').size().reset_index(name='Graduate Count')
 
-        fig = px.scatter_geo(
-            data_merged,
-            lat='Employer Latitude',
-            lon='Employer Longitude',
-            hover_name='Employer City',
-            hover_data={
-                'Employer City': True,
-                'Graduate Count': False,
-                'Employer Latitude': False,
-                'Employer Longitude': False,
-                'Employer City': False
-            },
-            size='Graduate Count',
-            size_max=25,
-            color_discrete_sequence=px.colors.sequential.Greens
-            )
+    # Merge with original data to get latitude and longitude
+    data_merged = pd.merge(data, city_counts, on='Employer City', how='left')
 
-        fig.update_traces(marker=dict(line=dict(width=2, color='#577b59')))
+    fig = px.scatter_geo(
+        data_merged,
+        lat='Employer Latitude',
+        lon='Employer Longitude',
+        hover_name='Employer City',
+        hover_data={
+            'Employer City': True,
+            'Graduate Count': True,
+            'Employer Latitude': False,
+            'Employer Longitude': False
+        },
+        size='Graduate Count',
+        size_max=25,
+        color_discrete_sequence=px.colors.sequential.Greens
+    )
 
+    fig.update_traces(marker=dict(line=dict(width=2, color='#577b59')))
 
-        fig.update_geos(
-            showcountries=True, countrycolor="Black",
-            showcoastlines=True, coastlinecolor="Black",
-            showland=True, landcolor="#a3cf9e"
-        )
+    fig.update_geos(
+        showcountries=True, countrycolor="Black",
+        showcoastlines=True, coastlinecolor="Black",
+        showland=True, landcolor="#a3cf9e"
+    )
 
-        fig.update_layout(
-            title=f"City Visualization ({selected_year})",
-            geo=dict(
-                scope='usa',
-                projection=dict(type='albers usa'),
-                showlakes=True,
-                lakecolor='#9ec1cf',
-                showocean=True,  # Show ocean
-                oceancolor='#9ec1cf'  # Color of ocean water (same as lake water color)
-            ),
-            margin={"r": 0, "t": 0, "l": 0, "b": 0}
-        )
+    fig.update_layout(
+    height=300,
+    width=600,
+    title=f"City Visualization ({selected_year})",
+    geo=dict(
+        scope='usa',
+        projection=dict(type='albers usa'),
+        showlakes=True,
+        lakecolor='#9ec1cf',
+        showocean=True,
+        oceancolor='#9ec1cf'
+    ),
+    margin={"r": 0, "t": 0, "l": 0, "b": 0}
+)
 
-        st.plotly_chart(fig)
-    else:
-        st.error("Failed to create Latitude and Longitude columns. Please check your CSV file.")
+    st.plotly_chart(fig)
 
 def top_5_employer_states(year, selected_major):
     states = []
