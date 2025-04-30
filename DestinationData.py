@@ -124,41 +124,76 @@ def c_key_stats(kr21, kr22, kr23, ya_kr, pr21, pr22, pr23, ya_pr, as21, as22, as
                 st.header("$" + ms21)
                 st.write("2021 Median Salary")
 
-def choropleth_state_map(file_path, selected_major):
-    all_majors_data = pd.read_csv(file_path) #removed encoding="utf-8"
+def choropleth_state_map(file_path, selected_major, selected_year="All"):
+    all_majors_data = pd.read_csv(file_path)
+
+    # Detect correct state column
+    if 'Employer State' in all_majors_data.columns:
+        state_column = 'Employer State'
+    elif 'State' in all_majors_data.columns:
+        state_column = 'State'
+    else:
+        st.error("No Employer State or State column found in the dataset.")
+        return None
+
+    # Filter by major if needed
     if selected_major != "All Engineering Majors":
-        filtered_data = all_majors_data[all_majors_data['Major'] == selected_major]
+        if 'Major' in all_majors_data.columns:
+            filtered_data = all_majors_data[all_majors_data['Major'] == selected_major]
+        else:
+            st.error("Major column not found in the dataset.")
+            return None
     else:
         filtered_data = all_majors_data
 
-    state_counts = filtered_data['Employer State'].value_counts().reset_index()
+    # --- New: Filter by graduation year if provided ---
+    if selected_year != "All":
+        if 'Graduation Term' in filtered_data.columns:
+            # Extract year from Graduation Term (e.g., "December 2023 - UG")
+            filtered_data['Graduation Year'] = filtered_data['Graduation Term'].str.extract(r'(\d{4})')
+            filtered_data = filtered_data[filtered_data['Graduation Year'] == selected_year]
+        else:
+            st.warning("Graduation Term column not found. Skipping year filter.")
+
+    # Create state counts
+    state_counts = filtered_data[state_column].value_counts().reset_index()
     state_counts.columns = ['State', 'Count']
+
+    # State full name to abbreviation
     state_abbrev = {
         'Alabama': 'AL', 'Alaska': 'AK', 'Arizona': 'AZ', 'Arkansas': 'AR', 'California': 'CA', 'Colorado': 'CO',
-        'Connecticut': 'CT', 'Delaware': 'DE', 'District of Columbia': 'DC', 'Florida': 'FL', 'Georgia': 'GA', 'Hawaii': 'HI', 'Idaho': 'ID',
-        'Illinois': 'IL', 'Indiana': 'IN', 'Iowa': 'IA', 'Kansas': 'KS', 'Kentucky': 'KY', 'Louisiana': 'LA',
-        'Maine': 'ME', 'Maryland': 'MD', 'Massachusetts': 'MA', 'Michigan': 'MI', 'Minnesota': 'MN', 'Mississippi': 'MS',
-        'Missouri': 'MO', 'Montana': 'MT', 'Nebraska': 'NE', 'Nevada': 'NV', 'New Hampshire': 'NH', 'New Jersey': 'NJ',
-        'New Mexico': 'NM', 'New York': 'NY', 'North Carolina': 'NC', 'North Dakota': 'ND', 'Ohio': 'OH', 'Oklahoma': 'OK',
-        'Oregon': 'OR', 'Pennsylvania': 'PA', 'Rhode Island': 'RI', 'South Carolina': 'SC', 'South Dakota': 'SD',
-        'Tennessee': 'TN', 'Texas': 'TX', 'Utah': 'UT', 'Vermont': 'VT', 'Virginia': 'VA', 'Washington': 'WA',
-        'West Virginia': 'WV', 'Wisconsin': 'WI', 'Wyoming': 'WY'
+        'Connecticut': 'CT', 'Delaware': 'DE', 'District of Columbia': 'DC', 'Florida': 'FL', 'Georgia': 'GA',
+        'Hawaii': 'HI', 'Idaho': 'ID', 'Illinois': 'IL', 'Indiana': 'IN', 'Iowa': 'IA', 'Kansas': 'KS', 'Kentucky': 'KY',
+        'Louisiana': 'LA', 'Maine': 'ME', 'Maryland': 'MD', 'Massachusetts': 'MA', 'Michigan': 'MI', 'Minnesota': 'MN',
+        'Mississippi': 'MS', 'Missouri': 'MO', 'Montana': 'MT', 'Nebraska': 'NE', 'Nevada': 'NV', 'New Hampshire': 'NH',
+        'New Jersey': 'NJ', 'New Mexico': 'NM', 'New York': 'NY', 'North Carolina': 'NC', 'North Dakota': 'ND',
+        'Ohio': 'OH', 'Oklahoma': 'OK', 'Oregon': 'OR', 'Pennsylvania': 'PA', 'Rhode Island': 'RI', 'South Carolina': 'SC',
+        'South Dakota': 'SD', 'Tennessee': 'TN', 'Texas': 'TX', 'Utah': 'UT', 'Vermont': 'VT', 'Virginia': 'VA',
+        'Washington': 'WA', 'West Virginia': 'WV', 'Wisconsin': 'WI', 'Wyoming': 'WY'
     }
+
+    # Map to abbreviations
     state_counts['StateAbbrev'] = state_counts['State'].map(state_abbrev)
-    abbrev = state_counts['StateAbbrev']
+    state_counts = state_counts.dropna(subset=['StateAbbrev'])
+
+    # Calculate log of counts for smoother coloring
     state_counts['LogCount'] = np.log1p(state_counts['Count'])
+
+    # Plot
     fig = px.choropleth(
         state_counts,
         locations='StateAbbrev',
         locationmode='USA-states',
-        color='LogCount', 
+        color='LogCount',
         color_continuous_scale='Greens',
         labels={'LogCount': 'Log Count'},
         scope='usa',
-        range_color=(state_counts['LogCount'].min(), state_counts['LogCount'].max()), 
-        hover_data={'State': True, 'Count': False, 'StateAbbrev': False, 'LogCount': False}
+        range_color=(state_counts['LogCount'].min(), state_counts['LogCount'].max()),
+        hover_data={'State': True, 'Count': True, 'StateAbbrev': False, 'LogCount': False}
     )
+
     fig.update_layout(coloraxis_showscale=False)
+
     return fig
 
 def add_lat_long_to_dataframe(data):
@@ -191,29 +226,28 @@ def add_lat_long_to_dataframe(data):
     else:
         st.error("The uploaded CSV file does not contain the 'Employer City' column.")
 
-def display_city_visualization(file_path, selected_year):
+def display_city_visualization(file_path, selected_year=None):
     data = pd.read_csv(file_path)
     
     # Determine Year column
     if 'Start Date' in data.columns:
-        # Old data format
         data['Year'] = pd.to_datetime(data['Start Date'], errors='coerce').dt.year
     elif 'Graduation Term' in data.columns:
-        # New data format
-        # Extract year from 'Graduation Term', e.g., "December 2023 - UG" -> 2023
         data['Year'] = data['Graduation Term'].str.extract(r'(\d{4})').astype(float)
     else:
         st.error("Neither 'Start Date' nor 'Graduation Term' column found.")
         return
 
-    # Filter data based on the selected year
-    if selected_year in ["2021", "2022", "2023"]:
-        data = data[data['Year'] == int(selected_year)]
-    elif selected_year == "Cumulative Data 21-23: Key Stats":
-        data = data[data['Year'].isin([2021, 2022, 2023])]
-    else:
-        st.error("Invalid year selection.")
-        return
+    # Filter data based on selected year
+    if selected_year:
+        if selected_year in ["2021", "2022", "2023", "2024"]:
+            data = data[data['Year'] == int(selected_year)]
+        elif selected_year in ["Cumulative Data 21-23: Key Stats", "Cumulative Data 21-24: Key Stats"]:
+            data = data[data['Year'].isin([2021, 2022, 2023, 2024])]
+        else:
+            st.error("Invalid year selection.")
+            return
+    # else: No filtering — keep ALL data (cumulative over all years)
 
     if data.empty:
         st.warning("No data available for the selected year.")
@@ -245,8 +279,8 @@ def display_city_visualization(file_path, selected_year):
         lon='Employer Longitude',
         hover_name='Employer City',
         hover_data={
-            'Employer City': True,
-            'Graduate Count': True,
+            'Employer City': False,
+            'Graduate Count': False,
             'Employer Latitude': False,
             'Employer Longitude': False
         },
@@ -263,22 +297,25 @@ def display_city_visualization(file_path, selected_year):
         showland=True, landcolor="#a3cf9e"
     )
 
+    title_text = f"City Visualization ({selected_year})" if selected_year else "City Visualization (All Years)"
+
     fig.update_layout(
-    height=300,
-    width=600,
-    title=f"City Visualization ({selected_year})",
-    geo=dict(
-        scope='usa',
-        projection=dict(type='albers usa'),
-        showlakes=True,
-        lakecolor='#9ec1cf',
-        showocean=True,
-        oceancolor='#9ec1cf'
-    ),
-    margin={"r": 0, "t": 0, "l": 0, "b": 0}
-)
+        height=300,
+        width=600,
+        title=title_text,
+        geo=dict(
+            scope='usa',
+            projection=dict(type='albers usa'),
+            showlakes=True,
+            lakecolor='#9ec1cf',
+            showocean=True,
+            oceancolor='#9ec1cf'
+        ),
+        margin={"r": 0, "t": 0, "l": 0, "b": 0}
+    )
 
     st.plotly_chart(fig)
+
 
 def top_5_employer_states(year, selected_major):
     states = []
@@ -605,10 +642,13 @@ def main():
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
-                    st.write("insert maps")
+                    fig = choropleth_state_map("LATLONGAnnual Cumulative Data Set_2021-2024.csv", "All Engineering Majors", selected_year='2024')
                     st.header('Interactive Map for Destination Data: Spring 2024 College of Engineering Graduating Class')
+                    st.plotly_chart(fig) 
+                    top_5_employer_states("2024", "All Engineering Majors")
                 with t2:
-                    st.write("insert map")
+                    display_city_visualization("LATLONGAnnual Cumulative Data Set_2021-2024.csv", "2024")
+                    display_top_5_cities("2024", "All Engineering Majors")
 
         elif ["2023"] == ms1:
             tab1, tab2, tab3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
@@ -700,15 +740,13 @@ def main():
                 st.image("FT (1).jpg")
             with t3:
                 tab1, tab2= st.tabs(["By State", "By City"])
-                with tab1:
-                    AllFig = choropleth_state_map("DestinationCumulativeDataset(All Majors).csv", "All Engineering Majors")
-                    st.header('College of Engineering Spring 21-23 Destination Locations - By State')
-                    st.plotly_chart(AllFig)
+                with t1:
+                    fig = choropleth_state_map("LATLONGAnnual Cumulative Data Set_2021-2024.csv", "All Engineering Majors")
+                    st.header('Interactive Map for Destination Data: College of Engineering')
+                    st.plotly_chart(fig) 
                     top_5_employer_states("Cumulative Data 21-23: Key Stats", "All Engineering Majors")
-
-                with tab2:
-                    st.header('College of Engineering Spring 21-23 Destination Locations - By City')
-                    display_city_visualization("LATLONGAnnual Cumulative Data Set_2021-2024.csv", "Cumulative Data 21-23: Key Stats")
+                with t2:
+                    display_city_visualization("LATLONGAnnual Cumulative Data Set_2021-2024.csv")
                     display_top_5_cities("Cumulative Data 21-23: Key Stats", "All Engineering Majors")
 
     elif ["Applied Engineering Sciences"] == ms:
@@ -734,10 +772,13 @@ def main():
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
-                    display_city_visualization("LATLONGDestinationCumulativeDataset(Applied Engineering Sciences).csv", "2024")
+                    fig = choropleth_state_map("LATLONGAnnual Cumulative Data Set_2021-2024.csv(Applied Engineering Sciences)", "Applied Engineering Sciences", selected_year='2024')
                     st.header('Interactive Map for Destination Data: Spring 2024 College of Engineering Graduating Class')
+                    st.plotly_chart(fig) 
+                    top_5_employer_states("2024", "Applied Engineering Sciences")
                 with t2:
-                    st.write("insert map")
+                    display_city_visualization("LATLONGAnnual Cumulative Data Set_2021-2024(Applied Engineering Sciences).csv", "2024")
+                    display_top_5_cities("2024", "Applied Engineering Sciences")
         elif ["2023"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -829,15 +870,14 @@ def main():
                 st.image("FT (2).jpg")
             with t3:
                 tab1, tab2= st.tabs(["By State", "By City"])
-                with tab1:
-                    AllFig = choropleth_state_map("DestinationCumulativeDataset(All Majors).csv", "Applied Engineering Sciences")
-                    st.header('College of Engineering Spring 21-23 Destination Locations - By State: AES Major')
-                    st.plotly_chart(AllFig) 
-                    top_5_employer_states("Cumulative Data 21-23: Key Stats", "Applied Engineering Sciences")
-                with tab2:
-                    st.header('College of Engineering Spring 21-23 Destination Locations - By City: AES Major')
-                    display_city_visualization("LATLONGDestinationCumulativeDataset(Applied Engineering Sciences).csv", "Cumulative Data 21-23: Key Stats")
-                    display_top_5_cities("Cumulative Data 21-23: Key Stats", "Applied Engineering Sciences")
+                with t1:
+                    fig = choropleth_state_map("LATLONGAnnual Cumulative Data Set_2021-2024.csv", "All Engineering Majors")
+                    st.header('Interactive Map for Destination Data: College of Engineering')
+                    st.plotly_chart(fig) 
+                    top_5_employer_states("Cumulative Data 21-23: Key Stats", "All Engineering Majors")
+                with t2:
+                    display_city_visualization("LATLONGAnnual Cumulative Data Set_2021-2024.csv")
+                    display_top_5_cities("Cumulative Data 21-23: Key Stats", "All Engineering Majors")
     
     elif ["Biosystems Engineering"] == ms:
         if ["2024"] == ms1:
@@ -861,10 +901,13 @@ def main():
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
-                    display_city_visualization("LATLONGDestinationCumulativeDataset(Biosystems Engineering).csv", "2024")
+                    fig = choropleth_state_map("LATLONGAnnual Cumulative Data Set_2021-2024.csv", "Biosystems Engineering", selected_year='2024')
                     st.header('Interactive Map for Destination Data: Spring 2024 College of Engineering Graduating Class')
+                    st.plotly_chart(fig) 
+                    top_5_employer_states("2024", "Biosystems Engineering")
                 with t2:
-                    st.write("insert map")
+                    display_city_visualization("LATLONGAnnual Cumulative Data Set_2021-2024(Biosystems Engineering).csv", "2024")
+                    display_top_5_cities("2024", "All Engineering Majors")
         elif ["2023"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -988,10 +1031,14 @@ def main():
                 st.write("insert graphic")
             with t3:
                 tab1, tab2= st.tabs(["By State", "By City"])
-                with tab1:
-                    display_city_visualization("LATLONGDestinationCumulativeDataset(Chemical Engineering).csv", "2024")
-                with tab2:
-                    st.write("insert map")
+                with t1:
+                    fig = choropleth_state_map("LATLONGAnnual Cumulative Data Set_2021-2024.csv", "Chemical Engineering", selected_year='2024')
+                    st.header('Interactive Map for Destination Data: Spring 2024 College of Engineering Graduating Class')
+                    st.plotly_chart(fig) 
+                    top_5_employer_states("2024", "Chemical Engineering")
+                with t2:
+                    display_city_visualization("LATLONGAnnual Cumulative Data Set_2021-2024(Chemical Engineering).csv", "2024")
+                    display_top_5_cities("2024", "Chemical Engineering")
         elif ["2023"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1115,10 +1162,14 @@ def main():
                 st.write("insert graphic")
             with t3:
                 tab1, tab2= st.tabs(["By State", "By City"])
-                with tab1:
-                    display_city_visualization("LATLONGDestinationCumulativeDataset(Civil Engineering).csv", "2024")
-                with tab2:
-                    st.write("insert map")
+                with t1:
+                    fig = choropleth_state_map("LATLONGAnnual Cumulative Data Set_2021-2024.csv", "Civil Engineering", selected_year='2024')
+                    st.header('Interactive Map for Destination Data: Spring 2024 College of Engineering Graduating Class')
+                    st.plotly_chart(fig) 
+                    top_5_employer_states("2024", "Civil Engineering")
+                with t2:
+                    display_city_visualization("LATLONGAnnual Cumulative Data Set_2021-2024(Civil Engineering).csv", "2024")
+                    display_top_5_cities("2024", "Civil Engineering")
         elif ["2023"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1244,9 +1295,13 @@ def main():
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
-                    display_city_visualization("LATLONGDestinationCumulativeDataset(Computational Data Science).csv", "2024")
+                    fig = choropleth_state_map("LATLONGAnnual Cumulative Data Set_2021-2024.csv", "Computational Data Science", selected_year='2024')
+                    st.header('Interactive Map for Destination Data: Spring 2024 College of Engineering Graduating Class')
+                    st.plotly_chart(fig) 
+                    top_5_employer_states("2024", "Computational Data Science")
                 with t2:
-                    st.write("insert map")
+                    display_city_visualization("LATLONGAnnual Cumulative Data Set_2021-2024(Computational Data Science).csv", "2024")
+                    display_top_5_cities("2024", "Computational Data Science")
         elif ["2023"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1342,9 +1397,13 @@ def main():
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
-                    display_city_visualization("LATLONGDestinationCumulativeDataset(Computer Engineering).csv", "2024")
+                    fig = choropleth_state_map("LATLONGAnnual Cumulative Data Set_2021-2024.csv", "Computer Engineering", selected_year='2024')
+                    st.header('Interactive Map for Destination Data: Spring 2024 College of Engineering Graduating Class')
+                    st.plotly_chart(fig) 
+                    top_5_employer_states("2024", "Computer Engineering")
                 with t2:
-                    st.write("insert map")
+                    display_city_visualization("LATLONGAnnual Cumulative Data Set_2021-2024(Computer Engineering).csv", "2024")
+                    display_top_5_cities("2024", "Computer Engineering")
         elif ["2023"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1469,9 +1528,13 @@ def main():
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
-                    display_city_visualization("LATLONGDestinationCumulativeDataset(Computer Science).csv", "2024")
+                    fig = choropleth_state_map("LATLONGAnnual Cumulative Data Set_2021-2024.csv", "Computer Science", selected_year='2024')
+                    st.header('Interactive Map for Destination Data: Spring 2024 College of Engineering Graduating Class')
+                    st.plotly_chart(fig) 
+                    top_5_employer_states("2024", "Computer Science")
                 with t2:
-                    st.write("insert map")
+                    display_city_visualization("LATLONGAnnual Cumulative Data Set_2021-2024(Computer Science).csv", "2024")
+                    display_top_5_cities("2024", "Computer Science")
         elif ["2023"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1595,9 +1658,13 @@ def main():
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
-                    display_city_visualization("LATLONGDestinationCumulativeDataset(Electrical Engineering).csv", "2024")
+                    fig = choropleth_state_map("LATLONGAnnual Cumulative Data Set_2021-2024.csv", "Electrical Engineering", selected_year='2024')
+                    st.header('Interactive Map for Destination Data: Spring 2024 College of Engineering Graduating Class')
+                    st.plotly_chart(fig) 
+                    top_5_employer_states("2024", "Electrical Engineering")
                 with t2:
-                    st.write("insert map")
+                    display_city_visualization("LATLONGAnnual Cumulative Data Set_2021-2024(Electrical Engineering).csv", "2024")
+                    display_top_5_cities("2024", "Electrical Engineering")
         elif ["2023"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1720,9 +1787,13 @@ def main():
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
-                    display_city_visualization("LATLONGDestinationCumulativeDataset(Environmental Engineering).csv", "2024")
+                    fig = choropleth_state_map("LATLONGAnnual Cumulative Data Set_2021-2024.csv", "Environmental Engineering", selected_year='2024')
+                    st.header('Interactive Map for Destination Data: Spring 2024 College of Engineering Graduating Class')
+                    st.plotly_chart(fig) 
+                    top_5_employer_states("2024", "Environmental Engineering")
                 with t2:
-                    st.write("insert map")
+                    display_city_visualization("LATLONGAnnual Cumulative Data Set_2021-2024(Environmental Engineering).csv", "2024")
+                    display_top_5_cities("2024", "Environmental Engineering")
         elif ["2023"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1847,9 +1918,13 @@ def main():
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
-                    display_city_visualization("LATLONGDestinationCumulativeDataset(Materials Science and Eng).csv", "2024")
+                    fig = choropleth_state_map("LATLONGAnnual Cumulative Data Set_2021-2024.csv", "Materials Science & Engineering", selected_year='2024')
+                    st.header('Interactive Map for Destination Data: Spring 2024 College of Engineering Graduating Class')
+                    st.plotly_chart(fig) 
+                    top_5_employer_states("2024", "All Engineering Majors")
                 with t2:
-                    st.write("insert map")
+                    display_city_visualization("LATLONGAnnual Cumulative Data Set_2021-2024(Materials Science and Eng).csv", "2024")
+                    display_top_5_cities("2024", "All Engineering Majors")
         elif ["2023"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
@@ -1975,9 +2050,13 @@ def main():
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
-                    display_city_visualization("LATLONGDestinationCumulativeDataset(Mechanical Engineering).csv", "2024")
+                    fig = choropleth_state_map("LATLONGAnnual Cumulative Data Set_2021-2024.csv", "Mechanical Engineering", selected_year='2024')
+                    st.header('Interactive Map for Destination Data: Spring 2024 College of Engineering Graduating Class')
+                    st.plotly_chart(fig) 
+                    top_5_employer_states("2024", "Mechanical Engineering")
                 with t2:
-                    st.write("insert map")
+                    display_city_visualization("LATLONGAnnual Cumulative Data Set_2021-2024(Mechanical Engineering).csv", "2024")
+                    display_top_5_cities("2024", "Mechanical Engineering")
         elif ["2023"] == ms1:
             t1, t2, t3 = st.tabs(["Key Statistics", "By Employer", "By Geography"])
             with t1:
