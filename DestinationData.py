@@ -595,7 +595,7 @@ def main():
                     AllGender2024 = [493, 185]
                     data_gender(AllGender2024)
             with tab2:
-                st.write("insert visualization")
+                st.image("2024 (1).png")
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
@@ -724,7 +724,7 @@ def main():
                     AllGender2024 = [36, 16]
                     data_gender(AllGender2024)
             with tab2:
-                st.write("insert visualization")
+                st.image("2024 (2).png")
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
@@ -851,7 +851,7 @@ def main():
                     BEGender2024 = [12,20]
                     data_gender(BEGender2024, InverseGender)
             with tab2:
-                st.write("insert visualization")
+                st.image("2024 (3).png")
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
@@ -979,7 +979,7 @@ def main():
                     ChemEGender2024 = [35, 23]
                     data_gender(ChemEGender2024)
             with t2:
-                st.write("insert graphic")
+                st.image("2024 (4).png")
             with t3:
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
@@ -1106,7 +1106,7 @@ def main():
                     CEGender2024 = [29, 17]
                     data_gender(CEGender2024)
             with t2:
-                st.write("insert graphic")
+                st.image("2024 (5).png")
             with t3:
                 tab1, tab2= st.tabs(["By State", "By City"])
                 with tab1:
@@ -1234,7 +1234,7 @@ def main():
                     CDSGender2024 = [4, 4]
                     data_gender(CDSGender2024)
             with tab2:
-                st.write("insert visualization")
+                st.image("2024 (6).png")
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
@@ -1332,7 +1332,7 @@ def main():
                     CpEGender2024 = [22, 5]
                     data_gender(CpEGender2024)
             with tab2:
-                st.write("insert visualization")
+                st.image("2024 (7).png")
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
@@ -1459,7 +1459,7 @@ def main():
                     CSEGender2024 = [168, 39]
                     data_gender(CSEGender2024)
             with tab2:
-                st.write("insert visualization")
+                st.image("2024 (8).png")
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
@@ -1585,7 +1585,7 @@ def main():
                     EEGender2024 = [39, 9]
                     data_gender(EEGender2024)
             with tab2:
-                st.write("insert visualization")
+                st.image("2024 (9).png")
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
@@ -1710,7 +1710,7 @@ def main():
                     ENEGender2024 = [8, 20]
                     data_gender(ENEGender2024, InverseGender)
             with tab2:
-                st.write("insert visualization")
+                st.image("2024 (10).png")
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
@@ -1837,7 +1837,7 @@ def main():
                     MSGender2024 = [10, 4]
                     data_gender(MSGender2024)
             with tab2:
-                st.write("insert visualization")
+                st.image("2024 (11).png")
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
@@ -1965,7 +1965,7 @@ def main():
                     MEGender2024 = [130, 28]
                     data_gender(MEGender2024)
             with tab2:
-                st.write("insert visualization")
+                st.image("2024 (12).png")
             with tab3:
                 t1, t2= st.tabs(["By State", "By City"])
                 with t1:
