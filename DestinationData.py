@@ -319,7 +319,34 @@ def display_city_visualization(file_path, selected_year=None):
 
 def top_5_employer_states(year, selected_major):
     states = []
-    if year == "2023":
+    if year == "2024":
+        if selected_major == "All Engineering Majors":
+            states = ["Michigan: 252 positions", "Illinois: 35 positions", "Ohio: 15 positions", "California: 12 positions", "North Carolina: 11 positions"]
+        elif selected_major == "Applied Engineering Sciences":
+            states = ["Michigan: 11 positions", "Illinois: 9 positions", "North Carolina: 3 positions", "Ohio: 2 positions"]
+        elif selected_major == "Biosystems Engineering":
+            states = ["Michigan: 8 positions"]
+        elif selected_major == "Chemical Engineering":
+            states = ["Michigan: 22 positions", "Wisconsin: 3 positions", "Tennessee: 2 positions"]
+        elif selected_major == "Civil Engineering":
+            states = ["Michigan: 19 positions", "New York: 3 positions"]
+        elif selected_major == "Computational Data Science":
+            states = ["Michigan: 2 positions"]
+        elif selected_major == "Computer Engineering":
+            states = ["Michigan: 8 positions", "Maryland: 2 positions"]
+        elif selected_major == "Computer Science":
+            states = ["Michigan: 71 positions", "Illinois: 17 positions", "Washington: 6 positions", "California: 5 positions", "Ohio: 4 positions"]
+        elif selected_major == "Electrical Engineering":
+            states = ["Michigan: 20 positions", "Illinois: 2 positions", "Minnesota: 2 positions"]
+        elif selected_major == "Environmental Engineering":
+            states = ["Michigan: 14 positions", "North Carolina: 2"]
+        elif selected_major == "Materials Science & Engineering":
+            states = ["Michigan: 4 positions"]
+        elif selected_major == "Mechanical Engineering":
+            states = ["Michigan: 73 positions", "Ohio: 7 positions", "Virginia: 5 positions", "Indiana: 4 positions", "Texas: 4 positions"]
+        else:
+            states = []
+    elif year == "2023":
         if selected_major == "All Engineering Majors":
             states = ["Michigan: 370 positions", "Illinois: 44 positions", "Ohio: 22 positions", "Texas: 19 positions", "California: 16 positions"]
         elif selected_major == "Applied Engineering Sciences":
@@ -400,29 +427,29 @@ def top_5_employer_states(year, selected_major):
             states = []
     if year == "Cumulative Data 21-23: Key Stats":
         if selected_major == "All Engineering Majors":
-            states = ["Michigan: 838 positions", "Illinois: 106 positions", "Texas: 62 positions", "Wisconsin: 51 positions", "Ohio: 47 positions"]
+            states = ["Michigan: 1319 positions", "Illinois: 156 positions", "Texas: 78 positions", "California: 67 positions", "Ohio: 64 positions"]
         elif selected_major == "Applied Engineering Sciences":
-            states = ["Michigan: 64 positions", "Illinois: 30 positions", "Texas: 10 positions", "Ohio: 8 positions", "California: 7 positions"]
+            states = ["Michigan: 81 positions", "Illinois: 40 positions", "Texas: 11 positions", "Ohio: 10 positions", "California: 8 positions"]
         elif selected_major == "Biosystems Engineering":
-            states = ["Michigan: 47 positions", "Wisconsin: 7 positions", "California: 5 positions", "Illinois: 4 positions", "Arizona: 2 positions"]
+            states = ["Michigan: 82 positions", "Wisconsin: 8 positions", "California: 5 positions", "Illinois: 5 positions", "Iowa: 4 positions"]
         elif selected_major == "Chemical Engineering":
-            states = ["Michigan: 97 positions", "Wisconsin: 16 positions", "Indiana: 11 positions", "Ohio: 11 positions", "Illinois: 10 positions"]
+            states = ["Michigan: 132 positions", "Wisconsin: 19 positions", "Indiana: 14 positions", "Illinois: 11 positions", "Ohio: 11 positions"]
         elif selected_major == "Civil Engineering":
-            states = ["Michigan: 69 positions", "Illinois: 8 positions", "Texas: 6 positions", "California: 3 positions", "Colorado: 2 positions"]
+            states = ["Michigan: 109 positions", "Illinois: 9 positions", "Texas: 7 positions", "New York: 6 positions", "California: 3 positions"]
         elif selected_major == "Computational Data Science":
-            states = ["Michigan: 8 positions", "Ohio: 2 positions"]
+            states = ["Michigan: 11 positions", "Texas: 3 positions", "Ohio: 2 positions"]
         elif selected_major == "Computer Engineering":
-            states = ["Michigan: 31 positions", "Texas: 4 positions", "Arizona: 3 positions", "California: 3 positions", "Ohio: 3 positions"]
+            states = ["Michigan: 56 positions", "California: 4 positions", "Illinois: 4 positions", "Texas: 4 positions", "Wisconsin: 4 positions"]
         elif selected_major == "Computer Science":
-            states = ["Michigan: 186 positions", "Illinois: 26 positions", "Washington: 17 positions", "Texas: 15 positions", "Minnesota: 13 positions"]
+            states = ["Michigan: 311 positions", "Illinois: 47 positions", "Washington: 23 positions", "California: 20 positions", "Texas: 20 positions"]
         elif selected_major == "Electrical Engineering":
-            states = ["Michigan: 77 positions", "Illinois: 8 positions", "Texas: 6 positions", "Indiana: 5 positions", "Wisconsin: 5 positions"]
+            states = ["Michigan: 126 positions", "Illinois: 12 positions", "Texas: 8 positions", "Indiana: 6 positions", "Wisconsin: 6 positions"]
         elif selected_major == "Environmental Engineering":
-            states = ["Michigan: 28 positions", "California: 2 positions", "Ohio: 2 positions", "Texas: 2 positions"]
+            states = ["Michigan: 50 positions", "California: 3 positions", "North Carolina: 2 positions", "Ohio: 2 positions", "Texas: 2 positions"]
         elif selected_major == "Materials Science & Engineering":
-            states = ["Michigan: 19 positions", "Ohio: 4 positions", "Pennsylvania: 2 positions", "Texas: 2 positions"]
+            states = ["Michigan: 28 positions", "Ohio: 5 positions", "Illinois: 2 positions", "Pennsylvania: 2 positions", "Texas: 2 positions"]
         elif selected_major == "Mechanical Engineering":
-            states = ["Michigan: 212 positions", "Illinois: 16 positions", "Indiana: 11 positions", "Wisconsin: 11 positions", "Texas: 10 positions"]
+            states = ["Michigan: 333 positions", "Illinois: 21 positions", "Indiana: 18 positions", "Ohio: 15 positions", "Texas: 15 positions"]
         else:
             states = []
 
@@ -552,41 +579,41 @@ def display_top_5_cities(year, selected_major):
             non_michigan_cities = []
     if year == "Cumulative Data 21-23: Key Stats":
         if selected_major == "All Engineering Majors":
-            michigan_cities = ["Detroit: 478 positions", "Lansing: 119 positions", "Grand Rapids: 92 positions", "Ann Arbor: 51 positions", "Kalamazoo: 30 positions"]
-            non_michigan_cities = ["Chicago, IL: 98 positions", "Madison, WI: 34 positions", "Minneapolis, MN: 23 positions", "Seattle, WA: 22 positions", "Dallas, TX: 20 positions"]
+            michigan_cities = ["Detroit: 633 positions", "Lansing: 347 positions", "Grand Rapids: 106 positions", "Ann Arbor: 96 positions", "Kalamazoo: 31 positions"]
+            non_michigan_cities = ["Chicago, IL: 142 positions", "Madison, WI: 39 positions", "Seattle, WA: 30 positions", "Minneapolis, MN: 28 positions", "Dallas, TX: 26 positions"]
         elif selected_major == "Applied Engineering Sciences":
-            michigan_cities = ["Detroit: 39 positions", "Grand Rapids: 10 positions", "Lansing: 6 positions", "Ann Arbor: 4 positions"]
-            non_michigan_cities = ["Chicago, IL: 29 positions", "Dallas, TX: 4 positions", "Phoenix, AZ: 4 positions", "Los Angeles, CA: 3 positions", "Minneapolis, MN: 3 positions"]
+            michigan_cities = ["Detroit: 51 positions", "Grand Rapids: 10 positions", "Lansing: 9 positions", "Ann Arbor: 5 positions"]
+            non_michigan_cities = ["Chicago, IL: 39 positions", "Dallas, TX: 4 positions", "Phoenix, AZ: 4 positions", "Los Angeles, CA: 4 positions", "Cincinnati, OH: 3 positions"]
         elif selected_major == "Biosystems Engineering":
-            michigan_cities = ["Detroit: 19 positions", "Grand Rapids: 8 positions", "Kalamazoo: 7 positions", "Lansing: 6 positions", "Ann Arbor: 2 positions"]
-            non_michigan_cities = ["Madison, WI: 6 positions", "Chicago, IL: 3 positions", "Boston, MA: 2 positions", "Denver, CO: 2 positions", "Minneapolis, MN: 2 positions"]
+            michigan_cities = ["Detroit: 30 positions", "Lansing: 25 positions", "Grand Rapids: 9 positions", "Kalamazoo: 8 positions", "Ann Arbor: 2 positions"]
+            non_michigan_cities = ["Madison, WI: 6 positions", "Chicago, IL: 4 positions", "Denver, CO: 3 positions", "Minneapolis, MN: 3 positions", "Boston, MA: 2 positions"]
         elif selected_major == "Chemical Engineering":
-            michigan_cities = ["Detroit: 38 positions", "Kalamazoo: 11 positions", "Lansing: 10 positions", "Ann Arbor: 9 positions", "Midland: 6 positions"]
-            non_michigan_cities = ["Madison, WI: 12 positions", "Chicago, IL: 9 positions", "Indianapolis, IN: 7 positions", "Cleveland, OH: 4 positions", "San Francisco, CA: 3 positions"]
+            michigan_cities = ["Detroit: 49 positions", "Lansing: 20 positions", "Kalamazoo: 14 positions", "Ann Arbor: 12 positions", "Grand Rapids: 11 positions"]
+            non_michigan_cities = ["Madison, WI: 13 positions", "Chicago, IL: 12 positions", "Indianapolis, IN: 7 positions", "Cleveland, OH: 4 positions", "Atlanta, GA: 4 positions"]
         elif selected_major == "Civil Engineering":
-            michigan_cities = ["Detroit: 33 positions", "Lansing: 17 positions", "Grand Rapids: 9 positions", "Ann Arbor: 3 positions", "Jackson: 3 positions"]
-            non_michigan_cities = ["Chicago, IL: 7 positions", "Dallas, TX: 4 positions", "Denver, CO: 2 positions"]
+            michigan_cities = ["Detroit: 44 positions", "Lansing: 39 positions", "Grand Rapids: 11 positions", "Ann Arbor: 5 positions", "Jackson: 3 positions"]
+            non_michigan_cities = ["Chicago, IL: 8 positions", "Dallas, TX: 5 positions", "New York, NY: 4 positions"]
         elif selected_major == "Computational Data Science":
-            michigan_cities = ["Detroit: 6 positions", "Lansing: 2 positions"]
-            non_michigan_cities = ["Columbus, OH: 2 positions"]
+            michigan_cities = ["Detroit: 7 positions", "Lansing: 4 positions"]
+            non_michigan_cities = ["Columbus, OH: 2 positions", "Austin, TX: 2 positions"]
         elif selected_major == "Computer Engineering":
-            michigan_cities = ["Detroit: 21 positions", "Lansing: 7 positions", "Grand Rapids: 3 positions"]
-            non_michigan_cities = ["San Francisco, CA: 3 positions", "Austin, TX: 2 positions", "Minneapolis, MN: 2 positions", "Seattle, WA: 2 positions"]
+            michigan_cities = ["Detroit: 25 positions", "Lansing: 24 positions", "Grand Rapids: 3 positions"]
+            non_michigan_cities = ["San Francisco, CA: 4 positions", "Baltimore, MD: 3 positions", "Chicago, IL: 3 positions", "Madison, WI: 3 positions", "Austin, TX: 2 positions"]
         elif selected_major == "Computer Science":
-            michigan_cities = ["Detroit: 109 positions", "Lansing: 43 positions", "Grand Rapids: 19 positions", "Ann Arbor: 10 positions", "Kalamazoo: 2 positions"]
-            non_michigan_cities = ["Chicago, IL: 26 positions", "Seattle, WA: 16 positions", "Minneapolis, MN: 12 positions", "New York, NY: 9 positions", "Austin, TX: 7 positions"]
+            michigan_cities = ["Detroit: 145 positions", "Lansing: 114 positions", "Grand Rapids: 23 positions", "Ann Arbor: 21 positions", "Kalamazoo: 2 positions"]
+            non_michigan_cities = ["Chicago, IL: 43 positions", "Seattle, WA: 22 positions", "Minneapolis, MN: 12 positions", "New York, NY: 12 positions", "Austin, TX: 8 positions"]
         elif selected_major == "Electrical Engineering":
-            michigan_cities = ["Detroit: 43 positions", "Ann Arbor: 9 positions", "Lansing: 7 positions", "Grand Rapids: 6 positions", "Jackson: 5 positions"]
-            non_michigan_cities = ["Chicago, IL: 8 positions", "Dallas, TX: 4 positions", "Indianapolis, IN: 3 positions", "Milwaukee, WI: 3 positions", "Alexandria, VA: 2 positions"]
+            michigan_cities = ["Detroit: 55 positions", "Lansing: 29 positions", "Ann Arbor: 16 positions", "Grand Rapids: 9 positions", "Jackson: 7 positions"]
+            non_michigan_cities = ["Chicago, IL: 12 positions", "Dallas, TX: 4 positions", "Milwaukee, WI: 4 positions", "Indianapolis, IN: 3 positions", "Minneapolis, MN: 3 positions"]
         elif selected_major == "Environmental Engineering":
-            michigan_cities = ["Detroit: 14 positions", "Lansing: 6 positions", "Grand Rapids: 5 positions"]
-            non_michigan_cities = []
+            michigan_cities = ["Detroit: 23 positions", "Lansing: 16 positions", "Grand Rapids: 6 positions", "Ann Arbor: 2 positions"]
+            non_michigan_cities = ["Charlotte, NC: 2 positions"]
         elif selected_major == "Materials Science & Engineering":
-            michigan_cities = ["Detroit: 12 positions", "Grand Rapids: 3 positions"]
-            non_michigan_cities = []
+            michigan_cities = ["Detroit: 13 positions", "Lansing: 7 positons", "Grand Rapids: 3 positions"]
+            non_michigan_cities = ["Cleveland, OH: 2 positions"]
         elif selected_major == "Mechanical Engineering":
-            michigan_cities = ["Detroit: 144 positions", "Grand Rapids: 19 positions", "Lansing: 15 positions", "Ann Arbor: 12 positions", "Kalamazoo: 5 positions"]
-            non_michigan_cities = ["Chicago, IL: 14 positions", "Indianapolis, IN: 8 positions", "Madison, WI: 6 positions", "Cincinnati, OH: 5 positions", "Boston, MA: 4 positions"]
+            michigan_cities = ["Detroit: 196 positions", "Lansing: 54 positions", "Ann Arbor: 30 positions", "Grand Rapids: 21 positions", "Kalamazoo: 6 positions"]
+            non_michigan_cities = ["Chicago, IL: 18 positions", "Indianapolis, IN: 10 positions", "Madison, WI: 7 positions", "Cincinnati, OH: 7 positions", "Boston, MA: 6 positions"]
         else:
             michigan_cities = []
             non_michigan_cities = []
